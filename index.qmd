@@ -1,52 +1,46 @@
 ---
-title: "Quarto Academic, PhD"
+title: "Thales Maia, PhD"
 description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
-image: "files/images/placeholder4.JPG"
+image: "files/images/foto.jpg"
 page-navigation: false
 toc: false
 #sidebar: false
 page-layout: full
-
 about:
   id: hero-heading
   template: trestles
   image-width: 70%
   links:
-    - icon: sun
-      text: Lab
-      href: https://www.github.com
+    - text: "{{< ai lattes >}} Lattes"
+      href: http://lattes.cnpq.br/8637504941507702
       target: _blank
-    - icon: globe
-      text: Uprofile
-      href: https://baruch.cuny.edu
+    - text: "{{< ai orcid >}} ORCID"   # use academic icons, "" are needed, you also need to install the fontawesome extension
+      href: https://orcid.org/0000-0001-7943-6322
       target: _blank
-    - icon: envelope
-      text: E-mail
-      href: mailto:email@gmail.com    
+    - text: "{{< ai researchgate >}} Research Gate"
+      href: https://www.researchgate.net/profile/Thales-Maia
+      target: _blank
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com.br/citations?user=7oeMSpAAAAAJ&hl=pt-BR&oi=ao
+      target: _blank
+    - text: '<img src="files/icons/somos-plus.png" style="height: 1.1em; vertical-align: -0.2em; margin-right: 0.3em;"> UFMG'
+      href: https://somos.ufmg.br/professor/thales-alexandre-carvalho-maia
+      target: _blank
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/thales-maia-38755a23
+      target: _blank
+    - icon: github
+      text: GitHub
+      href: https://github.com/thalesmaia
       target: _blank
     - icon: youtube
       text: YouTube
-      href: https://www.youtube.com     
-      target: _blank 
-    - text: "{{< ai orcid >}} ORCID"   # use academic icons, "" are needed, you also need to install the fontawesome extension
-      href: https://orcid.org
+      href: https://www.youtube.com/@thalesmaia6607
       target: _blank
-    - text: "{{< ai clarivate >}} Web of Science"
-      href: https://www.webofscience.com  
-      target: _blank
-    - text: "{{< ai scopus >}} Scopus"
-      href: https://www.scopus.com
-      target: _blank
-    - text: "{{< ai google-scholar >}} Google Scholar"
-      href: https://scholar.google.com
-      target: _blank
-#    - text: "{{< ai researchgate >}} Research Gate"
-#      href: https://www.researchgate.net
-#      target: _blank
-
+    - icon: envelope
+      text: E-mail
+      href: mailto:thalesmaia@gmail.com
 listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
   - id: recent-posts
     contents: 
@@ -66,26 +60,32 @@ listing:   # Comment the listing section and delete corresponding lines in the i
 ---
 
 :::{#hero-heading}
+**Desenvolvo tecnologia para o setor industrial | Projeto de Máquinas Elétricas, Geração de Energia & Automação | Professor**
 
-I'm a [Quarto Academeic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io).
+<small>Belo Horizonte, Minas Gerais, Brasil <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Bandeira_de_Minas_Gerais.svg" style="height: 1em; vertical-align: -0.1em;"> 🇧🇷</small>
 
-I'm a template that you can fork to build your own website with easy adaptation and deployment.
+Desenvolvo tecnologia para superar desafios industriais, atuando diretamente nos setores de geração renovável, cadeia do carbono, óleo e gás e automotivo. Com mais de 20 anos de vivência de mercado — aliados à experiência como Professor Universitário —, consolido uma bagagem no projeto de máquinas elétricas, eletrônica, instrumentação e software, criando arquiteturas completas para processos, acionamentos e automação.
 
-I can automatically generate a neat publication list from an Excel file and enabling categories and filters.
+Minha principal especialidade é o desenvolvimento de geradores e motores customizados (fluxo axial, alta rotação e motores in-wheel), integrando-os com eletrônica de potência, sistemas de controle e pilhas de comunicação industrial. Liderei projetos envolvendo geração eólica para redes rurais, microturbinas, máquinas móveis híbridas e powertrains especiais para ambientes severos.
 
-Check [Quarto Academic Website Examples and Tips](https://drganghe.github.io/quarto-academic-site-examples.html) and [README.md](https://github.com/drganghe/quarto-academic-website-template/blob/main/README.md) for more detailed instructions.
+Em paralelo, possuo ampla experiência prática em instrumentação de processos e sistemas térmicos: medição de gases de combustão em fornos de carbonização, gaseificação, produção de biochar e secadores industriais, integrando sensores, condicionamento de sinais, PLCs e sistemas embarcados.
 
-## Experience
+Normalmente sou chamado quando o problema é não trivial: ambientes ruidosos, redes elétricas fracas, condições térmicas severas, equipamentos legados ou metas energéticas ambiciosas. Resolvo o desafio desenvolvendo o seu sistema, validando-o por meio de modelos e protótipos, e então apoiando a implementação e o comissionamento.
 
-- Researcher, Univerisity
-- Consultant, Company
-- Intern, Institute
+Se você busca alguém com visão sistêmica para o seu projeto — capaz de conectar desde a química do seu processo e o comportamento das suas máquinas até o código dos seus controladores — e transformar tudo isso em uma arquitetura robusta, é exatamente aí que eu gero mais valor.
 
-## Education
+## Atuação Profissional
 
-- PhD, Univerisity
-- Master, Univerisity
-- Bachelor, Univerisity
+- **Professor (2017 - Atual)**, Universidade Federal de Minas Gerais (UFMG)
+- **Professor (2015 - 2017)**, Instituto Federal Minas Gerais (IFMG)
+- **Sócio-Engenheiro (2013 - 2015)**, Fahren
+- **Engenheiro (2011 - 2012)**, STA Engenharia
+
+## Formação
+
+- **Doutorado em Engenharia Mecânica (2016)**, Universidade Federal de Minas Gerais (UFMG)
+- **Mestrado em Engenharia Elétrica (2011)**, Universidade Federal de Minas Gerais (UFMG)
+- **Graduação em Engenharia Elétrica (2009)**, Universidade Federal de Minas Gerais (UFMG)
 
 :::
 

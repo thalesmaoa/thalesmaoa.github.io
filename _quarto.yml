@@ -6,15 +6,15 @@ project:
     
 # Meta
 description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
-author-meta: "Dr. Gang He"
+author-meta: "Dr. Thales A. C. Maia"
 
 website:
-  title: "Quarto Academic"
+  title: "Thales Maia, PhD"
   image: "https://quarto.org/quarto.png"
-  description: "Quarto Academic Website Template adapted by Dr. Gang He"
+  description: "Site pessoal e acadêmico de Thales Maia."
  
   navbar:
-    background: light  # You can change the background color here
+    background: primary  # You can change the background color here
 
     left:   # You can comment out all navigation items here if you just like to keep the index page only
 #      - text: Home
@@ -47,14 +47,12 @@ website:
         href: people.qmd
 
     right: 
-      - text: CV
-        href: files/nsf-biosketch.pdf
-      - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
+      - text: "{{< ai lattes >}} CV"
+        href: http://lattes.cnpq.br/8637504941507702
         target: _blank
-      - text: "{{< fa brands bluesky >}}"
-        href: https://bsky.app
-        target: _blank      
+      - icon: linkedin
+        href: https://www.linkedin.com/in/thales-maia-38755a23
+        target: _blank
       - icon: rss
         href: posts.xml
         target: _blank
@@ -62,14 +60,16 @@ website:
   page-navigation: true
   
   page-footer: 
-    left: "[Your Name](http://www.github.com) &copy; <script>document.write(new Date().getFullYear())</script>" 
-    center: "Build on [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io)"
+    left: "Thales Maia, PhD &copy; <script>document.write(new Date().getFullYear())</script>"
     right:  
-      - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
-        target: _blank
-      - text: "{{< fa brands bluesky >}}" 
-        href: https://bsky.app
+      # - icon: github
+      #   href: https://github.com/drganghe/quarto-academic-website-template
+      #   target: _blank
+      # - text: "{{< fa brands bluesky >}}" 
+      #   href: https://bsky.app
+      #   target: _blank
+      - icon: envelope
+        href: mailto:thalesmaia@gmail.com
         target: _blank
       - icon: rss
         href: posts.xml
@@ -101,7 +101,7 @@ bibliography: references.bib  # Add references.bib to the root folder to enable 
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
     toc: true
     footnotes-hover: true
@@ -114,4 +114,3 @@ format:
     email-obfuscation: javascript
     link-external-filter: '^(?:http:|https:)\/\/drganghe\.github\.io\/custom'
     include-in-header: "files/includes/_academic.qmd"
-
