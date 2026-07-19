@@ -9,11 +9,13 @@ description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
 author-meta: "Dr. Thales A. C. Maia"
 
 website:
-  title: "Thales Maia"
-  image: "https://quarto.org/quarto.png"
+  title: "SPHIN"
+  image: "files/icons/logo.png"
   description: "Site pessoal e acadêmico de Thales Maia."
  
   navbar:
+    title: "SPHIN"
+    logo: "files/icons/logo_machine.png"
     background: primary  # You can change the background color here
 
     left:   # You can comment out all navigation items here if you just like to keep the index page only
@@ -25,6 +27,8 @@ website:
             href: backend/research/pub-listing.qmd
           - text: Publicações  # Manually curated list of publications
             href: backend/research/publications.qmd
+          - text: SPHIN Lab  # Manually curated list of publications
+            href: backend/research/sphin_about.qmd
       - text: "Portfólio"
         href: backend/portfolio/index.qmd
           # - text: Projects

@@ -39,19 +39,25 @@ about:
       href: https://www.youtube.com/@thalesmaia6607
       target: _blank
     - icon: envelope
-      text: E-mail
+      text: Email
       href: mailto:thalesmaia@gmail.com
 listing:   # Recent news and events
   - id: recent-news
     contents: 
       - backend/news
     exclude:
-      title: ""
-    type: grid
-    max-items: 3
-    page-size: 3
-    fields: [image, date, title, subtitle]
-    max-description-length: 75
+      title: "News and Events"
+    # type: table
+    type: grid             # Mudamos para grid para permitir itens lado a lado
+    grid-columns: 2        # Força a ter exatamente 2 colunas
+    max-items: 4           # Limita para mostrar no máximo 4 notícias
+    page-size: 4           # Garante que a "página" tenha apenas 4 itens
+    # max-items: 3
+    # page-size: 3
+    fields: [date, title]
+    sort-ui: false     # Remove a caixa "Order By"
+    filter-ui: false   # Remove a caixa "Filter"
+    # max-description-length: 75
     sort: 
       - "date desc"
       - "title asc"
@@ -73,55 +79,33 @@ listing:   # Recent news and events
 ---
 
 :::{#hero-heading}
-**Desenvolvo tecnologia para o setor industrial | Projeto de Máquinas Elétricas, Geração de Energia & Automação | Professor**
+**Developing Technology for the Industrial Sector | Electric Machine Design, Power Generation & Automation | Professor**
 
 <small>Belo Horizonte, Minas Gerais, Brasil <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Bandeira_de_Minas_Gerais.svg" style="height: 1em; vertical-align: -0.1em;"> 🇧🇷</small>
 
-Desenvolvo tecnologia para superar desafios industriais, atuando diretamente nos setores de geração renovável, cadeia do carbono, óleo e gás e automotivo. Com mais de 20 anos de vivência de mercado — aliados à experiência como Professor Universitário —, consolido uma bagagem no projeto de máquinas elétricas, eletrônica, instrumentação e software, criando arquiteturas completas para processos, acionamentos e automação.
+I develop technology to overcome industrial challenges, working directly in the renewable generation, carbon chain, oil and gas, and automotive sectors. With over 20 years of market experience—combined with my background as a University Professor—I have built a solid foundation in designing electric machines, electronics, instrumentation, and software, creating complete architectures for processes, drives, and automation.
 
-Minha principal especialidade é o desenvolvimento de geradores e motores customizados (fluxo axial, alta rotação e motores in-wheel), integrando-os com eletrônica de potência, sistemas de controle e pilhas de comunicação industrial. Liderei projetos envolvendo geração eólica para redes rurais, microturbinas, máquinas móveis híbridas e powertrains especiais para ambientes severos.
+My main specialty is developing custom generators and motors (axial flux, high-speed, and in-wheel motors), integrating them with power electronics, control systems, and industrial communication stacks. I have led projects involving wind power for rural grids, microturbines, hybrid mobile machines, and special powertrains for harsh environments.
 
-Em paralelo, possuo ampla experiência prática em instrumentação de processos e sistemas térmicos: medição de gases de combustão em fornos de carbonização, gaseificação, produção de biochar e secadores industriais, integrando sensores, condicionamento de sinais, PLCs e sistemas embarcados.
+In parallel, I have extensive practical experience in process and thermal systems instrumentation: measuring combustion gases in carbonization furnaces, gasification, biochar production, and industrial dryers, integrating sensors, signal conditioning, PLCs, and embedded systems.
 
-Normalmente sou chamado quando o problema é não trivial: ambientes ruidosos, redes elétricas fracas, condições térmicas severas, equipamentos legados ou metas energéticas ambiciosas. Resolvo o desafio desenvolvendo o seu sistema, validando-o por meio de modelos e protótipos, e então apoiando a implementação e o comissionamento.
+I am usually called when the problem is non-trivial: noisy environments, weak electrical grids, severe thermal conditions, legacy equipment, or ambitious energy targets. I solve the challenge by developing your system, validating it through models and prototypes, and then supporting its implementation and commissioning.
 
-Se você busca alguém com visão sistêmica para o seu projeto — capaz de conectar desde a química do seu processo e o comportamento das suas máquinas até o código dos seus controladores — e transformar tudo isso em uma arquitetura robusta, é exatamente aí que eu gero mais valor.
-
-## Atuação Profissional
-
-- **Professor (2017 - Atual)**, Universidade Federal de Minas Gerais (UFMG)
-- **Professor (2015 - 2017)**, Instituto Federal Minas Gerais (IFMG)
-- **Sócio-Engenheiro (2013 - 2015)**, Fahren
-- **Engenheiro (2011 - 2012)**, STA Engenharia
-
-## Formação
-
-- **Doutorado em Engenharia Mecânica (2016)**, Universidade Federal de Minas Gerais (UFMG)
-- **Mestrado em Engenharia Elétrica (2011)**, Universidade Federal de Minas Gerais (UFMG)
-- **Graduação em Engenharia Elétrica (2009)**, Universidade Federal de Minas Gerais (UFMG)
+If you are looking for someone with a systemic view for your project—capable of connecting everything from the chemistry of your process and the behavior of your machines to the code of your controllers—and turning it all into a robust architecture, that is exactly where I generate the most value.
 
 :::
 
 
-<!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
-<!--
-## Recent Posts
-Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd)
-
-:::{#recent-posts}
-:::
--->
-
-## Notícias e Eventos
+## News and Events
 Check out the latest &nbsp;[News](backend/news/index.qmd#category=news)&nbsp;, &nbsp;[Events](backend/news/index.qmd#category=event)&nbsp;, and &nbsp;[More »](backend/news/index.qmd)
 
 :::{#recent-news}
 :::
 
 ## Blog
-Check out the latest &nbsp;[Posts](backend/blog/index.qmd)&nbsp; and &nbsp;[More »](backend/blog/index.qmd)
+Check out the latest &nbsp;[Posts](backend/blog/index.qmd)&nbsp; and &nbsp;[More »](/backend/blog/index.qmd)
 
 :::{#recent-blog}
 :::
 
-<p align="right">[All Posts »](/posts.qmd)</p>
+<p align="right">[All Posts »](/backend/blog/index.qmd)</p>

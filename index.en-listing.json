@@ -1,0 +1,13 @@
+{
+  "listing": "/index.en.html",
+  "items": [
+    "/backend/news/index.html",
+    "/backend/news/event-title/index.html",
+    "/backend/news/news-title/index.html",
+    "/backend/news/paper-title/index.html",
+    "/backend/blog/index.html",
+    "/backend/blog/event-title/index.html",
+    "/backend/blog/news-title/index.html",
+    "/backend/blog/paper-title/index.html"
+  ]
+}

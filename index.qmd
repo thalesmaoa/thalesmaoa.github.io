@@ -1,5 +1,6 @@
 ---
 title: "Thales Maia, PhD"
+pagetitle: "Thales Maia"
 description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
 image: "files/images/foto.jpg"
 page-navigation: false
@@ -46,12 +47,18 @@ listing:   # Recent news and events
     contents: 
       - backend/news
     exclude:
-      title: ""
-    type: grid
-    max-items: 3
-    page-size: 3
-    fields: [image, date, title, subtitle]
-    max-description-length: 75
+      title: "Notícias e Eventos"
+    # type: table
+    type: grid             # Mudamos para grid para permitir itens lado a lado
+    grid-columns: 2        # Força a ter exatamente 2 colunas
+    max-items: 4           # Limita para mostrar no máximo 4 notícias
+    page-size: 4           # Garante que a "página" tenha apenas 4 itens
+    # max-items: 3
+    # page-size: 3
+    fields: [date, title]
+    sort-ui: false     # Remove a caixa "Order By"
+    filter-ui: false   # Remove a caixa "Filter"
+    # max-description-length: 75
     sort: 
       - "date desc"
       - "title asc"
@@ -75,53 +82,24 @@ listing:   # Recent news and events
 :::{#hero-heading}
 **Desenvolvo tecnologia para o setor industrial | Projeto de Máquinas Elétricas, Geração de Energia & Automação | Professor**
 
-<small>Belo Horizonte, Minas Gerais, Brasil <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Bandeira_de_Minas_Gerais.svg" style="height: 1em; vertical-align: -0.1em;"> 🇧🇷</small>
+Belo Horizonte, Minas Gerais, Brasil <img src="files/icons/flag_minas.svg" style="height: 1em; vertical-align: -0.1em; border: 1px solid #999;"> <img src="files/icons/flag_brasil.svg" style="height: 1em; vertical-align: -0.1em; border: 1px solid #999;">
 
-Desenvolvo tecnologia para superar desafios industriais, atuando diretamente nos setores de geração renovável, cadeia do carbono, óleo e gás e automotivo. Com mais de 20 anos de vivência de mercado — aliados à experiência como Professor Universitário —, consolido uma bagagem no projeto de máquinas elétricas, eletrônica, instrumentação e software, criando arquiteturas completas para processos, acionamentos e automação.
+Desenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas, geração de energia e automação. Sou especialista no projeto de geradores e motores customizados, além da instrumentação de processos industriais — criando soluções para operação remota, IIoT e Indústria 4.0.
 
-Minha principal especialidade é o desenvolvimento de geradores e motores customizados (fluxo axial, alta rotação e motores in-wheel), integrando-os com eletrônica de potência, sistemas de controle e pilhas de comunicação industrial. Liderei projetos envolvendo geração eólica para redes rurais, microturbinas, máquinas móveis híbridas e powertrains especiais para ambientes severos.
-
-Em paralelo, possuo ampla experiência prática em instrumentação de processos e sistemas térmicos: medição de gases de combustão em fornos de carbonização, gaseificação, produção de biochar e secadores industriais, integrando sensores, condicionamento de sinais, PLCs e sistemas embarcados.
-
-Normalmente sou chamado quando o problema é não trivial: ambientes ruidosos, redes elétricas fracas, condições térmicas severas, equipamentos legados ou metas energéticas ambiciosas. Resolvo o desafio desenvolvendo o seu sistema, validando-o por meio de modelos e protótipos, e então apoiando a implementação e o comissionamento.
-
-Se você busca alguém com visão sistêmica para o seu projeto — capaz de conectar desde a química do seu processo e o comportamento das suas máquinas até o código dos seus controladores — e transformar tudo isso em uma arquitetura robusta, é exatamente aí que eu gero mais valor.
-
-## Atuação Profissional
-
-- **Professor (2017 - Atual)**, Universidade Federal de Minas Gerais (UFMG)
-- **Professor (2015 - 2017)**, Instituto Federal Minas Gerais (IFMG)
-- **Sócio-Engenheiro (2013 - 2015)**, Fahren
-- **Engenheiro (2011 - 2012)**, STA Engenharia
-
-## Formação
-
-- **Doutorado em Engenharia Mecânica (2016)**, Universidade Federal de Minas Gerais (UFMG)
-- **Mestrado em Engenharia Elétrica (2011)**, Universidade Federal de Minas Gerais (UFMG)
-- **Graduação em Engenharia Elétrica (2009)**, Universidade Federal de Minas Gerais (UFMG)
-
-:::
-
-
-<!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
-<!--
-## Recent Posts
-Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd)
-
-:::{#recent-posts}
-:::
--->
+**Professor**, Universidade Federal de Minas Gerais (UFMG)
 
 ## Notícias e Eventos
-Check out the latest &nbsp;[News](backend/news/index.qmd#category=news)&nbsp;, &nbsp;[Events](backend/news/index.qmd#category=event)&nbsp;, and &nbsp;[More »](backend/news/index.qmd)
+Acompanhe as últimas &nbsp;[Notícias](backend/news/index.qmd#category=news)&nbsp;, &nbsp;[Eventos](backend/news/index.qmd#category=event)&nbsp;, e &nbsp;[Mais »](backend/news/index.qmd)
 
 :::{#recent-news}
 :::
 
+:::
+
+
+
 ## Blog
-Check out the latest &nbsp;[Posts](backend/blog/index.qmd)&nbsp; and &nbsp;[More »](backend/blog/index.qmd)
+Confira os últimos &nbsp;[Artigos](backend/blog/index.qmd)&nbsp; e &nbsp;[Mais »](backend/blog/index.qmd)
 
 :::{#recent-blog}
 :::
-
-<p align="right">[All Posts »](/posts.qmd)</p>
