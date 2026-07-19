@@ -1,10 +1,15 @@
 [
   {
-    "listing": "/posts.html",
+    "listing": "/index.html",
     "items": [
-      "/posts/event-title/index.html",
-      "/posts/news-title/index.html",
-      "/posts/paper-title/index.html"
+      "/backend/news/index.html",
+      "/backend/news/event-title/index.html",
+      "/backend/news/news-title/index.html",
+      "/backend/news/paper-title/index.html",
+      "/backend/blog/index.html",
+      "/backend/blog/event-title/index.html",
+      "/backend/blog/news-title/index.html",
+      "/backend/blog/paper-title/index.html"
     ]
   },
   {
@@ -12,19 +17,54 @@
     "items": []
   },
   {
-    "listing": "/index.html",
+    "listing": "/backend/news/index.html",
     "items": [
-      "/posts/event-title/index.html",
-      "/posts/news-title/index.html",
-      "/posts/paper-title/index.html"
+      "/backend/news/event-title/index.html",
+      "/backend/news/news-title/index.html",
+      "/backend/news/paper-title/index.html"
     ]
+  },
+  {
+    "listing": "/backend/blog/index.html",
+    "items": [
+      "/backend/blog/event-title/index.html",
+      "/backend/blog/news-title/index.html",
+      "/backend/blog/paper-title/index.html"
+    ]
+  },
+  {
+    "listing": "/backend/portfolio/index.html",
+    "items": [
+      "/backend/portfolio/projects/gerador-eolico.html",
+      "/backend/portfolio/projects/instrumentacao-fornos.html"
+    ]
+  },
+  {
+    "listing": "/backend/teaching/index.html",
+    "items": [
+      "/backend/teaching/courses/maquinas-eletricas.html",
+      "/backend/teaching/courses/eletronica-potencia.html"
+    ]
+  },
+  {
+    "listing": "/backend/research/pub-listing.html",
+    "items": []
   },
   {
     "listing": "/people.html",
     "items": []
   },
   {
-    "listing": "/pub-listing.html",
-    "items": []
+    "listing": "/index.en.html",
+    "items": [
+      "/backend/news/index.html",
+      "/backend/news/event-title/index.html",
+      "/backend/news/news-title/index.html",
+      "/backend/news/paper-title/index.html",
+      "/backend/blog/index.html",
+      "/backend/blog/event-title/index.html",
+      "/backend/blog/news-title/index.html",
+      "/backend/blog/paper-title/index.html"
+    ]
   }
 ]

@@ -1,0 +1,56 @@
+---
+title: "Sobre"
+page-layout: full
+---
+
+## Trajetória
+
+::: {layout="[1,1]"}
+
+::: {}
+Escreva aqui a história da sua trajetória: como começou no mercado, a transição entre indústria e academia, e o que te levou a focar em máquinas elétricas, energia e automação.
+
+Use este espaço para contar o que a página inicial não cobre em detalhe — motivações, momentos marcantes, decisões de carreira.
+:::
+
+![](images/about/foto-trajetoria-1.jpg)
+
+:::
+
+---
+
+## Um pouco de história
+
+::: {layout="[1,1]"}
+
+![](images/about/foto-trajetoria-2.jpg)
+
+::: {}
+Continue a narrativa aqui — um segundo momento da carreira, um projeto marcante, ou a experiência como professor universitário.
+
+Alterne texto e imagem conforme for contando a história, trocando a ordem dos blocos (texto/imagem ou imagem/texto) para variar o ritmo visual da página.
+:::
+
+:::
+
+---
+
+## Linha do tempo
+
+::: {.timeline}
+
+**2004** — Início da carreira no mercado industrial.
+
+**20XX** — Ingresso na academia como Professor Universitário.
+
+**20XX** — Marco relevante (projeto, publicação, certificação).
+
+**Hoje** — Atuação atual entre indústria, pesquisa e ensino.
+
+:::
+
+---
+
+## Currículo completo
+
+Para uma visão detalhada da formação, publicações e experiência profissional, veja o [CV completo](cv.pdf) ou o [Lattes](#).

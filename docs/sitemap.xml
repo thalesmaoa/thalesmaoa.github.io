@@ -1,47 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts.html</loc>
-    <lastmod>2025-06-06T22:28:53.960Z</lastmod>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/posts/news-title/index.html</loc>
+    <lastmod>2026-07-12T19:40:08.256Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/publications.html</loc>
-    <lastmod>2025-03-11T20:28:51.830Z</lastmod>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/posts/event-title/index.html</loc>
+    <lastmod>2026-07-12T19:40:08.256Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/projects.html</loc>
-    <lastmod>2025-02-10T13:31:20.796Z</lastmod>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/index.html</loc>
+    <lastmod>2026-07-19T18:03:39.951Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/index.html</loc>
-    <lastmod>2025-06-06T22:34:03.868Z</lastmod>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/about.html</loc>
+    <lastmod>2026-07-19T17:56:38.141Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/paper-title/index.html</loc>
-    <lastmod>2025-02-08T20:29:49.171Z</lastmod>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/projects.html</loc>
+    <lastmod>2026-07-12T19:40:08.260Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/teaching.html</loc>
-    <lastmod>2025-02-10T15:14:33.036Z</lastmod>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/research/publications.html</loc>
+    <lastmod>2026-07-19T16:10:20.954Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/contact.html</loc>
-    <lastmod>2025-02-08T02:43:14.168Z</lastmod>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/teaching/courses/maquinas-eletricas.html</loc>
+    <lastmod>2026-07-19T16:18:36.681Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/event-title/index.html</loc>
-    <lastmod>2025-02-10T14:44:43.941Z</lastmod>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/news-title/index.html</loc>
+    <lastmod>2026-07-19T17:51:41.484Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/index.html</loc>
-    <lastmod>2026-05-29T10:25:05.848Z</lastmod>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/index.html</loc>
+    <lastmod>2026-07-19T17:56:27.261Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/people.html</loc>
-    <lastmod>2026-02-03T19:55:18.149Z</lastmod>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/blog/news-title/index.html</loc>
+    <lastmod>2026-07-19T17:51:38.072Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/pub-listing.html</loc>
-    <lastmod>2026-04-09T12:35:28.091Z</lastmod>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/blog/index.html</loc>
+    <lastmod>2026-07-19T17:51:44.800Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/portfolio/index.html</loc>
+    <lastmod>2026-07-19T16:13:35.755Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/portfolio/projects/instrumentacao-fornos.html</loc>
+    <lastmod>2026-07-19T16:08:31.206Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/portfolio/projects/gerador-eolico.html</loc>
+    <lastmod>2026-07-19T16:07:55.449Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/blog/event-title/index.html</loc>
+    <lastmod>2026-07-19T17:51:37.992Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/blog/paper-title/index.html</loc>
+    <lastmod>2026-07-19T17:51:38.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/event-title/index.html</loc>
+    <lastmod>2026-07-19T17:51:41.400Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/paper-title/index.html</loc>
+    <lastmod>2026-07-19T17:51:41.444Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/teaching/index.html</loc>
+    <lastmod>2026-07-19T17:08:54.197Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/teaching/courses/eletronica-potencia.html</loc>
+    <lastmod>2026-07-19T16:18:39.673Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/research/pub-listing.html</loc>
+    <lastmod>2026-07-19T16:01:34.589Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/people.html</loc>
+    <lastmod>2026-07-12T19:40:08.256Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/teaching.html</loc>
+    <lastmod>2026-07-12T19:40:08.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/contact.html</loc>
+    <lastmod>2026-07-12T19:40:08.180Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/posts/paper-title/index.html</loc>
+    <lastmod>2026-07-12T19:40:08.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/index.en.html</loc>
+    <lastmod>2026-07-19T18:03:14.447Z</lastmod>
   </url>
 </urlset>

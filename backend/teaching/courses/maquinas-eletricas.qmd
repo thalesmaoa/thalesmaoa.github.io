@@ -1,0 +1,19 @@
+---
+title: "Máquinas Elétricas"
+description: "Fundamentos de transformadores, motores CC, motores de indução e máquinas síncronas."
+date: 2026-02-01
+categories: [Graduação, Engenharia Elétrica]
+---
+
+## Ementa
+
+- Princípios de conversão eletromecânica de energia
+- Transformadores monofásicos e trifásicos
+- Máquinas de corrente contínua
+- Motores de indução e máquinas síncronas
+
+## Material de apoio
+
+- [Slides das aulas](#)
+- [Lista de exercícios](#)
+- [Bibliografia recomendada](#)
