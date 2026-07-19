@@ -1,0 +1,4 @@
+/* Ajuste fino direto na imagem do logo */
+.navbar-brand img, .navbar-logo {
+    max-height: 30px !important; /* Mantenha o tamanho ideal */
+}
