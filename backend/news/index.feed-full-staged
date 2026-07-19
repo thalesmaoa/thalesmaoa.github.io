@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>SPHIN</title>
+<link>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/</link>
+<atom:link href="https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/index.xml" rel="self" type="application/rss+xml"/>
+<description>Site pessoal e acadêmico de Thales Maia.</description>
+<image>
+<url>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/files/icons/logo.png</url>
+<title>SPHIN</title>
+<link>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/</link>
+<height>144</height>
+<width>144</width>
+</image>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Tue, 03 Sep 2024 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/backend/news/event-title/index.html}</title>
+  <dc:creator>Event </dc:creator>
+  <link>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/event-title/</link>
+  <description>{B4F502887207:/backend/news/event-title/index.html}</description>
+  <category>event</category>
+  <category>presentation</category>
+  <guid>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/event-title/</guid>
+  <pubDate>Tue, 03 Sep 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/files/images/placeholder2.JPG" medium="image"/>
+</item>
+<item>
+  <title>{B4F502887207:/backend/news/news-title/index.html}</title>
+  <dc:creator>News </dc:creator>
+  <link>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/news-title/</link>
+  <description>{B4F502887207:/backend/news/news-title/index.html}</description>
+  <category>news</category>
+  <guid>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/news-title/</guid>
+  <pubDate>Mon, 24 Jun 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/files/images/placeholder3.JPG" medium="image"/>
+</item>
+<item>
+  <title>{B4F502887207:/backend/news/paper-title/index.html}</title>
+  <dc:creator>Albert Einstein</dc:creator>
+  <dc:creator>Boris Podolsky</dc:creator>
+  <dc:creator>Nathan Rosen</dc:creator>
+  <link>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/paper-title/</link>
+  <description>{B4F502887207:/backend/news/paper-title/index.html}</description>
+  <category>paper</category>
+  <guid>https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/paper-title/</guid>
+  <pubDate>Wed, 15 May 1935 03:00:00 GMT</pubDate>
+  <media:content url="https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs/backend/news/paper-title/featured.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

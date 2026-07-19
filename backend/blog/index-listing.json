@@ -1,0 +1,8 @@
+{
+  "listing": "/backend/blog/index.html",
+  "items": [
+    "/backend/blog/event-title/index.html",
+    "/backend/blog/news-title/index.html",
+    "/backend/blog/paper-title/index.html"
+  ]
+}
