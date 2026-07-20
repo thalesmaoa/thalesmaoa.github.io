@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>SPHIN</title>
+<link>https://www.thalesmaia.com/backend/news/</link>
+<atom:link href="https://www.thalesmaia.com/backend/news/index.xml" rel="self" type="application/rss+xml"/>
+<description>Site pessoal e acadêmico de Thales Maia.</description>
+<image>
+<url>https://www.thalesmaia.com/files/icons/logo.png</url>
+<title>SPHIN</title>
+<link>https://www.thalesmaia.com/backend/news/</link>
+<height>144</height>
+<width>144</width>
+</image>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Mon, 20 Jul 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Defesa de Mestrado — William Andrade</title>
+  <dc:creator>Thales Maia</dc:creator>
+  <link>https://www.thalesmaia.com/backend/news/202607 - Defesa William/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><strong>William Santos Andrade</strong> defenderá sua dissertação de mestrado intitulada <strong>“Projeto, Implantação e Avaliação Comparativa de Uma Rede CC Para Aplicações Industriais”</strong> no Programa de Pós-Graduação em Engenharia Elétrica da UFMG.</p>
+<ul>
+<li><strong>Data:</strong> 04/08/2026</li>
+<li><strong>Horário:</strong> 15:00</li>
+<li><strong>Local:</strong> Seminário 1012 da EEUFMG</li>
+<li><strong>Orientador:</strong> Thales Alexandre Carvalho Maia</li>
+</ul>
+<p><a href="https://www.ppgee.ufmg.br/defesas_marcadas.php">Acompanhe os detalhes no site do PPGEE</a></p>
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_whatsapp"></a> <a class="a2a_button_telegram"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+
+ ]]></description>
+  <category>News</category>
+  <category>Defesa</category>
+  <guid>https://www.thalesmaia.com/backend/news/202607 - Defesa William/</guid>
+  <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://www.thalesmaia.com/backend/news/202607 - Defesa William/ufmg_m.png" medium="image" type="image/png" height="152" width="144"/>
+</item>
+<item>
+  <title>Bem-vindo ao meu novo site!</title>
+  <dc:creator>Thales Maia</dc:creator>
+  <link>https://www.thalesmaia.com/backend/news/202607 - Website creation/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Estou muito feliz em anunciar o lançamento do meu novo site pessoal e acadêmico!</p>
+<p>Este espaço foi desenvolvido utilizando <a href="https://quarto.org/">Quarto</a>, uma ferramenta de publicação técnica e científica de código aberto que transforma notebooks computacionais e markdown em documentos e sites de alta qualidade.</p>
+<section id="código-aberto" class="level2">
+<h2 class="anchored" data-anchor-id="código-aberto">Código Aberto</h2>
+<p>A estrutura deste site é uma adaptação do excelente template <a href="https://github.com/dr-gang-he/quarto-academic-website-template">Quarto Academic Website</a> criado pelo Dr.&nbsp;Gang He. Sou muito grato pela sua contribuição à comunidade.</p>
+<p>Todo o código-fonte e as modificações que realizei estão disponíveis publicamente no meu repositório do GitHub. Sinta-se à vontade para explorar, dar um “fork” e adaptar para seus próprios projetos.</p>
+<div style="text-align: center; margin-top: 20px;">
+<p><a href="https://github.com/thalesmaoa/thalesmaoa.github.io" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i>&nbsp; Ver o código no GitHub</a></p>
+</div>
+<p>Espero que goste do conteúdo!</p>
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_whatsapp"></a> <a class="a2a_button_telegram"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+</section>
+
+ ]]></description>
+  <category>News</category>
+  <guid>https://www.thalesmaia.com/backend/news/202607 - Website creation/</guid>
+  <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://www.thalesmaia.com/backend/news/202607 - Website creation/quarto-dark-bg.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Event item</title>
+  <dc:creator>Event </dc:creator>
+  <link>https://www.thalesmaia.com/backend/news/event-title/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="https://drganghe.github.io/quarto-academic-website-template/"><img src="https://www.thalesmaia.com/files/images/placeholder2.JPG" class="img-fluid" style="width:90.0%"></a></p>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_whatsapp"></a> <a class="a2a_button_telegram"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+
+ ]]></description>
+  <category>Event</category>
+  <category>Presentation</category>
+  <guid>https://www.thalesmaia.com/backend/news/event-title/</guid>
+  <pubDate>Tue, 03 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://www.thalesmaia.com/files/images/placeholder2.JPG" medium="image"/>
+</item>
+</channel>
+</rss>

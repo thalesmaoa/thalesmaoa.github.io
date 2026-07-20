@@ -1,9 +1,0 @@
----
-title: "Portfólio"
-page-layout: full
----
-
-Projetos de engenharia aplicada — máquinas elétricas, energia e automação.
-
-- [Projetos de P&D](pd/index.qmd) — pesquisa e desenvolvimento
-- [Indústria](industria/index.qmd) — consultoria e extensão industrial

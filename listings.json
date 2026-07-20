@@ -1,0 +1,86 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/backend/news/202607 - Defesa William/index.html",
+      "/backend/news/202607 - Website creation/index.html",
+      "/backend/news/event-title/index.html",
+      "/backend/blog/index.html",
+      "/backend/blog/event-title/index.html",
+      "/backend/blog/news-title/index.html",
+      "/backend/blog/paper-title/index.html"
+    ]
+  },
+  {
+    "listing": "/backend/teaching/graduacao/index.html",
+    "items": [
+      "/backend/teaching/graduacao/maquinas-eletricas.html",
+      "/backend/teaching/graduacao/eletronica-potencia.html"
+    ]
+  },
+  {
+    "listing": "/backend/research/theses/theses.html",
+    "items": []
+  },
+  {
+    "listing": "/index.en.html",
+    "items": [
+      "/backend/news/index.html",
+      "/backend/news/202607 - Defesa William/index.html",
+      "/backend/news/202607 - Website creation/index.html",
+      "/backend/news/event-title/index.html",
+      "/backend/blog/index.html",
+      "/backend/blog/event-title/index.html",
+      "/backend/blog/news-title/index.html",
+      "/backend/blog/paper-title/index.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": []
+  },
+  {
+    "listing": "/backend/blog/index.html",
+    "items": [
+      "/backend/blog/event-title/index.html",
+      "/backend/blog/news-title/index.html",
+      "/backend/blog/paper-title/index.html"
+    ]
+  },
+  {
+    "listing": "/backend/research/papers/pub-listing.html",
+    "items": []
+  },
+  {
+    "listing": "/backend/portfolio/pd/index.html",
+    "items": [
+      "/backend/portfolio/pd/maquinas-eletricas.html",
+      "/backend/portfolio/pd/eletrificacao-maquinas.html",
+      "/backend/portfolio/pd/microrredes.html",
+      "/backend/portfolio/pd/flywheel.html"
+    ]
+  },
+  {
+    "listing": "/backend/portfolio/industria/index.html",
+    "items": [
+      "/backend/portfolio/industria/monitoramento-offshore.html",
+      "/backend/portfolio/industria/gerador-eolico.html",
+      "/backend/portfolio/industria/instrumentacao-fornos.html",
+      "/backend/portfolio/industria/instrumentacao-iiot.html"
+    ]
+  },
+  {
+    "listing": "/backend/news/index.html",
+    "items": [
+      "/backend/news/202607 - Defesa William/index.html",
+      "/backend/news/202607 - Website creation/index.html",
+      "/backend/news/event-title/index.html"
+    ]
+  },
+  {
+    "listing": "/backend/teaching/pos-graduacao/index.html",
+    "items": [
+      "/backend/teaching/pos-graduacao/acionamentos-avancados.html"
+    ]
+  }
+]

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Thales A. C. Maia">
+<meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
+
+<title>SPHIN</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-3cd3e26f61c8ace5fe7d98ac12faf44b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J0BZ9QZDBD"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-J0BZ9QZDBD', { 'anonymize_ip': true});
+</script>
+
+<!-- 
+Load Academicons v1: https://jpswalsh.github.io/academicons/
+-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<!---
+The following code are needed to show dimension citation and altmetrics.
+https://api.altmetric.com/embeds.html
+https://badge.dimensions.ai/
+--->
+
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="SPHIN">
+<meta property="og:description" content="Site pessoal e acadêmico de Thales Maia.">
+<meta property="og:image" content="https://www.thalesmaia.com/files/icons/sphin_full.png">
+<meta property="og:site_name" content="SPHIN">
+<meta property="og:image:alt" content="SPHIN Lab">
+<meta property="og:image:height" content="1686">
+<meta property="og:image:width" content="1319">
+<meta name="twitter:title" content="SPHIN">
+<meta name="twitter:description" content="Site pessoal e acadêmico de Thales Maia.">
+<meta name="twitter:image" content="https://www.thalesmaia.com/files/icons/sphin_full.png">
+<meta name="twitter:image:alt" content="SPHIN Lab">
+<meta name="twitter:image-height" content="1686">
+<meta name="twitter:image-width" content="1319">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../files/icons/logo_machine.png" alt="" class="navbar-logo light-content">
+    <img src="../../files/icons/logo_machine.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SPHIN</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pesquisa" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Pesquisa</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pesquisa">    
+        <li>
+    <a class="dropdown-item" href="../../backend/research/papers/pub-listing.html">
+ <span class="dropdown-text">Lista de publicações</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../backend/research/theses/theses.html">
+ <span class="dropdown-text">Teses e Dissertações</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../backend/research/sphin_about.html">
+ <span class="dropdown-text">SPHIN</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-portfólio" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Portfólio</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-portfólio">    
+        <li>
+    <a class="dropdown-item" href="../../backend/portfolio/pd/index.html">
+ <span class="dropdown-text">Projetos de P&amp;D</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../backend/portfolio/industria/index.html">
+ <span class="dropdown-text">Indústria</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ensino" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Ensino</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-ensino">    
+        <li>
+    <a class="dropdown-item" href="../../backend/teaching/graduacao/index.html">
+ <span class="dropdown-text">Graduação</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../backend/teaching/pos-graduacao/index.html">
+ <span class="dropdown-text">Pós-Graduação</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../backend/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../backend/news/index.html"> 
+<span class="menu-text">Notícias</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">Sobre</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="http://lattes.cnpq.br/8637504941507702" target="_blank"> 
+<span class="menu-text"><i class="ai  ai-lattes"></i> CV</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/thales-maia-38755a23" target="_blank"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../backend/news/index.xml" target="_blank"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.en.html"> <i class="bi bi-globe" role="img">
+</i> 
+<span class="menu-text">EN</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#smart-power-industries" id="toc-smart-power-industries" class="nav-link active" data-scroll-target="#smart-power-industries">Smart Power &amp; Industries</a></li>
+  <li><a href="#missão-e-visão" id="toc-missão-e-visão" class="nav-link" data-scroll-target="#missão-e-visão">Missão e Visão</a>
+  <ul class="collapse">
+  <li><a href="#missão" id="toc-missão" class="nav-link" data-scroll-target="#missão">Missão</a></li>
+  <li><a href="#visão" id="toc-visão" class="nav-link" data-scroll-target="#visão">Visão</a></li>
+  </ul></li>
+  <li><a href="#nossos-valores-e-pilares-técnicos" id="toc-nossos-valores-e-pilares-técnicos" class="nav-link" data-scroll-target="#nossos-valores-e-pilares-técnicos">Nossos Valores e Pilares Técnicos</a>
+  <ul class="collapse">
+  <li><a href="#rigor-científico-e-validação-multifísica" id="toc-rigor-científico-e-validação-multifísica" class="nav-link" data-scroll-target="#rigor-científico-e-validação-multifísica">1. Rigor Científico e Validação Multifísica</a></li>
+  <li><a href="#transferência-de-tecnologia-b2b" id="toc-transferência-de-tecnologia-b2b" class="nav-link" data-scroll-target="#transferência-de-tecnologia-b2b">2. Transferência de Tecnologia (B2B)</a></li>
+  <li><a href="#ecossistemas-abertos-e-soberania-digital" id="toc-ecossistemas-abertos-e-soberania-digital" class="nav-link" data-scroll-target="#ecossistemas-abertos-e-soberania-digital">3. Ecossistemas Abertos e Soberania Digital</a></li>
+  <li><a href="#arquitetura-full-stack-em-tempo-real" id="toc-arquitetura-full-stack-em-tempo-real" class="nav-link" data-scroll-target="#arquitetura-full-stack-em-tempo-real">4. Arquitetura <em>Full-Stack</em> em Tempo Real</a></li>
+  </ul></li>
+  <li><a href="#stack-tecnológico-e-áreas-de-domínio" id="toc-stack-tecnológico-e-áreas-de-domínio" class="nav-link" data-scroll-target="#stack-tecnológico-e-áreas-de-domínio">Stack Tecnológico e Áreas de Domínio</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">SPHIN</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="smart-power-industries" class="level2">
+<h2 class="anchored" data-anchor-id="smart-power-industries">Smart Power &amp; Industries</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../files/icons/sphin_full.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%" alt="SPHIN Lab"></p>
+</figure>
+</div>
+<div style="text-align: center;">
+<blockquote class="blockquote">
+<p>O <strong>SPHIN</strong> existe para expandir o estado da arte na engenharia de acionamentos. Nascido na excelência da Universidade Federal de Minas Gerais (UFMG), nós transformamos pesquisa fundamental sobre forças eletromagnéticas e algoritmos em tempo real em soluções <em>Deep Tech</em>, conectando a ciência acadêmica às demandas reais da indústria B2B de alta performance.</p>
+</blockquote>
+</div>
+<hr>
+</section>
+<section id="missão-e-visão" class="level2">
+<h2 class="anchored" data-anchor-id="missão-e-visão">Missão e Visão</h2>
+<section id="missão" class="level3">
+<h3 class="anchored" data-anchor-id="missão">Missão</h3>
+<p><strong>Projetar, controlar e conectar sistemas rotativos de vanguarda.</strong><br>
+Atuamos como um núcleo de excelência em Pesquisa, Desenvolvimento e Inovação (P&amp;D+I). Desenvolvemos ecossistemas <em>full-stack</em> — do design eletromagnético de máquinas elétricas extremas (ex: rotores acima de 100.000 rpm) e eletrônica de potência até a infraestrutura IoT para telemetria. Simultaneamente, formamos pesquisadores e engenheiros de alto nível técnico, capazes de liderar a transição tecnológica e a inovação industrial.</p>
+</section>
+<section id="visão" class="level3">
+<h3 class="anchored" data-anchor-id="visão">Visão</h3>
+<p><strong>Ser o epicentro acadêmico-industrial do Brasil em mecatrônica extrema, perfeitamente integrado aos maiores polos globais.</strong><br>
+Consolidar o SPHIN como um parceiro estratégico intercontinental em hardware industrial e controle vetorial. Nosso objetivo é estabelecer pontes de pesquisa e desenvolvimento de tecnologias de propulsão com ecossistemas de inovação na América do Norte, Ásia e Europa, gerando <em>spin-offs</em>, patentes e transferência de tecnologia.</p>
+<hr>
+</section>
+</section>
+<section id="nossos-valores-e-pilares-técnicos" class="level2">
+<h2 class="anchored" data-anchor-id="nossos-valores-e-pilares-técnicos">Nossos Valores e Pilares Técnicos</h2>
+<section id="rigor-científico-e-validação-multifísica" class="level3">
+<h3 class="anchored" data-anchor-id="rigor-científico-e-validação-multifísica">1. Rigor Científico e Validação Multifísica</h3>
+<p>Na academia, o limite não é um palpite. Apoiamos nossa engenharia em análises profundas, método científico e simulações por elementos finitos (FEM). Do estresse centrífugo à temperatura no entreferro, tudo é matematicamente modelado em malhas rigorosas e validado antes da usinagem.</p>
+</section>
+<section id="transferência-de-tecnologia-b2b" class="level3">
+<h3 class="anchored" data-anchor-id="transferência-de-tecnologia-b2b">2. Transferência de Tecnologia (B2B)</h3>
+<p>Não fazemos ciência apenas para publicações. O conhecimento gerado no laboratório tem vocação aplicada. Focamos na entrega de valor real, prestando consultoria especializada de alto nível e desenvolvendo soluções tecnológicas que destravam gargalos da engenharia pesada.</p>
+</section>
+<section id="ecossistemas-abertos-e-soberania-digital" class="level3">
+<h3 class="anchored" data-anchor-id="ecossistemas-abertos-e-soberania-digital">3. Ecossistemas Abertos e Soberania Digital</h3>
+<p>A inovação em <em>Deep Tech</em> ganha escala através da colaboração. Priorizamos ecossistemas independentes, protocolos transparentes e infraestruturas <em>open-source</em> (Linux/Wayland) em toda nossa cadeia. Evitamos caixas-pretas proprietárias, garantindo o controle total sobre a tecnologia desenvolvida — do CAD à nuvem.</p>
+</section>
+<section id="arquitetura-full-stack-em-tempo-real" class="level3">
+<h3 class="anchored" data-anchor-id="arquitetura-full-stack-em-tempo-real">4. Arquitetura <em>Full-Stack</em> em Tempo Real</h3>
+<p>Acreditamos que o projeto mecânico e o código operam como um só organismo. Formamos talentos com domínio de ponta a ponta: a robustez das ligas de neodímio, a precisão do chaveamento PWM no inversor e a confiabilidade dos <em>gateways</em> de comunicação remota.</p>
+<hr>
+</section>
+</section>
+<section id="stack-tecnológico-e-áreas-de-domínio" class="level2">
+<h2 class="anchored" data-anchor-id="stack-tecnológico-e-áreas-de-domínio">Stack Tecnológico e Áreas de Domínio</h2>
+<p>O ecossistema de P&amp;D do SPHIN é sustentado por ferramentas e linguagens modernas, projetadas para estabilidade e alto desempenho:</p>
+<ul>
+<li><strong>Modelagem e Eletromagnetismo:</strong> Simulações multifísicas e análise de elementos finitos (<em>ElmerFEM</em>, <em>FEMM</em>, <em>Ansys Maxwell</em>, <em>COMSOL</em>).</li>
+<li><strong>Controle e Eletrônica de Potência:</strong> Desenvolvimento de eletrônicas, algoritmos em tempo real e controle vetorial (FOC).</li>
+<li><strong>Software e Sistemas Embarcados:</strong> Arquiteturas assíncronas e alta performance utilizando <strong>C/C++</strong>, <strong>Rust</strong>, <strong>Golang</strong>, <strong>Julia</strong>, <strong>Python</strong>, <strong>Node.js</strong> e <strong>MATLAB</strong>.</li>
+<li><strong>Conectividade Industrial:</strong> Redes de telemetria, painéis SCADA, <em>edge computing</em> e automação contínua (<em>IoT Industrial</em>).</li>
+</ul>
+<hr>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Parcerias e Inovação Aberta
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O SPHIN está continuamente prospectando novos desafios tecnológicos. Empresas e pesquisadores interessados em colaborações, projetos de P&amp;D ou consultoria avançada em máquinas elétricas podem entrar em contato através do Departamento de Engenharia Elétrica da UFMG.</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("^(?:http:|https:)\/\/drganghe\.github\.io\/custom");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+Thales Maia ©
+<script>document.write(new Date().getFullYear())</script>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.ufmg.br/" target="_blank">
+<p><img src="../../files/icons/logo_UFMG_grey.jpg" style="height: 1.1em; vertical-align: -0.2em; margin-right: 0.3em;"></p>
+</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:thalesmaia@gmail.com" target="_blank">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="../../posts.xml" target="_blank">
+      <i class="bi bi-rss" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
