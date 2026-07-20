@@ -1,6 +1,8 @@
 ---
-title: "SPHIN Lab"
+title: "SPHIN"
 ---
+
+## Smart Power & Industries
 
 ![](../../files/icons/sphin_full.png){fig-alt="SPHIN Lab" fig-align="center" width="35%"}
 

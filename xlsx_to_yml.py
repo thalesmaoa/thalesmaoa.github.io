@@ -16,8 +16,8 @@ from pathlib import Path
 import openpyxl
 
 # ── Default file paths (edit here or pass as command-line args) ──────────────
-DEFAULT_INPUT  = "publications.xlsx"
-DEFAULT_OUTPUT = "publications.yml"
+DEFAULT_INPUT  = "backend/research/publications.xlsx"
+DEFAULT_OUTPUT = "backend/research/publications.yml"
 
 # ── Column header → YAML key mapping ────────────────────────────────────────
 KEY_MAP = {

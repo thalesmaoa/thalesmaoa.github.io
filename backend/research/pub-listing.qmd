@@ -6,7 +6,7 @@ description-meta: "Information, PDFs, and social metrics of papers"
 title-block-banner: false
 listing:
   - id: selected-work
-    contents: ../../../publications.yml
+    contents: publications.yml
     type: custom
     page-size: 100
     categories: numbered
@@ -14,7 +14,7 @@ listing:
     include:
       section: "Selected Work"
   - id: peer-reviewed
-    contents: ./../../publications.yml
+    contents: publications.yml
     type: custom
     page-size: 100
     categories: numbered
@@ -22,7 +22,7 @@ listing:
     include:
       section: "Peer-reviewed Journal Paper"
 css: pub-listing.css
-filters: [./../../remove-stray-divfence.lua]  # This filter is used to remove stray ":::" strings that leak into the HTML output when Quarto's listing wrapper fenced divs are interrupted by raw HTML blocks from the EJS template.
+filters: [remove-stray-divfence.lua]  # This filter is used to remove stray ":::" strings that leak into the HTML output when Quarto's listing wrapper fenced divs are interrupted by raw HTML blocks from the EJS template.
 ---
 
 {{< include /files/includes/_academic.qmd >}}

@@ -3,7 +3,7 @@ title: "News item"
 description: "About new item"
 author: "News"
 date: "2024-06-24"
-categories: [news]
+categories: [News]
 image: "/files/images/placeholder3.JPG"
 #css: /custom.css
 #draft: true

@@ -25,21 +25,21 @@
     "href": "index.html",
     "title": "Thales Maia, PhD",
     "section": "",
-    "text": "Lattes\n  \n  \n      ORCID\n  \n  \n      Research Gate\n  \n  \n      Google Scholar\n  \n  \n      UFMG\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     YouTube\n  \n  \n    \n     E-mail\n  \n\n  \n  \nDesenvolvo tecnologia para o setor industrial | Projeto de Máquinas Elétricas, Geração de Energia & Automação | Professor\nBelo Horizonte, Minas Gerais, Brasil  \nDesenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas, geração de energia e automação. Sou especialista no projeto de geradores e motores customizados, além da instrumentação de processos industriais — criando soluções para operação remota, IIoT e Indústria 4.0.\nProfessor, Universidade Federal de Minas Gerais (UFMG)\n\n\nAcompanhe as últimas  Notícias ,  Eventos , e  Mais »\n\n\n\n\n\n\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nJun 24, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMay 15, 1935\n\n\n\n\n\n\nNo matching items"
+    "text": "Lattes\n  \n  \n      ORCID\n  \n  \n      Research Gate\n  \n  \n      Google Scholar\n  \n  \n      UFMG\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     YouTube\n  \n  \n    \n     E-mail\n  \n\n  \n  \nDesenvolvo tecnologia para o setor industrial | Projeto de Máquinas Elétricas, Geração de Energia & Automação | Professor\nBelo Horizonte, Minas Gerais, Brasil  \nDesenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas, geração de energia e automação. Sou especialista no projeto de geradores e motores customizados, além da instrumentação de processos industriais — criando soluções para operação remota, IIoT e Indústria 4.0.\nProfessor, Universidade Federal de Minas Gerais (UFMG)\n\n \n\n\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n\n\n\nJul 19, 2026\n\n\nBem-vindo ao meu novo site!\n\n\n\n\n\n\n\nSep 3, 2024\n\n\nEvent item\n\n\n\n\n\n\n\nJun 24, 2024\n\n\nNews item\n\n\n\n\nNo matching items\n\n\nVer todas »"
   },
   {
-    "objectID": "index.html#notícias-e-eventos",
-    "href": "index.html#notícias-e-eventos",
+    "objectID": "index.html#notícias",
+    "href": "index.html#notícias",
     "title": "Thales Maia, PhD",
     "section": "",
-    "text": "Acompanhe as últimas  Notícias ,  Eventos , e  Mais »\n\n\n\n\n\n\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nJun 24, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMay 15, 1935\n\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\n\n\n\n\n\n\n\nJul 19, 2026\n\n\nBem-vindo ao meu novo site!\n\n\n\n\n\n\n\nSep 3, 2024\n\n\nEvent item\n\n\n\n\n\n\n\nJun 24, 2024\n\n\nNews item\n\n\n\n\nNo matching items\n\n\nVer todas »"
   },
   {
     "objectID": "index.html#blog",
     "href": "index.html#blog",
     "title": "Thales Maia, PhD",
     "section": "Blog",
-    "text": "Blog\nConfira os últimos  Artigos  e  Mais »\n\n\n\n\n\n\n\n\nBlog\n\n\nArtigos técnicos, pesquisas e reflexões\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\nJun 24, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Blog\n\n\n\n\n\n\n\n\n\nBlog\n\n\nArtigos técnicos, pesquisas e reflexões\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\nJun 24, 2024\n\n\n\n\n\n\nNo matching items\n\n\nVer Todos »"
   },
   {
     "objectID": "backend/portfolio/index.html",
@@ -112,81 +112,102 @@
     "text": "About the news"
   },
   {
-    "objectID": "backend/blog/news-title/index.html",
-    "href": "backend/blog/news-title/index.html",
+    "objectID": "backend/news/202607 - Website creation/index.html",
+    "href": "backend/news/202607 - Website creation/index.html",
+    "title": "Bem-vindo ao meu novo site!",
+    "section": "",
+    "text": "Estou muito feliz em anunciar o lançamento do meu novo site pessoal e acadêmico!\nEste espaço foi desenvolvido utilizando Quarto, uma ferramenta de publicação técnica e científica de código aberto que transforma notebooks computacionais e markdown em documentos e sites de alta qualidade."
+  },
+  {
+    "objectID": "backend/news/202607 - Website creation/index.html#código-aberto",
+    "href": "backend/news/202607 - Website creation/index.html#código-aberto",
+    "title": "Bem-vindo ao meu novo site!",
+    "section": "Código Aberto",
+    "text": "Código Aberto\nA estrutura deste site é uma adaptação do excelente template Quarto Academic Website criado pelo Dr. Gang He. Sou muito grato pela sua contribuição à comunidade.\nTodo o código-fonte e as modificações que realizei estão disponíveis publicamente no meu repositório do GitHub. Sinta-se à vontade para explorar, dar um “fork” e adaptar para seus próprios projetos.\n\n  Ver o código no GitHub\n\nEspero que goste do conteúdo!"
+  },
+  {
+    "objectID": "backend/blog/index.html",
+    "href": "backend/blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\n\n\n\nevent\n\npresentation\n\n\n\nAbout Event item.\n\n\n\n\n\nSep 3, 2024\n\n\nEvent\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\n\n\n\nnews\n\n\n\nAbout new item\n\n\n\n\n\nJun 24, 2024\n\n\nNews\n\n\n\n\n\n\n\n\n\n\n\n\nCan quantum-mechanical description of physical reality be considered complete?\n\n\nPhysical Review\n\n\n\npaper\n\n\n\nOne is thus led to conclude that the description of reality as given by a wave function is not complete.\n\n\n\n\n\nMay 15, 1935\n\n\nAlbert Einstein, Boris Podolsky, Nathan Rosen\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "backend/blog/paper-title/index.html#abstract",
+    "href": "backend/blog/paper-title/index.html#abstract",
+    "title": "Can quantum-mechanical description of physical reality be considered complete?",
+    "section": "Abstract",
+    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
+  },
+  {
+    "objectID": "backend/blog/paper-title/index.html#links",
+    "href": "backend/blog/paper-title/index.html#links",
+    "title": "Can quantum-mechanical description of physical reality be considered complete?",
+    "section": "Links",
+    "text": "Links\nPublished paper"
+  },
+  {
+    "objectID": "backend/research/sphin_about.html",
+    "href": "backend/research/sphin_about.html",
+    "title": "SPHIN",
+    "section": "",
+    "text": "O SPHIN existe para expandir o estado da arte na engenharia de acionamentos. Nascido na excelência da Universidade Federal de Minas Gerais (UFMG), nós transformamos pesquisa fundamental sobre forças eletromagnéticas e algoritmos em tempo real em soluções Deep Tech, conectando a ciência acadêmica às demandas reais da indústria B2B de alta performance."
+  },
+  {
+    "objectID": "backend/research/sphin_about.html#smart-power-industries",
+    "href": "backend/research/sphin_about.html#smart-power-industries",
+    "title": "SPHIN",
+    "section": "",
+    "text": "O SPHIN existe para expandir o estado da arte na engenharia de acionamentos. Nascido na excelência da Universidade Federal de Minas Gerais (UFMG), nós transformamos pesquisa fundamental sobre forças eletromagnéticas e algoritmos em tempo real em soluções Deep Tech, conectando a ciência acadêmica às demandas reais da indústria B2B de alta performance."
+  },
+  {
+    "objectID": "backend/research/sphin_about.html#missão-e-visão",
+    "href": "backend/research/sphin_about.html#missão-e-visão",
+    "title": "SPHIN",
+    "section": "Missão e Visão",
+    "text": "Missão e Visão\n\nMissão\nProjetar, controlar e conectar sistemas rotativos de vanguarda.\nAtuamos como um núcleo de excelência em Pesquisa, Desenvolvimento e Inovação (P&D+I). Desenvolvemos ecossistemas full-stack — do design eletromagnético de máquinas elétricas extremas (ex: rotores acima de 100.000 rpm) e eletrônica de potência até a infraestrutura IoT para telemetria. Simultaneamente, formamos pesquisadores e engenheiros de alto nível técnico, capazes de liderar a transição tecnológica e a inovação industrial.\n\n\nVisão\nSer o epicentro acadêmico-industrial do Brasil em mecatrônica extrema, perfeitamente integrado aos maiores polos globais.\nConsolidar o SPHIN como um parceiro estratégico intercontinental em hardware industrial e controle vetorial. Nosso objetivo é estabelecer pontes de pesquisa e desenvolvimento de tecnologias de propulsão com ecossistemas de inovação na América do Norte, Ásia e Europa, gerando spin-offs, patentes e transferência de tecnologia."
+  },
+  {
+    "objectID": "backend/research/sphin_about.html#nossos-valores-e-pilares-técnicos",
+    "href": "backend/research/sphin_about.html#nossos-valores-e-pilares-técnicos",
+    "title": "SPHIN",
+    "section": "Nossos Valores e Pilares Técnicos",
+    "text": "Nossos Valores e Pilares Técnicos\n\n1. Rigor Científico e Validação Multifísica\nNa academia, o limite não é um palpite. Apoiamos nossa engenharia em análises profundas, método científico e simulações por elementos finitos (FEM). Do estresse centrífugo à temperatura no entreferro, tudo é matematicamente modelado em malhas rigorosas e validado antes da usinagem.\n\n\n2. Transferência de Tecnologia (B2B)\nNão fazemos ciência apenas para publicações. O conhecimento gerado no laboratório tem vocação aplicada. Focamos na entrega de valor real, prestando consultoria especializada de alto nível e desenvolvendo soluções tecnológicas que destravam gargalos da engenharia pesada.\n\n\n3. Ecossistemas Abertos e Soberania Digital\nA inovação em Deep Tech ganha escala através da colaboração. Priorizamos ecossistemas independentes, protocolos transparentes e infraestruturas open-source (Linux/Wayland) em toda nossa cadeia. Evitamos caixas-pretas proprietárias, garantindo o controle total sobre a tecnologia desenvolvida — do CAD à nuvem.\n\n\n4. Arquitetura Full-Stack em Tempo Real\nAcreditamos que o projeto mecânico e o código operam como um só organismo. Formamos talentos com domínio de ponta a ponta: a robustez das ligas de neodímio, a precisão do chaveamento PWM no inversor e a confiabilidade dos gateways de comunicação remota."
+  },
+  {
+    "objectID": "backend/research/sphin_about.html#stack-tecnológico-e-áreas-de-domínio",
+    "href": "backend/research/sphin_about.html#stack-tecnológico-e-áreas-de-domínio",
+    "title": "SPHIN",
+    "section": "Stack Tecnológico e Áreas de Domínio",
+    "text": "Stack Tecnológico e Áreas de Domínio\nO ecossistema de P&D do SPHIN é sustentado por ferramentas e linguagens modernas, projetadas para estabilidade e alto desempenho:\n\nModelagem e Eletromagnetismo: Simulações multifísicas e análise de elementos finitos (ElmerFEM, FEMM, Ansys Maxwell, COMSOL).\nControle e Eletrônica de Potência: Desenvolvimento de eletrônicas, algoritmos em tempo real e controle vetorial (FOC).\nSoftware e Sistemas Embarcados: Arquiteturas assíncronas e alta performance utilizando C/C++, Rust, Golang, Julia, Python, Node.js e MATLAB.\nConectividade Industrial: Redes de telemetria, painéis SCADA, edge computing e automação contínua (IoT Industrial).\n\n\n\n\n\n\n\n\nNoteParcerias e Inovação Aberta\n\n\n\nO SPHIN está continuamente prospectando novos desafios tecnológicos. Empresas e pesquisadores interessados em colaborações, projetos de P&D ou consultoria avançada em máquinas elétricas podem entrar em contato através do Departamento de Engenharia Elétrica da UFMG."
+  },
+  {
+    "objectID": "posts/news-title/index.html",
+    "href": "posts/news-title/index.html",
     "title": "News item",
     "section": "",
     "text": "About the news"
   },
   {
-    "objectID": "backend/blog/news-title/index.html#summary",
-    "href": "backend/blog/news-title/index.html#summary",
+    "objectID": "posts/news-title/index.html#summary",
+    "href": "posts/news-title/index.html#summary",
     "title": "News item",
     "section": "",
     "text": "About the news"
   },
   {
-    "objectID": "backend/research/publications.html",
-    "href": "backend/research/publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Notes: * corresponding author; GS graduate student advisee; VS visiting scholar;  ESI Highly Cited Paper (top 1%);  ESI Hot Paper (top 0.1%)\nTotal citations as of January 2025:"
+    "objectID": "posts/paper-title/index.html#abstract",
+    "href": "posts/paper-title/index.html#abstract",
+    "title": "Can quantum-mechanical description of physical reality be considered complete?",
+    "section": "Abstract",
+    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
   },
   {
-    "objectID": "backend/research/publications.html#selected-work",
-    "href": "backend/research/publications.html#selected-work",
-    "title": "Publications",
-    "section": "Selected Work",
-    "text": "Selected Work\nEinstein, A., Podolsky, B., & Rosen, N. (1935). Can quantum-mechanical description of physical reality be considered complete?. Physical review, 47(10), 777. [pdf] [code and data]   \n\n\n\n\n\n\nEinstein, A. (1965). Concerning an heuristic point of view toward the emission and transformation of light. American Journal of Physics, 33(5), 367. [pdf]"
-  },
-  {
-    "objectID": "backend/research/pub-listing.html",
-    "href": "backend/research/pub-listing.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Note: * corresponding author;  ESI Highly Cited Paper (top 1%);  ESI Hot Paper (top 0.1%)"
-  },
-  {
-    "objectID": "backend/research/pub-listing.html#selected-work",
-    "href": "backend/research/pub-listing.html#selected-work",
-    "title": "Publications",
-    "section": "Selected Work",
-    "text": "Selected Work\n\n\n\nQuantifying the Cost Savings of Global Solar Photovoltaic Supply Chains Helveston, John, Gang He*, and Michael Davidson Oct 26, 2022\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('MjAyMg=='); return false;\"&gt;2022&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c2VsZWN0ZWQ='); return false;\"&gt;selected&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('cGVlci1yZXZpZXdlZA=='); return false;\"&gt;peer-reviewed&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('YXdhcmQ='); return false;\"&gt;award&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('aGlnaGx5LWNpdGVk'); return false;\"&gt;highly-cited&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('aG90LXBhcGVy'); return false;\"&gt;hot-paper&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('bmF0dXJlLXNlcmllcw=='); return false;\"&gt;nature-series&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c3VwcGx5LWNoYWlu'); return false;\"&gt;supply-chain&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c29sYXI='); return false;\"&gt;solar&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('dW5pdGVkLXN0YXRlcw=='); return false;\"&gt;united-states&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('Y2hpbmE='); return false;\"&gt;china&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('Z2VybWFueQ=='); return false;\"&gt;germany&lt;/span&gt;\n\n\nHelveston, John, Gang He*, and Michael Davidson. 2022. Quantifying the Cost Savings of Global Solar Photovoltaic Supply Chains. Nature 612: 83-87. doi: 10.1038/s41586-022-05316-6.  \n\n\n Preprint  SharedIt  GitHub  Data  \n\n\n Award: IAMC2022 Best Poster Award\n\n\nCoverage: SBU News | GWU News | UCSD News | Nature Research Highlights | E&E News | Foreign Policy | GRID News | PV Magazine | dot.LA | pvbuzz | InnovateLongIsland | Mercom India | China News | Science and Technology Daily\n\n\nInvited presentation: Peking University | Tsinghua University | Harvard University (M.D.) | ITIF (J.H.) | Climate Change Economics Forum\n\n\n\n\nNo matching items\n\n\n\nRapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System He, Gang*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke* May 15, 2020\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('MjAyMA=='); return false;\"&gt;2020&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c2VsZWN0ZWQ='); return false;\"&gt;selected&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('cGVlci1yZXZpZXdlZA=='); return false;\"&gt;peer-reviewed&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('aGlnaGx5LWNpdGVk'); return false;\"&gt;highly-cited&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('bmF0dXJlLXNlcmllcw=='); return false;\"&gt;nature-series&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('cG93ZXItc3lzdGVt'); return false;\"&gt;power-system&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c3dpdGNoLWNoaW5h'); return false;\"&gt;switch-china&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c29sYXI='); return false;\"&gt;solar&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('d2luZA=='); return false;\"&gt;wind&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c3RvcmFnZQ=='); return false;\"&gt;storage&lt;/span&gt;\n\n\nHe, Gang*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke*. 2020. Rapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System. Nature Communications 11(1): 2486. doi: 10.1038/s41467-020-16184-x. \n\n\n PDF  GitHub  Supplemental  \n\n\nCoverage: SBU News | LBL News | Carbon Brief Headline | InsideClimateNews | E&E News/ClimateWire | Forbes | Nature News\n\n\nInvited presentation: Asia Pacific Energy Research Centre (APERC) Annual Conference 2020 | Beijing Institute of Technology | Dartmouth College | Harvard Kennedy School Growth Lab\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "backend/research/pub-listing.html#peer-reviewed-journal-papers",
-    "href": "backend/research/pub-listing.html#peer-reviewed-journal-papers",
-    "title": "Publications",
-    "section": "Peer-reviewed Journal Papers",
-    "text": "Peer-reviewed Journal Papers\n\n\n\nRapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System He, Gang*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke* May 15, 2020\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('MjAyMA=='); return false;\"&gt;2020&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c2VsZWN0ZWQ='); return false;\"&gt;selected&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('cGVlci1yZXZpZXdlZA=='); return false;\"&gt;peer-reviewed&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('aGlnaGx5LWNpdGVk'); return false;\"&gt;highly-cited&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('bmF0dXJlLXNlcmllcw=='); return false;\"&gt;nature-series&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('cG93ZXItc3lzdGVt'); return false;\"&gt;power-system&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c3dpdGNoLWNoaW5h'); return false;\"&gt;switch-china&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c29sYXI='); return false;\"&gt;solar&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('d2luZA=='); return false;\"&gt;wind&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c3RvcmFnZQ=='); return false;\"&gt;storage&lt;/span&gt;\n\n\nHe, Gang*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke*. 2020. Rapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System. Nature Communications 11(1): 2486. doi: 10.1038/s41467-020-16184-x. \n\n\n PDF  GitHub  Supplemental  \n\n\nCoverage: SBU News | LBL News | Carbon Brief Headline | InsideClimateNews | E&E News/ClimateWire | Forbes | Nature News\n\n\nInvited presentation: Asia Pacific Energy Research Centre (APERC) Annual Conference 2020 | Beijing Institute of Technology | Dartmouth College | Harvard Kennedy School Growth Lab\n\n\n\n\nNo matching items\n\nPublications – SPHIN Publications – SPHIN Publications – SPHIN SPHIN Site pessoal e acadêmico de Thales Maia. Site pessoal e acadêmico de Thales Maia. Site pessoal e acadêmico de Thales Maia."
-  },
-  {
-    "objectID": "index.en.html",
-    "href": "index.en.html",
-    "title": "Thales Maia, PhD",
-    "section": "",
-    "text": "Lattes\n  \n  \n      ORCID\n  \n  \n      Research Gate\n  \n  \n      Google Scholar\n  \n  \n      UFMG\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     YouTube\n  \n  \n    \n     Email\n  \n\n  \n  \nDeveloping Technology for the Industrial Sector | Electric Machine Design, Power Generation & Automation | Professor\nBelo Horizonte, Minas Gerais, Brasil  🇧🇷\nI develop technology to overcome industrial challenges, working directly in the renewable generation, carbon chain, oil and gas, and automotive sectors. With over 20 years of market experience—combined with my background as a University Professor—I have built a solid foundation in designing electric machines, electronics, instrumentation, and software, creating complete architectures for processes, drives, and automation.\nMy main specialty is developing custom generators and motors (axial flux, high-speed, and in-wheel motors), integrating them with power electronics, control systems, and industrial communication stacks. I have led projects involving wind power for rural grids, microturbines, hybrid mobile machines, and special powertrains for harsh environments.\nIn parallel, I have extensive practical experience in process and thermal systems instrumentation: measuring combustion gases in carbonization furnaces, gasification, biochar production, and industrial dryers, integrating sensors, signal conditioning, PLCs, and embedded systems.\nI am usually called when the problem is non-trivial: noisy environments, weak electrical grids, severe thermal conditions, legacy equipment, or ambitious energy targets. I solve the challenge by developing your system, validating it through models and prototypes, and then supporting its implementation and commissioning.\nIf you are looking for someone with a systemic view for your project—capable of connecting everything from the chemistry of your process and the behavior of your machines to the code of your controllers—and turning it all into a robust architecture, that is exactly where I generate the most value."
-  },
-  {
-    "objectID": "index.en.html#news-and-events",
-    "href": "index.en.html#news-and-events",
-    "title": "Thales Maia, PhD",
-    "section": "News and Events",
-    "text": "News and Events\nCheck out the latest  News ,  Events , and  More »\n\n\n\n\n\n\n\nNotícias e Eventos\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\nJun 24, 2024\n\n\n\n\n\n\n\n\n\n\nCan quantum-mechanical description of physical reality be considered complete?\n\n\n\nMay 15, 1935\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.en.html#blog",
-    "href": "index.en.html#blog",
-    "title": "Thales Maia, PhD",
-    "section": "Blog",
-    "text": "Blog\nCheck out the latest  Posts  and  More »\n\n\n\n\n\n\n\n\nBlog\n\n\nArtigos técnicos, pesquisas e reflexões\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\nJun 24, 2024\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
+    "objectID": "posts/paper-title/index.html#links",
+    "href": "posts/paper-title/index.html#links",
+    "title": "Can quantum-mechanical description of physical reality be considered complete?",
+    "section": "Links",
+    "text": "Links\nPublished paper"
   },
   {
     "objectID": "teaching.html",
@@ -217,74 +238,81 @@
     "text": "Class 3\n\n\n\n\n\nSpring 2025,   Spring 2024\nClass 3 introduction."
   },
   {
-    "objectID": "posts/paper-title/index.html#abstract",
-    "href": "posts/paper-title/index.html#abstract",
-    "title": "Can quantum-mechanical description of physical reality be considered complete?",
-    "section": "Abstract",
-    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
   },
   {
-    "objectID": "posts/paper-title/index.html#links",
-    "href": "posts/paper-title/index.html#links",
-    "title": "Can quantum-mechanical description of physical reality be considered complete?",
-    "section": "Links",
-    "text": "Links\nPublished paper"
+    "objectID": "index.en.html",
+    "href": "index.en.html",
+    "title": "Thales Maia, PhD",
+    "section": "",
+    "text": "Lattes\n  \n  \n      ORCID\n  \n  \n      Research Gate\n  \n  \n      Google Scholar\n  \n  \n      UFMG\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     YouTube\n  \n  \n    \n     Email\n  \n\n  \n  \nDeveloping Technology for the Industrial Sector | Electric Machine Design, Power Generation & Automation | Professor\nBelo Horizonte, Minas Gerais, Brasil  🇧🇷\nI develop technology to overcome industrial challenges, working directly in the renewable generation, carbon chain, oil and gas, and automotive sectors. With over 20 years of market experience—combined with my background as a University Professor—I have built a solid foundation in designing electric machines, electronics, instrumentation, and software, creating complete architectures for processes, drives, and automation.\nMy main specialty is developing custom generators and motors (axial flux, high-speed, and in-wheel motors), integrating them with power electronics, control systems, and industrial communication stacks. I have led projects involving wind power for rural grids, microturbines, hybrid mobile machines, and special powertrains for harsh environments.\nIn parallel, I have extensive practical experience in process and thermal systems instrumentation: measuring combustion gases in carbonization furnaces, gasification, biochar production, and industrial dryers, integrating sensors, signal conditioning, PLCs, and embedded systems.\nI am usually called when the problem is non-trivial: noisy environments, weak electrical grids, severe thermal conditions, legacy equipment, or ambitious energy targets. I solve the challenge by developing your system, validating it through models and prototypes, and then supporting its implementation and commissioning.\nIf you are looking for someone with a systemic view for your project—capable of connecting everything from the chemistry of your process and the behavior of your machines to the code of your controllers—and turning it all into a robust architecture, that is exactly where I generate the most value."
   },
   {
-    "objectID": "posts/news-title/index.html",
-    "href": "posts/news-title/index.html",
+    "objectID": "index.en.html#news-and-events",
+    "href": "index.en.html#news-and-events",
+    "title": "Thales Maia, PhD",
+    "section": "News and Events",
+    "text": "News and Events\nCheck out the latest  News ,  Events , and  More »\n\n\n\n\n\n\n\nNotícias e Eventos\n\n\n\n\n\n\n\n\n\nBem-vindo ao meu novo site!\n\n\n\nJul 19, 2026\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\nJun 24, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.en.html#blog",
+    "href": "index.en.html#blog",
+    "title": "Thales Maia, PhD",
+    "section": "Blog",
+    "text": "Blog\nCheck out the latest  Posts  and  More »\n\n\n\n\n\n\n\n\nBlog\n\n\nArtigos técnicos, pesquisas e reflexões\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\nJun 24, 2024\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
+  },
+  {
+    "objectID": "backend/research/pub-listing.html",
+    "href": "backend/research/pub-listing.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Note: * corresponding author;  ESI Highly Cited Paper (top 1%);  ESI Hot Paper (top 0.1%)"
+  },
+  {
+    "objectID": "backend/research/pub-listing.html#selected-work",
+    "href": "backend/research/pub-listing.html#selected-work",
+    "title": "Publications",
+    "section": "Selected Work",
+    "text": "Selected Work\n\n\n\nQuantifying the Cost Savings of Global Solar Photovoltaic Supply Chains Helveston, John, Gang He*, and Michael Davidson Oct 26, 2022\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('MjAyMg=='); return false;\"&gt;2022&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c2VsZWN0ZWQ='); return false;\"&gt;selected&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('cGVlci1yZXZpZXdlZA=='); return false;\"&gt;peer-reviewed&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('YXdhcmQ='); return false;\"&gt;award&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('aGlnaGx5LWNpdGVk'); return false;\"&gt;highly-cited&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('aG90LXBhcGVy'); return false;\"&gt;hot-paper&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('bmF0dXJlLXNlcmllcw=='); return false;\"&gt;nature-series&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c3VwcGx5LWNoYWlu'); return false;\"&gt;supply-chain&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c29sYXI='); return false;\"&gt;solar&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('dW5pdGVkLXN0YXRlcw=='); return false;\"&gt;united-states&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('Y2hpbmE='); return false;\"&gt;china&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('Z2VybWFueQ=='); return false;\"&gt;germany&lt;/span&gt;\n\n\nHelveston, John, Gang He*, and Michael Davidson. 2022. Quantifying the Cost Savings of Global Solar Photovoltaic Supply Chains. Nature 612: 83-87. doi: 10.1038/s41586-022-05316-6.  \n\n\n Preprint  SharedIt  GitHub  Data  \n\n\n Award: IAMC2022 Best Poster Award\n\n\nCoverage: SBU News | GWU News | UCSD News | Nature Research Highlights | E&E News | Foreign Policy | GRID News | PV Magazine | dot.LA | pvbuzz | InnovateLongIsland | Mercom India | China News | Science and Technology Daily\n\n\nInvited presentation: Peking University | Tsinghua University | Harvard University (M.D.) | ITIF (J.H.) | Climate Change Economics Forum\n\n\n\n\nNo matching items\n\n\n\nRapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System He, Gang*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke* May 15, 2020\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('MjAyMA=='); return false;\"&gt;2020&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c2VsZWN0ZWQ='); return false;\"&gt;selected&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('cGVlci1yZXZpZXdlZA=='); return false;\"&gt;peer-reviewed&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('aGlnaGx5LWNpdGVk'); return false;\"&gt;highly-cited&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('bmF0dXJlLXNlcmllcw=='); return false;\"&gt;nature-series&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('cG93ZXItc3lzdGVt'); return false;\"&gt;power-system&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c3dpdGNoLWNoaW5h'); return false;\"&gt;switch-china&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c29sYXI='); return false;\"&gt;solar&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('d2luZA=='); return false;\"&gt;wind&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c3RvcmFnZQ=='); return false;\"&gt;storage&lt;/span&gt;\n\n\nHe, Gang*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke*. 2020. Rapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System. Nature Communications 11(1): 2486. doi: 10.1038/s41467-020-16184-x. \n\n\n PDF  GitHub  Supplemental  \n\n\nCoverage: SBU News | LBL News | Carbon Brief Headline | InsideClimateNews | E&E News/ClimateWire | Forbes | Nature News\n\n\nInvited presentation: Asia Pacific Energy Research Centre (APERC) Annual Conference 2020 | Beijing Institute of Technology | Dartmouth College | Harvard Kennedy School Growth Lab\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "backend/research/pub-listing.html#peer-reviewed-journal-papers",
+    "href": "backend/research/pub-listing.html#peer-reviewed-journal-papers",
+    "title": "Publications",
+    "section": "Peer-reviewed Journal Papers",
+    "text": "Peer-reviewed Journal Papers\n\n\n\nRapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System He, Gang*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke* May 15, 2020\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('MjAyMA=='); return false;\"&gt;2020&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c2VsZWN0ZWQ='); return false;\"&gt;selected&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('cGVlci1yZXZpZXdlZA=='); return false;\"&gt;peer-reviewed&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('aGlnaGx5LWNpdGVk'); return false;\"&gt;highly-cited&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('bmF0dXJlLXNlcmllcw=='); return false;\"&gt;nature-series&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('cG93ZXItc3lzdGVt'); return false;\"&gt;power-system&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c3dpdGNoLWNoaW5h'); return false;\"&gt;switch-china&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c29sYXI='); return false;\"&gt;solar&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('d2luZA=='); return false;\"&gt;wind&lt;/span&gt;\n\n&lt;span class=\"listing-category\"\n      onclick=\"window.quartoListingCategory('c3RvcmFnZQ=='); return false;\"&gt;storage&lt;/span&gt;\n\n\nHe, Gang*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke*. 2020. Rapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System. Nature Communications 11(1): 2486. doi: 10.1038/s41467-020-16184-x. \n\n\n PDF  GitHub  Supplemental  \n\n\nCoverage: SBU News | LBL News | Carbon Brief Headline | InsideClimateNews | E&E News/ClimateWire | Forbes | Nature News\n\n\nInvited presentation: Asia Pacific Energy Research Centre (APERC) Annual Conference 2020 | Beijing Institute of Technology | Dartmouth College | Harvard Kennedy School Growth Lab\n\n\n\n\nNo matching items\n\nPublications – SPHIN Publications – SPHIN Publications – SPHIN SPHIN Site pessoal e acadêmico de Thales Maia. Site pessoal e acadêmico de Thales Maia. Site pessoal e acadêmico de Thales Maia."
+  },
+  {
+    "objectID": "backend/research/publications.html",
+    "href": "backend/research/publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Notes: * corresponding author; GS graduate student advisee; VS visiting scholar;  ESI Highly Cited Paper (top 1%);  ESI Hot Paper (top 0.1%)\nTotal citations as of January 2025:"
+  },
+  {
+    "objectID": "backend/research/publications.html#selected-work",
+    "href": "backend/research/publications.html#selected-work",
+    "title": "Publications",
+    "section": "Selected Work",
+    "text": "Selected Work\nEinstein, A., Podolsky, B., & Rosen, N. (1935). Can quantum-mechanical description of physical reality be considered complete?. Physical review, 47(10), 777. [pdf] [code and data]   \n\n\n\n\n\n\nEinstein, A. (1965). Concerning an heuristic point of view toward the emission and transformation of light. American Journal of Physics, 33(5), 367. [pdf]"
+  },
+  {
+    "objectID": "backend/blog/news-title/index.html",
+    "href": "backend/blog/news-title/index.html",
     "title": "News item",
     "section": "",
     "text": "About the news"
   },
   {
-    "objectID": "posts/news-title/index.html#summary",
-    "href": "posts/news-title/index.html#summary",
+    "objectID": "backend/blog/news-title/index.html#summary",
+    "href": "backend/blog/news-title/index.html#summary",
     "title": "News item",
     "section": "",
     "text": "About the news"
-  },
-  {
-    "objectID": "backend/research/sphin_about.html#missão-e-visão",
-    "href": "backend/research/sphin_about.html#missão-e-visão",
-    "title": "SPHIN Lab",
-    "section": "Missão e Visão",
-    "text": "Missão e Visão\n\nMissão\nProjetar, controlar e conectar sistemas rotativos de vanguarda.\nAtuamos como um núcleo de excelência em Pesquisa, Desenvolvimento e Inovação (P&D+I). Desenvolvemos ecossistemas full-stack — do design eletromagnético de máquinas elétricas extremas (ex: rotores acima de 100.000 rpm) e eletrônica de potência até a infraestrutura IoT para telemetria. Simultaneamente, formamos pesquisadores e engenheiros de alto nível técnico, capazes de liderar a transição tecnológica e a inovação industrial.\n\n\nVisão\nSer o epicentro acadêmico-industrial do Brasil em mecatrônica extrema, perfeitamente integrado aos maiores polos globais.\nConsolidar o SPHIN como um parceiro estratégico intercontinental em hardware industrial e controle vetorial. Nosso objetivo é estabelecer pontes de pesquisa e desenvolvimento de tecnologias de propulsão com ecossistemas de inovação na América do Norte, Ásia e Europa, gerando spin-offs, patentes e transferência de tecnologia."
-  },
-  {
-    "objectID": "backend/research/sphin_about.html#nossos-valores-e-pilares-técnicos",
-    "href": "backend/research/sphin_about.html#nossos-valores-e-pilares-técnicos",
-    "title": "SPHIN Lab",
-    "section": "Nossos Valores e Pilares Técnicos",
-    "text": "Nossos Valores e Pilares Técnicos\n\n1. Rigor Científico e Validação Multifísica\nNa academia, o limite não é um palpite. Apoiamos nossa engenharia em análises profundas, método científico e simulações por elementos finitos (FEM). Do estresse centrífugo à temperatura no entreferro, tudo é matematicamente modelado em malhas rigorosas e validado antes da usinagem.\n\n\n2. Transferência de Tecnologia (B2B)\nNão fazemos ciência apenas para publicações. O conhecimento gerado no laboratório tem vocação aplicada. Focamos na entrega de valor real, prestando consultoria especializada de alto nível e desenvolvendo soluções tecnológicas que destravam gargalos da engenharia pesada.\n\n\n3. Ecossistemas Abertos e Soberania Digital\nA inovação em Deep Tech ganha escala através da colaboração. Priorizamos ecossistemas independentes, protocolos transparentes e infraestruturas open-source (Linux/Wayland) em toda nossa cadeia. Evitamos caixas-pretas proprietárias, garantindo o controle total sobre a tecnologia desenvolvida — do CAD à nuvem.\n\n\n4. Arquitetura Full-Stack em Tempo Real\nAcreditamos que o projeto mecânico e o código operam como um só organismo. Formamos talentos com domínio de ponta a ponta: a robustez das ligas de neodímio, a precisão do chaveamento PWM no inversor e a confiabilidade dos gateways de comunicação remota."
-  },
-  {
-    "objectID": "backend/research/sphin_about.html#stack-tecnológico-e-áreas-de-domínio",
-    "href": "backend/research/sphin_about.html#stack-tecnológico-e-áreas-de-domínio",
-    "title": "SPHIN Lab",
-    "section": "Stack Tecnológico e Áreas de Domínio",
-    "text": "Stack Tecnológico e Áreas de Domínio\nO ecossistema de P&D do SPHIN é sustentado por ferramentas e linguagens modernas, projetadas para estabilidade e alto desempenho:\n\nModelagem e Eletromagnetismo: Simulações multifísicas e análise de elementos finitos (ElmerFEM, FEMM, Ansys Maxwell, COMSOL).\nControle e Eletrônica de Potência: Desenvolvimento de eletrônicas, algoritmos em tempo real e controle vetorial (FOC).\nSoftware e Sistemas Embarcados: Arquiteturas assíncronas e alta performance utilizando C/C++, Rust, Golang, Julia, Python, Node.js e MATLAB.\nConectividade Industrial: Redes de telemetria, painéis SCADA, edge computing e automação contínua (IoT Industrial).\n\n\n\n\n\n\n\n\nNoteParcerias e Inovação Aberta\n\n\n\nO SPHIN está continuamente prospectando novos desafios tecnológicos. Empresas e pesquisadores interessados em colaborações, projetos de P&D ou consultoria avançada em máquinas elétricas podem entrar em contato através do Departamento de Engenharia Elétrica da UFMG."
-  },
-  {
-    "objectID": "backend/blog/paper-title/index.html#abstract",
-    "href": "backend/blog/paper-title/index.html#abstract",
-    "title": "Can quantum-mechanical description of physical reality be considered complete?",
-    "section": "Abstract",
-    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
-  },
-  {
-    "objectID": "backend/blog/paper-title/index.html#links",
-    "href": "backend/blog/paper-title/index.html#links",
-    "title": "Can quantum-mechanical description of physical reality be considered complete?",
-    "section": "Links",
-    "text": "Links\nPublished paper"
-  },
-  {
-    "objectID": "backend/blog/index.html",
-    "href": "backend/blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\n\n\n\nevent\n\npresentation\n\n\n\nAbout Event item.\n\n\n\n\n\nSep 3, 2024\n\n\nEvent\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\n\n\n\nnews\n\n\n\nAbout new item\n\n\n\n\n\nJun 24, 2024\n\n\nNews\n\n\n\n\n\n\n\n\n\n\n\n\nCan quantum-mechanical description of physical reality be considered complete?\n\n\nPhysical Review\n\n\n\npaper\n\n\n\nOne is thus led to conclude that the description of reality as given by a wave function is not complete.\n\n\n\n\n\nMay 15, 1935\n\n\nAlbert Einstein, Boris Podolsky, Nathan Rosen\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "backend/news/paper-title/index.html#abstract",
@@ -305,7 +333,7 @@
     "href": "backend/news/index.html",
     "title": "Notícias e Eventos",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\n\n\n\nevent\n\npresentation\n\n\n\nAbout Event item.\n\n\n\n\n\nSep 3, 2024\n\n\nEvent\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\n\n\n\nnews\n\n\n\nAbout new item\n\n\n\n\n\nJun 24, 2024\n\n\nNews\n\n\n\n\n\n\n\n\n\n\n\n\nCan quantum-mechanical description of physical reality be considered complete?\n\n\nPhysical Review\n\n\n\npaper\n\n\n\nOne is thus led to conclude that the description of reality as given by a wave function is not complete.\n\n\n\n\n\nMay 15, 1935\n\n\nAlbert Einstein, Boris Podolsky, Nathan Rosen\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBem-vindo ao meu novo site!\n\n\n\n\n\n\nNews\n\n\n\nO site foi construído com Quarto e está no ar.\n\n\n\n\n\nJul 19, 2026\n\n\nThales Maia\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\n\n\n\nEvent\n\nPresentation\n\n\n\nAbout Event item.\n\n\n\n\n\nSep 3, 2024\n\n\nEvent\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\n\n\n\nNews\n\n\n\nAbout new item\n\n\n\n\n\nJun 24, 2024\n\n\nNews\n\n\n\n\n\n\n\n\n\n\n\n\nCan quantum-mechanical description of physical reality be considered complete?\n\n\nPhysical Review\n\n\n\nPaper\n\n\n\nOne is thus led to conclude that the description of reality as given by a wave function is not complete.\n\n\n\n\n\nMay 15, 1935\n\n\nAlbert Einstein, Boris Podolsky, Nathan Rosen\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "backend/teaching/index.html",

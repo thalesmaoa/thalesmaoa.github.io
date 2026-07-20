@@ -85,7 +85,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 4,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -132,14 +133,14 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J0BZ9QZDBD"></script>
 
 <script type="text/javascript">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '', { 'anonymize_ip': true});
+gtag('config', 'G-J0BZ9QZDBD', { 'anonymize_ip': true});
 </script>
 
 <!-- 
@@ -147,8 +148,8 @@ Load Academicons v1: https://jpswalsh.github.io/academicons/
 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <!---
 The following code are needed to show dimension citation and altmetrics.
@@ -275,7 +276,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="./backend/news/index.xml" target="_blank"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -378,7 +379,22 @@ Notícias e Eventos
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="ZXZlbnQlMkNwcmVzZW50YXRpb24=" data-listing-date-sort="1725332400000" data-listing-file-modified-sort="1784489519207" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+<div class="g-col-1" data-index="1" data-categories="TmV3cw==" data-listing-date-sort="1784430000000" data-listing-file-modified-sort="1784505906423" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="119">
+<a href="./backend/news/202607 - Website creation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Bem-vindo ao meu novo site!
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 19, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="RXZlbnQlMkNQcmVzZW50YXRpb24=" data-listing-date-sort="1725332400000" data-listing-file-modified-sort="1784504830765" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
 <a href="./backend/news/event-title/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -393,7 +409,7 @@ Sep 3, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="bmV3cw==" data-listing-date-sort="1719198000000" data-listing-file-modified-sort="1784489519208" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="g-col-1" data-index="3" data-categories="TmV3cw==" data-listing-date-sort="1719198000000" data-listing-file-modified-sort="1784504818682" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
 <a href="./backend/news/news-title/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -403,21 +419,6 @@ News item
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
 Jun 24, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="cGFwZXI=" data-listing-date-sort="-1092949200000" data-listing-file-modified-sort="1784489519213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
-<a href="./backend/news/paper-title/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Can quantum-mechanical description of physical reality be considered complete?
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 15, 1935
 </div>
 </div>
 </div>
@@ -905,6 +906,11 @@ Thales Maia ©
     </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.ufmg.br/" target="_blank">
+<p><img src="./files/icons/logo_UFMG_grey.jpg" style="height: 1.1em; vertical-align: -0.2em; margin-right: 0.3em;"></p>
+</a>
+  </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="mailto:thalesmaia@gmail.com" target="_blank">
       <i class="bi bi-envelope" role="img">

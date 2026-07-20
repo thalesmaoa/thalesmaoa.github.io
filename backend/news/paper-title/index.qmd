@@ -7,7 +7,7 @@ author:
   - name: Boris Podolsky
   - name: Nathan Rosen
 date: "1935-05-15"
-categories: [paper]
+categories: [Paper]
 image: "featured.jpg"
 citation:
   type: article-journal

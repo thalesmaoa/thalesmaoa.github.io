@@ -74,7 +74,7 @@ website:
         href: https://www.linkedin.com/in/thales-maia-38755a23
         target: _blank
       - icon: rss
-        href: posts.xml
+        href: backend/news/index.xml
         target: _blank
       - icon: globe
         href: index.en.qmd
@@ -91,6 +91,9 @@ website:
       # - text: "{{< fa brands bluesky >}}" 
       #   href: https://bsky.app
       #   target: _blank
+      - text: '<img src="/files/icons/logo_UFMG_grey.jpg" style="height: 1.1em; vertical-align: -0.2em; margin-right: 0.3em;">' # <--- AQUI: Mudou de icon para text
+        href: https://www.ufmg.br/
+        target: _blank
       - icon: envelope
         href: mailto:thalesmaia@gmail.com
         target: _blank
@@ -118,7 +121,7 @@ website:
   site-url: "https://github.com/thalesmaoa/thalesmaoa.github.io/tree/main/docs"
   
   google-analytics:
-    tracking-id: ""  # Please delete or replace with your own tracking ID
+    tracking-id: "G-J0BZ9QZDBD"  # Please delete or replace with your own tracking ID
     anonymize-ip: true 
 
 bibliography: references.bib  # Add references.bib to the root folder to enable the bibliography function
