@@ -1,0 +1,22 @@
+---
+title: "Instrumentação e IIoT Industrial"
+description: "Sistemas de instrumentação para processos térmicos com monitoramento remoto e arquitetura open-source."
+image: ../images/projeto-iiot.jpg
+date: 2023-01-01
+categories: [Instrumentação, IoT]
+---
+
+## Contexto
+
+Desenvolvimento de sistemas de instrumentação para processos térmicos industriais — carbonização, gaseificação, pirólise e secadores — integrando sensores, PLCs e gateways de comunicação.
+
+## Escopo
+
+- Sensores e condicionamento de sinais para ambientes severos
+- Controladores lógicos programáveis (PLCs)
+- Gateways de comunicação e edge computing
+- Painéis SCADA com arquitetura open-source (Linux)
+
+## Resultado
+
+Sistemas instalados e operando em múltiplas plantas industriais.

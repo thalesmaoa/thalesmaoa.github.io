@@ -1,0 +1,9 @@
+---
+title: "Ensino"
+page-layout: full
+---
+
+Disciplinas ministradas e material de apoio.
+
+- [Graduação](graduacao/index.qmd) — disciplinas de graduação em Engenharia Elétrica
+- [Pós-Graduação](pos-graduacao/index.qmd) — disciplinas do PPGEE

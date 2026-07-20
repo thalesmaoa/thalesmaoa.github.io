@@ -1,0 +1,86 @@
+---
+title: "Sobre"
+page-layout: full
+---
+
+:::{#hero-heading}
+**Desenvolvo tecnologia para o setor industrial | Projeto de Máquinas Elétricas, Geração de Energia & Automação | Professor**
+
+<small>Belo Horizonte, Minas Gerais, Brasil <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Bandeira_de_Minas_Gerais.svg" style="height: 1em; vertical-align: -0.1em;"> 🇧🇷</small>
+
+Desenvolvo tecnologia para superar desafios industriais, atuando diretamente nos setores de geração renovável, cadeia do carbono, óleo e gás e automotivo. Com mais de 20 anos de vivência de mercado — aliados à experiência como Professor Universitário —, consolido uma bagagem no projeto de máquinas elétricas, eletrônica, instrumentação e software, criando arquiteturas completas para processos, acionamentos e automação.
+
+Minha principal especialidade é o desenvolvimento de geradores e motores customizados (fluxo axial, alta rotação e motores in-wheel), integrando-os com eletrônica de potência, sistemas de controle e pilhas de comunicação industrial. Liderei projetos envolvendo geração eólica para redes rurais, microturbinas, máquinas móveis híbridas e powertrains especiais para ambientes severos.
+
+Em paralelo, possuo ampla experiência prática em instrumentação de processos e sistemas térmicos: medição de gases de combustão em fornos de carbonização, gaseificação, produção de biochar e secadores industriais, integrando sensores, condicionamento de sinais, PLCs e sistemas embarcados.
+
+Normalmente sou chamado quando o problema é não trivial: ambientes ruidosos, redes elétricas fracas, condições térmicas severas, equipamentos legados ou metas energéticas ambiciosas. Resolvo o desafio desenvolvendo o seu sistema, validando-o por meio de modelos e protótipos, e então apoiando a implementação e o comissionamento.
+
+Se você busca alguém com visão sistêmica para o seu projeto — capaz de conectar desde a química do seu processo e o comportamento das suas máquinas até o código dos seus controladores — e transformar tudo isso em uma arquitetura robusta, é exatamente aí que eu gero mais valor.
+
+## Atuação Profissional
+
+- **Professor (2017 - Atual)**, Universidade Federal de Minas Gerais (UFMG)
+- **Professor (2015 - 2017)**, Instituto Federal Minas Gerais (IFMG)
+- **Sócio-Engenheiro (2013 - 2015)**, Fahren
+- **Sócio-Engenheiro (2011 - 2013)**, STA Engenharia
+
+## Formação
+
+- **Doutorado em Engenharia Mecânica (2016)**, Universidade Federal de Minas Gerais (UFMG)
+- **Mestrado em Engenharia Elétrica (2011)**, Universidade Federal de Minas Gerais (UFMG)
+- **Graduação em Engenharia Elétrica (2009)**, Universidade Federal de Minas Gerais (UFMG)
+
+:::
+
+## Trajetória
+
+::: {layout="[1,1]"}
+
+::: {}
+Escreva aqui a história da sua trajetória: como começou no mercado, a transição entre indústria e academia, e o que te levou a focar em máquinas elétricas, energia e automação.
+
+Use este espaço para contar o que a página inicial não cobre em detalhe — motivações, momentos marcantes, decisões de carreira.
+:::
+
+![](images/about/foto-trajetoria-1.jpg)
+
+:::
+
+---
+
+## Um pouco de história
+
+::: {layout="[1,1]"}
+
+![](images/about/foto-trajetoria-2.jpg)
+
+::: {}
+Continue a narrativa aqui — um segundo momento da carreira, um projeto marcante, ou a experiência como professor universitário.
+
+Alterne texto e imagem conforme for contando a história, trocando a ordem dos blocos (texto/imagem ou imagem/texto) para variar o ritmo visual da página.
+:::
+
+:::
+
+---
+
+## Linha do tempo
+
+::: {.timeline}
+
+**2004** — Início da carreira no mercado industrial.
+
+**20XX** — Ingresso na academia como Professor Universitário.
+
+**20XX** — Marco relevante (projeto, publicação, certificação).
+
+**Hoje** — Atuação atual entre indústria, pesquisa e ensino.
+
+:::
+
+---
+
+## Currículo completo
+
+Para uma visão detalhada da formação, publicações e experiência profissional, veja o [CV completo](cv.pdf) ou o [Lattes](#).

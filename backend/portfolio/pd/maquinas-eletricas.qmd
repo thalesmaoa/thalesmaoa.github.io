@@ -1,0 +1,22 @@
+---
+title: "Máquinas Elétricas Customizadas"
+description: "Projeto, modelagem eletromagnética e fabricação de geradores e motores especiais: fluxo axial, alta rotação e in-wheel."
+image: ../images/projeto-maquinas.jpg
+date: 2024-01-01
+categories: [Máquinas Elétricas, Eletrônica de Potência]
+---
+
+## Contexto
+
+Desenvolvimento de máquinas elétricas sob medida para aplicações industriais que exigem desempenho extremo — altas rotações (>100.000 rpm), densidade de potência elevada e geometrias não convencionais.
+
+## Escopo
+
+- Projeto eletromagnético por elementos finitos (FEM)
+- Prototipagem e validação experimental em bancada
+- Integração com eletrônica de potência e controle vetorial
+- Motores in-wheel para veículos elétricos
+
+## Resultado
+
+Múltiplos protótipos validados e transferidos para parceiros industriais.

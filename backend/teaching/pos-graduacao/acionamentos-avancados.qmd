@@ -1,0 +1,19 @@
+---
+title: "Acionamentos Elétricos Avançados"
+description: "Controle vetorial, máquinas especiais, estratégias de acionamento com eletrônica de potência."
+date: 2025-03-01
+categories: [Pós-Graduação, Engenharia Elétrica]
+---
+
+## Ementa
+
+- Controle vetorial (FOC) para máquinas de indução e ímãs permanentes
+- Máquinas elétricas especiais: fluxo axial, relutância variável
+- Estratégias de modulação avançadas (SVPWM, DPWM)
+- Técnicas de estimação sensorless
+
+## Material de apoio
+
+- [Slides das aulas](#)
+- [Simulações no Simulink/PLECS](#)
+- [Artigos selecionados](#)

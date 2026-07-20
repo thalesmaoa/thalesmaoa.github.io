@@ -1,0 +1,113 @@
+---
+title: "Thales Maia, PhD"
+description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
+image: "files/images/foto.jpg"
+page-navigation: false
+toc: false
+#sidebar: false
+page-layout: full
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 70%
+  links:
+    - text: "{{< ai lattes >}} Lattes"
+      href: http://lattes.cnpq.br/8637504941507702
+      target: _blank
+    - text: "{{< ai orcid >}} ORCID"   # use academic icons, "" are needed, you also need to install the fontawesome extension
+      href: https://orcid.org/0000-0001-7943-6322
+      target: _blank
+    - text: "{{< ai researchgate >}} Research Gate"
+      href: https://www.researchgate.net/profile/Thales-Maia
+      target: _blank
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com.br/citations?user=7oeMSpAAAAAJ&hl=pt-BR&oi=ao
+      target: _blank
+    - text: '<img src="files/icons/somos-plus.png" style="height: 1.1em; vertical-align: -0.2em; margin-right: 0.3em;"> UFMG'
+      href: https://somos.ufmg.br/professor/thales-alexandre-carvalho-maia
+      target: _blank
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/thales-maia-38755a23
+      target: _blank
+    - icon: github
+      text: GitHub
+      href: https://github.com/thalesmaia
+      target: _blank
+    - icon: youtube
+      text: YouTube
+      href: https://www.youtube.com/@thalesmaia6607
+      target: _blank
+    - icon: envelope
+      text: Email
+      href: mailto:thalesmaia@gmail.com
+listing:   # Recent news and events
+  - id: recent-news
+    contents: 
+      - backend/news
+    exclude:
+      title: "News and Events"
+    # type: table
+    type: grid             # Mudamos para grid para permitir itens lado a lado
+    grid-columns: 2        # Força a ter exatamente 2 colunas
+    max-items: 4           # Limita para mostrar no máximo 4 notícias
+    page-size: 4           # Garante que a "página" tenha apenas 4 itens
+    # max-items: 3
+    # page-size: 3
+    fields: [date, title]
+    sort-ui: false     # Remove a caixa "Order By"
+    filter-ui: false   # Remove a caixa "Filter"
+    # max-description-length: 75
+    sort: 
+      - "date desc"
+      - "title asc"
+      
+
+  - id: recent-blog
+    contents: 
+      - backend/blog
+    exclude:
+      title: ""
+    type: grid
+    max-items: 3
+    page-size: 3
+    fields: [image, date, title, subtitle]
+    max-description-length: 75
+    sort: 
+      - "date desc"
+      - "title asc"
+---
+
+:::{#hero-heading}
+**Developing Technology for the Industrial Sector | Electric Machine Design, Power Generation & Automation | Professor**
+
+<small>Belo Horizonte, Minas Gerais, Brasil <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Bandeira_de_Minas_Gerais.svg" style="height: 1em; vertical-align: -0.1em;"> 🇧🇷</small>
+
+I develop technology to overcome industrial challenges, working directly in the renewable generation, carbon chain, oil and gas, and automotive sectors. With over 20 years of market experience—combined with my background as a University Professor—I have built a solid foundation in designing electric machines, electronics, instrumentation, and software, creating complete architectures for processes, drives, and automation.
+
+My main specialty is developing custom generators and motors (axial flux, high-speed, and in-wheel motors), integrating them with power electronics, control systems, and industrial communication stacks. I have led projects involving wind power for rural grids, microturbines, hybrid mobile machines, and special powertrains for harsh environments.
+
+In parallel, I have extensive practical experience in process and thermal systems instrumentation: measuring combustion gases in carbonization furnaces, gasification, biochar production, and industrial dryers, integrating sensors, signal conditioning, PLCs, and embedded systems.
+
+I am usually called when the problem is non-trivial: noisy environments, weak electrical grids, severe thermal conditions, legacy equipment, or ambitious energy targets. I solve the challenge by developing your system, validating it through models and prototypes, and then supporting its implementation and commissioning.
+
+If you are looking for someone with a systemic view for your project—capable of connecting everything from the chemistry of your process and the behavior of your machines to the code of your controllers—and turning it all into a robust architecture, that is exactly where I generate the most value.
+
+:::
+
+
+## News and Events
+Check out the latest &nbsp;[News](backend/news/index.qmd#category=news)&nbsp;, &nbsp;[Events](backend/news/index.qmd#category=event)&nbsp;, and &nbsp;[More »](backend/news/index.qmd)
+
+::: {#recent-news}
+
+:::
+
+## Blog
+Check out the latest &nbsp;[Posts](backend/blog/index.qmd)&nbsp; and &nbsp;[More »](/backend/blog/index.qmd)
+
+::: {#recent-blog}
+
+:::
+
+<p align="right">[All Posts »](/backend/blog/index.qmd)</p>

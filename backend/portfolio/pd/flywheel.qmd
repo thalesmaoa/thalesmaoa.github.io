@@ -1,0 +1,22 @@
+---
+title: "Armazenamento por Volante de Inércia"
+description: "Projeto e controle de mancais magnéticos ativos para flywheels de alta rotação."
+image: ../images/projeto-flywheel.jpg
+date: 2021-06-01
+categories: [Máquinas Elétricas, Controle]
+---
+
+## Contexto
+
+Armazenamento cinético de energia utilizando flywheels de alta rotação com levitação magnética — uma alternativa limpa e durável às baterias químicas para aplicações de alta potência.
+
+## Escopo
+
+- Modelagem eletromagnética do mancal magnético ativo
+- Projeto do sistema de levitação e controle em tempo real
+- Integração com máquinas elétricas de fluxo axial
+- Validação experimental do sistema completo
+
+## Resultado
+
+Protótipo de bancada validado. Teses e dissertações concluídas.
