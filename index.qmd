@@ -152,6 +152,6 @@ Desenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas,
 
 <p align="right">[Ver Todos »](backend/blog/index.qmd)</p>
 
-### Clientes e Parceiro
+### Clientes e Parceiros
 
 {{< include /files/includes/_partners.qmd >}}
