@@ -2,3 +2,24 @@
 .navbar-brand img, .navbar-logo {
     max-height: 30px !important; /* Mantenha o tamanho ideal */
 }
+
+/* ── Search panel styling ── */
+.aa-DetachedContainer {
+  background: #f8f9fa !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.12);
+}
+
+.aa-Panel {
+  background: #f8f9fa !important;
+}
+
+.aa-DetachedContainer .aa-InputWrapper {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+}
+
+.aa-DetachedOverlay {
+  background: rgba(0,0,0,.3) !important;
+}

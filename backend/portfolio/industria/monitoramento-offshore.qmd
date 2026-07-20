@@ -1,0 +1,22 @@
+---
+title: "Monitoramento Preditivo Offshore"
+description: "Bancada experimental de média tensão para validação de técnicas de monitoramento preditivo em motores de indução."
+image: ../images/projeto-offshore.jpg
+date: 2024-06-01
+categories: [Instrumentação, Energia]
+---
+
+## Contexto
+
+Implementação de bancada experimental de média tensão para validação de técnicas de monitoramento preditivo em motores de indução offshore, em parceria com a Petrobras.
+
+## Escopo
+
+- Projeto e montagem da bancada de média tensão
+- Algoritmos para detecção de faltas incipientes
+- Estimação de vida útil remanescente
+- Validação com dados reais de campo
+
+## Resultado
+
+Bancada validada e em operação. Formação de recursos humanos especializados.

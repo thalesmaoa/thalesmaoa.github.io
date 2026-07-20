@@ -1,0 +1,22 @@
+---
+title: "Microrredes e Geração Distribuída"
+description: "Energia eólica, solar e armazenamento para comunidades isoladas e operação resiliente."
+image: ../images/projeto-microrrede.jpg
+date: 2022-01-01
+categories: [Energia, Eletrônica de Potência]
+---
+
+## Contexto
+
+Pesquisa em microrredes resilientes para comunidades isoladas e aplicações industriais, integrando geração eólica de pequeno porte, fotovoltaica e armazenamento em baterias.
+
+## Escopo
+
+- Conversores bidirecionais para integração de fontes renováveis
+- Supervisório IoT para monitoramento remoto
+- Estratégias de controle para operação isolada e conectada à rede
+- Validação experimental em microrrede real
+
+## Resultado
+
+Sistema supervisório implementado em planta solar real. Publicações e formação de recursos humanos.

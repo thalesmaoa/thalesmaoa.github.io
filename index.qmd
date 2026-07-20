@@ -130,13 +130,12 @@ Desenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas,
 </div>
 
 
-
-
 <!-- ## Notícias e Eventos -->
 ## Notícias
 <!-- Acompanhe as últimas &nbsp;[Notícias](backend/news/index.qmd#category=news)&nbsp;, &nbsp;[Eventos](backend/news/index.qmd#category=event)&nbsp;, e &nbsp;[Mais »](backend/news/index.qmd) -->
 
-:::{#recent-news}
+::: {#recent-news}
+
 :::
 
 <p align="right" style="margin-top: -1rem;">[Ver todas »](backend/news/index.qmd)</p>
@@ -147,7 +146,12 @@ Desenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas,
 ## Blog
 <!-- Confira os últimos &nbsp;[Artigos](backend/blog/index.qmd)&nbsp; e &nbsp;[Mais »](backend/blog/index.qmd) -->
 
-:::{#recent-blog}
+::: {#recent-blog}
+
 :::
 
 <p align="right">[Ver Todos »](backend/blog/index.qmd)</p>
+
+### Clientes e Parceiro
+
+{{< include /files/includes/_partners.qmd >}}

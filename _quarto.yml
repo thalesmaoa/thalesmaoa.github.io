@@ -26,13 +26,18 @@ website:
       - text: Pesquisa
         menu:
           - text: Lista de publicações  # Automatically generated from publications.xlsx
-            href: backend/research/pub-listing.qmd
-          - text: Publicações  # Manually curated list of publications
-            href: backend/research/publications.qmd
-          - text: SPHIN Lab  # Manually curated list of publications
+            href: backend/research/papers/pub-listing.qmd
+          - text: Teses e Dissertações
+            href: backend/research/theses/theses.qmd
+          - text: SPHIN
             href: backend/research/sphin_about.qmd
+          
       - text: "Portfólio"
-        href: backend/portfolio/index.qmd
+        menu:
+          - text: Projetos de P&D
+            href: backend/portfolio/pd/index.qmd
+          - text: Indústria
+            href: backend/portfolio/industria/index.qmd
           # - text: Projects
           #   href: backend/research/projects.qmd     
           # - text: Selected Papers
@@ -41,7 +46,11 @@ website:
           #   href: projects.qmd 
 
       - text: "Ensino"
-        href: backend/teaching/index.qmd
+        menu:
+          - text: Graduação
+            href: backend/teaching/graduacao/index.qmd
+          - text: Pós-Graduação
+            href: backend/teaching/pos-graduacao/index.qmd
       - text: "Blog"
         href: backend/blog/index.qmd
       - text: "Notícias"

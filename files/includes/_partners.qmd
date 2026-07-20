@@ -1,0 +1,85 @@
+```{=html}
+<style>
+.partners-carousel {
+  overflow: hidden;
+  padding: 1rem 0;
+  mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+}
+
+.partners-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: partners-scroll 34s linear infinite;
+}
+
+.partners-carousel:hover .partners-track {
+  animation-play-state: paused;
+}
+
+.partners-track .logo-box {
+  width: 160px;
+  height: 70px;
+  margin-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.partners-track .logo-box img {
+  max-height: 55px;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: .90;
+  transition: opacity .3s;
+}
+
+.partners-track .logo-box img:hover {
+  opacity: 1;
+}
+
+@keyframes partners-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+</style>
+
+<div class="partners-carousel">
+  <div class="partners-track" id="partnersTrack">
+    <!-- grupo 1 -->
+    <div class="logo-box"><img src="files/images/partners/olivapss.png" alt="OlivaPSS"></div>
+    <div class="logo-box"><img src="files/images/partners/Stellantis.svg" alt="Stellantis"></div>
+    <div class="logo-box"><img src="files/images/partners/CNH_Industrial.svg" alt="CNHi"></div>
+    <div class="logo-box"><img src="files/images/partners/Petrobras_logo.svg" alt="Petrobras"></div>
+    <div class="logo-box"><img src="files/images/partners/Aperam_Logo.svg" alt="Aperam"></div>
+    <div class="logo-box"><img src="files/images/partners/NetZero.svg" alt="NetZero"></div>
+    <div class="logo-box"><img src="files/images/partners/data-eng.png" alt="DATA Engenharia"></div>
+    <div class="logo-box"><img src="files/images/partners/Arcelormittal-logo.svg" alt="ArcelorMittal Bioflorestas"></div>
+    <!-- grupo 2 (idêntico ao grupo 1) -->
+    <div class="logo-box"><img src="files/images/partners/lapem-logo.png" alt="LAPEM"></div>
+    <div class="logo-box"><img src="files/images/partners/rima-industrial-seeklogo.png" alt="RIMA Industrial"></div>
+    <div class="logo-box"><img src="files/images/partners/biagio-turbos-seeklogo.png" alt="RIMA Industrial"></div>
+ <div class="logo-box"><img src="files/images/partners/aethra-group-automotive-systems-seeklogo.png" alt="Aethra Group"></div>
+  <div class="logo-box"><img src="files/images/partners/Halliburton_logo.svg" alt="Halliburton"></div>
+
+ <div class="logo-box"><img src="files/images/partners/olivapss.png" alt="OlivaPSS"></div>
+    <div class="logo-box"><img src="files/images/partners/Stellantis.svg" alt="Stellantis"></div>
+    <div class="logo-box"><img src="files/images/partners/CNH_Industrial.svg" alt="CNHi"></div>
+    <div class="logo-box"><img src="files/images/partners/Petrobras_logo.svg" alt="Petrobras"></div>
+    <div class="logo-box"><img src="files/images/partners/Aperam_Logo.svg" alt="Aperam"></div>
+    <div class="logo-box"><img src="files/images/partners/NetZero.svg" alt="NetZero"></div>
+    <div class="logo-box"><img src="files/images/partners/data-eng.png" alt="DATA Engenharia"></div>
+    <div class="logo-box"><img src="files/images/partners/Arcelormittal-logo.svg" alt="ArcelorMittal Bioflorestas"></div>
+    <!-- grupo 2 (idêntico ao grupo 1) -->
+    <div class="logo-box"><img src="files/images/partners/lapem-logo.png" alt="LAPEM"></div>
+    <div class="logo-box"><img src="files/images/partners/rima-industrial-seeklogo.png" alt="RIMA Industrial"></div>
+    <div class="logo-box"><img src="files/images/partners/biagio-turbos-seeklogo.png" alt="RIMA Industrial"></div>
+ <div class="logo-box"><img src="files/images/partners/aethra-group-automotive-systems-seeklogo.png" alt="Aethra Group"></div>
+ <div class="logo-box"><img src="files/images/partners/Halliburton_logo.svg" alt="Halliburton"></div>
+ 
+ </div>
+</div>
+
+```

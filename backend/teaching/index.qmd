@@ -1,17 +1,9 @@
 ---
 title: "Ensino"
-subtitle: "Disciplinas ministradas e material de apoio"
 page-layout: full
-listing:
-  contents: courses
-  type: default
-  fields: [date, title, description, categories]
-  field-display-names:
-    date: "Período"
-  sort: "date desc"
-  sort-ui: false
-  filter-ui: true
-  categories: true
 ---
 
-Abaixo estão as disciplinas que ministro, com material de apoio disponível para cada uma.
+Disciplinas ministradas e material de apoio.
+
+- [Graduação](graduacao/index.qmd) — disciplinas de graduação em Engenharia Elétrica
+- [Pós-Graduação](pos-graduacao/index.qmd) — disciplinas do PPGEE

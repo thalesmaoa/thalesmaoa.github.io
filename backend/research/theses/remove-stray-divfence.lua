@@ -1,8 +1,7 @@
 -- remove-stray-divfence.lua
 -- Removes stray ":::" strings that leak into the HTML output when Quarto's
 -- listing wrapper fenced divs are interrupted by raw HTML blocks from the
--- EJS template. These appear as bare Para or Plain nodes whose sole content
--- is the string ":::".
+-- EJS template.
 
 function Para(el)
   if #el.content == 1

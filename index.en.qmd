@@ -99,13 +99,15 @@ If you are looking for someone with a systemic view for your project—capable o
 ## News and Events
 Check out the latest &nbsp;[News](backend/news/index.qmd#category=news)&nbsp;, &nbsp;[Events](backend/news/index.qmd#category=event)&nbsp;, and &nbsp;[More »](backend/news/index.qmd)
 
-:::{#recent-news}
+::: {#recent-news}
+
 :::
 
 ## Blog
 Check out the latest &nbsp;[Posts](backend/blog/index.qmd)&nbsp; and &nbsp;[More »](/backend/blog/index.qmd)
 
-:::{#recent-blog}
+::: {#recent-blog}
+
 :::
 
 <p align="right">[All Posts »](/backend/blog/index.qmd)</p>
