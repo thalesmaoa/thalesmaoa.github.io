@@ -12,6 +12,8 @@ author-meta: "Dr. Thales A. C. Maia"
 
 website:
   title: "SPHIN"
+  site-url: "https://thalesmaia.com"
+  favicon: "files/icons/logo_machine.png"
   image: "files/icons/logo.png"
   description: "Site pessoal e acadêmico de Thales Maia."
  
