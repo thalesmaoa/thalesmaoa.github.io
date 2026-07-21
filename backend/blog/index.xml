@@ -6,13 +6,13 @@
       version="2.0">
 <channel>
 <title>SPHIN</title>
-<link>https://www.thalesmaia.com/backend/blog/</link>
-<atom:link href="https://www.thalesmaia.com/backend/blog/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://thalesmaia.com/backend/blog/</link>
+<atom:link href="https://thalesmaia.com/backend/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Site pessoal e acadêmico de Thales Maia.</description>
 <image>
-<url>https://www.thalesmaia.com/files/icons/logo.png</url>
+<url>https://thalesmaia.com/files/icons/logo.png</url>
 <title>SPHIN</title>
-<link>https://www.thalesmaia.com/backend/blog/</link>
+<link>https://thalesmaia.com/backend/blog/</link>
 <height>144</height>
 <width>144</width>
 </image>
@@ -21,13 +21,13 @@
 <item>
   <title>Event item</title>
   <dc:creator>Event </dc:creator>
-  <link>https://www.thalesmaia.com/backend/blog/event-title/</link>
+  <link>https://thalesmaia.com/backend/blog/event-title/</link>
   <description><![CDATA[ 
 
 
 
 
-<p><a href="https://drganghe.github.io/quarto-academic-website-template/"><img src="https://www.thalesmaia.com/files/images/placeholder2.JPG" class="img-fluid" style="width:90.0%"></a></p>
+<p><a href="https://drganghe.github.io/quarto-academic-website-template/"><img src="https://thalesmaia.com/files/images/placeholder2.JPG" class="img-fluid" style="width:90.0%"></a></p>
 <!--Include social share buttons-->
 <!-- 
 AddToAny check more: https://www.addtoany.com/buttons/for/website 
@@ -44,14 +44,14 @@ https://quarto.org/docs/authoring/includes.html
  ]]></description>
   <category>event</category>
   <category>presentation</category>
-  <guid>https://www.thalesmaia.com/backend/blog/event-title/</guid>
+  <guid>https://thalesmaia.com/backend/blog/event-title/</guid>
   <pubDate>Tue, 03 Sep 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://www.thalesmaia.com/files/images/placeholder2.JPG" medium="image"/>
+  <media:content url="https://thalesmaia.com/files/images/placeholder2.JPG" medium="image"/>
 </item>
 <item>
   <title>News item</title>
   <dc:creator>News </dc:creator>
-  <link>https://www.thalesmaia.com/backend/blog/news-title/</link>
+  <link>https://thalesmaia.com/backend/blog/news-title/</link>
   <description><![CDATA[ 
 
 
@@ -76,16 +76,16 @@ https://quarto.org/docs/authoring/includes.html
 
  ]]></description>
   <category>news</category>
-  <guid>https://www.thalesmaia.com/backend/blog/news-title/</guid>
+  <guid>https://thalesmaia.com/backend/blog/news-title/</guid>
   <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://www.thalesmaia.com/files/images/placeholder3.JPG" medium="image"/>
+  <media:content url="https://thalesmaia.com/files/images/placeholder3.JPG" medium="image"/>
 </item>
 <item>
   <title>Can quantum-mechanical description of physical reality be considered complete?</title>
   <dc:creator>Albert Einstein</dc:creator>
   <dc:creator>Boris Podolsky</dc:creator>
   <dc:creator>Nathan Rosen</dc:creator>
-  <link>https://www.thalesmaia.com/backend/blog/paper-title/</link>
+  <link>https://thalesmaia.com/backend/blog/paper-title/</link>
   <description><![CDATA[ 
 
 
@@ -139,9 +139,9 @@ Quantum-Mechanical Description of Physical Reality Be Considered
 Complete?”</span> <em>Physical Review</em> 47 (7938): 777–80. <a href="https://doi.org/10.1103/PhysRev.47.777">https://doi.org/10.1103/PhysRev.47.777</a>.
 </div></div></section></div> ]]></description>
   <category>paper</category>
-  <guid>https://www.thalesmaia.com/backend/blog/paper-title/</guid>
+  <guid>https://thalesmaia.com/backend/blog/paper-title/</guid>
   <pubDate>Wed, 15 May 1935 00:00:00 GMT</pubDate>
-  <media:content url="https://www.thalesmaia.com/backend/blog/paper-title/featured.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://thalesmaia.com/backend/blog/paper-title/featured.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

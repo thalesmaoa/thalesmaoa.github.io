@@ -6,13 +6,13 @@
       version="2.0">
 <channel>
 <title>SPHIN</title>
-<link>https://www.thalesmaia.com/backend/news/</link>
-<atom:link href="https://www.thalesmaia.com/backend/news/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://thalesmaia.com/backend/news/</link>
+<atom:link href="https://thalesmaia.com/backend/news/index.xml" rel="self" type="application/rss+xml"/>
 <description>Site pessoal e acadêmico de Thales Maia.</description>
 <image>
-<url>https://www.thalesmaia.com/files/icons/logo.png</url>
+<url>https://thalesmaia.com/files/icons/logo.png</url>
 <title>SPHIN</title>
-<link>https://www.thalesmaia.com/backend/news/</link>
+<link>https://thalesmaia.com/backend/news/</link>
 <height>144</height>
 <width>144</width>
 </image>
@@ -21,7 +21,7 @@
 <item>
   <title>Defesa de Mestrado — William Andrade</title>
   <dc:creator>Thales Maia</dc:creator>
-  <link>https://www.thalesmaia.com/backend/news/202607 - Defesa William/</link>
+  <link>https://thalesmaia.com/backend/news/202607 - Defesa William/</link>
   <description><![CDATA[ 
 
 
@@ -50,14 +50,14 @@ https://quarto.org/docs/authoring/includes.html
  ]]></description>
   <category>News</category>
   <category>Defesa</category>
-  <guid>https://www.thalesmaia.com/backend/news/202607 - Defesa William/</guid>
+  <guid>https://thalesmaia.com/backend/news/202607 - Defesa William/</guid>
   <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://www.thalesmaia.com/backend/news/202607 - Defesa William/ufmg_m.png" medium="image" type="image/png" height="152" width="144"/>
+  <media:content url="https://thalesmaia.com/backend/news/202607 - Defesa William/ufmg_m.png" medium="image" type="image/png" height="152" width="144"/>
 </item>
 <item>
   <title>Bem-vindo ao meu novo site!</title>
   <dc:creator>Thales Maia</dc:creator>
-  <link>https://www.thalesmaia.com/backend/news/202607 - Website creation/</link>
+  <link>https://thalesmaia.com/backend/news/202607 - Website creation/</link>
   <description><![CDATA[ 
 
 
@@ -88,20 +88,20 @@ https://quarto.org/docs/authoring/includes.html
 
  ]]></description>
   <category>News</category>
-  <guid>https://www.thalesmaia.com/backend/news/202607 - Website creation/</guid>
+  <guid>https://thalesmaia.com/backend/news/202607 - Website creation/</guid>
   <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://www.thalesmaia.com/backend/news/202607 - Website creation/quarto-dark-bg.jpeg" medium="image" type="image/jpeg"/>
+  <media:content url="https://thalesmaia.com/backend/news/202607 - Website creation/quarto-dark-bg.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Event item</title>
   <dc:creator>Event </dc:creator>
-  <link>https://www.thalesmaia.com/backend/news/event-title/</link>
+  <link>https://thalesmaia.com/backend/news/event-title/</link>
   <description><![CDATA[ 
 
 
 
 
-<p><a href="https://drganghe.github.io/quarto-academic-website-template/"><img src="https://www.thalesmaia.com/files/images/placeholder2.JPG" class="img-fluid" style="width:90.0%"></a></p>
+<p><a href="https://drganghe.github.io/quarto-academic-website-template/"><img src="https://thalesmaia.com/files/images/placeholder2.JPG" class="img-fluid" style="width:90.0%"></a></p>
 <!--Include social share buttons-->
 <!-- 
 AddToAny check more: https://www.addtoany.com/buttons/for/website 
@@ -118,9 +118,9 @@ https://quarto.org/docs/authoring/includes.html
  ]]></description>
   <category>Event</category>
   <category>Presentation</category>
-  <guid>https://www.thalesmaia.com/backend/news/event-title/</guid>
+  <guid>https://thalesmaia.com/backend/news/event-title/</guid>
   <pubDate>Tue, 03 Sep 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://www.thalesmaia.com/files/images/placeholder2.JPG" medium="image"/>
+  <media:content url="https://thalesmaia.com/files/images/placeholder2.JPG" medium="image"/>
 </item>
 </channel>
 </rss>
