@@ -225,17 +225,17 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pesquisa" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Pesquisa</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-span-classlang-ptpesquisaspanspan-classlang-enresearchspan" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><span class="lang-pt">Pesquisa</span><span class="lang-en">Research</span></span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-pesquisa">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptpesquisaspanspan-classlang-enresearchspan">    
         <li>
     <a class="dropdown-item" href="./backend/research/papers/pub-listing.html">
- <span class="dropdown-text">Lista de publicações</span></a>
+ <span class="dropdown-text"><span class="lang-pt">Lista de publicações</span><span class="lang-en">Publication List</span></span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./backend/research/theses/theses.html">
- <span class="dropdown-text">Teses e Dissertações</span></a>
+ <span class="dropdown-text"><span class="lang-pt">Teses e Dissertações</span><span class="lang-en">Theses &amp; Dissertations</span></span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./backend/research/sphin_about.html">
@@ -244,32 +244,32 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-portfólio" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Portfólio</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-span-classlang-ptportfóliospanspan-classlang-enportfoliospan" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><span class="lang-pt">Portfólio</span><span class="lang-en">Portfolio</span></span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-portfólio">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptportfóliospanspan-classlang-enportfoliospan">    
         <li>
     <a class="dropdown-item" href="./backend/portfolio/pd/index.html">
- <span class="dropdown-text">Projetos de P&amp;D</span></a>
+ <span class="dropdown-text"><span class="lang-pt">Projetos de P&amp;D</span><span class="lang-en">R&amp;D Projects</span></span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./backend/portfolio/industria/index.html">
- <span class="dropdown-text">Indústria</span></a>
+ <span class="dropdown-text"><span class="lang-pt">Indústria</span><span class="lang-en">Industry</span></span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ensino" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Ensino</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-span-classlang-ptensinospanspan-classlang-enteachingspan" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><span class="lang-pt">Ensino</span><span class="lang-en">Teaching</span></span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-ensino">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptensinospanspan-classlang-enteachingspan">    
         <li>
     <a class="dropdown-item" href="./backend/teaching/graduacao/index.html">
- <span class="dropdown-text">Graduação</span></a>
+ <span class="dropdown-text"><span class="lang-pt">Graduação</span><span class="lang-en">Undergraduate</span></span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./backend/teaching/pos-graduacao/index.html">
- <span class="dropdown-text">Pós-Graduação</span></a>
+ <span class="dropdown-text"><span class="lang-pt">Pós-Graduação</span><span class="lang-en">Graduate</span></span></a>
   </li>  
     </ul>
   </li>
@@ -279,11 +279,11 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./backend/news/index.html"> 
-<span class="menu-text">Notícias</span></a>
+<span class="menu-text"><span class="lang-pt">Notícias</span><span class="lang-en">News</span></span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">Sobre</span></a>
+<span class="menu-text"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -300,11 +300,6 @@ window.Quarto = {
     <a class="nav-link" href="./backend/news/index.xml" target="_blank"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./index.en.html"> <i class="bi bi-globe" role="img">
-</i> 
-<span class="menu-text">EN</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -362,6 +357,19 @@ window.Quarto = {
   padding-bottom: 8px;
 }
 
+/* Container scrollável para as notícias — mantém a altura de ~3 itens e permite rolar as demais */
+#listing-recent-news {
+  max-height: 210px;          /* altura aproximada de 3 linhas */
+  overflow-y: auto;           /* scroll vertical quando houver mais itens */
+  scrollbar-width: none;      /* Firefox: esconde a barra de scroll */
+  -ms-overflow-style: none;   /* IE/Edge: esconde a barra de scroll */
+}
+
+/* Chrome/Safari/Edge: esconde a barra de scroll mas mantém a rolagem */
+#listing-recent-news::-webkit-scrollbar {
+  display: none;
+}
+
 /* #listing-recent-news {
   margin-bottom: 1.5rem;
 } */
@@ -412,16 +420,16 @@ window.Quarto = {
 </div>
   </div>
   <div class="about-contents"><div id="hero-heading">
-<p><strong>Desenvolvo tecnologia para o setor industrial | Projeto de Máquinas Elétricas, Geração de Energia &amp; Automação | Professor</strong></p>
-<p>Belo Horizonte, Minas Gerais, Brasil <img src="files/icons/flag_minas.svg" style="height: 1em; vertical-align: -0.1em; border: 1px solid #999;"> <img src="files/icons/flag_brasil.svg" style="height: 1em; vertical-align: -0.1em; border: 1px solid #999;"></p>
-<p>Desenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas, geração de energia e automação. Sou especialista no projeto de geradores e motores customizados, além da instrumentação de processos industriais — criando soluções para operação remota, IIoT e Indústria 4.0.</p>
-<p><strong>Professor</strong>, Universidade Federal de Minas Gerais (UFMG)</p>
+<p><strong><span class="lang-pt">Desenvolvo tecnologia para o setor industrial | Projeto de Máquinas Elétricas, Geração de Energia &amp; Automação | Professor</span><span class="lang-en">I develop technology for the industrial sector | Electrical Machine Design, Power Generation &amp; Automation | Professor</span></strong></p>
+<p><span class="lang-pt">Belo Horizonte, Minas Gerais, Brasil</span><span class="lang-en">Belo Horizonte, Minas Gerais, Brazil</span> <img src="files/icons/flag_minas.svg" style="height: 1em; vertical-align: -0.1em; border: 1px solid #999;"> <img src="files/icons/flag_brasil.svg" style="height: 1em; vertical-align: -0.1em; border: 1px solid #999;"></p>
+<p><span class="lang-pt">Desenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas, geração de energia e automação. Sou especialista no projeto de geradores e motores customizados, além da instrumentação de processos industriais — criando soluções para operação remota, IIoT e Indústria 4.0.</span><span class="lang-en">I develop technology for the industrial sector, focusing on electrical machines, power generation, and automation. I specialize in designing custom generators and motors, as well as industrial process instrumentation — creating solutions for remote operation, IIoT, and Industry 4.0.</span></p>
+<p><span class="lang-pt"><strong>Professor</strong></span><span class="lang-en"><strong>Professor</strong></span>, Universidade Federal de Minas Gerais (UFMG)</p>
 <div style="margin-top: 20px; margin-bottom: 40px;">
 <p><img src="files/icons/dee.jpg" style="height: 45px; margin-right: 15px; vertical-align: middle;" alt="Departamento de Engenharia Elétrica"> <img src="files/icons/logo_UFMG.jpg" style="height: 45px; vertical-align: middle;" alt="Universidade Federal de Minas Gerais"></p>
 </div>
 <!-- ## Notícias e Eventos -->
-<section id="notícias" class="level2">
-<h2 data-anchor-id="notícias">Notícias</h2>
+<section id="notíciasnews" class="level2">
+<h2 data-anchor-id="notíciasnews"><span class="lang-pt">Notícias</span><span class="lang-en">News</span></h2>
 <!-- Acompanhe as últimas &nbsp;[Notícias](backend/news/index.qmd#category=news)&nbsp;, &nbsp;[Eventos](backend/news/index.qmd#category=event)&nbsp;, e &nbsp;[Mais »](backend/news/index.qmd) -->
 <div id="listing-recent-news" class="quarto-listing quarto-listing-container-table">
 <table class="quarto-listing-table table">
@@ -438,7 +446,7 @@ Title
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="TmV3cyUyQ0RlZmVzYQ==" data-listing-date-sort="1784505600000" data-listing-file-modified-sort="1784580209660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="52" data-listing-title-sort="Defesa de Mestrado — William Andrade" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-categories="TmV3cyUyQ0RlZmVzYQ==" data-listing-date-sort="1784505600000" data-listing-file-modified-sort="1784673752126" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="52" data-listing-title-sort="Defesa de Mestrado — William Andrade" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img loading="lazy" src="./backend/news/202607 - Defesa William/ufmg_m.png" style="height: 40px;"></span>
 </td>
@@ -449,7 +457,7 @@ Title
 <a href="./backend/news/202607 - Defesa William/index.html" class="title listing-title">Defesa de Mestrado — William Andrade</a>
 </td>
 </tr>
-<tr data-index="1" data-categories="TmV3cw==" data-listing-date-sort="1784419200000" data-listing-file-modified-sort="1784580209660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="119" data-listing-title-sort="Bem-vindo ao meu novo site!" data-listing-filename-sort="index.qmd">
+<tr data-index="1" data-categories="TmV3cw==" data-listing-date-sort="1784419200000" data-listing-file-modified-sort="1784673752126" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="119" data-listing-title-sort="Bem-vindo ao meu novo site!" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img loading="lazy" src="./backend/news/202607 - Website creation/quarto-dark-bg.jpeg" style="height: 40px;"></span>
 </td>
@@ -460,7 +468,7 @@ Title
 <a href="./backend/news/202607 - Website creation/index.html" class="title listing-title">Bem-vindo ao meu novo site!</a>
 </td>
 </tr>
-<tr data-index="2" data-categories="RXZlbnQlMkNQcmVzZW50YXRpb24=" data-listing-date-sort="1725321600000" data-listing-file-modified-sort="1784580209660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="Event item" data-listing-filename-sort="index.qmd">
+<tr data-index="2" data-categories="RXZlbnQlMkNQcmVzZW50YXRpb24=" data-listing-date-sort="1725321600000" data-listing-file-modified-sort="1784673752127" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="Event item" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img loading="lazy" src="./files/images/placeholder2.JPG" style="height: 40px;"></span>
 </td>
@@ -476,7 +484,7 @@ Title
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <p align="right" style="margin-top: -1rem;">
-<a href="./backend/news/index.html">Ver todas »</a>
+<span class="lang-pt"><a href="./backend/news/index.html">Ver todas »</a></span><span class="lang-en"><a href="./backend/news/index.html">See all »</a></span>
 </p>
 <!-- <p align="right">[Todos as Notícias »](backend/news/index.qmd)</p> -->
 </section>
@@ -488,7 +496,7 @@ Title
 <!-- Confira os últimos &nbsp;[Artigos](backend/blog/index.qmd)&nbsp; e &nbsp;[Mais »](backend/blog/index.qmd) -->
 <div id="listing-recent-blog" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1784580209653" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1784673752121" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
 <a href="./backend/blog/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img loading='lazy' src="backend/blog/paper-title/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -502,7 +510,7 @@ Artigos técnicos, pesquisas e reflexões
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="ZXZlbnQlMkNwcmVzZW50YXRpb24=" data-listing-date-sort="1725321600000" data-listing-file-modified-sort="1784580209653" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+<div class="g-col-1" data-index="1" data-categories="ZXZlbnQlMkNwcmVzZW50YXRpb24=" data-listing-date-sort="1725321600000" data-listing-file-modified-sort="1784673752121" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
 <a href="./backend/blog/event-title/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -520,7 +528,7 @@ Sep 3, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="bmV3cw==" data-listing-date-sort="1719187200000" data-listing-file-modified-sort="1784580209653" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="g-col-1" data-index="2" data-categories="bmV3cw==" data-listing-date-sort="1719187200000" data-listing-file-modified-sort="1784673752121" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
 <a href="./backend/blog/news-title/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -542,10 +550,10 @@ Jun 24, 2024
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <p align="right">
-<a href="./backend/blog/index.html">Ver Todos »</a>
+<span class="lang-pt"><a href="./backend/blog/index.html">Ver Todos »</a></span><span class="lang-en"><a href="./backend/blog/index.html">See all »</a></span>
 </p>
-<section id="clientes-e-parceiros" class="level3">
-<h3 data-anchor-id="clientes-e-parceiros">Clientes e Parceiros</h3>
+<section id="clientes-e-parceirosclients-partners" class="level3">
+<h3 data-anchor-id="clientes-e-parceirosclients-partners"><span class="lang-pt">Clientes e Parceiros</span><span class="lang-en">Clients &amp; Partners</span></h3>
 <style>
 .partners-carousel {
   overflow: hidden;
@@ -637,6 +645,46 @@ Jun 24, 2024
 </section>
 
 </main> <!-- /main -->
+<script>
+(function() {
+  const LANG_KEY = 'site-lang';
+
+  // Restaura preferência salva
+  if (localStorage.getItem(LANG_KEY) === 'en') {
+    document.documentElement.classList.add('lang-en');
+  }
+
+  function insertToggle() {
+    // Encontra o <ul> direito da navbar do Quarto
+    const rightNav = document.querySelector('.navbar-nav.ms-auto');
+    if (!rightNav) return;
+
+    const li = document.createElement('li');
+    li.className = 'nav-item';
+
+    const a = document.createElement('a');
+    a.className = 'nav-link nav-lang-toggle';
+    a.href = '#';
+    a.setAttribute('aria-label', 'Switch language');
+    a.innerHTML = '<span class="lang-pt">PT</span><span class="lang-en">EN</span>';
+
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var isEn = document.documentElement.classList.toggle('lang-en');
+      localStorage.setItem(LANG_KEY, isEn ? 'en' : 'pt');
+    });
+
+    li.appendChild(a);
+    rightNav.appendChild(li);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', insertToggle);
+  } else {
+    insertToggle();
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

@@ -23,3 +23,20 @@
 .aa-DetachedOverlay {
   background: rgba(0,0,0,.3) !important;
 }
+
+/* ===== Language Toggle (navbar) ===== */
+/* EN visível só quando html.lang-en estiver ativo */
+html:not(.lang-en) .lang-en { display: none; }
+html.lang-en .lang-pt       { display: none; }
+
+.nav-lang-toggle {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem !important;
+  transition: color 0.2s;
+}
+.nav-lang-toggle:hover {
+  opacity: 0.8;
+}
