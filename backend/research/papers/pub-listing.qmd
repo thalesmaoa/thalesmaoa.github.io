@@ -1,5 +1,5 @@
 ---
-title: "Publicações"
+title: "<span class='lang-pt'>Publicações</span><span class='lang-en'>Publications</span>"
 description-meta: "Informações, pdfs, e métricas dos trabalhos"
 title-block-banner: false
 listing:
@@ -24,13 +24,13 @@ css: pub-listing.css
 filters: [remove-stray-divfence.lua]  
 ---
 
-## Artigos de revista
+## <span class="lang-pt">Artigos de revista</span><span class="lang-en">Journal Papers</span>
 
 ::: {#peer-reviewed}
 
 :::
 
-## Artigos de Congressos
+## <span class="lang-pt">Artigos de Congressos</span><span class="lang-en">Conference Papers</span>
 
 ::: {#conference}
 

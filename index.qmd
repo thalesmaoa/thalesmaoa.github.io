@@ -51,7 +51,7 @@ listing:   # Recent news and events
     type: table
     # type: grid             # Mudamos para grid para permitir itens lado a lado
     # grid-columns: 4        # Força a ter exatamente 2 colunas
-    max-items: 3           # Limita para mostrar no máximo 4 notícias
+    max-items: 6           # Mostra até 6 notícias com scroll
     # page-size: 4           # Garante que a "página" tenha apenas 4 itens
     fields: [image, date, title]
     sort-ui: false     # Remove a caixa "Order By"
@@ -110,19 +110,32 @@ listing:   # Recent news and events
   padding-bottom: 8px;
 }
 
+/* Container scrollável para as notícias — mantém a altura de ~3 itens e permite rolar as demais */
+#listing-recent-news {
+  max-height: 210px;          /* altura aproximada de 3 linhas */
+  overflow-y: auto;           /* scroll vertical quando houver mais itens */
+  scrollbar-width: none;      /* Firefox: esconde a barra de scroll */
+  -ms-overflow-style: none;   /* IE/Edge: esconde a barra de scroll */
+}
+
+/* Chrome/Safari/Edge: esconde a barra de scroll mas mantém a rolagem */
+#listing-recent-news::-webkit-scrollbar {
+  display: none;
+}
+
 /* #listing-recent-news {
   margin-bottom: 1.5rem;
 } */
 </style>
 
 :::{#hero-heading}
-**Desenvolvo tecnologia para o setor industrial | Projeto de Máquinas Elétricas, Geração de Energia & Automação | Professor**
+**<span class="lang-pt">Desenvolvo tecnologia para o setor industrial | Projeto de Máquinas Elétricas, Geração de Energia &amp; Automação | Professor</span><span class="lang-en">I develop technology for the industrial sector | Electrical Machine Design, Power Generation &amp; Automation | Professor</span>**
 
-Belo Horizonte, Minas Gerais, Brasil <img src="files/icons/flag_minas.svg" style="height: 1em; vertical-align: -0.1em; border: 1px solid #999;"> <img src="files/icons/flag_brasil.svg" style="height: 1em; vertical-align: -0.1em; border: 1px solid #999;">
+<span class="lang-pt">Belo Horizonte, Minas Gerais, Brasil</span><span class="lang-en">Belo Horizonte, Minas Gerais, Brazil</span> <img src="files/icons/flag_minas.svg" style="height: 1em; vertical-align: -0.1em; border: 1px solid #999;"> <img src="files/icons/flag_brasil.svg" style="height: 1em; vertical-align: -0.1em; border: 1px solid #999;">
 
-Desenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas, geração de energia e automação. Sou especialista no projeto de geradores e motores customizados, além da instrumentação de processos industriais — criando soluções para operação remota, IIoT e Indústria 4.0.
+<span class="lang-pt">Desenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas, geração de energia e automação. Sou especialista no projeto de geradores e motores customizados, além da instrumentação de processos industriais — criando soluções para operação remota, IIoT e Indústria 4.0.</span><span class="lang-en">I develop technology for the industrial sector, focusing on electrical machines, power generation, and automation. I specialize in designing custom generators and motors, as well as industrial process instrumentation — creating solutions for remote operation, IIoT, and Industry 4.0.</span>
 
-**Professor**, Universidade Federal de Minas Gerais (UFMG)
+<span class="lang-pt">**Professor**</span><span class="lang-en">**Professor**</span>, Universidade Federal de Minas Gerais (UFMG)
 
 <div style="margin-top: 20px; margin-bottom: 40px;">
   <img src="files/icons/dee.jpg" style="height: 45px; margin-right: 15px; vertical-align: middle;" alt="Departamento de Engenharia Elétrica">
@@ -131,14 +144,14 @@ Desenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas,
 
 
 <!-- ## Notícias e Eventos -->
-## Notícias
+## <span class="lang-pt">Notícias</span><span class="lang-en">News</span>
 <!-- Acompanhe as últimas &nbsp;[Notícias](backend/news/index.qmd#category=news)&nbsp;, &nbsp;[Eventos](backend/news/index.qmd#category=event)&nbsp;, e &nbsp;[Mais »](backend/news/index.qmd) -->
 
 ::: {#recent-news}
 
 :::
 
-<p align="right" style="margin-top: -1rem;">[Ver todas »](backend/news/index.qmd)</p>
+<p align="right" style="margin-top: -1rem;"><span class="lang-pt">[Ver todas »](backend/news/index.qmd)</span><span class="lang-en">[See all »](backend/news/index.qmd)</span></p>
 <!-- <p align="right">[Todos as Notícias »](backend/news/index.qmd)</p> -->
 
 :::
@@ -150,8 +163,8 @@ Desenvolvo tecnologia para o setor industrial, com foco em máquinas elétricas,
 
 :::
 
-<p align="right">[Ver Todos »](backend/blog/index.qmd)</p>
+<p align="right"><span class="lang-pt">[Ver Todos »](backend/blog/index.qmd)</span><span class="lang-en">[See all »](backend/blog/index.qmd)</span></p>
 
-### Clientes e Parceiros
+### <span class="lang-pt">Clientes e Parceiros</span><span class="lang-en">Clients &amp; Partners</span>
 
 {{< include /files/includes/_partners.qmd >}}

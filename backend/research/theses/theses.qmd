@@ -1,5 +1,5 @@
 ---
-title: "Teses e Dissertações"
+title: "<span class='lang-pt'>Teses e Dissertações</span><span class='lang-en'>Theses &amp; Dissertations</span>"
 description-meta: "Banco de teses e dissertações orientadas"
 title-block-banner: false
 listing:
@@ -24,13 +24,13 @@ css: ../papers/pub-listing.css
 filters: [remove-stray-divfence.lua]
 ---
 
-## Teses de Doutorado
+## <span class="lang-pt">Teses de Doutorado</span><span class="lang-en">Doctoral Theses</span>
 
 ::: {#doutorado}
 
 :::
 
-## Dissertações de Mestrado
+## <span class="lang-pt">Dissertações de Mestrado</span><span class="lang-en">Master&apos;s Theses</span>
 
 ::: {#mestrado}
 

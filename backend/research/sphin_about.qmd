@@ -7,51 +7,68 @@ title: "SPHIN"
 ![](../../files/icons/sphin_full.png){fig-alt="SPHIN Lab" fig-align="center" width="35%"}
 
 ::: {style="text-align: center;"}
-> O **SPHIN** existe para expandir o estado da arte na engenharia de acionamentos. Nascido na excelência da Universidade Federal de Minas Gerais (UFMG), nós transformamos pesquisa fundamental sobre forças eletromagnéticas e algoritmos em tempo real em soluções *Deep Tech*, conectando a ciência acadêmica às demandas reais da indústria B2B de alta performance.
+> <span class="lang-pt">O **SPHIN** existe para expandir o estado da arte na engenharia de acionamentos. Nascido na excelência da Universidade Federal de Minas Gerais (UFMG), nós transformamos pesquisa fundamental sobre forças eletromagnéticas e algoritmos em tempo real em soluções *Deep Tech*, conectando a ciência acadêmica às demandas reais da indústria B2B de alta performance.</span><span class="lang-en">**SPHIN** exists to expand the state of the art in drive engineering. Born from the excellence of the Federal University of Minas Gerais (UFMG), we transform fundamental research on electromagnetic forces and real-time algorithms into *Deep Tech* solutions, connecting academic science to the real demands of high-performance B2B industry.</span>
 :::
 
 ---
 
-## Missão e Visão
+## <span class="lang-pt">Missão e Visão</span><span class="lang-en">Mission &amp; Vision</span>
 
-### Missão
-**Projetar, controlar e conectar sistemas rotativos de vanguarda.**  
-Atuamos como um núcleo de excelência em Pesquisa, Desenvolvimento e Inovação (P&D+I). Desenvolvemos ecossistemas *full-stack* — do design eletromagnético de máquinas elétricas extremas (ex: rotores acima de 100.000 rpm) e eletrônica de potência até a infraestrutura IoT para telemetria. Simultaneamente, formamos pesquisadores e engenheiros de alto nível técnico, capazes de liderar a transição tecnológica e a inovação industrial.
+### <span class="lang-pt">Missão</span><span class="lang-en">Mission</span>
 
-### Visão
-**Ser o epicentro acadêmico-industrial do Brasil em mecatrônica extrema, perfeitamente integrado aos maiores polos globais.**  
-Consolidar o SPHIN como um parceiro estratégico intercontinental em hardware industrial e controle vetorial. Nosso objetivo é estabelecer pontes de pesquisa e desenvolvimento de tecnologias de propulsão com ecossistemas de inovação na América do Norte, Ásia e Europa, gerando *spin-offs*, patentes e transferência de tecnologia.
+<span class="lang-pt">**Projetar, controlar e conectar sistemas rotativos de vanguarda.**
+Atuamos como um núcleo de excelência em Pesquisa, Desenvolvimento e Inovação (P&amp;D+I). Desenvolvemos ecossistemas *full-stack* — do design eletromagnético de máquinas elétricas extremas (ex: rotores acima de 100.000 rpm) e eletrônica de potência até a infraestrutura IoT para telemetria. Simultaneamente, formamos pesquisadores e engenheiros de alto nível técnico, capazes de liderar a transição tecnológica e a inovação industrial.</span><span class="lang-en">**Design, control, and connect cutting-edge rotating systems.**
+We operate as a center of excellence in Research, Development, and Innovation (R&amp;D+I). We develop *full-stack* ecosystems — from the electromagnetic design of extreme electric machines (e.g., rotors above 100,000 rpm) and power electronics to IoT infrastructure for telemetry. Simultaneously, we train high-level researchers and engineers capable of leading the technological transition and industrial innovation.</span>
 
----
+### <span class="lang-pt">Visão</span><span class="lang-en">Vision</span>
 
-## Nossos Valores e Pilares Técnicos
-
-### 1. Rigor Científico e Validação Multifísica
-Na academia, o limite não é um palpite. Apoiamos nossa engenharia em análises profundas, método científico e simulações por elementos finitos (FEM). Do estresse centrífugo à temperatura no entreferro, tudo é matematicamente modelado em malhas rigorosas e validado antes da usinagem.
-
-### 2. Transferência de Tecnologia (B2B)
-Não fazemos ciência apenas para publicações. O conhecimento gerado no laboratório tem vocação aplicada. Focamos na entrega de valor real, prestando consultoria especializada de alto nível e desenvolvendo soluções tecnológicas que destravam gargalos da engenharia pesada.
-
-### 3. Ecossistemas Abertos e Soberania Digital
-A inovação em *Deep Tech* ganha escala através da colaboração. Priorizamos ecossistemas independentes, protocolos transparentes e infraestruturas *open-source* (Linux/Wayland) em toda nossa cadeia. Evitamos caixas-pretas proprietárias, garantindo o controle total sobre a tecnologia desenvolvida — do CAD à nuvem.
-
-### 4. Arquitetura *Full-Stack* em Tempo Real
-Acreditamos que o projeto mecânico e o código operam como um só organismo. Formamos talentos com domínio de ponta a ponta: a robustez das ligas de neodímio, a precisão do chaveamento PWM no inversor e a confiabilidade dos *gateways* de comunicação remota.
+<span class="lang-pt">**Ser o epicentro acadêmico-industrial do Brasil em mecatrônica extrema, perfeitamente integrado aos maiores polos globais.**
+Consolidar o SPHIN como um parceiro estratégico intercontinental em hardware industrial e controle vetorial. Nosso objetivo é estabelecer pontes de pesquisa e desenvolvimento de tecnologias de propulsão com ecossistemas de inovação na América do Norte, Ásia e Europa, gerando *spin-offs*, patentes e transferência de tecnologia.</span><span class="lang-en">**To be Brazil's academic-industrial epicenter in extreme mechatronics, seamlessly integrated with the world's leading global hubs.**
+To consolidate SPHIN as an intercontinental strategic partner in industrial hardware and vector control. Our goal is to establish research and development bridges for propulsion technologies with innovation ecosystems in North America, Asia, and Europe, generating *spin-offs*, patents, and technology transfer.</span>
 
 ---
 
-## Stack Tecnológico e Áreas de Domínio
+## <span class="lang-pt">Nossos Valores e Pilares Técnicos</span><span class="lang-en">Our Values &amp; Technical Pillars</span>
 
-O ecossistema de P&D do SPHIN é sustentado por ferramentas e linguagens modernas, projetadas para estabilidade e alto desempenho:
+### 1. <span class="lang-pt">Rigor Científico e Validação Multifísica</span><span class="lang-en">Scientific Rigor &amp; Multiphysics Validation</span>
 
-*   **Modelagem e Eletromagnetismo:** Simulações multifísicas e análise de elementos finitos (*ElmerFEM*, *FEMM*, *Ansys Maxwell*, *COMSOL*).
-*   **Controle e Eletrônica de Potência:** Desenvolvimento de eletrônicas, algoritmos em tempo real e controle vetorial (FOC).
-*   **Software e Sistemas Embarcados:** Arquiteturas assíncronas e alta performance utilizando **C/C++**, **Rust**, **Golang**, **Julia**, **Python**, **Node.js** e **MATLAB**.
-*   **Conectividade Industrial:** Redes de telemetria, painéis SCADA, *edge computing* e automação contínua (*IoT Industrial*).
+<span class="lang-pt">Na academia, o limite não é um palpite. Apoiamos nossa engenharia em análises profundas, método científico e simulações por elementos finitos (FEM). Do estresse centrífugo à temperatura no entreferro, tudo é matematicamente modelado em malhas rigorosas e validado antes da usinagem.</span><span class="lang-en">In academia, the limit is not a guess. We ground our engineering in deep analysis, the scientific method, and finite element simulations (FEM). From centrifugal stress to air-gap temperature, everything is mathematically modeled on rigorous meshes and validated before machining.</span>
+
+### 2. <span class="lang-pt">Transferência de Tecnologia (B2B)</span><span class="lang-en">Technology Transfer (B2B)</span>
+
+<span class="lang-pt">Não fazemos ciência apenas para publicações. O conhecimento gerado no laboratório tem vocação aplicada. Focamos na entrega de valor real, prestando consultoria especializada de alto nível e desenvolvendo soluções tecnológicas que destravam gargalos da engenharia pesada.</span><span class="lang-en">We don't do science just for publications. The knowledge generated in the lab has an applied vocation. We focus on delivering real value, providing high-level specialized consulting and developing technological solutions that unlock bottlenecks in heavy engineering.</span>
+
+### 3. <span class="lang-pt">Ecossistemas Abertos e Soberania Digital</span><span class="lang-en">Open Ecosystems &amp; Digital Sovereignty</span>
+
+<span class="lang-pt">A inovação em *Deep Tech* ganha escala através da colaboração. Priorizamos ecossistemas independentes, protocolos transparentes e infraestruturas *open-source* (Linux/Wayland) em toda nossa cadeia. Evitamos caixas-pretas proprietárias, garantindo o controle total sobre a tecnologia desenvolvida — do CAD à nuvem.</span><span class="lang-en">Innovation in *Deep Tech* scales through collaboration. We prioritize independent ecosystems, transparent protocols, and *open-source* infrastructures (Linux/Wayland) throughout our entire chain. We avoid proprietary black boxes, ensuring total control over the technology developed — from CAD to the cloud.</span>
+
+### 4. <span class="lang-pt">Arquitetura *Full-Stack* em Tempo Real</span><span class="lang-en">Real-Time *Full-Stack* Architecture</span>
+
+<span class="lang-pt">Acreditamos que o projeto mecânico e o código operam como um só organismo. Formamos talentos com domínio de ponta a ponta: a robustez das ligas de neodímio, a precisão do chaveamento PWM no inversor e a confiabilidade dos *gateways* de comunicação remota.</span><span class="lang-en">We believe that mechanical design and code operate as a single organism. We develop talent with end-to-end mastery: the robustness of neodymium alloys, the precision of PWM switching in the inverter, and the reliability of remote communication *gateways*.</span>
+
+---
+
+## <span class="lang-pt">Stack Tecnológico e Áreas de Domínio</span><span class="lang-en">Technology Stack &amp; Areas of Expertise</span>
+
+<span class="lang-pt">O ecossistema de P&amp;D do SPHIN é sustentado por ferramentas e linguagens modernas, projetadas para estabilidade e alto desempenho:</span><span class="lang-en">The SPHIN R&amp;D ecosystem is supported by modern tools and languages, designed for stability and high performance:</span>
+
+<ul class="lang-pt">
+  <li><strong>Modelagem e Eletromagnetismo:</strong> Simulações multifísicas e análise de elementos finitos (<em>ElmerFEM</em>, <em>FEMM</em>, <em>Ansys Maxwell</em>, <em>COMSOL</em>).</li>
+  <li><strong>Controle e Eletrônica de Potência:</strong> Desenvolvimento de eletrônicas, algoritmos em tempo real e controle vetorial (FOC).</li>
+  <li><strong>Software e Sistemas Embarcados:</strong> Arquiteturas assíncronas e alta performance utilizando <strong>C/C++</strong>, <strong>Rust</strong>, <strong>Golang</strong>, <strong>Julia</strong>, <strong>Python</strong>, <strong>Node.js</strong> e <strong>MATLAB</strong>.</li>
+  <li><strong>Conectividade Industrial:</strong> Redes de telemetria, painéis SCADA, <em>edge computing</em> e automação contínua (<em>IoT Industrial</em>).</li>
+</ul>
+<ul class="lang-en">
+  <li><strong>Modeling &amp; Electromagnetics:</strong> Multiphysics simulations and finite element analysis (<em>ElmerFEM</em>, <em>FEMM</em>, <em>Ansys Maxwell</em>, <em>COMSOL</em>).</li>
+  <li><strong>Control &amp; Power Electronics:</strong> Electronics development, real-time algorithms, and vector control (FOC).</li>
+  <li><strong>Software &amp; Embedded Systems:</strong> Asynchronous and high-performance architectures using <strong>C/C++</strong>, <strong>Rust</strong>, <strong>Golang</strong>, <strong>Julia</strong>, <strong>Python</strong>, <strong>Node.js</strong>, and <strong>MATLAB</strong>.</li>
+  <li><strong>Industrial Connectivity:</strong> Telemetry networks, SCADA dashboards, <em>edge computing</em>, and continuous automation (<em>Industrial IoT</em>).</li>
+</ul>
 
 ---
 
 ::: {.callout-note}
-### Parcerias e Inovação Aberta
-O SPHIN está continuamente prospectando novos desafios tecnológicos. Empresas e pesquisadores interessados em colaborações, projetos de P&D ou consultoria avançada em máquinas elétricas podem entrar em contato através do Departamento de Engenharia Elétrica da UFMG.
+### <span class="lang-pt">Parcerias e Inovação Aberta</span><span class="lang-en">Partnerships &amp; Open Innovation</span>
+
+<span class="lang-pt">O SPHIN está continuamente prospectando novos desafios tecnológicos. Empresas e pesquisadores interessados em colaborações, projetos de P&amp;D ou consultoria avançada em máquinas elétricas podem entrar em contato através do Departamento de Engenharia Elétrica da UFMG.</span><span class="lang-en">SPHIN is continuously prospecting for new technological challenges. Companies and researchers interested in collaborations, R&amp;D projects, or advanced consulting in electrical machines can get in touch through the Department of Electrical Engineering at UFMG.</span>
 :::

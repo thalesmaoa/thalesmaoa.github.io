@@ -1,0 +1,40 @@
+<script>
+(function() {
+  const LANG_KEY = 'site-lang';
+
+  // Restaura preferência salva
+  if (localStorage.getItem(LANG_KEY) === 'en') {
+    document.documentElement.classList.add('lang-en');
+  }
+
+  function insertToggle() {
+    // Encontra o <ul> direito da navbar do Quarto
+    const rightNav = document.querySelector('.navbar-nav.ms-auto');
+    if (!rightNav) return;
+
+    const li = document.createElement('li');
+    li.className = 'nav-item';
+
+    const a = document.createElement('a');
+    a.className = 'nav-link nav-lang-toggle';
+    a.href = '#';
+    a.setAttribute('aria-label', 'Switch language');
+    a.innerHTML = '<span class="lang-pt">PT</span><span class="lang-en">EN</span>';
+
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var isEn = document.documentElement.classList.toggle('lang-en');
+      localStorage.setItem(LANG_KEY, isEn ? 'en' : 'pt');
+    });
+
+    li.appendChild(a);
+    rightNav.appendChild(li);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', insertToggle);
+  } else {
+    insertToggle();
+  }
+})();
+</script>

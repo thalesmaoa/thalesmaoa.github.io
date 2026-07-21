@@ -6,3 +6,4 @@
 docs/
 .quarto/
 _site/
+.cache/

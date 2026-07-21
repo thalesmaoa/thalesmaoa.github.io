@@ -23,20 +23,20 @@ website:
     left:   # You can comment out all navigation items here if you just like to keep the index page only
 #      - text: Home
 #        href: index.qmd
-      - text: Pesquisa
+      - text: "<span class='lang-pt'>Pesquisa</span><span class='lang-en'>Research</span>"
         menu:
-          - text: Lista de publicações  # Automatically generated from publications.xlsx
+          - text: "<span class='lang-pt'>Lista de publicações</span><span class='lang-en'>Publication List</span>"  # Automatically generated from publications.xlsx
             href: backend/research/papers/pub-listing.qmd
-          - text: Teses e Dissertações
+          - text: "<span class='lang-pt'>Teses e Dissertações</span><span class='lang-en'>Theses &amp; Dissertations</span>"
             href: backend/research/theses/theses.qmd
           - text: SPHIN
             href: backend/research/sphin_about.qmd
-          
-      - text: "Portfólio"
+
+      - text: "<span class='lang-pt'>Portfólio</span><span class='lang-en'>Portfolio</span>"
         menu:
-          - text: Projetos de P&D
+          - text: "<span class='lang-pt'>Projetos de P&amp;D</span><span class='lang-en'>R&amp;D Projects</span>"
             href: backend/portfolio/pd/index.qmd
-          - text: Indústria
+          - text: "<span class='lang-pt'>Indústria</span><span class='lang-en'>Industry</span>"
             href: backend/portfolio/industria/index.qmd
           # - text: Projects
           #   href: backend/research/projects.qmd     
@@ -45,17 +45,17 @@ website:
           # - text: Grants
           #   href: projects.qmd 
 
-      - text: "Ensino"
+      - text: "<span class='lang-pt'>Ensino</span><span class='lang-en'>Teaching</span>"
         menu:
-          - text: Graduação
+          - text: "<span class='lang-pt'>Graduação</span><span class='lang-en'>Undergraduate</span>"
             href: backend/teaching/graduacao/index.qmd
-          - text: Pós-Graduação
+          - text: "<span class='lang-pt'>Pós-Graduação</span><span class='lang-en'>Graduate</span>"
             href: backend/teaching/pos-graduacao/index.qmd
-      - text: "Blog"
+      - text: Blog
         href: backend/blog/index.qmd
-      - text: "Notícias"
+      - text: "<span class='lang-pt'>Notícias</span><span class='lang-en'>News</span>"
         href: backend/news/index.qmd
-      - text: "Sobre"
+      - text: "<span class='lang-pt'>Sobre</span><span class='lang-en'>About</span>"
         href: about.qmd
       # - text: About
       #   menu:
@@ -85,9 +85,7 @@ website:
       - icon: rss
         href: backend/news/index.xml
         target: _blank
-      - icon: globe
-        href: index.en.qmd
-        text: "EN"
+      # Language toggle inserido dinamicamente via files/includes/_lang-toggle.html
   
   page-navigation: true
   
@@ -150,3 +148,4 @@ format:
     email-obfuscation: javascript
     link-external-filter: '^(?:http:|https:)\/\/drganghe\.github\.io\/custom'
     include-in-header: "files/includes/_academic.qmd"
+    include-after-body: "files/includes/_lang-toggle.html"
