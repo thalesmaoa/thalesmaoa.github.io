@@ -1,0 +1,15 @@
+---
+title: "ELE619 — Eletrotécnica Geral"
+description: "Circuitos elétricos, sistemas trifásicos e princípios de máquinas elétricas."
+date: 2020-02-01
+categories: [Anterior, Eletrotécnica]
+draft: true
+---
+
+## Ementa
+
+Circuitos de corrente contínua e alternada. Fasores e potência em regime senoidal. Sistemas trifásicos equilibrados e desequilibrados. Correção de fator de potência. Fundamentos de transformadores e máquinas elétricas.
+
+::: {.callout-note}
+Material didático em construção. Em breve disponibilizarei slides e listas de exercícios.
+:::

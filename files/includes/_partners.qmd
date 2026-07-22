@@ -63,6 +63,11 @@
     <div class="logo-box"><img src="files/images/partners/biagio-turbos-seeklogo.png" alt="RIMA Industrial"></div>
  <div class="logo-box"><img src="files/images/partners/aethra-group-automotive-systems-seeklogo.png" alt="Aethra Group"></div>
   <div class="logo-box"><img src="files/images/partners/Halliburton_logo.svg" alt="Halliburton"></div>
+<div class="logo-box"><img src="files/images/partners/Fahren_vetorizado.svg" alt="Fahren"></div>
+<div class="logo-box"><img src="files/images/partners/STA_logomarca_SET11.svg" alt="STA"></div>
+<div class="logo-box"><img src="files/images/partners/CTM_logomarca_SET11.svg" alt="CTM"></div>
+
+  
 
  <div class="logo-box"><img src="files/images/partners/olivapss.png" alt="OlivaPSS"></div>
     <div class="logo-box"><img src="files/images/partners/Stellantis.svg" alt="Stellantis"></div>
@@ -78,6 +83,9 @@
     <div class="logo-box"><img src="files/images/partners/biagio-turbos-seeklogo.png" alt="RIMA Industrial"></div>
  <div class="logo-box"><img src="files/images/partners/aethra-group-automotive-systems-seeklogo.png" alt="Aethra Group"></div>
  <div class="logo-box"><img src="files/images/partners/Halliburton_logo.svg" alt="Halliburton"></div>
+<div class="logo-box"><img src="files/images/partners/Fahren_vetorizado.svg" alt="Fahren"></div>
+<div class="logo-box"><img src="files/images/partners/STA_logomarca_SET11.svg" alt="STA"></div>
+<div class="logo-box"><img src="files/images/partners/CTM_logomarca_SET11.svg" alt="CTM"></div>
  
  </div>
 </div>

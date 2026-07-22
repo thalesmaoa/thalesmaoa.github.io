@@ -63,70 +63,36 @@ listing:   # Recent news and events
       
 
   - id: recent-blog
-    contents: 
+    contents:
       - backend/blog
     exclude:
-      title: ""
+      title: "Blog"
     type: grid
     max-items: 3
     page-size: 3
     fields: [image, date, title, subtitle]
     max-description-length: 75
-    sort: 
+    sort:
+      - "date desc"
+      - "title asc"
+
+  - id: recent-portfolio
+    contents:
+      - backend/portfolio/pd
+      - backend/portfolio/industria
+    exclude:
+      title:
+        - "Projetos de P&D"
+        - "Indústria"
+    type: grid
+    max-items: 9
+    page-size: 9
+    fields: [image, title, description]
+    max-description-length: 75
+    sort:
       - "date desc"
       - "title asc"
 ---
-
-<style>
-#listing-recent-news table thead {
-  display: none;
-}
-
-/* Remove bordas verticais e da tabela em si, mas mantém linha horizontal entre as linhas */
-#listing-recent-news table {
-  border: none !important;
-}
-#listing-recent-news table th,
-#listing-recent-news table td {
-  border: none !important;
-  border-bottom: 1px solid #e0e0e0 !important;
-  vertical-align: middle !important;
-}
-#listing-recent-news table tr:last-child td {
-  border-bottom: none !important;
-}
-
-/* Imagens um pouco menores, pra reduzir a altura da linha */
-#listing-recent-news table img {
-  width: 45px !important;
-  height: 45px !important;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-/* Espaçamento vertical mais enxuto */
-#listing-recent-news table td {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-/* Container scrollável para as notícias — mantém a altura de ~3 itens e permite rolar as demais */
-#listing-recent-news {
-  max-height: 210px;          /* altura aproximada de 3 linhas */
-  overflow-y: auto;           /* scroll vertical quando houver mais itens */
-  scrollbar-width: none;      /* Firefox: esconde a barra de scroll */
-  -ms-overflow-style: none;   /* IE/Edge: esconde a barra de scroll */
-}
-
-/* Chrome/Safari/Edge: esconde a barra de scroll mas mantém a rolagem */
-#listing-recent-news::-webkit-scrollbar {
-  display: none;
-}
-
-/* #listing-recent-news {
-  margin-bottom: 1.5rem;
-} */
-</style>
 
 :::{#hero-heading}
 **<span class="lang-pt">Desenvolvo tecnologia para o setor industrial | Projeto de Máquinas Elétricas, Geração de Energia &amp; Automação | Professor</span><span class="lang-en">I develop technology for the industrial sector | Electrical Machine Design, Power Generation &amp; Automation | Professor</span>**
@@ -165,6 +131,16 @@ listing:   # Recent news and events
 
 <p align="right"><span class="lang-pt">[Ver Todos »](backend/blog/index.qmd)</span><span class="lang-en">[See all »](backend/blog/index.qmd)</span></p>
 
+## <span class="lang-pt">Portfólio</span><span class="lang-en">Portfolio</span>
+
+::: {#recent-portfolio}
+
+:::
+
+<p align="right"><span class="lang-pt">[Ver Todos »](backend/portfolio/pd/index.qmd)</span><span class="lang-en">[See all »](backend/portfolio/pd/index.qmd)</span></p>
+
 ### <span class="lang-pt">Clientes e Parceiros</span><span class="lang-en">Clients &amp; Partners</span>
 
 {{< include /files/includes/_partners.qmd >}}
+
+<script src="/files/scripts/portfolio-carousel.js"></script>

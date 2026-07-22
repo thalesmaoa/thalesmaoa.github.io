@@ -13,3 +13,24 @@ listing:
   filter-ui: true
   categories: true
 ---
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.quarto-listing-category').forEach(function(container) {
+    var cats = Array.from(container.querySelectorAll('.category'));
+    if (!cats.length) return;
+    cats.sort(function(a, b) {
+      var ta = a.textContent.trim(), tb = b.textContent.trim();
+      var aIsAll = ta.startsWith('Tudo') || ta.startsWith('All'), bIsAll = tb.startsWith('Tudo') || tb.startsWith('All');
+      if (aIsAll) return -1; if (bIsAll) return 1;
+      var aIsAtual = ta.startsWith('Atual'), bIsAtual = tb.startsWith('Atual');
+      if (aIsAtual && !bIsAll) return -1; if (bIsAtual && !aIsAll) return 1;
+      var aIsAnterior = ta.startsWith('Anterior'), bIsAnterior = tb.startsWith('Anterior');
+      if (aIsAnterior && !bIsAll && !bIsAtual) return -1;
+      if (bIsAnterior && !aIsAll && !bIsAtual) return 1;
+      return ta.localeCompare(tb);
+    });
+    cats.forEach(function(c) { container.appendChild(c); });
+  });
+});
+</script>

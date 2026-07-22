@@ -7,6 +7,7 @@ project:
     - python xlsx_to_yml.py  # Automatically generate publications.yml from publications.xlsx
     
 # Meta
+lang: pt
 description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
 author-meta: "Dr. Thales A. C. Maia"
 
@@ -138,12 +139,13 @@ bibliography: references.bib  # Add references.bib to the root folder to enable 
 format:
   html:
     theme: flatly
+    highlight-style: github
+    code-line-numbers: true
+    code-copy: true
     css: styles.css
     toc: true
     footnotes-hover: true
-    code-copy: true
-    code-link: true
-    code-overflow: wrap
+    code-overflow: scroll
     fig-align: center
     link-external-icon: false
     link-external-newwindow: true

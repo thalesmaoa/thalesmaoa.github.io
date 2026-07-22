@@ -1,0 +1,31 @@
+---
+title: "Registro de Software no INPI — Projeto SIMOI"
+description: "Software para monitoramento e previsão de falha de isolamento em motores de indução trifásicos recebe certificado de registro no INPI."
+author: "Thales Maia"
+date: "2026-07-14"
+categories: [Notícias, INPI]
+image: "images/INPI_Brasil.svg"
+draft: false
+---
+
+<figure style="text-align: center;">
+
+![](images/certificado.png)
+
+<figcaption>
+
+<span class="lang-pt">Fig. 1 — Certificado de Registro de Programa de Computador — INPI.</span><span class="lang-en">Fig. 1 — Computer Program Registration Certificate — INPI.</span>
+
+</figcaption>
+
+</figure>
+
+<span class="lang-pt">É com satisfação que anuncio o registro de software junto ao **INPI** (Instituto Nacional da Propriedade Industrial) no âmbito do **Projeto SIMOI**, em parceria com a **Petrobras**.</span><span class="lang-en">I am pleased to announce the software registration with **INPI** (Brazilian National Institute of Industrial Property) under the **SIMOI Project**, in partnership with **Petrobras**.</span>
+
+<span class="lang-pt">O software, intitulado **"Software para Monitoramento e Previsão da Degradação de Falha de Isolamento em Motores de Indução Trifásicos Equipados com Sensor de Corrente de Alta Sensibilidade"**, recebeu o certificado de registro sob o processo **BR512026005291-2**, expedido em 14 de julho de 2026.</span><span class="lang-en">The software, titled **"Software for Monitoring and Predicting Insulation Failure Degradation in Three-Phase Induction Motors Equipped with High-Sensitivity Current Sensor"**, received the registration certificate under process **BR512026005291-2**, issued on July 14, 2026.</span>
+
+<span class="lang-pt">Este trabalho contou com a excelente coordenação do [Prof. Sidelmo Magalhães Silva](https://somos.ufmg.br/professor/sidelmo-magalhaes-silva) e com uma equipe multidisciplinar de pesquisadores da UFMG e da Petrobras, unindo esforços em prol da inovação na área de monitoramento de máquinas elétricas.</span><span class="lang-en">This work was carried out under the excellent coordination of [Prof. Sidelmo Magalhães Silva](https://somos.ufmg.br/professor/sidelmo-magalhaes-silva) and with a multidisciplinary team of researchers from UFMG and Petrobras, joining efforts to drive innovation in the field of electrical machine monitoring.</span>
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

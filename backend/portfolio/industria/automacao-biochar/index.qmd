@@ -1,0 +1,50 @@
+---
+title: "Automação Full-Stack e IoT para Produção de Biochar"
+description: "Projeto e implementação integral da arquitetura de fábrica, desde o Centro de Controle de Motores (CCM) até hardwares de comunicação redundante e integração em nuvem."
+date: "2026-03-15" # Ajuste para a data de conclusão ou marco do projeto
+categories: [IoT Industrial, Automação, Infraestrutura Elétrica, P&D]
+image: "images/paineis.jpg"
+draft: false
+---
+
+<span class="lang-pt">**Empresa:** NetZero
+**Escopo:** Liderança Tecnológica / Engenharia Full-Stack e IoT Industrial</span><span class="lang-en">**Company:** NetZero
+**Scope:** Technology Leadership / Full-Stack Engineering and Industrial IoT</span>
+
+![<span class="lang-pt">Imagem ilustrativa de uma produção de biochar.</span><span class="lang-en">Illustrative image of a biochar production facility.</span>](images/biochar01.png){width=60%}
+
+## <span class="lang-pt">O Desafio</span><span class="lang-en">The Challenge</span>
+
+<span class="lang-pt">A produção de Biochar em escala industrial exige um controle rigoroso de processos termoquímicos e movimentação de materiais. O grande desafio tecnológico nesse cenário é garantir que os dados fluam com confiabilidade absoluta desde os sensores no ambiente agressivo do chão de fábrica até os servidores em nuvem, sem latência e sem perda de pacotes, garantindo a rastreabilidade essencial para o mercado de créditos de carbono.</span><span class="lang-en">Industrial-scale Biochar production demands rigorous control of thermochemical processes and material handling. The major technological challenge in this scenario is ensuring that data flows with absolute reliability — from sensors in the harsh factory-floor environment to cloud servers — without latency or packet loss, guaranteeing the traceability essential for the carbon credit market.</span>
+
+<span class="lang-pt">Atuando como Líder Tecnológico na **NetZero**, o meu objetivo foi projetar e implementar, em tempo recorde, toda a espinha dorsal de automação, elétrica e de dados da fábrica, fugindo das limitações e dos altos custos de licenciamento de sistemas de prateleira engessados.</span><span class="lang-en">Serving as Technology Leader at **NetZero**, my goal was to design and implement, in record time, the entire automation, electrical, and data backbone of the factory, moving beyond the limitations and high licensing costs of rigid off-the-shelf systems.</span>
+
+## <span class="lang-pt">Engenharia Híbrida: Do Metal à Nuvem</span><span class="lang-en">Hybrid Engineering: From Metal to Cloud</span>
+
+<span class="lang-pt">Este projeto é a materialização da engenharia *full-stack* aplicada à indústria pesada. A arquitetura foi concebida para ser resiliente, escalável e de domínio proprietário. Minha atuação cobriu todas as camadas do ecossistema tecnológico da planta:</span><span class="lang-en">This project is the embodiment of full-stack engineering applied to heavy industry. The architecture was designed to be resilient, scalable, and proprietary. My contributions spanned every layer of the plant's technological ecosystem:</span>
+
+![<span class="lang-pt">Hardwares fabricados para atender a demanda da planta.</span><span class="lang-en">Hardware manufactured to meet the plant's requirements.</span>](images/eletronica.png){width=85%}
+
+* <span class="lang-pt">**Infraestrutura Elétrica e Potência:** Fui responsável pelo projeto e implementação de toda a rede elétrica de baixa tensão e pela estruturação do Centro de Controle de Motores (CCM), garantindo o acionamento seguro e eficiente do maquinário pesado.</span><span class="lang-en">**Electrical and Power Infrastructure:** I was responsible for the design and implementation of the entire low-voltage electrical network and the structuring of the Motor Control Center (MCC), ensuring safe and efficient operation of heavy machinery.</span>
+* <span class="lang-pt">**Hardwares Proprietários e Comunicação Redundante:** Para garantir a robustez na aquisição de dados, desenvolvi módulos de I/O (Entradas e Saídas) customizados. Implementei uma malha de comunicação redundante operando simultaneamente via cabeamento físico robusto (CAN bus) e rede sem fio (Wi-Fi). Caso uma das vias sofra interferência ou rompimento, o sistema mantém a telemetria intacta.</span><span class="lang-en">**Proprietary Hardware and Redundant Communication:** To ensure robustness in data acquisition, I developed custom I/O (Input/Output) modules. I implemented a redundant communication mesh operating simultaneously via robust physical wiring (CAN bus) and wireless network (Wi-Fi). Should one path suffer interference or breakage, the system keeps telemetry intact.</span>
+* <span class="lang-pt">**Sistemas Embarcados e Edge Computing:** Desenvolvimento de *firmwares* otimizados para microcontroladores de borda, responsáveis por ler os sensores do processo de pirólise/gaseificação, empacotar os dados e gerenciar os monitores de *heartbeat* dos equipamentos em tempo real.</span><span class="lang-en">**Embedded Systems and Edge Computing:** Development of optimized firmware for edge microcontrollers, responsible for reading pyrolysis/gasification process sensors, packaging data, and managing real-time equipment heartbeat monitors.</span>
+* <span class="lang-pt">**Integração de Dados e Nuvem (IoT):** Na camada de software, orquestrei sistemas de mensageria e consumo de dados em tempo real utilizando instâncias virtuais (VPS). Desenvolvi a arquitetura de *backend* para receber essas variáveis, permitindo a criação de *dashboards* no estilo SCADA para a supervisão remota e simultânea de múltiplas plantas operacionais.</span><span class="lang-en">**Data Integration and Cloud (IoT):** At the software layer, I orchestrated messaging systems and real-time data consumption using virtual private servers (VPS). I developed the backend architecture to ingest these variables, enabling SCADA-style dashboards for remote and simultaneous supervision of multiple operational plants.</span>
+
+![<span class="lang-pt">Interface dos dashboards de monitoramento.</span><span class="lang-en">Monitoring dashboard interface.</span>](images/dashboard.png)
+
+## <span class="lang-pt">Impacto</span><span class="lang-en">Impact</span>
+
+<span class="lang-pt">A entrega desta arquitetura completa rompeu a dependência de fornecedores de automação tradicionais. O sistema construído garantiu não apenas a operacionalidade imediata e segura da planta de Biochar, mas estabeleceu uma infraestrutura de dados madura. O resultado é uma fábrica inteligente, onde todas as variáveis de processo — desde a temperatura dos fornos até a vibração dos motores — estão centralizadas e visíveis em tempo real na nuvem, permitindo decisões rápidas e auditorias precisas.</span><span class="lang-en">The delivery of this complete architecture broke the dependency on traditional automation vendors. The built system not only ensured the immediate and safe operation of the Biochar plant but also established a mature data infrastructure. The result is a smart factory where every process variable — from furnace temperatures to motor vibrations — is centralized and visible in real time in the cloud, enabling rapid decisions and precise audits.</span>
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 100px;">
+
+<!-- ![](/files/icons/logo_UFMG.jpg){height=60px} -->
+
+![](/files/images/partners/NetZero.svg){height=60px}
+
+</div>
+
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

@@ -3,7 +3,7 @@ title: "Bem-vindo ao meu novo site!"
 description: "O site foi construído com Quarto e está no ar."
 author: "Thales Maia"
 date: "2026-07-19"
-categories: [News]
+categories: [Notícias]
 image: "quarto-dark-bg.jpeg"
 draft: false
 ---
@@ -23,5 +23,8 @@ Todo o código-fonte e as modificações que realizei estão disponíveis public
 </div>
 
 Espero que goste do conteúdo!
+
+
+<!--Include social share buttons-->
 
 {{< include /files/includes/_socialshare.qmd >}}

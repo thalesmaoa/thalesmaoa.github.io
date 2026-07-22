@@ -3,7 +3,7 @@ title: "Defesa de Mestrado — William Andrade"
 description: "William Andrade defende dissertação no PPGEE-UFMG"
 author: "Thales Maia"
 date: "2026-07-20"
-categories: [News, Defesa]
+categories: [Notícias, Defesa]
 image: "ufmg_m.png"
 draft: false
 ---
@@ -17,5 +17,7 @@ draft: false
 - **Orientador:** Thales Alexandre Carvalho Maia
 
 [Acompanhe os detalhes no site do PPGEE](https://www.ppgee.ufmg.br/defesas_marcadas.php)
+
+<!--Include social share buttons-->
 
 {{< include /files/includes/_socialshare.qmd >}}

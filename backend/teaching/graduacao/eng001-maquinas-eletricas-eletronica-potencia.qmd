@@ -1,0 +1,15 @@
+---
+title: "ENG001 — Máquinas Elétricas e Eletrônica de Potência"
+description: "Máquinas elétricas de indução, síncronas e de corrente contínua, com fundamentos de eletrônica de potência."
+date: 2019-08-01
+categories: [Anterior, Máquinas Elétricas, Eletrônica de Potência]
+draft: true
+---
+
+## Ementa
+
+Conversão eletromecânica de energia. Motores de indução, máquinas síncronas e máquinas de corrente contínua. Dispositivos semicondutores de potência. Conversores CA-CC, CC-CC e inversores. Aplicações em acionamentos industriais.
+
+::: {.callout-note}
+Material didático em construção. Em breve disponibilizarei slides e listas de exercícios.
+:::

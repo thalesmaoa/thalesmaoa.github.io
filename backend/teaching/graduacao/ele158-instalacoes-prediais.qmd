@@ -1,0 +1,15 @@
+---
+title: "ELE158 — Instalações Prediais Elétricas e de Comunicação"
+description: "Projeto de instalações elétricas prediais, cabeamento estruturado e sistemas de comunicação."
+date: 2020-08-01
+categories: [Anterior, Instalações Elétricas]
+draft: true
+---
+
+## Ementa
+
+Dimensionamento de instalações elétricas prediais de baixa tensão. Luminotécnica, tomadas, quadros de distribuição, dispositivos de proteção, aterramento, SPDA, cabeamento estruturado e infraestrutura para sistemas de comunicação.
+
+::: {.callout-note}
+Material didático em construção. Em breve disponibilizarei slides e listas de exercícios.
+:::
