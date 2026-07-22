@@ -40,3 +40,104 @@ html.lang-en .lang-pt       { display: none; }
 .nav-lang-toggle:hover {
   opacity: 0.8;
 }
+
+/* ===== Index: News listing (table) ===== */
+#listing-recent-news table thead {
+  display: none;
+}
+
+#listing-recent-news table {
+  border: none !important;
+}
+#listing-recent-news table th,
+#listing-recent-news table td {
+  border: none !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  vertical-align: middle !important;
+}
+#listing-recent-news table tr:last-child td {
+  border-bottom: none !important;
+}
+
+#listing-recent-news table img {
+  width: 45px !important;
+  height: 45px !important;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+#listing-recent-news table td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#listing-recent-news {
+  max-height: 210px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#listing-recent-news::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===== Index: Portfolio Carousel ===== */
+#listing-recent-portfolio {
+  position: relative;
+}
+
+#listing-recent-portfolio .list.grid {
+  display: block !important;
+  overflow: hidden;
+}
+
+#listing-recent-portfolio .carousel-track {
+  display: flex;
+  gap: 1rem;
+}
+
+#listing-recent-portfolio .carousel-track .g-col-1 {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  grid-column: unset !important;
+}
+
+/* ---- Navigation arrows ---- */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(255,255,255,.85);
+  border: 1px solid #dee2e6;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c3e50;
+  transition: background .2s, box-shadow .2s;
+  padding: 0;
+  line-height: 1;
+}
+.carousel-arrow:hover {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+.carousel-arrow-left  { left: 4px; }
+.carousel-arrow-right { right: 4px; }
+
+@media (max-width: 767px) {
+  .carousel-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .carousel-arrow-left  { left: 2px; }
+  .carousel-arrow-right { right: 2px; }
+}
+
