@@ -137,7 +137,7 @@ listing:   # Recent news and events
 
 :::
 
-<p align="right"><span class="lang-pt">[Ver Todos »](backend/portfolio/pd/index.qmd)</span><span class="lang-en">[See all »](backend/portfolio/pd/index.qmd)</span></p>
+<p align="right"><span class="lang-pt">[Ver Todos »](backend/portfolio/index.qmd)</span><span class="lang-en">[See all »](backend/portfolio/index.qmd)</span></p>
 
 ### <span class="lang-pt">Clientes e Parceiros</span><span class="lang-en">Clients &amp; Partners</span>
 

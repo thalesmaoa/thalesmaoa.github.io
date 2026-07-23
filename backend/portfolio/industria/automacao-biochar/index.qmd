@@ -36,7 +36,7 @@ draft: false
 
 <span class="lang-pt">A entrega desta arquitetura completa rompeu a dependência de fornecedores de automação tradicionais. O sistema construído garantiu não apenas a operacionalidade imediata e segura da planta de Biochar, mas estabeleceu uma infraestrutura de dados madura. O resultado é uma fábrica inteligente, onde todas as variáveis de processo — desde a temperatura dos fornos até a vibração dos motores — estão centralizadas e visíveis em tempo real na nuvem, permitindo decisões rápidas e auditorias precisas.</span><span class="lang-en">The delivery of this complete architecture broke the dependency on traditional automation vendors. The built system not only ensured the immediate and safe operation of the Biochar plant but also established a mature data infrastructure. The result is a smart factory where every process variable — from furnace temperatures to motor vibrations — is centralized and visible in real time in the cloud, enabling rapid decisions and precise audits.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 100px;">
+<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
 
 <!-- ![](/files/icons/logo_UFMG.jpg){height=60px} -->
 

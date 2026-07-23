@@ -3,7 +3,7 @@ title: "Gestão Ativa de Baterias em Microrredes: Evolução em Sistemas de Arma
 description: "Pesquisa para o desenvolvimento de equalização ativa de carga via conversores DC/DC e especificação completa de microrrede em parceria com a Petrobras."
 date: "2022-12-15" # Ajuste para a data de conclusão do projeto
 categories: [Sistemas de Armazenamento, Microrredes, Eletrônica de Potência, P&D]
-image: "images/smartbattery.png"
+image: "images/dcdc.png"
 draft: false
 ---
 
@@ -37,7 +37,7 @@ draft: false
 
 <span class="lang-pt">A arquitetura desenvolvida pela nossa equipe transforma a maneira como grandes plantas industriais gerenciam seus ativos de armazenamento. Ao substituir a limitação passiva por um controle de potência eletrônico ativo e descentralizado, o projeto provou ser capaz de prolongar substancialmente a vida útil dos ativos. Isso não apenas propõe uma redução drástica nos custos de reposição prematura, como aumenta a resiliência de microrredes industriais conectadas a fontes de energia renovável.</span><span class="lang-en">The architecture developed by our team transforms the way large industrial plants manage their storage assets. By replacing passive limitation with active and decentralized electronic power control, the project proved capable of substantially extending asset lifespan. This not only offers a drastic reduction in premature replacement costs but also increases the resilience of industrial microgrids connected to renewable energy sources.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 100px;">
+<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
 
 ![](/files/icons/logo_UFMG.jpg){height=60px}
 

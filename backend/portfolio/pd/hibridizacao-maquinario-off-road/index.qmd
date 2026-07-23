@@ -38,7 +38,7 @@ draft: false
 
 <span class="lang-pt">Este projeto validou a capacidade de transformar um equipamento legado, movido a diesel e de alta complexidade mecânica, em uma plataforma híbrida controlada por software. O resultado é uma arquitetura pronta para reduzir emissões de carbono e custos operacionais, provando que o domínio integrado de mecânica, elétrica e código é o único caminho viável para o futuro do maquinário pesado.</span><span class="lang-en">This project validated the ability to transform legacy diesel-powered equipment of high mechanical complexity into a software-controlled hybrid platform. The result is an architecture ready to reduce carbon emissions and operational costs, proving that integrated mastery of mechanics, electrical engineering, and code is the only viable path for the future of heavy machinery.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 100px;">
+<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
 
 ![](/files/icons/logo_UFMG.jpg){height=60px}
 

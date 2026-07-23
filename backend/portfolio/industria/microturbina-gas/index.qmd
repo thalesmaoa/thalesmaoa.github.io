@@ -39,7 +39,7 @@ draft: false
 
 <span class="lang-pt">A excelência e a robustez técnica do desenvolvimento atraíram o mercado, resultando em aportes de investidores anjo e na vitória em um edital de inovação do SENAI no valor de meio milhão de reais, chancelando a viabilidade industrial da arquitetura concebida.</span><span class="lang-en">The technical excellence and robustness of the development attracted market interest, resulting in angel investor funding and winning a SENAI innovation grant worth half a million reais, endorsing the industrial viability of the designed architecture.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 100px;">
+<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
 
 <!-- ![](/files/icons/logo_UFMG.jpg){height=60px} -->
 
