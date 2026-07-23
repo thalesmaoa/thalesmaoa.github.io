@@ -17,25 +17,29 @@
       "/backend/portfolio/industria/automacao-biochar/index.html",
       "/backend/portfolio/pd/hibridizacao-maquinario-off-road/index.html",
       "/backend/portfolio/pd/gestao-ativa-baterias/index.html",
-      "/backend/portfolio/industria/microturbina-gas/index.html"
+      "/backend/portfolio/industria/laudos-periciais-pareceres-tecnicos/index.html",
+      "/backend/portfolio/pd/oasis-ufmg/index.html",
+      "/backend/portfolio/pd/supervisorio-iot-fotovoltaico/index.html",
+      "/backend/portfolio/pd/oscilador-magnetico/index.html",
+      "/backend/portfolio/industria/microturbina-gas/index.html",
+      "/backend/portfolio/industria/balanco-quimico/index.html"
     ]
   },
   {
     "listing": "/backend/portfolio/industria/index.html",
     "items": [
       "/backend/portfolio/industria/automacao-biochar/index.html",
-      "/backend/portfolio/industria/microturbina-gas/index.html"
+      "/backend/portfolio/industria/laudos-periciais-pareceres-tecnicos/index.html",
+      "/backend/portfolio/industria/microturbina-gas/index.html",
+      "/backend/portfolio/industria/balanco-quimico/index.html"
     ]
   },
   {
-    "listing": "/backend/portfolio/pd/index.html",
-    "items": [
-      "/backend/portfolio/pd/hibridizacao-maquinario-off-road/index.html",
-      "/backend/portfolio/pd/gestao-ativa-baterias/index.html"
-    ]
+    "listing": "/backend/research/theses/theses.html",
+    "items": []
   },
   {
-    "listing": "/backend/research/papers/pub-listing.html",
+    "listing": "/projects.html",
     "items": []
   },
   {
@@ -52,31 +56,18 @@
     ]
   },
   {
-    "listing": "/projects.html",
+    "listing": "/backend/research/papers/pub-listing.html",
     "items": []
   },
   {
-    "listing": "/index.en.html",
+    "listing": "/backend/portfolio/pd/index.html",
     "items": [
-      "/backend/news/index.html",
-      "/backend/news/202607 - Defesa William/index.html",
-      "/backend/news/202607 - Website creation/index.html",
-      "/backend/news/20260715 - BuyCoffee event/index.html",
-      "/backend/news/202607 - Registro INPI SIMOI/index.html",
-      "/backend/blog/index.html",
-      "/backend/blog/20260504 - Designing 2D transformer core mastering sif file/index.html",
-      "/backend/blog/20260504 - Designing 2D transformer core post processing with paraview part3/index.html",
-      "/backend/blog/20260501 - Designing 2D transformer core steady state simulation elmerfem part2/index.html",
-      "/backend/blog/20260429 - Designing a 2D transformer core freecad to elmerfem integration part1/index.html",
-      "/backend/blog/20260104 - Still paying for the obvious in 2025/index.html",
-      "/backend/blog/20251228 - Daisy chain power efuses oring/index.html",
-      "/backend/blog/20251224 - Semihosting advanced debugging for embedded devices/index.html",
-      "/backend/blog/20251220 - Building a wireguard site-to-ste VPN/index.html"
+      "/backend/portfolio/pd/hibridizacao-maquinario-off-road/index.html",
+      "/backend/portfolio/pd/gestao-ativa-baterias/index.html",
+      "/backend/portfolio/pd/oasis-ufmg/index.html",
+      "/backend/portfolio/pd/supervisorio-iot-fotovoltaico/index.html",
+      "/backend/portfolio/pd/oscilador-magnetico/index.html"
     ]
-  },
-  {
-    "listing": "/backend/research/theses/theses.html",
-    "items": []
   },
   {
     "listing": "/backend/news/index.html",

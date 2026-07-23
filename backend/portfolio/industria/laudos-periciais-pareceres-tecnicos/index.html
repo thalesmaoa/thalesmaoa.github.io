@@ -9,7 +9,7 @@
 <meta name="author" content="Dr.&nbsp;Thales A. C. Maia">
 <meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
 
-<title>Thales Maia, PhD – SPHIN</title>
+<title>Laudos Periciais e Pareceres Técnicos – SPHIN</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -28,27 +28,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./files/icons/logo_machine.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-49652229725583e679e24428a78697da.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<link href="../../../../files/icons/logo_machine.png" rel="icon" type="image/png">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-49652229725583e679e24428a78697da.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,65 +74,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-news .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 4,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-news'] = new List('listing-recent-news', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-blog .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 3,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-blog'] = new List('listing-recent-blog', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J0BZ9QZDBD"></script>
 
 <script type="text/javascript">
@@ -164,44 +104,19 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Thales Maia, PhD – SPHIN">
-<meta property="og:description" content="Site pessoal e acadêmico de Thales Maia.">
-<meta property="og:image" content="https://thalesmaia.com/files/images/foto.jpg">
+<link rel="stylesheet" href="../../../../styles.css">
+<meta property="og:title" content="Laudos Periciais e Pareceres Técnicos – SPHIN">
+<meta property="og:description" content="Atuação em engenharia forense, análise de causa-raiz e emissão de pareceres técnicos especializados para litígios e suporte jurídico.">
+<meta property="og:image" content="https://thalesmaia.com/backend/portfolio/industria/laudos-periciais-pareceres-tecnicos/images/banner.png">
 <meta property="og:site_name" content="SPHIN">
-<meta name="twitter:title" content="Thales Maia, PhD – SPHIN">
-<meta name="twitter:description" content="Site pessoal e acadêmico de Thales Maia.">
-<meta name="twitter:image" content="https://thalesmaia.com/files/images/foto.jpg">
+<meta property="og:image:height" content="488">
+<meta property="og:image:width" content="681">
+<meta name="twitter:title" content="Laudos Periciais e Pareceres Técnicos – SPHIN">
+<meta name="twitter:description" content="Atuação em engenharia forense, análise de causa-raiz e emissão de pareceres técnicos especializados para litígios e suporte jurídico.">
+<meta name="twitter:image" content="https://thalesmaia.com/backend/portfolio/industria/laudos-periciais-pareceres-tecnicos/images/banner.png">
+<meta name="twitter:image-height" content="488">
+<meta name="twitter:image-width" content="681">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -212,11 +127,11 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./files/icons/logo_machine.png" alt="" class="navbar-logo light-content">
-    <img src="./files/icons/logo_machine.png" alt="" class="navbar-logo dark-content">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../files/icons/logo_machine.png" alt="" class="navbar-logo light-content">
+    <img src="../../../../files/icons/logo_machine.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">SPHIN</span>
     </a>
   </div>
@@ -232,15 +147,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptpesquisaspanspan-classlang-enresearchspan">    
         <li>
-    <a class="dropdown-item" href="./backend/research/papers/pub-listing.html">
+    <a class="dropdown-item" href="../../../../backend/research/papers/pub-listing.html">
  <span class="dropdown-text"><span class="lang-pt">Lista de publicações</span><span class="lang-en">Publication List</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/research/theses/theses.html">
+    <a class="dropdown-item" href="../../../../backend/research/theses/theses.html">
  <span class="dropdown-text"><span class="lang-pt">Teses e Dissertações</span><span class="lang-en">Theses &amp; Dissertations</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/research/sphin_about.html">
+    <a class="dropdown-item" href="../../../../backend/research/sphin_about.html">
  <span class="dropdown-text">SPHIN</span></a>
   </li>  
     </ul>
@@ -251,11 +166,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptportfóliospanspan-classlang-enportfoliospan">    
         <li>
-    <a class="dropdown-item" href="./backend/portfolio/pd/index.html">
+    <a class="dropdown-item" href="../../../../backend/portfolio/pd/index.html">
  <span class="dropdown-text"><span class="lang-pt">Projetos de P&amp;D</span><span class="lang-en">R&amp;D Projects</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/portfolio/industria/index.html">
+    <a class="dropdown-item" href="../../../../backend/portfolio/industria/index.html">
  <span class="dropdown-text"><span class="lang-pt">Indústria</span><span class="lang-en">Industry</span></span></a>
   </li>  
     </ul>
@@ -266,25 +181,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptensinospanspan-classlang-enteachingspan">    
         <li>
-    <a class="dropdown-item" href="./backend/teaching/graduacao/index.html">
+    <a class="dropdown-item" href="../../../../backend/teaching/graduacao/index.html">
  <span class="dropdown-text"><span class="lang-pt">Graduação</span><span class="lang-en">Undergraduate</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/teaching/pos-graduacao/index.html">
+    <a class="dropdown-item" href="../../../../backend/teaching/pos-graduacao/index.html">
  <span class="dropdown-text"><span class="lang-pt">Pós-Graduação</span><span class="lang-en">Graduate</span></span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./backend/blog/index.html"> 
+    <a class="nav-link" href="../../../../backend/blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./backend/news/index.html"> 
+    <a class="nav-link" href="../../../../backend/news/index.html"> 
 <span class="menu-text"><span class="lang-pt">Notícias</span><span class="lang-en">News</span></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../../about.html"> 
 <span class="menu-text"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></span></a>
   </li>  
 </ul>
@@ -299,7 +214,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./backend/news/index.xml" target="_blank"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../../../backend/news/index.xml" target="_blank"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -316,195 +231,216 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#caso-1-análise-de-falha-e-responsabilidade-técnica-em-máquinas-rotativas" id="toc-caso-1-análise-de-falha-e-responsabilidade-técnica-em-máquinas-rotativas" class="nav-link active" data-scroll-target="#caso-1-análise-de-falha-e-responsabilidade-técnica-em-máquinas-rotativas">Caso 1: Análise de Falha e Responsabilidade Técnica em Máquinas Rotativas</a>
+  <ul class="collapse">
+  <li><a href="#o-contexto" id="toc-o-contexto" class="nav-link" data-scroll-target="#o-contexto">O Contexto</a></li>
+  <li><a href="#a-investigação" id="toc-a-investigação" class="nav-link" data-scroll-target="#a-investigação">A Investigação</a></li>
+  <li><a href="#impacto-jurídico" id="toc-impacto-jurídico" class="nav-link" data-scroll-target="#impacto-jurídico">Impacto Jurídico</a></li>
+  </ul></li>
+  <li><a href="#caso-2-avaliação-de-propriedade-intelectual-e-anterioridade-tecnológica" id="toc-caso-2-avaliação-de-propriedade-intelectual-e-anterioridade-tecnológica" class="nav-link" data-scroll-target="#caso-2-avaliação-de-propriedade-intelectual-e-anterioridade-tecnológica">Caso 2: Avaliação de Propriedade Intelectual e Anterioridade Tecnológica</a>
+  <ul class="collapse">
+  <li><a href="#o-contexto-1" id="toc-o-contexto-1" class="nav-link" data-scroll-target="#o-contexto-1">O Contexto</a></li>
+  <li><a href="#a-investigação-1" id="toc-a-investigação-1" class="nav-link" data-scroll-target="#a-investigação-1">A Investigação</a></li>
+  <li><a href="#impacto-jurídico-1" id="toc-impacto-jurídico-1" class="nav-link" data-scroll-target="#impacto-jurídico-1">Impacto Jurídico</a></li>
+  </ul></li>
+  <li><a href="#atuação-em-engenharia-forense-e-perícias" id="toc-atuação-em-engenharia-forense-e-perícias" class="nav-link" data-scroll-target="#atuação-em-engenharia-forense-e-perícias">Atuação em Engenharia Forense e Perícias</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="files/images/foto.jpg" class="about-image
-  rounded " style="width: 70%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Thales Maia, PhD</h1>
-</div>
-<div class="quarto-title-meta column-page">
+<h1 class="title">Laudos Periciais e Pareceres Técnicos</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Engenharia Forense</div>
+    <div class="quarto-category">Laudos Periciais</div>
+    <div class="quarto-category">Consultoria</div>
+    <div class="quarto-category">Propriedade Intelectual</div>
   </div>
+  </div>
+
+<div>
+  <div class="description">
+    Atuação em engenharia forense, análise de causa-raiz e emissão de pareceres técnicos especializados para litígios e suporte jurídico.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">27 de setembro de 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="http://lattes.cnpq.br/8637504941507702" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-lattes"></i> Lattes</span>
-  </a>
-  <a href="https://orcid.org/0000-0001-7943-6322" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-orcid"></i> ORCID</span>
-  </a>
-  <a href="https://www.researchgate.net/profile/Thales-Maia" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-researchgate"></i> Research Gate</span>
-  </a>
-  <a href="https://scholar.google.com.br/citations?user=7oeMSpAAAAAJ&amp;hl=pt-BR&amp;oi=ao" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-google-scholar"></i> Google Scholar</span>
-  </a>
-  <a href="https://somos.ufmg.br/professor/thales-alexandre-carvalho-maia" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><img src="files/icons/somos-plus.png" style="height: 1.1em; vertical-align: -0.2em; margin-right: 0.3em;"> UFMG</span>
-  </a>
-  <a href="https://www.linkedin.com/in/thales-maia-38755a23" class="about-link" rel="" target="_blank">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/thalesmaia" class="about-link" rel="" target="_blank">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://www.youtube.com/@thalesmaia6607" class="about-link" rel="" target="_blank">
-    <i class="bi bi-youtube"></i>
-     <span class="about-link-text">YouTube</span>
-  </a>
-  <a href="mailto:thalesmaia@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<p><strong>Developing Technology for the Industrial Sector | Electric Machine Design, Power Generation &amp; Automation | Professor</strong></p>
-<p><small>Belo Horizonte, Minas Gerais, Brasil <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Bandeira_de_Minas_Gerais.svg" style="height: 1em; vertical-align: -0.1em;"> 🇧🇷</small></p>
-<p>I develop technology to overcome industrial challenges, working directly in the renewable generation, carbon chain, oil and gas, and automotive sectors. With over 20 years of market experience—combined with my background as a University Professor—I have built a solid foundation in designing electric machines, electronics, instrumentation, and software, creating complete architectures for processes, drives, and automation.</p>
-<p>My main specialty is developing custom generators and motors (axial flux, high-speed, and in-wheel motors), integrating them with power electronics, control systems, and industrial communication stacks. I have led projects involving wind power for rural grids, microturbines, hybrid mobile machines, and special powertrains for harsh environments.</p>
-<p>In parallel, I have extensive practical experience in process and thermal systems instrumentation: measuring combustion gases in carbonization furnaces, gasification, biochar production, and industrial dryers, integrating sensors, signal conditioning, PLCs, and embedded systems.</p>
-<p>I am usually called when the problem is non-trivial: noisy environments, weak electrical grids, severe thermal conditions, legacy equipment, or ambitious energy targets. I solve the challenge by developing your system, validating it through models and prototypes, and then supporting its implementation and commissioning.</p>
-<p>If you are looking for someone with a systemic view for your project—capable of connecting everything from the chemistry of your process and the behavior of your machines to the code of your controllers—and turning it all into a robust architecture, that is exactly where I generate the most value.</p>
-</div></div>
-</div>
 
-<section id="news-and-events" class="level2">
-<h2 data-anchor-id="news-and-events">News and Events</h2>
-<p>Check out the latest &nbsp;<a href="./backend/news/index.html#category=news">News</a>&nbsp;, &nbsp;<a href="./backend/news/index.html#category=event">Events</a>&nbsp;, and &nbsp;<a href="./backend/news/index.html">More »</a></p>
-<div id="listing-recent-news" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1784757858030" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-<a href="./backend/news/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Notícias e Eventos
-</h5>
+
+<p>A elaboração de laudos técnico-científicos exige um profundo rigor analítico para subsidiar decisões jurídicas e resoluções de litígios. A atuação como perito e assistente técnico envolve a investigação de causa-raiz, análise do estado da arte e a emissão de pareceres isentos e fundamentados para resguardar empresas em disputas de propriedade intelectual, responsabilidade operacional e falhas em equipamentos.</p>
+<p>Abaixo, apresento dois casos reais onde a engenharia investigativa serviu como prova jurídica definitiva.</p>
+<hr>
+<section id="caso-1-análise-de-falha-e-responsabilidade-técnica-em-máquinas-rotativas" class="level2">
+<h2 class="anchored" data-anchor-id="caso-1-análise-de-falha-e-responsabilidade-técnica-em-máquinas-rotativas">Caso 1: Análise de Falha e Responsabilidade Técnica em Máquinas Rotativas</h2>
+<p><strong>Escopo:</strong> Engenharia Forense e Análise de Causa-Raiz</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/IMG20210805140930.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>Inspeção técnica e análise de fadiga em componentes de máquinas rotativas.</figcaption>
+</figure>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Tm90JUMzJUFEY2lhcyUyQ0RlZmVzYQ==" data-listing-date-sort="1784505600000" data-listing-file-modified-sort="1784757858028" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
-<a href="./backend/news/202607 - Defesa William/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Defesa de Mestrado — William Andrade
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-20 de jul. de 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Tm90JUMzJUFEY2lhcw==" data-listing-date-sort="1784419200000" data-listing-file-modified-sort="1784757858028" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
-<a href="./backend/news/202607 - Website creation/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bem-vindo ao meu novo site!
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-19 de jul. de 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Tm90JUMzJUFEY2lhcyUyQ0V2ZW50bw==" data-listing-date-sort="1784073600000" data-listing-file-modified-sort="1784757858030" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="366">
-<a href="./backend/news/20260715 - BuyCoffee event/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-BuyCoffee — Networking, Tecnologia e Boas Conversas
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-15 de jul. de 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">Nenhum item correspondente</div>
-</div>
+<section id="o-contexto" class="level3">
+<h3 class="anchored" data-anchor-id="o-contexto">O Contexto</h3>
+<p>Investigação das causas da quebra catastrófica das barras do rotor de um motor síncrono de grande porte (1.500 kW, 3.450 V, 10 polos), ocorrida logo após um serviço de manutenção corretiva.</p>
 </section>
-<section id="blog" class="level2">
-<h2 data-anchor-id="blog">Blog</h2>
-<p>Check out the latest &nbsp;<a href="./backend/blog/index.html">Posts</a>&nbsp; and &nbsp;<a href="./backend/blog/index.html">More »</a></p>
-<div id="listing-recent-blog" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1784757858026" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-<a href="./backend/blog/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="backend/blog/20260504 - Designing 2D transformer core mastering sif file/images/image-18-1024x575.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Blog
-</h5>
-<div class="card-subtitle listing-subtitle">
-Artigos técnicos, pesquisas e reflexões
+<section id="a-investigação" class="level3">
+<h3 class="anchored" data-anchor-id="a-investigação">A Investigação</h3>
+<p>A análise técnica aprofundada determinou que a falha não possuía relação com os reparos pontuais realizados no anel de curto-circuito, mas sim com um severo processo de fadiga por estresse termo-mecânico. O laudo demonstrou que o equipamento, com mais de 40 anos de operação, sofria com ineficiências de refrigeração no lado acoplado, o que gerou um gradiente térmico elevado e um envelhecimento acelerado do material metálico.</p>
+</section>
+<section id="impacto-jurídico" class="level3">
+<h3 class="anchored" data-anchor-id="impacto-jurídico">Impacto Jurídico</h3>
+<p>O parecer técnico comprovou que a falha inicial desencadeou uma reação em cadeia devido à transferência excessiva de corrente para as barras adjacentes durante os ciclos de partida. Essa comprovação técnica isentou a empresa de manutenção de qualquer responsabilidade ou passivo sobre a quebra, fornecendo respaldo legal incontestável.</p>
+<hr>
+</section>
+</section>
+<section id="caso-2-avaliação-de-propriedade-intelectual-e-anterioridade-tecnológica" class="level2">
+<h2 class="anchored" data-anchor-id="caso-2-avaliação-de-propriedade-intelectual-e-anterioridade-tecnológica">Caso 2: Avaliação de Propriedade Intelectual e Anterioridade Tecnológica</h2>
+<p><strong>Escopo:</strong> Perícia de Software/Hardware e Disputa de Propriedade Intelectual</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/eletronica.png" class="img-fluid figure-img"></p>
+<figcaption>Análise de placas de circuito impresso e auditoria de sistemas embarcados.</figcaption>
+</figure>
 </div>
+<section id="o-contexto-1" class="level3">
+<h3 class="anchored" data-anchor-id="o-contexto-1">O Contexto</h3>
+<p>Emissão de parecer técnico-científico para validar ou refutar judicialmente a alegação de invenção de um sistema de integração de automação industrial (envolvendo placas seriais e linhas de braços robóticos).</p>
+</section>
+<section id="a-investigação-1" class="level3">
+<h3 class="anchored" data-anchor-id="a-investigação-1">A Investigação</h3>
+<p>A condução de uma rigorosa análise de anterioridade comprovou que o hardware pleiteado como invenção era composto integralmente por placas de desenvolvimento comercialmente disponíveis no varejo, baseadas em arquiteturas de domínio público. O laudo também identificou a modificação e o uso indevido de bibliotecas de código aberto, caracterizando infração direta aos termos de uso da licença de software livre LGPL (<em>GNU Lesser General Public License</em>).</p>
+</section>
+<section id="impacto-jurídico-1" class="level3">
+<h3 class="anchored" data-anchor-id="impacto-jurídico-1">Impacto Jurídico</h3>
+<p>O parecer descaracterizou a alegação de patenteabilidade e ineditismo, provando tratar-se apenas de uma melhoria de um processo já existente montado com tecnologia de prateleira. O documento serviu como prova material decisiva para a resolução do litígio de propriedade intelectual da companhia.</p>
+<hr>
+</section>
+</section>
+<section id="atuação-em-engenharia-forense-e-perícias" class="level2">
+<h2 class="anchored" data-anchor-id="atuação-em-engenharia-forense-e-perícias">Atuação em Engenharia Forense e Perícias</h2>
+<p>Os casos acima ilustram apenas uma fração da minha capacidade de atuação em engenharia forense. Com vasta experiência na condução de investigações técnicas rigorosas, emito laudos que traduzem a capacidade da engenharia elétrica, mecânica e de software para o meio jurídico, fornecendo a segurança técnica necessária para a tomada de decisão.</p>
+<p><strong>Posso auxiliar sua empresa ou escritório de advocacia com:</strong></p>
+<ul>
+<li><strong>Investigação de Causa-Raiz:</strong> Falhas em equipamentos de potência (transformadores, geradores, motores industriais, inversores).</li>
+<li><strong>Propriedade Intelectual:</strong> Avaliação de patentes, quebra de PI e anterioridade tecnológica em hardwares e softwares.</li>
+<li><strong>Sistemas de Energia:</strong> Análise técnica de microrredes, qualidade de energia e sinistros elétricos.</li>
+<li><strong>Suporte Jurídico:</strong> Atuação como Assistente Técnico em litígios complexos.</li>
+</ul>
+<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<p><img src="../../../../files/icons/logo_UFMG.jpg" height="60"></p>
+<!-- ![](/files/images/partners/Petrobras_logo.svg){height=60px} -->
 </div>
-</div></a>
+<!--Include social share buttons-->
+<div class="social-share">
+<p><a href="#" class="social-link" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no LinkedIn"> <svg class="social-icon" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.114 20.452H3.558V9h3.556v11.452z"></path></svg> </a> <a href="#" class="social-link" data-share="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no WhatsApp"> <svg class="social-icon" viewbox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.74 14.09c-.24.68-1.4 1.3-1.93 1.36-.51.06-1.03.24-3.45-.72-2.9-1.15-4.76-4.1-4.9-4.29-.14-.19-1.17-1.55-1.17-2.96 0-1.4.74-2.09 1-2.38.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.14.31-.28.48-.14.17-.29.38-.42.51-.14.14-.28.29-.12.57.16.29.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.24 1.38.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.64-.14.26.1 1.64.77 1.92.91.29.14.48.21.55.33.07.12.07.69-.17 1.37z"></path></svg> </a> <a href="#" class="social-link" data-share="telegram" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no Telegram"> <svg class="social-icon" viewbox="0 0 24 24"><path d="M22 2 2 10.5l6 2 2 6.5 3-4 5 4 4-17zM8.5 13.5l9-7-7 8.5v3z"></path></svg> </a> <a href="#" class="social-link" data-share="email" aria-label="Compartilhar por email"> <svg class="social-icon" viewbox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path></svg> </a> <button class="social-link copy-link-btn" data-share="copy" aria-label="Copiar link"> <svg class="social-icon" viewbox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg> </button></p>
 </div>
-<div class="g-col-1" data-index="1" data-categories="U2ltdWxhdGlvbiUyQ0VsZWN0cmljYWwlMjBNYWNoaW5lcyUyQ1R1dG9yaWFs" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1784757858016" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2314">
-<a href="./backend/blog/20260504 - Designing 2D transformer core mastering sif file/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="backend/blog/20260504 - Designing 2D transformer core mastering sif file/images/image-18-1024x575.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Designing a 2D Transformer Core: Mastering the Sif file
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-4 de mai. de 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="U2ltdWxhdGlvbiUyQ0VsZWN0cmljYWwlMjBNYWNoaW5lcyUyQ1R1dG9yaWFs" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1784757858026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="838">
-<a href="./backend/blog/20260504 - Designing 2D transformer core post processing with paraview part3/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="backend/blog/20260504 - Designing 2D transformer core post processing with paraview part3/images/image-13-1024x577.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Designing a 2D Transformer Core: Post-processing with ParaView (Part 3)
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-4 de mai. de 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">Nenhum item correspondente</div>
-</div>
-<p align="right">
-<a href="./backend/blog/index.html">All Posts »</a>
-</p>
+<style>
+.social-share {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  text-decoration: none;
+  box-shadow: none;
+}
+.social-link::-moz-focus-inner {
+  border: 0;
+}
+.social-icon {
+  width: 25px;
+  height: 25px;
+  fill: #1a1a1a;
+  display: block;
+}
+.social-link:hover .social-icon {
+  fill: #000;
+}
+.social-link:hover {
+  background: rgba(0,0,0,0.08);
+}
+</style>
+<!-- <script src="/files/scripts/socialshare.js"></script> -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const pageUrl = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(document.title);
 
+  const shareUrls = {
+    linkedin: "https://www.linkedin.com/sharing/share-offsite/?url=" + pageUrl,
+    whatsapp: "https://wa.me/?text=" + pageTitle + "%20" + pageUrl,
+    telegram: "https://t.me/share/url?url=" + pageUrl + "&text=" + pageTitle
+  };
 
+  document.querySelectorAll("[data-share]").forEach(function (el) {
+    const type = el.getAttribute("data-share");
+
+    if (type === "copy") {
+      el.addEventListener("click", function () {
+        navigator.clipboard.writeText(window.location.href);
+        el.setAttribute("aria-label", "Link copiado!");
+      }, true);
+      return;
+    }
+
+    if (type === "email") {
+      el.setAttribute("href", "mailto:?subject=" + pageTitle + "&body=" + pageUrl);
+      return;
+    }
+
+    if (shareUrls[type]) {
+      // Captura o clique ANTES de qualquer outro listener (inclusive o tracker do tema)
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        window.open(shareUrls[type], "_blank", "noopener,noreferrer");
+      }, true); // true = capture phase, roda primeiro
+    }
+  });
+});
+</script>
 
 
 </section>
@@ -552,6 +488,13 @@ Designing a 2D Transformer Core: Post-processing with ParaView (Part 3)
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -962,7 +905,7 @@ Thales Maia ©
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
     <a class="nav-link" href="https://www.ufmg.br/" target="_blank">
-<p><img src="./files/icons/logo_UFMG_grey.jpg" style="height: 1.1em; vertical-align: -0.2em; margin-right: 0.3em;"></p>
+<p><img src="../../../../files/icons/logo_UFMG_grey.jpg" style="height: 1.1em; vertical-align: -0.2em; margin-right: 0.3em;"></p>
 </a>
   </li>  
     <li class="nav-item compact">
@@ -972,7 +915,7 @@ Thales Maia ©
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank">
+    <a class="nav-link" href="../../../../posts.xml" target="_blank">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>

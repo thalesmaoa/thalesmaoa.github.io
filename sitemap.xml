@@ -2,150 +2,166 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thalesmaia.com/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.110Z</lastmod>
+    <lastmod>2026-07-23T21:43:14.038Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/teaching/graduacao/ele035-lab-conversao-energia.html</loc>
-    <lastmod>2026-07-22T22:04:18.086Z</lastmod>
+    <lastmod>2026-07-23T21:43:14.004Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/teaching/pos-graduacao/eee931-tecnologia-maquinas-eletricas.html</loc>
-    <lastmod>2026-07-22T22:04:18.086Z</lastmod>
+    <lastmod>2026-07-23T21:43:14.004Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/news/202607 - Website creation/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.028Z</lastmod>
+    <lastmod>2026-07-23T21:43:13.881Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/news/20260715 - BuyCoffee event/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.030Z</lastmod>
+    <lastmod>2026-07-23T21:43:13.886Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/portfolio/industria/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.062Z</lastmod>
+    <lastmod>2026-07-23T21:43:13.941Z</lastmod>
   </url>
   <url>
-    <loc>https://thalesmaia.com/backend/portfolio/industria/microturbina-gas/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.069Z</lastmod>
+    <loc>https://thalesmaia.com/backend/portfolio/industria/laudos-periciais-pareceres-tecnicos/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.948Z</lastmod>
   </url>
   <url>
-    <loc>https://thalesmaia.com/backend/portfolio/pd/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.084Z</lastmod>
+    <loc>https://thalesmaia.com/backend/portfolio/industria/balanco-quimico/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.941Z</lastmod>
   </url>
   <url>
-    <loc>https://thalesmaia.com/backend/portfolio/pd/hibridizacao-maquinario-off-road/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.084Z</lastmod>
+    <loc>https://thalesmaia.com/backend/portfolio/pd/oscilador-magnetico/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.997Z</lastmod>
   </url>
   <url>
-    <loc>https://thalesmaia.com/backend/research/sphin_about.html</loc>
-    <lastmod>2026-07-22T22:04:18.085Z</lastmod>
+    <loc>https://thalesmaia.com/backend/portfolio/pd/oasis-ufmg/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.994Z</lastmod>
   </url>
   <url>
-    <loc>https://thalesmaia.com/backend/research/papers/pub-listing.html</loc>
-    <lastmod>2026-07-22T22:04:18.085Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/backend/blog/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.026Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/backend/blog/20260501 - Designing 2D transformer core steady state simulation elmerfem part2/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.014Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/backend/blog/20251224 - Semihosting advanced debugging for embedded devices/index.html</loc>
-    <lastmod>2026-07-22T22:04:17.967Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/backend/blog/20251220 - Building a wireguard site-to-ste VPN/index.html</loc>
-    <lastmod>2026-07-22T22:04:17.964Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/teaching.html</loc>
-    <lastmod>2026-07-22T22:04:18.112Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/contact.html</loc>
-    <lastmod>2026-07-22T22:04:18.086Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/projects.html</loc>
-    <lastmod>2026-07-22T22:04:18.112Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/index.en.html</loc>
-    <lastmod>2026-07-22T22:04:18.110Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/about.html</loc>
-    <lastmod>2026-07-22T22:04:17.957Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/backend/blog/20260504 - Designing 2D transformer core mastering sif file/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.016Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/backend/blog/20251228 - Daisy chain power efuses oring/index.html</loc>
-    <lastmod>2026-07-22T22:04:17.971Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/backend/blog/20260429 - Designing a 2D transformer core freecad to elmerfem integration part1/index.html</loc>
-    <lastmod>2026-07-22T22:04:17.995Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/backend/blog/20260504 - Designing 2D transformer core post processing with paraview part3/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.026Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/backend/blog/20260104 - Still paying for the obvious in 2025/index.html</loc>
-    <lastmod>2026-07-22T22:04:17.976Z</lastmod>
-  </url>
-  <url>
-    <loc>https://thalesmaia.com/backend/research/publications.html</loc>
-    <lastmod>2026-07-22T22:04:18.085Z</lastmod>
+    <loc>https://thalesmaia.com/backend/portfolio/pd/supervisorio-iot-fotovoltaico/index.html</loc>
+    <lastmod>2026-07-23T21:43:14.002Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/research/theses/theses.html</loc>
-    <lastmod>2026-07-22T22:04:18.086Z</lastmod>
+    <lastmod>2026-07-23T21:43:14.004Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/research/publications.html</loc>
+    <lastmod>2026-07-23T21:43:14.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/blog/20260104 - Still paying for the obvious in 2025/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.798Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/blog/20260504 - Designing 2D transformer core post processing with paraview part3/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/blog/20260429 - Designing a 2D transformer core freecad to elmerfem integration part1/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.829Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/blog/20251228 - Daisy chain power efuses oring/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.792Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/blog/20260504 - Designing 2D transformer core mastering sif file/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.863Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/about.html</loc>
+    <lastmod>2026-07-23T21:43:13.769Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/projects.html</loc>
+    <lastmod>2026-07-23T21:43:14.039Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/contact.html</loc>
+    <lastmod>2026-07-23T21:43:14.004Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/teaching.html</loc>
+    <lastmod>2026-07-23T21:43:14.039Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/blog/20251220 - Building a wireguard site-to-ste VPN/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.781Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/blog/20251224 - Semihosting advanced debugging for embedded devices/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.782Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/blog/20260501 - Designing 2D transformer core steady state simulation elmerfem part2/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.859Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/blog/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/research/papers/pub-listing.html</loc>
+    <lastmod>2026-07-23T21:43:14.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/research/sphin_about.html</loc>
+    <lastmod>2026-07-23T21:43:14.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/portfolio/pd/hibridizacao-maquinario-off-road/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.984Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/portfolio/pd/gestao-ativa-baterias/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.077Z</lastmod>
+    <lastmod>2026-07-23T21:43:13.973Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/portfolio/pd/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.984Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/portfolio/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.030Z</lastmod>
+    <lastmod>2026-07-23T21:43:13.886Z</lastmod>
+  </url>
+  <url>
+    <loc>https://thalesmaia.com/backend/portfolio/industria/microturbina-gas/index.html</loc>
+    <lastmod>2026-07-23T21:43:13.960Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/portfolio/industria/automacao-biochar/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.062Z</lastmod>
+    <lastmod>2026-07-23T21:43:13.937Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/news/202607 - Defesa William/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.028Z</lastmod>
+    <lastmod>2026-07-23T21:43:13.881Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/news/202607 - Registro INPI SIMOI/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.028Z</lastmod>
+    <lastmod>2026-07-23T21:43:13.881Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/news/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.030Z</lastmod>
+    <lastmod>2026-07-23T21:43:13.886Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/teaching/pos-graduacao/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.086Z</lastmod>
+    <lastmod>2026-07-23T21:43:14.004Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/teaching/graduacao/ele618-sistemas-eletricos-industriais.html</loc>
-    <lastmod>2026-07-22T22:04:18.086Z</lastmod>
+    <lastmod>2026-07-23T21:43:14.004Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/teaching/graduacao/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.086Z</lastmod>
+    <lastmod>2026-07-23T21:43:14.004Z</lastmod>
   </url>
   <url>
     <loc>https://thalesmaia.com/backend/teaching/index.html</loc>
-    <lastmod>2026-07-22T22:04:18.086Z</lastmod>
+    <lastmod>2026-07-23T21:43:14.004Z</lastmod>
   </url>
 </urlset>
