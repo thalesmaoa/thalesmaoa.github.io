@@ -267,9 +267,9 @@ window.Quarto = {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#o-desafio" id="toc-o-desafio" class="nav-link active" data-scroll-target="#o-desafio">O Desafio</a></li>
-  <li><a href="#engenharia-reversa-e-ciência-de-dados" id="toc-engenharia-reversa-e-ciência-de-dados" class="nav-link" data-scroll-target="#engenharia-reversa-e-ciência-de-dados">Engenharia Reversa e Ciência de Dados</a></li>
-  <li><a href="#impacto" id="toc-impacto" class="nav-link" data-scroll-target="#impacto">Impacto</a></li>
+  <li><a href="#o-desafiothe-challenge" id="toc-o-desafiothe-challenge" class="nav-link active" data-scroll-target="#o-desafiothe-challenge"><span class="lang-pt">O Desafio</span><span class="lang-en">The Challenge</span></a></li>
+  <li><a href="#engenharia-reversa-e-ciência-de-dadosreverse-engineering-and-data-science" id="toc-engenharia-reversa-e-ciência-de-dadosreverse-engineering-and-data-science" class="nav-link" data-scroll-target="#engenharia-reversa-e-ciência-de-dadosreverse-engineering-and-data-science"><span class="lang-pt">Engenharia Reversa e Ciência de Dados</span><span class="lang-en">Reverse Engineering and Data Science</span></a></li>
+  <li><a href="#impactoimpact" id="toc-impactoimpact" class="nav-link" data-scroll-target="#impactoimpact"><span class="lang-pt">Impacto</span><span class="lang-en">Impact</span></a></li>
   </ul>
 </nav>
     </div>
@@ -282,7 +282,7 @@ window.Quarto = {
   <div class="quarto-categories">
     <div class="quarto-category">Ciência de Dados</div>
     <div class="quarto-category">Instrumentação</div>
-    <div class="quarto-category">Sustentabilidade</div>
+    <div class="quarto-category">Geração de Energia</div>
     <div class="quarto-category">Engenharia Reversa</div>
   </div>
   </div>
@@ -312,21 +312,27 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Parceiro Industrial:</strong> ArcelorMittal Bioflorestas<br>
-<strong>Escopo:</strong> Engenharia Reversa, Instrumentação Analítica e Ciência de Dados Aplicada</p>
+<p><span class="lang-pt"><strong>Parceiro Industrial:</strong> ArcelorMittal Bioflorestas<br><strong>Escopo:</strong> Engenharia Reversa, Instrumentação Analítica e Ciência de Dados Aplicada</span><span class="lang-en"><strong>Industrial Partner:</strong> ArcelorMittal Bioflorestas<br><strong>Scope:</strong> Reverse Engineering, Analytical Instrumentation and Applied Data Science</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/DSC04383.JPG" class="img-fluid figure-img" style="width:70.0%"></p>
 <figcaption>Sistema de amostragem e condicionamento de gases instalado no ambiente agressivo dos fornos de carbonização.</figcaption>
 </figure>
 </div>
-<section id="o-desafio" class="level2">
-<h2 class="anchored" data-anchor-id="o-desafio">O Desafio</h2>
+<section id="o-desafiothe-challenge" class="level2">
+<h2 class="anchored" data-anchor-id="o-desafiothe-challenge"><span class="lang-pt">O Desafio</span><span class="lang-en">The Challenge</span></h2>
+<div class="lang-pt">
 <p>A produção de carvão vegetal (biomassa) para a indústria siderúrgica envolve processos termoquímicos complexos de carbonização. Para que empresas de grande porte, como a <strong>ArcelorMittal Bioflorestas</strong>, possam certificar suas operações e atuar ativamente no mercado internacional de créditos de carbono, é exigida uma precisão absoluta na medição das emissões de gases de efeito estufa (GEE) durante o processo.</p>
 <p>O grande obstáculo prático é que os analisadores de gás comerciais de alta precisão operam frequentemente como “caixas-pretas”. Seus hardwares e softwares proprietários entregam dados pré-processados e engessados, o que inviabiliza a customização algorítmica necessária para a realização de cálculos estequiométricos e auditorias rigorosas exigidas pelos órgãos certificadores de carbono.</p>
+</div>
+<div class="lang-en">
+<p>The production of charcoal (biomass) for the steel industry involves complex thermochemical carbonization processes. For large-scale companies such as <strong>ArcelorMittal Bioflorestas</strong> to certify their operations and actively participate in the international carbon credit market, absolute precision is required in measuring greenhouse gas (GHG) emissions throughout the process.</p>
+<p>The major practical obstacle is that high-precision commercial gas analyzers often operate as “black boxes.” Their proprietary hardware and software deliver pre-processed, rigid data, which prevents the algorithmic customization needed to perform stoichiometric calculations and rigorous audits required by carbon certification bodies.</p>
+</div>
 </section>
-<section id="engenharia-reversa-e-ciência-de-dados" class="level2">
-<h2 class="anchored" data-anchor-id="engenharia-reversa-e-ciência-de-dados">Engenharia Reversa e Ciência de Dados</h2>
+<section id="engenharia-reversa-e-ciência-de-dadosreverse-engineering-and-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="engenharia-reversa-e-ciência-de-dadosreverse-engineering-and-data-science"><span class="lang-pt">Engenharia Reversa e Ciência de Dados</span><span class="lang-en">Reverse Engineering and Data Science</span></h2>
+<div class="lang-pt">
 <p>Para contornar as restrições comerciais dos equipamentos de prateleira e garantir total controle sobre os dados das emissões, o projeto exigiu uma abordagem híbrida de instrumentação avançada e modelagem matemática.</p>
 <p>A solução desenvolvida passou pelas seguintes etapas críticas de engenharia:</p>
 <ul>
@@ -337,6 +343,19 @@ window.Quarto = {
 <p>onde os coeficientes <span class="math inline">\(a, b, c, d, e, f\)</span> dependem da composição da madeira e das condições do forno (temperatura, taxa de aquecimento e atmosfera), formando: carbono fixo (carvão), hidrogênio gasoso, hidrocarbonetos leves (alcatrão), monóxido e dióxido de carbono, e água.</p></li>
 <li><p><strong>Balanço Químico e Modelagem:</strong> Na camada de software, utilizei técnicas de Ciência de Dados para modelar a termodinâmica dos fornos. Desenvolvi algoritmos que cruzavam os dados crus dos sensores com as variáveis de entrada de biomassa, realizando o balanço químico estequiométrico e de massa contínuo da combustão.</p></li>
 </ul>
+</div>
+<div class="lang-en">
+<p>To circumvent the commercial restrictions of off-the-shelf equipment and ensure full control over emissions data, the project demanded a hybrid approach combining advanced instrumentation and mathematical modeling.</p>
+<p>The developed solution went through the following critical engineering stages:</p>
+<ul>
+<li><p><strong>Reverse Engineering of Analyzers:</strong> I worked directly on the logical and physical disassembly of commercial gas analyzers. The goal was to map and intercept the raw analog and digital signals directly at the output of optical and chemical sensors, before they were filtered by the manufacturer’s proprietary software.</p></li>
+<li><p><strong>Acquisition and Conditioning System:</strong> I designed the data collection architecture capable of operating in the hostile factory-floor environment (high temperatures and particulates). This ensured that gas concentration readings (such as <span class="math inline">\(CO\)</span>, <span class="math inline">\(CO_2\)</span>, <span class="math inline">\(CH_4\)</span> and <span class="math inline">\(O_2\)</span>) were extracted in real time and with high fidelity.</p>
+<p>The pyrolysis of eucalyptus biomass can be represented by the generic decomposition:</p>
+<p><span class="math display">\[C_n H_m O_p \;\xrightarrow{\;\Delta\;}\; a\,C_{(s)} + b\,H_2 + c\,C_x H_y + d\,CO + e\,CO_2 + f\,H_2O\]</span></p>
+<p>where the coefficients <span class="math inline">\(a, b, c, d, e, f\)</span> depend on the wood composition and furnace conditions (temperature, heating rate and atmosphere), forming: fixed carbon (charcoal), hydrogen gas, light hydrocarbons (tar), carbon monoxide and dioxide, and water.</p></li>
+<li><p><strong>Chemical Balance and Modeling:</strong> At the software layer, I used Data Science techniques to model furnace thermodynamics. I developed algorithms that cross-referenced raw sensor data with biomass input variables, performing continuous stoichiometric and mass balance of combustion.</p></li>
+</ul>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/CorridaCH4.png" class="img-fluid figure-img" style="width:85.0%"></p>
@@ -344,10 +363,16 @@ window.Quarto = {
 </figure>
 </div>
 </section>
-<section id="impacto" class="level2">
-<h2 class="anchored" data-anchor-id="impacto">Impacto</h2>
+<section id="impactoimpact" class="level2">
+<h2 class="anchored" data-anchor-id="impactoimpact"><span class="lang-pt">Impacto</span><span class="lang-en">Impact</span></h2>
+<div class="lang-pt">
 <p>Este desenvolvimento rompeu a limitação dos instrumentos comerciais, transformando equipamentos padrão em ferramentas de auditoria de precisão científica. A modelagem algorítmica do balanço de massa forneceu à ArcelorMittal Bioflorestas a transparência e a rastreabilidade exatas dos gases emitidos e evitados no processo de carbonização.</p>
 <p>Como resultado direto, o sistema viabilizou a comprovação auditável das métricas de sustentabilidade da planta, fornecendo o lastro técnico necessário para a conversão das reduções de emissões em ativos financeiros no mercado global de créditos de carbono.</p>
+</div>
+<div class="lang-en">
+<p>This development broke through the limitations of commercial instruments, transforming standard equipment into scientifically precise auditing tools. The algorithmic mass-balance modeling provided ArcelorMittal Bioflorestas with exact transparency and traceability of gases emitted and avoided during the carbonization process.</p>
+<p>As a direct result, the system enabled auditable verification of the plant’s sustainability metrics, providing the technical foundation necessary to convert emission reductions into financial assets in the global carbon credit market.</p>
+</div>
 <div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
 <p><img src="../../../../files/images/partners/Fahren_vetorizado.svg" height="60"></p>
 <p><img src="../../../../files/images/partners/Arcelormittal-logo.svg" height="60"></p>

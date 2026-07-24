@@ -233,17 +233,8 @@ https://badge.dimensions.ai/
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Nesta página</h2>
-   
-  <ul>
-  <li><a href="#o-desafio" id="toc-o-desafio" class="nav-link active" data-scroll-target="#o-desafio">O Desafio</a></li>
-  <li><a href="#arquitetura-do-produto-e-integração-de-sistemas" id="toc-arquitetura-do-produto-e-integração-de-sistemas" class="nav-link" data-scroll-target="#arquitetura-do-produto-e-integração-de-sistemas">Arquitetura do Produto e Integração de Sistemas</a></li>
-  <li><a href="#engenharia-reversa-e-metrologia-customizada" id="toc-engenharia-reversa-e-metrologia-customizada" class="nav-link" data-scroll-target="#engenharia-reversa-e-metrologia-customizada">Engenharia Reversa e Metrologia Customizada</a></li>
-  <li><a href="#impacto" id="toc-impacto" class="nav-link" data-scroll-target="#impacto">Impacto</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -253,9 +244,8 @@ https://badge.dimensions.ai/
 <h1 class="title">Instrumentação Industrial em Gases: Sistemas de Medição e Condicionamento</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Instrumentação</div>
-    <div class="quarto-category">Automação Industrial</div>
+    <div class="quarto-category">Automação</div>
     <div class="quarto-category">Engenharia Reversa</div>
-    <div class="quarto-category">Metrologia</div>
   </div>
   </div>
 
@@ -284,33 +274,28 @@ https://badge.dimensions.ai/
 </header>
 
 
-<p><strong>Parceiros Industriais:</strong> Rima<br>
-<strong>Escopo:</strong> Desenvolvimento de Produto, Engenharia Reversa, Metrologia e Integração de Automação (CLP)</p>
+<p><span class="lang-pt"><strong>Parceiros Industriais:</strong> Rima<br><strong>Escopo:</strong> Desenvolvimento de Produto, Engenharia Reversa, Metrologia e Integração de Automação (CLP)</span><span class="lang-en"><strong>Industrial Partners:</strong> Rima<br><strong>Scope:</strong> Product Development, Reverse Engineering, Metrology and Automation Integration (PLC)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/condicionador.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
 <figcaption>Painel de condicionamento de gases desenvolvido para operação no chão de fábrica, contendo sistemas de filtragem, resfriamento e análise.</figcaption>
 </figure>
 </div>
-<section id="o-desafio" class="level2">
-<h2 class="anchored" data-anchor-id="o-desafio">O Desafio</h2>
+<p><span class="lang-pt">## O Desafio</span></p>
 <p>O monitoramento de emissões e a caracterização de gases em fornos industriais são processos fundamentais tanto para a otimização da combustão quanto para o cumprimento de rigorosas normas ambientais.</p>
-<p>A partir da expertise validada em análises termoquímicas para créditos de carbono, o desafio evoluiu da consultoria analítica para a engenharia de produto: foi necessário desenvolver um armário de instrumentação robusto, autônomo e de fácil instalação, capaz de operar no ambiente agressivo das plantas siderúrgicas e metalúrgicas, entregando dados confiáveis e contínuos diretamente para o sistema de controle da fábrica.</p>
-</section>
-<section id="arquitetura-do-produto-e-integração-de-sistemas" class="level2">
-<h2 class="anchored" data-anchor-id="arquitetura-do-produto-e-integração-de-sistemas">Arquitetura do Produto e Integração de Sistemas</h2>
-<p>A entrega consistiu em um produto completo, englobando a coleta física da amostra, o condicionamento mecânico e a integração lógica da telemetria. O desenvolvimento foi estruturado nas seguintes frentes:</p>
+<p>A partir da expertise validada em análises termoquímicas para créditos de carbono, o desafio evoluiu da consultoria analítica para a engenharia de produto: foi necessário desenvolver um armário de instrumentação robusto, autônomo e de fácil instalação, capaz de operar no ambiente agressivo das plantas siderúrgicas e metalúrgicas, entregando dados confiáveis e contínuos diretamente para o sistema de controle da fábrica. <span class="lang-en">## The Challenge</span></p>
+<p>Emissions monitoring and gas characterization in industrial furnaces are fundamental processes both for combustion optimization and for compliance with stringent environmental regulations.</p>
+<p>Building on validated expertise in thermochemical analyses for carbon credits, the challenge evolved from analytical consulting to product engineering: it was necessary to develop a robust, autonomous, and easy-to-install instrumentation cabinet capable of operating in the aggressive environment of steel and metallurgical plants, delivering reliable and continuous data directly to the factory’s control system.</p>
+<p><span class="lang-pt">## Arquitetura do Produto e Integração de Sistemas</span></p>
+<p>A entrega consistiu em um produto completo, englobando a coleta física da amostra, o condicionamento mecânico e a integração lógica da telemetria. O desenvolvimento foi estruturado nas seguintes frentes: <span class="lang-en">## System Architecture and Product Integration</span></p>
+<p>The delivery consisted of a complete product, encompassing physical sample collection, mechanical conditioning, and logical telemetry integration. The development was structured across the following fronts:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Pitot2_blur.jpg" class="img-fluid figure-img"></p>
 <figcaption>Detalhe do arranjo do Tubo de Pitot e conexões de amostragem instalados para a coleta primária dos gases no processo.</figcaption>
 </figure>
 </div>
-<ul>
-<li><strong>Coleta e Condicionamento Físico:</strong> Para que os sensores de precisão pudessem operar sem degradação, o gás extraído dos fornos (via sondas e tubos de Pitot customizados) precisava ser tratado. O painel projetado incluiu sistemas mecânicos e pneumáticos para a remoção de particulados, controle de fluxo e resfriamento da amostra antes de atingir os módulos de análise.</li>
-<li><strong>Instrumentação Multivariável:</strong> O núcleo analítico do sistema foi estruturado ao redor de analisadores multiparamétricos (como o Gasboard 3100) para a caracterização contínua de concentrações de CO2, CH4, CO, H2 e O2. Em paralelo, foram integrados transmissores de pressão diferencial (MAMAC), pressão interna (SAMRELLO), além de medidores de temperatura e umidade da amostra (Honeywell).</li>
-<li><strong>Integração em Tempo Real (CLP):</strong> A inovação do projeto esteve na conectividade e transparência dos dados. Realizei a interligação completa de todos os instrumentos analíticos com o Controlador Lógico Programável (CLP) da própria planta. Utilizando módulos de aquisição dedicados (ABB AI523) e o protocolo de comunicação industrial PROFINET, a arquitetura garantiu que as medições chegassem ao CLP AC500 com máxima fidelidade.</li>
-</ul>
+<p><span class="lang-pt">* <strong>Coleta e Condicionamento Físico:</strong> Para que os sensores de precisão pudessem operar sem degradação, o gás extraído dos fornos (via sondas e tubos de Pitot customizados) precisava ser tratado. O painel projetado incluiu sistemas mecânicos e pneumáticos para a remoção de particulados, controle de fluxo e resfriamento da amostra antes de atingir os módulos de análise. * <strong>Instrumentação Multivariável:</strong> O núcleo analítico do sistema foi estruturado ao redor de analisadores multiparamétricos (como o Gasboard 3100) para a caracterização contínua de concentrações de CO2, CH4, CO, H2 e O2. Em paralelo, foram integrados transmissores de pressão diferencial (MAMAC), pressão interna (SAMRELLO), além de medidores de temperatura e umidade da amostra (Honeywell). * <strong>Integração em Tempo Real (CLP):</strong> A inovação do projeto esteve na conectividade e transparência dos dados. Realizei a interligação completa de todos os instrumentos analíticos com o Controlador Lógico Programável (CLP) da própria planta. Utilizando módulos de aquisição dedicados (ABB AI523) e o protocolo de comunicação industrial PROFINET, a arquitetura garantiu que as medições chegassem ao CLP AC500 com máxima fidelidade.</span> <span class="lang-en">* <strong>Physical Collection and Conditioning:</strong> For the precision sensors to operate without degradation, the gas extracted from the furnaces (via custom probes and Pitot tubes) needed to be treated. The designed panel included mechanical and pneumatic systems for particulate removal, flow control, and sample cooling before reaching the analysis modules. * <strong>Multivariable Instrumentation:</strong> The analytical core of the system was structured around multiparameter analyzers (such as the Gasboard 3100) for continuous characterization of CO2, CH4, CO, H2, and O2 concentrations. In parallel, differential pressure transmitters (MAMAC), internal pressure sensors (SAMRELLO), as well as sample temperature and humidity meters (Honeywell) were integrated. * <strong>Real-Time Integration (PLC):</strong> The project’s innovation lay in data connectivity and transparency. I performed the complete interconnection of all analytical instruments with the plant’s Programmable Logic Controller (PLC). Using dedicated acquisition modules (ABB AI523) and the PROFINET industrial communication protocol, the architecture ensured that measurements reached the AC500 PLC with maximum fidelity.</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/DIAFisicoPLC.png" class="img-fluid figure-img" style="width:90.0%"></p>
@@ -318,24 +303,23 @@ https://badge.dimensions.ai/
 </figure>
 </div>
 <hr>
-</section>
-<section id="engenharia-reversa-e-metrologia-customizada" class="level2">
-<h2 class="anchored" data-anchor-id="engenharia-reversa-e-metrologia-customizada">Engenharia Reversa e Metrologia Customizada</h2>
-<p>Durante a execução do projeto, o núcleo analítico exigiu intervenções de baixo nível para garantir a confiabilidade dos dados no ambiente industrial. Ao invés de operar o analisador como uma “caixa-preta”, foi necessário realizar a manutenção e a engenharia reversa do equipamento para ajustes finos em sua eletrônica e pneumática.</p>
+<p><span class="lang-pt">## Engenharia Reversa e Metrologia Customizada</span></p>
+<p>Durante a execução do projeto, o núcleo analítico exigiu intervenções de baixo nível para garantir a confiabilidade dos dados no ambiente industrial. Ao invés de operar o analisador como uma “caixa-preta”, foi necessário realizar a manutenção e a engenharia reversa do equipamento para ajustes finos em sua eletrônica e pneumática. <span class="lang-en">## Reverse Engineering and Custom Metrology</span></p>
+<p>During project execution, the analytical core required low-level interventions to ensure data reliability in the industrial environment. Instead of operating the analyzer as a “black box,” it was necessary to perform maintenance and reverse engineering of the equipment for fine adjustments to its electronics and pneumatics.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/IMG_0111.JPG" class="img-fluid figure-img" style="width:75.0%"></p>
 <figcaption>Analisador Gasboard 3100 em operação durante os testes de bancada.</figcaption>
 </figure>
 </div>
-<p>Para assegurar a precisão das leituras de emissões e atestar a qualidade da solução entregue, projetei e construí uma bancada de calibração de fluxo customizada do zero.</p>
+<p><span class="lang-pt">Para assegurar a precisão das leituras de emissões e atestar a qualidade da solução entregue, projetei e construí uma bancada de calibração de fluxo customizada do zero.</span> <span class="lang-en">To ensure the accuracy of emissions readings and certify the quality of the delivered solution, I designed and built a custom flow calibration bench from scratch.</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/IMG_0116.JPG" class="img-fluid figure-img" style="width:75.0%"></p>
 <figcaption>Bancada de calibração de fluxo projetada com rotâmetros de precisão para atestar a metrologia do sistema.</figcaption>
 </figure>
 </div>
-<p>Utilizando rotâmetros de precisão, tubulações pneumáticas estruturadas e componentes usinados sob medida para a câmara de fluxo, o sistema permitiu a calibração fina e a aferição cruzada das vazões dos gases de amostra e de referência, garantindo a certificação metrológica da solução antes de sua ida para o chão de fábrica.</p>
+<p><span class="lang-pt">Utilizando rotâmetros de precisão, tubulações pneumáticas estruturadas e componentes usinados sob medida para a câmara de fluxo, o sistema permitiu a calibração fina e a aferição cruzada das vazões dos gases de amostra e de referência, garantindo a certificação metrológica da solução antes de sua ida para o chão de fábrica.</span> <span class="lang-en">Using precision rotameters, structured pneumatic tubing, and custom-machined components for the flow chamber, the system enabled fine calibration and cross-verification of sample and reference gas flow rates, ensuring the metrological certification of the solution before it went to the factory floor.</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/IMG_0059.JPG" class="img-fluid figure-img" style="width:90.0%"></p>
@@ -343,11 +327,11 @@ https://badge.dimensions.ai/
 </figure>
 </div>
 <hr>
-</section>
-<section id="impacto" class="level2">
-<h2 class="anchored" data-anchor-id="impacto">Impacto</h2>
+<p><span class="lang-pt">## Impacto</span></p>
 <p>O desenvolvimento superou o conceito de medição isolada ao entregar uma solução <em>plug-and-play</em> com precisão atestada em laboratório e perfeitamente integrada à arquitetura de automação existente na planta.</p>
-<p>Ao fornecer caracterizações precisas e medições de umidade em tempo real diretamente para as telas de supervisão da operação, o equipamento eliminou pontos cegos do processo termoquímico. Isso permitiu aos operadores da Rima otimizarem a eficiência dos fornos industriais em tempo real, baseando suas tomadas de decisão em dados instantâneos e rastreáveis.</p>
+<p>Ao fornecer caracterizações precisas e medições de umidade em tempo real diretamente para as telas de supervisão da operação, o equipamento eliminou pontos cegos do processo termoquímico. Isso permitiu aos operadores da Rima otimizarem a eficiência dos fornos industriais em tempo real, baseando suas tomadas de decisão em dados instantâneos e rastreáveis. <span class="lang-en">## Impact</span></p>
+<p>The development surpassed the concept of isolated measurement by delivering a plug-and-play solution with laboratory-certified precision, perfectly integrated with the plant’s existing automation architecture.</p>
+<p>By providing accurate characterizations and real-time humidity measurements directly to the operation’s supervision screens, the equipment eliminated blind spots in the thermochemical process. This enabled Rima’s operators to optimize industrial furnace efficiency in real time, basing their decision-making on instant and traceable data.</p>
 <div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
 <p><img src="../../../../files/images/partners/Fahren_vetorizado.svg" height="60"></p>
 <p><img src="../../../../files/images/partners/rima-industrial-seeklogo.png" height="60"></p>
@@ -438,7 +422,6 @@ https://badge.dimensions.ai/
 </script>
 
 
-</section>
 
 </main> <!-- /main -->
 <script>

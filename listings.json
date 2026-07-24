@@ -2,8 +2,13 @@
   {
     "listing": "/pages/portfolio/pd/index.html",
     "items": [
+      "/pages/portfolio/pd/measure-cable-fault/index.html",
+      "/pages/portfolio/pd/ferramenta-mapa-eficiencia/index.html",
+      "/pages/portfolio/pd/online-monitoring/index.html",
+      "/pages/portfolio/pd/resfriamento-imersao/index.html",
       "/pages/portfolio/pd/hibridizacao-maquinario-off-road/index.html",
       "/pages/portfolio/pd/gestao-ativa-baterias/index.html",
+      "/pages/portfolio/pd/eletrificacao-inwheel/index.html",
       "/pages/portfolio/pd/oasis-ufmg/index.html",
       "/pages/portfolio/pd/supervisorio-iot-fotovoltaico/index.html",
       "/pages/portfolio/pd/oscilador-magnetico/index.html",
@@ -44,10 +49,16 @@
       "/pages/blog/20251224 - Semihosting advanced debugging for embedded devices/index.html",
       "/pages/blog/20251220 - Building a wireguard site-to-ste VPN/index.html",
       "/pages/portfolio/industria/automacao-biochar/index.html",
+      "/pages/portfolio/pd/measure-cable-fault/index.html",
+      "/pages/portfolio/pd/ferramenta-mapa-eficiencia/index.html",
+      "/pages/portfolio/pd/online-monitoring/index.html",
+      "/pages/portfolio/pd/resfriamento-imersao/index.html",
       "/pages/portfolio/pd/hibridizacao-maquinario-off-road/index.html",
+      "/pages/portfolio/industria/flow-measure/index.html",
       "/pages/portfolio/industria/geracao-termoelétrica/index.html",
       "/pages/portfolio/pd/gestao-ativa-baterias/index.html",
       "/pages/portfolio/industria/laudos-periciais-pareceres-tecnicos/index.html",
+      "/pages/portfolio/pd/eletrificacao-inwheel/index.html",
       "/pages/portfolio/pd/oasis-ufmg/index.html",
       "/pages/portfolio/industria/fem-motor-inducao/index.html",
       "/pages/portfolio/pd/supervisorio-iot-fotovoltaico/index.html",
@@ -55,7 +66,9 @@
       "/pages/portfolio/industria/maquinas-especiais/index.html",
       "/pages/portfolio/pd/eletrificacao-mobilidade/index.html",
       "/pages/portfolio/industria/microturbina-gas/index.html",
+      "/pages/portfolio/industria/magnetic-evaluation/index.html",
       "/pages/portfolio/industria/eletronica-automotiva/index.html",
+      "/pages/portfolio/industria/condicionamento-ar-motores/index.html",
       "/pages/portfolio/industria/instrumentacao-gases/index.html",
       "/pages/portfolio/industria/balanco-quimico/index.html"
     ]
@@ -93,12 +106,15 @@
     "listing": "/pages/portfolio/industria/index.html",
     "items": [
       "/pages/portfolio/industria/automacao-biochar/index.html",
+      "/pages/portfolio/industria/flow-measure/index.html",
       "/pages/portfolio/industria/geracao-termoelétrica/index.html",
       "/pages/portfolio/industria/laudos-periciais-pareceres-tecnicos/index.html",
       "/pages/portfolio/industria/fem-motor-inducao/index.html",
       "/pages/portfolio/industria/maquinas-especiais/index.html",
       "/pages/portfolio/industria/microturbina-gas/index.html",
+      "/pages/portfolio/industria/magnetic-evaluation/index.html",
       "/pages/portfolio/industria/eletronica-automotiva/index.html",
+      "/pages/portfolio/industria/condicionamento-ar-motores/index.html",
       "/pages/portfolio/industria/instrumentacao-gases/index.html",
       "/pages/portfolio/industria/balanco-quimico/index.html"
     ]
