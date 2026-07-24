@@ -85,8 +85,8 @@ listing:   # Recent news and events
         - "Projetos de P&D"
         - "Indústria"
     type: grid
-    max-items: 15
-    page-size: 15
+    max-items: 25
+    page-size: 25
     fields: [image, title, description]
     max-description-length: 75
     sort:

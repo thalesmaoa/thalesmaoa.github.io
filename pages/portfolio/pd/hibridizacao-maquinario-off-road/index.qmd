@@ -2,7 +2,7 @@
 title: "Hibridização de Maquinário Off-Road: Powertrain para Retroescavadeiras"
 description: "Desenvolvimento full-stack de arquitetura híbrida, especificação de powertrain e sistemas embarcados para maquinário pesado em parceria com a CNH Industrial."
 date: "2023-11-15" # Ajuste para a data exata do projeto
-categories: [Eletrificação Veicular, Powertrain, Sistemas Embarcados, P&D]
+categories: [Eletrificação Veicular, Sistemas Embarcados, P&D]
 image: "images/retroescavadeira.png" # Esta é a imagem que aparece no "card" principal do blog
 draft: false
 ---

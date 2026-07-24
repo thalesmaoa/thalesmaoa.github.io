@@ -1,0 +1,111 @@
+---
+title: "Diagnóstico Preditivo de Cabos Subterrâneos: Localização de Falhas Incipientes via Blindagem"
+description: "Pesquisa e desenvolvimento de algoritmo baseado no método de impedância de dois terminais aplicado à blindagem metálica para detecção online de falhas (Water Tree)."
+date: "2025-07-04" 
+categories: [Infraestrutura Elétrica, Instrumentação, Simulação Multifísica, P&D, Ciência de Dados]
+image: "images/banner.png" # Sugestão: Use a Figura 1.4 da tese (Formas de onda de corrente da falha incipiente)
+draft: false
+---
+
+<span class="lang-pt">**Escopo:** Eletromagnetismo Aplicado, Processamento de Sinais, Instrumentação e P&D.</span><span class="lang-en">**Scope:** Applied Electromagnetism, Signal Processing, Instrumentation and R&D.</span>  
+
+![Formas de onda evidenciando a ocorrência de uma falha incipiente (subcíclica e autoextinguível) antes de sua evolução para uma falha permanente.](images/falha-incipiente.png){width=80%}
+
+## <span class="lang-pt">O Desafio Oculto das Redes Subterrâneas</span><span class="lang-en">The Hidden Challenge of Underground Grids</span>
+
+<div class="lang-pt">
+
+Nas redes elétricas de média tensão, o envelhecimento da isolação dos cabos subterrâneos ocorre de forma gradual e não uniforme. Fatores como umidade e estresse elétrico geram fenômenos de arborescência (*water trees* e *electrical trees*), que degradam o polímero isolante.
+
+Antes de um cabo romper definitivamente, ele apresenta **falhas incipientes**: pequenos arcos elétricos que duram apenas frações de um ciclo (subcíclicos) e se autoextinguem no cruzamento por zero da onda de tensão. Por serem transitórios e de baixíssima energia, esses eventos passam totalmente despercebidos pelos sistemas de proteção convencionais do sistema elétrico de potência. O desafio da engenharia é detectar esses micro-rompimentos online e, mais importante, calcular a localização exata (em metros) de onde a degradação está ocorrendo, antes que ela evolua para uma falha catastrófica.
+
+</div>
+<div class="lang-en">
+
+In medium-voltage power grids, the aging of underground cable insulation occurs gradually and non-uniformly. Factors such as moisture and electrical stress generate treeing phenomena (*water trees* and *electrical trees*), which degrade the insulating polymer.
+
+Before a cable definitively ruptures, it exhibits **incipient faults**: small electric arcs that last only fractions of a cycle (sub-cycle) and self-extinguish at the zero-crossing of the voltage wave. Because they are transient and of extremely low energy, these events go completely unnoticed by conventional power system protection schemes. The engineering challenge is to detect these micro-ruptures online and, more importantly, to calculate the exact location (in meters) of where the degradation is occurring, before it evolves into a catastrophic failure.
+
+</div>
+
+## <span class="lang-pt">A Física do Problema: O Fator Maxwell</span><span class="lang-en">The Physics of the Problem: The Maxwell Factor</span>
+
+<div class="lang-pt">
+
+Cabos de média tensão possuem uma blindagem metálica aterrada em sua estrutura. Quando o cabo está energizado, existe um forte acoplamento capacitivo entre o condutor central e a blindagem.
+
+Baseando-nos na lei de Ampère-Maxwell, sabemos que a variação temporal do fluxo elétrico através do dielétrico degradado induz uma corrente de deslocamento. No exato instante do micro-arco da falha incipiente, ocorre um escape de corrente de fuga que flui diretamente para a malha de terra.
+
+A inovação central deste projeto foi mudar o foco da instrumentação. Os métodos tradicionais de localização de falhas utilizam as medições de tensão e corrente no condutor principal. O problema é que o condutor principal sofre com a forte interferência das variações de carga da rede, o que insere erros massivos no cálculo de distância. Nossa abordagem aplicou o **método de localização por impedância de dois terminais diretamente na blindagem metálica**.
+
+</div>
+<div class="lang-en">
+
+Medium-voltage cables have a grounded metallic shield in their structure. When the cable is energized, there is strong capacitive coupling between the central conductor and the shield.
+
+Based on Ampère-Maxwell's law, we know that the temporal variation of the electric flux through the degraded dielectric induces a displacement current. At the exact moment of the incipient fault micro-arc, a leakage current escapes and flows directly to the ground grid.
+
+The central innovation of this project was shifting the instrumentation focus. Traditional fault location methods use voltage and current measurements on the main conductor. The problem is that the main conductor suffers from strong interference from grid load variations, which introduces massive errors in the distance calculation. Our approach applied the **two-terminal impedance-based fault location method directly on the metallic shield**.
+
+</div>
+
+## <span class="lang-pt">Modelagem e Algoritmo de Localização</span><span class="lang-en">Modeling and Fault Location Algorithm</span>
+
+<div class="lang-pt">
+
+</span>
+<div class="lang-en">
+
+</div>
+
+![Gráfico comparativo provando a superioridade do método: a análise via blindagem metálica (azul) apresenta erros drasticamente menores em relação ao uso do condutor principal (vermelho).](images/comparativo.png){width=90%}
+
+<div class="lang-pt">
+
+Ao monitorar a tensão e a corrente exclusivamente na blindagem metálica nos terminais do cabo, o algoritmo desenvolvido isola o evento da falha das dinâmicas de carga da rede. O processamento foi estruturado nas seguintes etapas:
+
+* **Aquisição Diferenciada:** O sistema detecta derivadas diferentes de zero nas grandezas da blindagem, confirmando a ocorrência do arco incipiente no domínio do tempo.
+* **Desacoplamento Matemático:** A aplicação do método de impedância na blindagem elimina completamente a necessidade de medir as correntes de fase do condutor principal.
+* **Cálculo de Posição:** Resolvendo uma equação polinomial de segundo grau com as grandezas transientes da blindagem, o algoritmo calcula as raízes que indicam o percentual exato do comprimento do cabo onde a fuga ocorreu.
+
+</div>
+<div class="lang-en">
+
+By monitoring voltage and current exclusively on the metallic shield at the cable terminals, the developed algorithm isolates the fault event from grid load dynamics. The processing was structured in the following stages:
+
+* **Differentiated Acquisition:** The system detects non-zero derivatives in the shield quantities, confirming the occurrence of the incipient arc in the time domain.
+* **Mathematical Decoupling:** Applying the impedance method on the shield completely eliminates the need to measure the phase currents of the main conductor.
+* **Position Calculation:** By solving a second-degree polynomial equation with the transient shield quantities, the algorithm calculates the roots that indicate the exact percentage of the cable length where the leakage occurred.
+
+</div>
+
+## <span class="lang-pt">Impacto
+</div><span class="lang-en">Impact</span>
+
+<div class="lang-pt">
+
+O desenvolvimento e a validação computacional/experimental desta metodologia representam uma quebra de paradigma na manutenção preditiva de linhas subterrâneas de média tensão.
+
+Ao extrair a informação preditiva diretamente da blindagem, o algoritmo se mostrou imune às flutuações de carga do condutor central. Como resultado prático, a nova abordagem **melhorou a precisão da localização da falha em 55,86%** quando comparada à aplicação do método tradicional no condutor principal. Esta tecnologia permite que concessionárias e indústrias localizem e substituam trechos fadigados cirurgicamente de forma *online*, evitando apagões e elevando drasticamente a confiabilidade do fornecimento de energia.
+
+</div>
+<div class="lang-en">
+
+The development and computational/experimental validation of this methodology represent a paradigm shift in the predictive maintenance of medium-voltage underground lines.
+
+By extracting predictive information directly from the shield, the algorithm proved immune to central conductor load fluctuations. As a practical result, the new approach **improved fault location accuracy by 55.86%** when compared to the traditional method applied to the main conductor. This technology allows utilities and industries to precisely locate and replace fatigued cable sections online, preventing blackouts and dramatically increasing power supply reliability.
+
+</div>
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+
+![](/files/icons/logo_UFMG.jpg){height=60px}
+
+<!-- ![](/files/images/partners/CNH_Industrial.svg){height=60px} -->
+
+</div>
+
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

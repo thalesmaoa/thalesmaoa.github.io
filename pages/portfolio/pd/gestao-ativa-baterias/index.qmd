@@ -2,7 +2,7 @@
 title: "Gestão Ativa de Baterias em Microrredes: Evolução em Sistemas de Armazenamento"
 description: "Pesquisa para o desenvolvimento de equalização ativa de carga via conversores DC/DC e especificação completa de microrrede em parceria com a Petrobras."
 date: "2022-12-15" # Ajuste para a data de conclusão do projeto
-categories: [Sistemas de Armazenamento, Microrredes, Eletrônica de Potência, P&D]
+categories: [Armazenamento de Energia, Eletrônica de Potência, P&D]
 image: "images/baterias_montadas.jpg"
 draft: false
 ---

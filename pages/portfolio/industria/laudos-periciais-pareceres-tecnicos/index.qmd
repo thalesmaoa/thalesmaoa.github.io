@@ -2,52 +2,75 @@
 title: "Laudos Periciais e Pareceres Técnicos"
 description: "Atuação em engenharia forense, análise de causa-raiz e emissão de pareceres técnicos especializados para litígios e suporte jurídico."
 date: "2022-09-27" # Data do laudo mais recente
-categories: [Engenharia Forense, Laudos Periciais, Consultoria, Propriedade Intelectual]
+categories: [Consultoria & Perícia]
 image: "images/banner.png"
 draft: false
 ---
 
+<div class="lang-pt">
 A elaboração de laudos técnico-científicos exige um profundo rigor analítico para subsidiar decisões jurídicas e resoluções de litígios. A atuação como perito e assistente técnico envolve a investigação de causa-raiz, análise do estado da arte e a emissão de pareceres isentos e fundamentados para resguardar empresas em disputas de propriedade intelectual, responsabilidade operacional e falhas em equipamentos.
 
 Abaixo, apresento dois casos reais onde a engenharia investigativa serviu como prova jurídica definitiva.
 
+</div>
+<div class="lang-en">
+The preparation of technical-scientific reports demands deep analytical rigor to support legal decisions and dispute resolutions. Acting as an expert witness and technical assistant involves root cause investigation, state-of-the-art analysis, and issuing impartial, well-founded opinions to protect companies in intellectual property disputes, operational liability, and equipment failures.
+
+Below, I present two real cases where investigative engineering served as definitive legal evidence.
+
+</div>
+
 ---
 
-## Caso 1: Análise de Falha e Responsabilidade Técnica em Máquinas Rotativas
+## <span class="lang-pt">Caso 1: Análise de Falha e Responsabilidade Técnica em Máquinas Rotativas</span><span class="lang-en">Case 1: Failure Analysis and Technical Responsibility in Rotating Machinery</span>
 
-**Escopo:** Engenharia Forense e Análise de Causa-Raiz  
+<span class="lang-pt">**Escopo:** Engenharia Forense e Análise de Causa-Raiz</span>
+<span class="lang-en">**Scope:** Forensic Engineering and Root Cause Analysis</span>
 
 ![Inspeção técnica e análise de fadiga em componentes de máquinas rotativas.](images/IMG20210805140930.jpg){width=60%}
+### <span class="lang-pt">O Contexto</span><span class="lang-en">The Context</span>
 
-### O Contexto
-Investigação das causas da quebra catastrófica das barras do rotor de um motor síncrono de grande porte (1.500 kW, 3.450 V, 10 polos), ocorrida logo após um serviço de manutenção corretiva.
+<span class="lang-pt">Investigação das causas da quebra catastrófica das barras do rotor de um motor síncrono de grande porte (1.500 kW, 3.450 V, 10 polos), ocorrida logo após um serviço de manutenção corretiva.</span>
+<span class="lang-en">Investigation of the causes of the catastrophic breakage of the rotor bars of a large synchronous motor (1,500 kW, 3,450 V, 10 poles), which occurred shortly after a corrective maintenance service.</span>
 
-### A Investigação
-A análise técnica aprofundada determinou que a falha não possuía relação com os reparos pontuais realizados no anel de curto-circuito, mas sim com um severo processo de fadiga por estresse termo-mecânico. O laudo demonstrou que o equipamento, com mais de 40 anos de operação, sofria com ineficiências de refrigeração no lado acoplado, o que gerou um gradiente térmico elevado e um envelhecimento acelerado do material metálico.
+### <span class="lang-pt">A Investigação</span><span class="lang-en">The Investigation</span>
 
-### Impacto Jurídico
-O parecer técnico comprovou que a falha inicial desencadeou uma reação em cadeia devido à transferência excessiva de corrente para as barras adjacentes durante os ciclos de partida. Essa comprovação técnica isentou a empresa de manutenção de qualquer responsabilidade ou passivo sobre a quebra, fornecendo respaldo legal incontestável.
+<span class="lang-pt">A análise técnica aprofundada determinou que a falha não possuía relação com os reparos pontuais realizados no anel de curto-circuito, mas sim com um severo processo de fadiga por estresse termo-mecânico. O laudo demonstrou que o equipamento, com mais de 40 anos de operação, sofria com ineficiências de refrigeração no lado acoplado, o que gerou um gradiente térmico elevado e um envelhecimento acelerado do material metálico.</span>
+<span class="lang-en">The in-depth technical analysis determined that the failure was not related to the specific repairs performed on the short-circuit ring, but rather to a severe thermo-mechanical stress fatigue process. The report demonstrated that the equipment, with over 40 years of operation, suffered from cooling inefficiencies on the coupled side, which generated a high thermal gradient and accelerated aging of the metallic material.</span>
+
+### <span class="lang-pt">Impacto Jurídico</span><span class="lang-en">Legal Impact</span>
+
+<span class="lang-pt">O parecer técnico comprovou que a falha inicial desencadeou uma reação em cadeia devido à transferência excessiva de corrente para as barras adjacentes durante os ciclos de partida. Essa comprovação técnica isentou a empresa de manutenção de qualquer responsabilidade ou passivo sobre a quebra, fornecendo respaldo legal incontestável.</span>
+<span class="lang-en">The technical opinion proved that the initial failure triggered a chain reaction due to excessive current transfer to adjacent bars during startup cycles. This technical evidence exonerated the maintenance company from any responsibility or liability for the breakage, providing incontestable legal support.</span>
 
 ---
 
-## Caso 2: Avaliação de Propriedade Intelectual e Anterioridade Tecnológica
+## <span class="lang-pt">Caso 2: Avaliação de Propriedade Intelectual e Anterioridade Tecnológica</span><span class="lang-en">Case 2: Intellectual Property Assessment and Prior Art Analysis</span>
 
-**Escopo:** Perícia de Software/Hardware e Disputa de Propriedade Intelectual  
+<span class="lang-pt">**Escopo:** Perícia de Software/Hardware e Disputa de Propriedade Intelectual</span>
+<span class="lang-en">**Scope:** Software/Hardware Expert Analysis and Intellectual Property Dispute</span>
 
 ![Análise de placas de circuito impresso e auditoria de sistemas embarcados.](images/eletronica.png)
+### <span class="lang-pt">O Contexto</span><span class="lang-en">The Context</span>
 
-### O Contexto
-Emissão de parecer técnico-científico para validar ou refutar judicialmente a alegação de invenção de um sistema de integração de automação industrial (envolvendo placas seriais e linhas de braços robóticos).
+<span class="lang-pt">Emissão de parecer técnico-científico para validar ou refutar judicialmente a alegação de invenção de um sistema de integração de automação industrial (envolvendo placas seriais e linhas de braços robóticos).</span>
+<span class="lang-en">Issuance of a technical-scientific opinion to judicially validate or refute the claimed invention of an industrial automation integration system (involving serial boards and robotic arm lines).</span>
 
-### A Investigação
-A condução de uma rigorosa análise de anterioridade comprovou que o hardware pleiteado como invenção era composto integralmente por placas de desenvolvimento comercialmente disponíveis no varejo, baseadas em arquiteturas de domínio público. O laudo também identificou a modificação e o uso indevido de bibliotecas de código aberto, caracterizando infração direta aos termos de uso da licença de software livre LGPL (*GNU Lesser General Public License*).
+### <span class="lang-pt">A Investigação</span><span class="lang-en">The Investigation</span>
 
-### Impacto Jurídico
-O parecer descaracterizou a alegação de patenteabilidade e ineditismo, provando tratar-se apenas de uma melhoria de um processo já existente montado com tecnologia de prateleira. O documento serviu como prova material decisiva para a resolução do litígio de propriedade intelectual da companhia.
+<span class="lang-pt">A condução de uma rigorosa análise de anterioridade comprovou que o hardware pleiteado como invenção era composto integralmente por placas de desenvolvimento comercialmente disponíveis no varejo, baseadas em arquiteturas de domínio público. O laudo também identificou a modificação e o uso indevido de bibliotecas de código aberto, caracterizando infração direta aos termos de uso da licença de software livre LGPL (*GNU Lesser General Public License*).</span>
+<span class="lang-en">A rigorous prior art analysis proved that the hardware claimed as an invention was composed entirely of commercially available development boards based on public domain architectures. The report also identified the modification and unauthorized use of open-source libraries, characterizing a direct infringement of the LGPL (*GNU Lesser General Public License*) free software license terms.</span>
+
+### <span class="lang-pt">Impacto Jurídico</span><span class="lang-en">Legal Impact</span>
+
+<span class="lang-pt">O parecer descaracterizou a alegação de patenteabilidade e ineditismo, provando tratar-se apenas de uma melhoria de um processo já existente montado com tecnologia de prateleira. O documento serviu como prova material decisiva para a resolução do litígio de propriedade intelectual da companhia.</span>
+<span class="lang-en">The opinion discredited the claim of patentability and novelty, proving it to be merely an improvement of an existing process assembled with off-the-shelf technology. The document served as decisive material evidence for resolving the company's intellectual property dispute.</span>
 
 ---
 
-## Atuação em Engenharia Forense e Perícias
+## <span class="lang-pt">Atuação em Engenharia Forense e Perícias</span><span class="lang-en">Forensic Engineering and Expert Analysis Services</span>
+
+<div class="lang-pt">
 
 Os casos acima ilustram apenas uma fração da minha capacidade de atuação em engenharia forense. Com vasta experiência na condução de investigações técnicas rigorosas, emito laudos que traduzem a capacidade da engenharia elétrica, mecânica e de software para o meio jurídico, fornecendo a segurança técnica necessária para a tomada de decisão.
 
@@ -57,6 +80,20 @@ Os casos acima ilustram apenas uma fração da minha capacidade de atuação em 
 *   **Propriedade Intelectual:** Avaliação de patentes, quebra de PI e anterioridade tecnológica em hardwares e softwares.
 *   **Sistemas de Energia:** Análise técnica de microrredes, qualidade de energia e sinistros elétricos.
 *   **Suporte Jurídico:** Atuação como Assistente Técnico em litígios complexos.
+
+</div>
+<div class="lang-en">
+
+The cases above illustrate just a fraction of my capacity in forensic engineering. With extensive experience in conducting rigorous technical investigations, I issue reports that translate the capabilities of electrical, mechanical, and software engineering into the legal sphere, providing the technical certainty needed for decision-making.
+
+**I can assist your company or law firm with:**
+
+*   **Root Cause Investigation:** Failures in power equipment (transformers, generators, industrial motors, inverters).
+*   **Intellectual Property:** Patent evaluation, IP infringement, and prior art analysis in hardware and software.
+*   **Energy Systems:** Technical analysis of microgrids, power quality, and electrical incidents.
+*   **Legal Support:** Acting as a Technical Assistant in complex litigation.
+
+</div>
 
 <div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
 
