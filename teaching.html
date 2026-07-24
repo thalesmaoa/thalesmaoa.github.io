@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,10 +45,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bb62276ab45c84d9efd712f51ff97b5a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-49652229725583e679e24428a78697da.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-55b5661a329bb2b073bfb5d7a83a89fa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -143,15 +146,15 @@ https://badge.dimensions.ai/
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptpesquisaspanspan-classlang-enresearchspan">    
         <li>
-    <a class="dropdown-item" href="./backend/research/papers/pub-listing.html">
+    <a class="dropdown-item" href="./pages/research/papers/pub-listing.html">
  <span class="dropdown-text"><span class="lang-pt">Lista de publicações</span><span class="lang-en">Publication List</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/research/theses/theses.html">
+    <a class="dropdown-item" href="./pages/research/theses/theses.html">
  <span class="dropdown-text"><span class="lang-pt">Teses e Dissertações</span><span class="lang-en">Theses &amp; Dissertations</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/research/sphin_about.html">
+    <a class="dropdown-item" href="./pages/research/sphin_about.html">
  <span class="dropdown-text">SPHIN</span></a>
   </li>  
     </ul>
@@ -162,11 +165,11 @@ https://badge.dimensions.ai/
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptportfóliospanspan-classlang-enportfoliospan">    
         <li>
-    <a class="dropdown-item" href="./backend/portfolio/pd/index.html">
+    <a class="dropdown-item" href="./pages/portfolio/pd/index.html">
  <span class="dropdown-text"><span class="lang-pt">Projetos de P&amp;D</span><span class="lang-en">R&amp;D Projects</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/portfolio/industria/index.html">
+    <a class="dropdown-item" href="./pages/portfolio/industria/index.html">
  <span class="dropdown-text"><span class="lang-pt">Indústria</span><span class="lang-en">Industry</span></span></a>
   </li>  
     </ul>
@@ -177,21 +180,21 @@ https://badge.dimensions.ai/
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptensinospanspan-classlang-enteachingspan">    
         <li>
-    <a class="dropdown-item" href="./backend/teaching/graduacao/index.html">
+    <a class="dropdown-item" href="./pages/teaching/graduacao/index.html">
  <span class="dropdown-text"><span class="lang-pt">Graduação</span><span class="lang-en">Undergraduate</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/teaching/pos-graduacao/index.html">
+    <a class="dropdown-item" href="./pages/teaching/pos-graduacao/index.html">
  <span class="dropdown-text"><span class="lang-pt">Pós-Graduação</span><span class="lang-en">Graduate</span></span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./backend/blog/index.html"> 
+    <a class="nav-link" href="./pages/blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./backend/news/index.html"> 
+    <a class="nav-link" href="./pages/news/index.html"> 
 <span class="menu-text"><span class="lang-pt">Notícias</span><span class="lang-en">News</span></span></a>
   </li>  
   <li class="nav-item">
@@ -210,7 +213,7 @@ https://badge.dimensions.ai/
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./backend/news/index.xml" target="_blank"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="./pages/news/index.xml" target="_blank"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  

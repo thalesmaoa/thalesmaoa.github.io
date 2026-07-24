@@ -1,94 +1,106 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/pages/portfolio/pd/index.html",
     "items": [
-      "/backend/news/202607 - Defesa William/index.html",
-      "/backend/news/202607 - Website creation/index.html",
-      "/backend/news/20260715 - BuyCoffee event/index.html",
-      "/backend/news/202607 - Registro INPI SIMOI/index.html",
-      "/backend/blog/20260504 - Designing 2D transformer core mastering sif file/index.html",
-      "/backend/blog/20260504 - Designing 2D transformer core post processing with paraview part3/index.html",
-      "/backend/blog/20260501 - Designing 2D transformer core steady state simulation elmerfem part2/index.html",
-      "/backend/blog/20260429 - Designing a 2D transformer core freecad to elmerfem integration part1/index.html",
-      "/backend/blog/20260104 - Still paying for the obvious in 2025/index.html",
-      "/backend/blog/20251228 - Daisy chain power efuses oring/index.html",
-      "/backend/blog/20251224 - Semihosting advanced debugging for embedded devices/index.html",
-      "/backend/blog/20251220 - Building a wireguard site-to-ste VPN/index.html",
-      "/backend/portfolio/industria/automacao-biochar/index.html",
-      "/backend/portfolio/pd/hibridizacao-maquinario-off-road/index.html",
-      "/backend/portfolio/pd/gestao-ativa-baterias/index.html",
-      "/backend/portfolio/industria/laudos-periciais-pareceres-tecnicos/index.html",
-      "/backend/portfolio/pd/oasis-ufmg/index.html",
-      "/backend/portfolio/pd/supervisorio-iot-fotovoltaico/index.html",
-      "/backend/portfolio/pd/oscilador-magnetico/index.html",
-      "/backend/portfolio/industria/microturbina-gas/index.html",
-      "/backend/portfolio/industria/balanco-quimico/index.html"
+      "/pages/portfolio/pd/hibridizacao-maquinario-off-road/index.html",
+      "/pages/portfolio/pd/gestao-ativa-baterias/index.html",
+      "/pages/portfolio/pd/oasis-ufmg/index.html",
+      "/pages/portfolio/pd/supervisorio-iot-fotovoltaico/index.html",
+      "/pages/portfolio/pd/oscilador-magnetico/index.html",
+      "/pages/portfolio/pd/eletrificacao-mobilidade/index.html"
     ]
   },
   {
-    "listing": "/backend/portfolio/industria/index.html",
-    "items": [
-      "/backend/portfolio/industria/automacao-biochar/index.html",
-      "/backend/portfolio/industria/laudos-periciais-pareceres-tecnicos/index.html",
-      "/backend/portfolio/industria/microturbina-gas/index.html",
-      "/backend/portfolio/industria/balanco-quimico/index.html"
-    ]
-  },
-  {
-    "listing": "/backend/research/theses/theses.html",
+    "listing": "/pages/research/theses/theses.html",
     "items": []
+  },
+  {
+    "listing": "/pages/research/papers/pub-listing.html",
+    "items": []
+  },
+  {
+    "listing": "/pages/teaching/pos-graduacao/index.html",
+    "items": [
+      "/pages/teaching/pos-graduacao/eee931-tecnologia-maquinas-eletricas.html"
+    ]
   },
   {
     "listing": "/projects.html",
     "items": []
   },
   {
-    "listing": "/backend/blog/index.html",
+    "listing": "/index.html",
     "items": [
-      "/backend/blog/20260504 - Designing 2D transformer core mastering sif file/index.html",
-      "/backend/blog/20260504 - Designing 2D transformer core post processing with paraview part3/index.html",
-      "/backend/blog/20260501 - Designing 2D transformer core steady state simulation elmerfem part2/index.html",
-      "/backend/blog/20260429 - Designing a 2D transformer core freecad to elmerfem integration part1/index.html",
-      "/backend/blog/20260104 - Still paying for the obvious in 2025/index.html",
-      "/backend/blog/20251228 - Daisy chain power efuses oring/index.html",
-      "/backend/blog/20251224 - Semihosting advanced debugging for embedded devices/index.html",
-      "/backend/blog/20251220 - Building a wireguard site-to-ste VPN/index.html"
+      "/pages/news/202607 - Defesa William/index.html",
+      "/pages/news/202607 - Website creation/index.html",
+      "/pages/news/20260715 - BuyCoffee event/index.html",
+      "/pages/news/202607 - Registro INPI SIMOI/index.html",
+      "/pages/blog/20260504 - Designing 2D transformer core mastering sif file/index.html",
+      "/pages/blog/20260504 - Designing 2D transformer core post processing with paraview part3/index.html",
+      "/pages/blog/20260501 - Designing 2D transformer core steady state simulation elmerfem part2/index.html",
+      "/pages/blog/20260429 - Designing a 2D transformer core freecad to elmerfem integration part1/index.html",
+      "/pages/blog/20260104 - Still paying for the obvious in 2025/index.html",
+      "/pages/blog/20251228 - Daisy chain power efuses oring/index.html",
+      "/pages/blog/20251224 - Semihosting advanced debugging for embedded devices/index.html",
+      "/pages/blog/20251220 - Building a wireguard site-to-ste VPN/index.html",
+      "/pages/portfolio/industria/automacao-biochar/index.html",
+      "/pages/portfolio/pd/hibridizacao-maquinario-off-road/index.html",
+      "/pages/portfolio/industria/geracao-termoelétrica/index.html",
+      "/pages/portfolio/pd/gestao-ativa-baterias/index.html",
+      "/pages/portfolio/industria/laudos-periciais-pareceres-tecnicos/index.html",
+      "/pages/portfolio/pd/oasis-ufmg/index.html",
+      "/pages/portfolio/industria/fem-motor-inducao/index.html",
+      "/pages/portfolio/pd/supervisorio-iot-fotovoltaico/index.html",
+      "/pages/portfolio/pd/oscilador-magnetico/index.html",
+      "/pages/portfolio/industria/maquinas-especiais/index.html",
+      "/pages/portfolio/pd/eletrificacao-mobilidade/index.html",
+      "/pages/portfolio/industria/microturbina-gas/index.html",
+      "/pages/portfolio/industria/eletronica-automotiva/index.html",
+      "/pages/portfolio/industria/instrumentacao-gases/index.html",
+      "/pages/portfolio/industria/balanco-quimico/index.html"
     ]
   },
   {
-    "listing": "/backend/research/papers/pub-listing.html",
-    "items": []
-  },
-  {
-    "listing": "/backend/portfolio/pd/index.html",
+    "listing": "/pages/teaching/graduacao/index.html",
     "items": [
-      "/backend/portfolio/pd/hibridizacao-maquinario-off-road/index.html",
-      "/backend/portfolio/pd/gestao-ativa-baterias/index.html",
-      "/backend/portfolio/pd/oasis-ufmg/index.html",
-      "/backend/portfolio/pd/supervisorio-iot-fotovoltaico/index.html",
-      "/backend/portfolio/pd/oscilador-magnetico/index.html"
+      "/pages/teaching/graduacao/ele618-sistemas-eletricos-industriais.html",
+      "/pages/teaching/graduacao/ele035-lab-conversao-energia.html"
     ]
   },
   {
-    "listing": "/backend/news/index.html",
+    "listing": "/pages/news/index.html",
     "items": [
-      "/backend/news/202607 - Defesa William/index.html",
-      "/backend/news/202607 - Website creation/index.html",
-      "/backend/news/20260715 - BuyCoffee event/index.html",
-      "/backend/news/202607 - Registro INPI SIMOI/index.html"
+      "/pages/news/202607 - Defesa William/index.html",
+      "/pages/news/202607 - Website creation/index.html",
+      "/pages/news/20260715 - BuyCoffee event/index.html",
+      "/pages/news/202607 - Registro INPI SIMOI/index.html"
     ]
   },
   {
-    "listing": "/backend/teaching/pos-graduacao/index.html",
+    "listing": "/pages/blog/index.html",
     "items": [
-      "/backend/teaching/pos-graduacao/eee931-tecnologia-maquinas-eletricas.html"
+      "/pages/blog/20260504 - Designing 2D transformer core post processing with paraview part3/index.html",
+      "/pages/blog/20260504 - Designing 2D transformer core mastering sif file/index.html",
+      "/pages/blog/20260501 - Designing 2D transformer core steady state simulation elmerfem part2/index.html",
+      "/pages/blog/20260429 - Designing a 2D transformer core freecad to elmerfem integration part1/index.html",
+      "/pages/blog/20260104 - Still paying for the obvious in 2025/index.html",
+      "/pages/blog/20251228 - Daisy chain power efuses oring/index.html",
+      "/pages/blog/20251224 - Semihosting advanced debugging for embedded devices/index.html",
+      "/pages/blog/20251220 - Building a wireguard site-to-ste VPN/index.html"
     ]
   },
   {
-    "listing": "/backend/teaching/graduacao/index.html",
+    "listing": "/pages/portfolio/industria/index.html",
     "items": [
-      "/backend/teaching/graduacao/ele618-sistemas-eletricos-industriais.html",
-      "/backend/teaching/graduacao/ele035-lab-conversao-energia.html"
+      "/pages/portfolio/industria/automacao-biochar/index.html",
+      "/pages/portfolio/industria/geracao-termoelétrica/index.html",
+      "/pages/portfolio/industria/laudos-periciais-pareceres-tecnicos/index.html",
+      "/pages/portfolio/industria/fem-motor-inducao/index.html",
+      "/pages/portfolio/industria/maquinas-especiais/index.html",
+      "/pages/portfolio/industria/microturbina-gas/index.html",
+      "/pages/portfolio/industria/eletronica-automotiva/index.html",
+      "/pages/portfolio/industria/instrumentacao-gases/index.html",
+      "/pages/portfolio/industria/balanco-quimico/index.html"
     ]
   }
 ]

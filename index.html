@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -43,10 +46,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bb62276ab45c84d9efd712f51ff97b5a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-49652229725583e679e24428a78697da.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-55b5661a329bb2b073bfb5d7a83a89fa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -192,7 +195,7 @@ https://badge.dimensions.ai/
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -259,15 +262,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptpesquisaspanspan-classlang-enresearchspan">    
         <li>
-    <a class="dropdown-item" href="./backend/research/papers/pub-listing.html">
+    <a class="dropdown-item" href="./pages/research/papers/pub-listing.html">
  <span class="dropdown-text"><span class="lang-pt">Lista de publicações</span><span class="lang-en">Publication List</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/research/theses/theses.html">
+    <a class="dropdown-item" href="./pages/research/theses/theses.html">
  <span class="dropdown-text"><span class="lang-pt">Teses e Dissertações</span><span class="lang-en">Theses &amp; Dissertations</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/research/sphin_about.html">
+    <a class="dropdown-item" href="./pages/research/sphin_about.html">
  <span class="dropdown-text">SPHIN</span></a>
   </li>  
     </ul>
@@ -278,11 +281,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptportfóliospanspan-classlang-enportfoliospan">    
         <li>
-    <a class="dropdown-item" href="./backend/portfolio/pd/index.html">
+    <a class="dropdown-item" href="./pages/portfolio/pd/index.html">
  <span class="dropdown-text"><span class="lang-pt">Projetos de P&amp;D</span><span class="lang-en">R&amp;D Projects</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/portfolio/industria/index.html">
+    <a class="dropdown-item" href="./pages/portfolio/industria/index.html">
  <span class="dropdown-text"><span class="lang-pt">Indústria</span><span class="lang-en">Industry</span></span></a>
   </li>  
     </ul>
@@ -293,21 +296,21 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-span-classlang-ptensinospanspan-classlang-enteachingspan">    
         <li>
-    <a class="dropdown-item" href="./backend/teaching/graduacao/index.html">
+    <a class="dropdown-item" href="./pages/teaching/graduacao/index.html">
  <span class="dropdown-text"><span class="lang-pt">Graduação</span><span class="lang-en">Undergraduate</span></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./backend/teaching/pos-graduacao/index.html">
+    <a class="dropdown-item" href="./pages/teaching/pos-graduacao/index.html">
  <span class="dropdown-text"><span class="lang-pt">Pós-Graduação</span><span class="lang-en">Graduate</span></span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./backend/blog/index.html"> 
+    <a class="nav-link" href="./pages/blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./backend/news/index.html"> 
+    <a class="nav-link" href="./pages/news/index.html"> 
 <span class="menu-text"><span class="lang-pt">Notícias</span><span class="lang-en">News</span></span></a>
   </li>  
   <li class="nav-item">
@@ -326,7 +329,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./backend/news/index.xml" target="_blank"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="./pages/news/index.xml" target="_blank"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -409,7 +412,7 @@ window.Quarto = {
 <!-- ## Notícias e Eventos -->
 <section id="notíciasnews" class="level2">
 <h2 data-anchor-id="notíciasnews"><span class="lang-pt">Notícias</span><span class="lang-en">News</span></h2>
-<!-- Acompanhe as últimas &nbsp;[Notícias](backend/news/index.qmd#category=news)&nbsp;, &nbsp;[Eventos](backend/news/index.qmd#category=event)&nbsp;, e &nbsp;[Mais »](backend/news/index.qmd) -->
+<!-- Acompanhe as últimas &nbsp;[Notícias](pages/news/index.qmd#category=news)&nbsp;, &nbsp;[Eventos](pages/news/index.qmd#category=event)&nbsp;, e &nbsp;[Mais »](pages/news/index.qmd) -->
 <div id="listing-recent-news" class="quarto-listing quarto-listing-container-table">
 <table class="quarto-listing-table table">
 <thead>
@@ -425,48 +428,48 @@ Título
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="Tm90JUMzJUFEY2lhcyUyQ0RlZmVzYQ==" data-listing-date-sort="1784505600000" data-listing-file-modified-sort="1784842993881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="55" data-listing-title-sort="Defesa de Mestrado — William Andrade" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-categories="Tm90JUMzJUFEY2lhcyUyQ0RlZmVzYQ==" data-listing-date-sort="1784505600000" data-listing-file-modified-sort="1784915961552" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="55" data-listing-title-sort="Defesa de Mestrado — William Andrade" data-listing-filename-sort="index.qmd">
 <td>
-<span class="listing-image"><img loading="lazy" src="./backend/news/202607 - Defesa William/ufmg_m.png" style="height: 40px;"></span>
+<span class="listing-image"><img loading="lazy" src="./pages/news/202607 - Defesa William/ufmg_m.png" style="height: 40px;"></span>
 </td>
 <td>
 <span class="listing-date">20 de jul. de 2026</span>
 </td>
 <td>
-<a href="./backend/news/202607 - Defesa William/index.html" class="title listing-title">Defesa de Mestrado — William Andrade</a>
+<a href="./pages/news/202607 - Defesa William/index.html" class="title listing-title">Defesa de Mestrado — William Andrade</a>
 </td>
 </tr>
-<tr data-index="1" data-categories="Tm90JUMzJUFEY2lhcw==" data-listing-date-sort="1784419200000" data-listing-file-modified-sort="1784842993881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122" data-listing-title-sort="Bem-vindo ao meu novo site!" data-listing-filename-sort="index.qmd">
+<tr data-index="1" data-categories="Tm90JUMzJUFEY2lhcw==" data-listing-date-sort="1784419200000" data-listing-file-modified-sort="1784915961553" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122" data-listing-title-sort="Bem-vindo ao meu novo site!" data-listing-filename-sort="index.qmd">
 <td>
-<span class="listing-image"><img loading="lazy" src="./backend/news/202607 - Website creation/quarto-dark-bg.jpeg" style="height: 40px;"></span>
+<span class="listing-image"><img loading="lazy" src="./pages/news/202607 - Website creation/quarto-dark-bg.jpeg" style="height: 40px;"></span>
 </td>
 <td>
 <span class="listing-date">19 de jul. de 2026</span>
 </td>
 <td>
-<a href="./backend/news/202607 - Website creation/index.html" class="title listing-title">Bem-vindo ao meu novo site!</a>
+<a href="./pages/news/202607 - Website creation/index.html" class="title listing-title">Bem-vindo ao meu novo site!</a>
 </td>
 </tr>
-<tr data-index="2" data-categories="Tm90JUMzJUFEY2lhcyUyQ0V2ZW50bw==" data-listing-date-sort="1784073600000" data-listing-file-modified-sort="1784842993886" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="366" data-listing-title-sort="BuyCoffee — Networking, Tecnologia e Boas Conversas" data-listing-filename-sort="index.qmd">
+<tr data-index="2" data-categories="Tm90JUMzJUFEY2lhcyUyQ0V2ZW50bw==" data-listing-date-sort="1784073600000" data-listing-file-modified-sort="1784915961556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="366" data-listing-title-sort="BuyCoffee — Networking, Tecnologia e Boas Conversas" data-listing-filename-sort="index.qmd">
 <td>
-<span class="listing-image"><img loading="lazy" src="./backend/news/20260715 - BuyCoffee event/images/logo_buyco.jpg" style="height: 40px;"></span>
+<span class="listing-image"><img loading="lazy" src="./pages/news/20260715 - BuyCoffee event/images/logo_buyco.jpg" style="height: 40px;"></span>
 </td>
 <td>
 <span class="listing-date">15 de jul. de 2026</span>
 </td>
 <td>
-<a href="./backend/news/20260715 - BuyCoffee event/index.html" class="title listing-title">BuyCoffee — Networking, Tecnologia e Boas Conversas</a>
+<a href="./pages/news/20260715 - BuyCoffee event/index.html" class="title listing-title">BuyCoffee — Networking, Tecnologia e Boas Conversas</a>
 </td>
 </tr>
-<tr data-index="3" data-categories="Tm90JUMzJUFEY2lhcyUyQ0lOUEk=" data-listing-date-sort="1783987200000" data-listing-file-modified-sort="1784842993881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="230" data-listing-title-sort="Registro de Software no INPI — Projeto SIMOI" data-listing-filename-sort="index.qmd">
+<tr data-index="3" data-categories="Tm90JUMzJUFEY2lhcyUyQ0lOUEk=" data-listing-date-sort="1783987200000" data-listing-file-modified-sort="1784915961553" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="230" data-listing-title-sort="Registro de Software no INPI — Projeto SIMOI" data-listing-filename-sort="index.qmd">
 <td>
-<span class="listing-image"><img loading="lazy" src="./backend/news/202607 - Registro INPI SIMOI/images/INPI_Brasil.svg" style="height: 40px;"></span>
+<span class="listing-image"><img loading="lazy" src="./pages/news/202607 - Registro INPI SIMOI/images/INPI_Brasil.svg" style="height: 40px;"></span>
 </td>
 <td>
 <span class="listing-date">14 de jul. de 2026</span>
 </td>
 <td>
-<a href="./backend/news/202607 - Registro INPI SIMOI/index.html" class="title listing-title">Registro de Software no INPI — Projeto SIMOI</a>
+<a href="./pages/news/202607 - Registro INPI SIMOI/index.html" class="title listing-title">Registro de Software no INPI — Projeto SIMOI</a>
 </td>
 </tr>
 </tbody>
@@ -474,22 +477,22 @@ Título
 <div class="listing-no-matching d-none">Nenhum item correspondente</div>
 </div>
 <p align="right" style="margin-top: -1rem;">
-<span class="lang-pt"><a href="./backend/news/index.html">Ver todas »</a></span><span class="lang-en"><a href="./backend/news/index.html">See all »</a></span>
+<span class="lang-pt"><a href="./pages/news/index.html">Ver todas »</a></span><span class="lang-en"><a href="./pages/news/index.html">See all »</a></span>
 </p>
-<!-- <p align="right">[Todos as Notícias »](backend/news/index.qmd)</p> -->
+<!-- <p align="right">[Todos as Notícias »](pages/news/index.qmd)</p> -->
 </section>
 </div></div>
 </div>
 
 <section id="blog" class="level2">
 <h2 data-anchor-id="blog">Blog</h2>
-<!-- Confira os últimos &nbsp;[Artigos](backend/blog/index.qmd)&nbsp; e &nbsp;[Mais »](backend/blog/index.qmd) -->
+<!-- Confira os últimos &nbsp;[Artigos](pages/blog/index.qmd)&nbsp; e &nbsp;[Mais »](pages/blog/index.qmd) -->
 <div id="listing-recent-blog" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="U2ltdWxhdGlvbiUyQ0VsZWN0cmljYWwlMjBNYWNoaW5lcyUyQ1R1dG9yaWFs" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1784842993863" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2314">
-<a href="./backend/blog/20260504 - Designing 2D transformer core mastering sif file/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="U2ltdWxhdGlvbiUyQ0VsZWN0cmljYWwlMjBNYWNoaW5lcyUyQ1R1dG9yaWFs" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1784915961538" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2314">
+<a href="./pages/blog/20260504 - Designing 2D transformer core mastering sif file/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="backend/blog/20260504 - Designing 2D transformer core mastering sif file/images/image-18-1024x575.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img loading='lazy' src="pages/blog/20260504 - Designing 2D transformer core mastering sif file/images/image-18-1024x575.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Designing a 2D Transformer Core: Mastering the Sif file
@@ -502,10 +505,10 @@ Designing a 2D Transformer Core: Mastering the Sif file
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="U2ltdWxhdGlvbiUyQ0VsZWN0cmljYWwlMjBNYWNoaW5lcyUyQ1R1dG9yaWFs" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1784842993880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="838">
-<a href="./backend/blog/20260504 - Designing 2D transformer core post processing with paraview part3/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="U2ltdWxhdGlvbiUyQ0VsZWN0cmljYWwlMjBNYWNoaW5lcyUyQ1R1dG9yaWFs" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1784915961551" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="838">
+<a href="./pages/blog/20260504 - Designing 2D transformer core post processing with paraview part3/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="backend/blog/20260504 - Designing 2D transformer core post processing with paraview part3/images/image-13-1024x577.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img loading='lazy' src="pages/blog/20260504 - Designing 2D transformer core post processing with paraview part3/images/image-13-1024x577.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Designing a 2D Transformer Core: Post-processing with ParaView (Part 3)
@@ -518,10 +521,10 @@ Designing a 2D Transformer Core: Post-processing with ParaView (Part 3)
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="U2ltdWxhdGlvbiUyQ0VsZWN0cmljYWwlMjBNYWNoaW5lcyUyQ1R1dG9yaWFs" data-listing-date-sort="1777593600000" data-listing-file-modified-sort="1784842993859" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="784">
-<a href="./backend/blog/20260501 - Designing 2D transformer core steady state simulation elmerfem part2/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="U2ltdWxhdGlvbiUyQ0VsZWN0cmljYWwlMjBNYWNoaW5lcyUyQ1R1dG9yaWFs" data-listing-date-sort="1777593600000" data-listing-file-modified-sort="1784915961535" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="784">
+<a href="./pages/blog/20260501 - Designing 2D transformer core steady state simulation elmerfem part2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="backend/blog/20260501 - Designing 2D transformer core steady state simulation elmerfem part2/images/image-1024x575.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img loading='lazy' src="pages/blog/20260501 - Designing 2D transformer core steady state simulation elmerfem part2/images/image-1024x575.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Designing a 2D Transformer Core: Steady-State Simulation in ElmerFEM (Part 2)
@@ -538,18 +541,18 @@ Designing a 2D Transformer Core: Steady-State Simulation in ElmerFEM (Part 2)
 <div class="listing-no-matching d-none">Nenhum item correspondente</div>
 </div>
 <p align="right">
-<span class="lang-pt"><a href="./backend/blog/index.html">Ver Todos »</a></span><span class="lang-en"><a href="./backend/blog/index.html">See all »</a></span>
+<span class="lang-pt"><a href="./pages/blog/index.html">Ver Todos »</a></span><span class="lang-en"><a href="./pages/blog/index.html">See all »</a></span>
 </p>
 </section>
 <section id="portfólioportfolio" class="level2">
 <h2 data-anchor-id="portfólioportfolio"><span class="lang-pt">Portfólio</span><span class="lang-en">Portfolio</span></h2>
 <div id="listing-recent-portfolio" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="SW9UJTIwSW5kdXN0cmlhbCUyQ0F1dG9tYSVDMyVBNyVDMyVBM28lMkNJbmZyYWVzdHJ1dHVyYSUyMEVsJUMzJUE5dHJpY2ElMkNQJTI2RA==" data-listing-date-sort="1773532800000" data-listing-file-modified-sort="1784842993937" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="833">
-<a href="./backend/portfolio/industria/automacao-biochar/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="SW9UJTIwSW5kdXN0cmlhbCUyQ0F1dG9tYSVDMyVBNyVDMyVBM28lMkNJbmZyYWVzdHJ1dHVyYSUyMEVsJUMzJUE5dHJpY2ElMkNQJTI2RA==" data-listing-date-sort="1773532800000" data-listing-file-modified-sort="1784915961597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="833">
+<a href="./pages/portfolio/industria/automacao-biochar/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./backend/portfolio/industria/automacao-biochar/images/paineis.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pages/portfolio/industria/automacao-biochar/images/paineis.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -561,11 +564,11 @@ Automação Full-Stack e IoT para Produção de Biochar
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="RWxldHJpZmljYSVDMyVBNyVDMyVBM28lMjBWZWljdWxhciUyQ1Bvd2VydHJhaW4lMkNTaXN0ZW1hcyUyMEVtYmFyY2Fkb3MlMkNQJTI2RA==" data-listing-date-sort="1700006400000" data-listing-file-modified-sort="1784842993984" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="864">
-<a href="./backend/portfolio/pd/hibridizacao-maquinario-off-road/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="RWxldHJpZmljYSVDMyVBNyVDMyVBM28lMjBWZWljdWxhciUyQ1Bvd2VydHJhaW4lMkNTaXN0ZW1hcyUyMEVtYmFyY2Fkb3MlMkNQJTI2RA==" data-listing-date-sort="1700006400000" data-listing-file-modified-sort="1784915961705" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="864">
+<a href="./pages/portfolio/pd/hibridizacao-maquinario-off-road/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./backend/portfolio/pd/hibridizacao-maquinario-off-road/images/retroescavadeira.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pages/portfolio/pd/hibridizacao-maquinario-off-road/images/retroescavadeira.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -577,11 +580,27 @@ Hibridização de Maquinário Off-Road: Powertrain para Retroescavadeiras
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="U2lzdGVtYXMlMjBkZSUyMEFybWF6ZW5hbWVudG8lMkNNaWNyb3JyZWRlcyUyQ0VsZXRyJUMzJUI0bmljYSUyMGRlJTIwUG90JUMzJUFBbmNpYSUyQ1AlMjZE" data-listing-date-sort="1671062400000" data-listing-file-modified-sort="1784842993973" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="897">
-<a href="./backend/portfolio/pd/gestao-ativa-baterias/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="R2VyYSVDMyVBNyVDMyVBM28lMjBkZSUyMEVuZXJnaWElMkNNb3RvZ2VyYWRvcmVzJTJDQ29taXNzaW9uYW1lbnRvJTJDRWxldHIlQzMlQjRuaWNhJTIwZGUlMjBQb3QlQzMlQUFuY2lhJTJDUCUyNkQ=" data-listing-date-sort="1671494400000" data-listing-file-modified-sort="1784915961650" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="395">
+<a href="./pages/portfolio/industria/geracao-termoelétrica/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./backend/portfolio/pd/gestao-ativa-baterias/images/dcdc.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pages/portfolio/industria/geracao-termoelétrica/images/photo_2022-12-20_18-32-04.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Geração Termoelétrica Customizada: Especificação e Comissionamento de Motogeradores
+</h5>
+<div class="card-text listing-description delink">
+<p>Engenharia integral de sistema de geração elétrica: da especificação da…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="U2lzdGVtYXMlMjBkZSUyMEFybWF6ZW5hbWVudG8lMkNNaWNyb3JyZWRlcyUyQ0VsZXRyJUMzJUI0bmljYSUyMGRlJTIwUG90JUMzJUFBbmNpYSUyQ1AlMjZE" data-listing-date-sort="1671062400000" data-listing-file-modified-sort="1784915961696" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="897">
+<a href="./pages/portfolio/pd/gestao-ativa-baterias/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pages/portfolio/pd/gestao-ativa-baterias/images/baterias_montadas.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -593,11 +612,11 @@ Gestão Ativa de Baterias em Microrredes: Evolução em Sistemas de Armazenament
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="RW5nZW5oYXJpYSUyMEZvcmVuc2UlMkNMYXVkb3MlMjBQZXJpY2lhaXMlMkNDb25zdWx0b3JpYSUyQ1Byb3ByaWVkYWRlJTIwSW50ZWxlY3R1YWw=" data-listing-date-sort="1664236800000" data-listing-file-modified-sort="1784842993948" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="542">
-<a href="./backend/portfolio/industria/laudos-periciais-pareceres-tecnicos/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="4" data-categories="RW5nZW5oYXJpYSUyMEZvcmVuc2UlMkNMYXVkb3MlMjBQZXJpY2lhaXMlMkNDb25zdWx0b3JpYSUyQ1Byb3ByaWVkYWRlJTIwSW50ZWxlY3R1YWw=" data-listing-date-sort="1664236800000" data-listing-file-modified-sort="1784915961661" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="542">
+<a href="./pages/portfolio/industria/laudos-periciais-pareceres-tecnicos/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./backend/portfolio/industria/laudos-periciais-pareceres-tecnicos/images/banner.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pages/portfolio/industria/laudos-periciais-pareceres-tecnicos/images/banner.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -609,11 +628,11 @@ Laudos Periciais e Pareceres Técnicos
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="TWluaXJyZWRlcyUyQ0dlcmElQzMlQTclQzMlQTNvJTIwRGlzdHJpYnUlQzMlQURkYSUyQ0FybWF6ZW5hbWVudG8lMjBkZSUyMEVuZXJnaWElMkNQJTI2RA==" data-listing-date-sort="1643587200000" data-listing-file-modified-sort="1784842993994" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="992">
-<a href="./backend/portfolio/pd/oasis-ufmg/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="5" data-categories="TWluaXJyZWRlcyUyQ0dlcmElQzMlQTclQzMlQTNvJTIwRGlzdHJpYnUlQzMlQURkYSUyQ0FybWF6ZW5hbWVudG8lMjBkZSUyMEVuZXJnaWElMkNQJTI2RA==" data-listing-date-sort="1643587200000" data-listing-file-modified-sort="1784915961712" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="992">
+<a href="./pages/portfolio/pd/oasis-ufmg/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./backend/portfolio/pd/oasis-ufmg/images/campus.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pages/portfolio/pd/oasis-ufmg/images/campus.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -625,11 +644,27 @@ Minirredes Inteligentes (Projeto OÁSIS): Integração Fotovoltaica, Baterias e 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="SW9UJTIwSW5kdXN0cmlhbCUyQ0FycXVpdGV0dXJhJTIwZGUlMjBTaXN0ZW1hcyUyQ0VuZXJnaWElMjBTb2xhciUyQ09wZW4tU291cmNl" data-listing-date-sort="1617667200000" data-listing-file-modified-sort="1784842994002" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="905">
-<a href="./backend/portfolio/pd/supervisorio-iot-fotovoltaico/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="6" data-categories="RWxlbWVudG9zJTIwRmluaXRvcyUyMChGRU0pJTJDTSVDMyVBMXF1aW5hcyUyMEVsJUMzJUE5dHJpY2FzJTJDT3RpbWl6YSVDMyVBNyVDMyVBM28lMjBHZW9tJUMzJUE5dHJpY2ElMkNFbGV0cm9tYWduZXRpc21v" data-listing-date-sort="1628985600000" data-listing-file-modified-sort="1784915961648" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="557">
+<a href="./pages/portfolio/industria/fem-motor-inducao/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./backend/portfolio/pd/supervisorio-iot-fotovoltaico/images/banner.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pages/portfolio/industria/fem-motor-inducao/images/MaqInd.gif" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Simulação por Elementos Finitos (FEM): Otimização Eletromagnética de Motores de Indução
+</h5>
+<div class="card-text listing-description delink">
+<p>Aplicação avançada do Método de Elementos Finitos (FEM) no design de um…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="SW9UJTIwSW5kdXN0cmlhbCUyQ0FycXVpdGV0dXJhJTIwZGUlMjBTaXN0ZW1hcyUyQ0VuZXJnaWElMjBTb2xhciUyQ09wZW4tU291cmNl" data-listing-date-sort="1617667200000" data-listing-file-modified-sort="1784915961720" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="905">
+<a href="./pages/portfolio/pd/supervisorio-iot-fotovoltaico/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pages/portfolio/pd/supervisorio-iot-fotovoltaico/images/banner.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -641,11 +676,11 @@ Sistema Supervisório IoT para Usinas Fotovoltaicas: Substituição de Plataform
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="RWxldHIlQzMlQjRuaWNhJTIwZGUlMjBQb3QlQzMlQUFuY2lhJTJDU2ltdWxhJUMzJUE3JUMzJUEzbyUyMEVsZXRyb21hZ24lQzMlQTl0aWNhJTJDSGFyZHdhcmUlMkNQJTI2RA==" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1784842993997" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="733">
-<a href="./backend/portfolio/pd/oscilador-magnetico/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="8" data-categories="RWxldHIlQzMlQjRuaWNhJTIwZGUlMjBQb3QlQzMlQUFuY2lhJTJDU2ltdWxhJUMzJUE3JUMzJUEzbyUyMEVsZXRyb21hZ24lQzMlQTl0aWNhJTJDSGFyZHdhcmUlMkNQJTI2RA==" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1784915961715" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="733">
+<a href="./pages/portfolio/pd/oscilador-magnetico/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./backend/portfolio/pd/oscilador-magnetico/images/simulacao.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pages/portfolio/pd/oscilador-magnetico/images/simulacao.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -657,11 +692,43 @@ Oscilador Magnético para Processos de Soldagem: Otimização TIG e MIG/MAG
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="TSVDMyVBMXF1aW5hcyUyMGRlJTIwQWx0YSUyMFJvdGElQzMlQTclQzMlQTNvJTJDR2VyYSVDMyVBNyVDMyVBM28lMjBEaXN0cmlidSVDMyVBRGRhJTJDRWxldHIlQzMlQjRuaWNhJTIwZGUlMjBQb3QlQzMlQUFuY2lhJTJDUCUyNkQ=" data-listing-date-sort="1477958400000" data-listing-file-modified-sort="1784842993960" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="912">
-<a href="./backend/portfolio/industria/microturbina-gas/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="9" data-categories="TSVDMyVBMXF1aW5hcyUyMEVsJUMzJUE5dHJpY2FzJTJDRW5nZW5oYXJpYSUyMEZ1bGwtU3RhY2slMkNTaW11bGElQzMlQTclQzMlQTNvJTIwTXVsdGlmJUMzJUFEc2ljYSUyQyVDMyU5M2xlbyUyMGUlMjBHJUMzJUExcyUyQ1AlMjZE" data-listing-date-sort="1596240000000" data-listing-file-modified-sort="1784915961671" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="682">
+<a href="./pages/portfolio/industria/maquinas-especiais/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./backend/portfolio/industria/microturbina-gas/images/modelo-turbo-eletrico.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pages/portfolio/industria/maquinas-especiais/images/Modelo03.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Desenvolvimento Full-Stack de Máquinas Especiais: Design Eletromecânico para Cenários Extremos
+</h5>
+<div class="card-text listing-description delink">
+<p>Capacidade de execução do ciclo completo de engenharia (eletromagnetismo…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="TSVDMyVBMXF1aW5hcyUyMEVsJUMzJUE5dHJpY2FzJTJDRS1Nb2JpbGl0eSUyQ0luY2x1cyVDMyVBM28lMjBTb2NpYWwlMkNQJTI2RA==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1784915961685" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="587">
+<a href="./pages/portfolio/pd/eletrificacao-mobilidade/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pages/portfolio/pd/eletrificacao-mobilidade/images/hallbach.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Eletrificação Assistiva e Motores Leves: Acionamentos Híbridos para Mobilidade
+</h5>
+<div class="card-text listing-description delink">
+<p>Desenvolvimento de motores síncronos de fluxo axial de alta eficiência…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="TSVDMyVBMXF1aW5hcyUyMGRlJTIwQWx0YSUyMFJvdGElQzMlQTclQzMlQTNvJTJDR2VyYSVDMyVBNyVDMyVBM28lMjBEaXN0cmlidSVDMyVBRGRhJTJDRWxldHIlQzMlQjRuaWNhJTIwZGUlMjBQb3QlQzMlQUFuY2lhJTJDUCUyNkQ=" data-listing-date-sort="1477958400000" data-listing-file-modified-sort="1784915961680" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="912">
+<a href="./pages/portfolio/industria/microturbina-gas/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pages/portfolio/industria/microturbina-gas/images/modelo-turbo-eletrico.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -673,11 +740,43 @@ Microturbinas a Gás de Alta Rotação: Engenharia Full-Stack para Geração de 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Q2klQzMlQUFuY2lhJTIwZGUlMjBEYWRvcyUyQ0luc3RydW1lbnRhJUMzJUE3JUMzJUEzbyUyQ1N1c3RlbnRhYmlsaWRhZGUlMkNFbmdlbmhhcmlhJTIwUmV2ZXJzYQ==" data-listing-date-sort="1337040000000" data-listing-file-modified-sort="1784842993941" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="442">
-<a href="./backend/portfolio/industria/balanco-quimico/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="12" data-categories="U2lzdGVtYXMlMjBFbWJhcmNhZG9zJTJDQXV0b21vdGl2byUyQ0hhcmR3YXJlJTJDQmFyZS1NZXRhbCUyQ0Rlc2Vudm9sdmltZW50byUyMGRlJTIwUHJvZHV0bw==" data-listing-date-sort="1464739200000" data-listing-file-modified-sort="1784915961622" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="517">
+<a href="./pages/portfolio/industria/eletronica-automotiva/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./backend/portfolio/industria/balanco-quimico/images/condicionador.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pages/portfolio/industria/eletronica-automotiva/images/IMG20260724144055.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Eletrônica de Injeção Automotiva: Desenvolvimento Bare-Metal para Kits Turbo
+</h5>
+<div class="card-text listing-description delink">
+<p>Desenvolvimento integral (TRL 1 a 9) de módulos eletrônicos de controle…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="13" data-categories="SW5zdHJ1bWVudGElQzMlQTclQzMlQTNvJTJDQXV0b21hJUMzJUE3JUMzJUEzbyUyMEluZHVzdHJpYWwlMkNFbmdlbmhhcmlhJTIwUmV2ZXJzYSUyQ01ldHJvbG9naWE=" data-listing-date-sort="1408492800000" data-listing-file-modified-sort="1784915961656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="623">
+<a href="./pages/portfolio/industria/instrumentacao-gases/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pages/portfolio/industria/instrumentacao-gases/images/condicionador.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Instrumentação Industrial em Gases: Sistemas de Medição e Condicionamento
+</h5>
+<div class="card-text listing-description delink">
+<p>Desenvolvimento e integração de painéis de análise e condicionamento de…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="14" data-categories="Q2klQzMlQUFuY2lhJTIwZGUlMjBEYWRvcyUyQ0luc3RydW1lbnRhJUMzJUE3JUMzJUEzbyUyQ1N1c3RlbnRhYmlsaWRhZGUlMkNFbmdlbmhhcmlhJTIwUmV2ZXJzYQ==" data-listing-date-sort="1337040000000" data-listing-file-modified-sort="1784915961603" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="514">
+<a href="./pages/portfolio/industria/balanco-quimico/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pages/portfolio/industria/balanco-quimico/images/DSC04388.JPG" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -693,7 +792,7 @@ Ciência de Dados e Balanço Químico em Combustão para Créditos de Carbono
 <div class="listing-no-matching d-none">Nenhum item correspondente</div>
 </div>
 <p align="right">
-<span class="lang-pt"><a href="./backend/portfolio/index.html">Ver Todos »</a></span><span class="lang-en"><a href="./backend/portfolio/index.html">See all »</a></span>
+<span class="lang-pt"><a href="./pages/portfolio/index.html">Ver Todos »</a></span><span class="lang-en"><a href="./pages/portfolio/index.html">See all »</a></span>
 </p>
 <section id="clientes-e-parceirosclients-partners" class="level3">
 <h3 data-anchor-id="clientes-e-parceirosclients-partners"><span class="lang-pt">Clientes e Parceiros</span><span class="lang-en">Clients &amp; Partners</span></h3>
