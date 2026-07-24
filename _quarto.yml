@@ -16,7 +16,7 @@ website:
   site-url: "https://thalesmaia.com"
   favicon: "files/icons/logo_machine.png"
   image: "files/icons/logo.png"
-  description: "Site pessoal e acadêmico de Thales Maia."
+  description: "Thales Maia — researcher, engineer, and R&D professional bridging academic research and industry innovation."
  
   navbar:
     title: "SPHIN"
