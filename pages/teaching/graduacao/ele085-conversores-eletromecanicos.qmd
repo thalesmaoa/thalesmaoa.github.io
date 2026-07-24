@@ -1,0 +1,15 @@
+---
+title: "ELE085 — Conversores Eletromecânicos"
+description: "Fundamentos de conversão eletromecânica de energia, transformadores e máquinas elétricas."
+date: 2022-08-01
+categories: [Anterior, Conversão de Energia, Máquinas Elétricas]
+draft: true
+---
+
+## Ementa
+
+Princípios de conversão eletromecânica de energia. Transformadores monofásicos e trifásicos. Máquinas de corrente contínua, motores de indução e máquinas síncronas. Circuitos magnéticos e força magnetomotriz.
+
+::: {.callout-note}
+Material didático em construção. Em breve disponibilizarei slides e listas de exercícios.
+:::

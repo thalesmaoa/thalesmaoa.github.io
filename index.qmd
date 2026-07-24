@@ -45,7 +45,7 @@ about:
 listing:   # Recent news and events
   - id: recent-news
     contents: 
-      - backend/news
+      - pages/news
     exclude:
       title: "Notícias e Eventos"
     type: table
@@ -64,7 +64,7 @@ listing:   # Recent news and events
 
   - id: recent-blog
     contents:
-      - backend/blog
+      - pages/blog
     exclude:
       title: "Blog"
     type: grid
@@ -78,15 +78,15 @@ listing:   # Recent news and events
 
   - id: recent-portfolio
     contents:
-      - backend/portfolio/pd
-      - backend/portfolio/industria
+      - pages/portfolio/pd
+      - pages/portfolio/industria
     exclude:
       title:
         - "Projetos de P&D"
         - "Indústria"
     type: grid
-    max-items: 9
-    page-size: 9
+    max-items: 15
+    page-size: 15
     fields: [image, title, description]
     max-description-length: 75
     sort:
@@ -111,25 +111,25 @@ listing:   # Recent news and events
 
 <!-- ## Notícias e Eventos -->
 ## <span class="lang-pt">Notícias</span><span class="lang-en">News</span>
-<!-- Acompanhe as últimas &nbsp;[Notícias](backend/news/index.qmd#category=news)&nbsp;, &nbsp;[Eventos](backend/news/index.qmd#category=event)&nbsp;, e &nbsp;[Mais »](backend/news/index.qmd) -->
+<!-- Acompanhe as últimas &nbsp;[Notícias](pages/news/index.qmd#category=news)&nbsp;, &nbsp;[Eventos](pages/news/index.qmd#category=event)&nbsp;, e &nbsp;[Mais »](pages/news/index.qmd) -->
 
 ::: {#recent-news}
 
 :::
 
-<p align="right" style="margin-top: -1rem;"><span class="lang-pt">[Ver todas »](backend/news/index.qmd)</span><span class="lang-en">[See all »](backend/news/index.qmd)</span></p>
-<!-- <p align="right">[Todos as Notícias »](backend/news/index.qmd)</p> -->
+<p align="right" style="margin-top: -1rem;"><span class="lang-pt">[Ver todas »](pages/news/index.qmd)</span><span class="lang-en">[See all »](pages/news/index.qmd)</span></p>
+<!-- <p align="right">[Todos as Notícias »](pages/news/index.qmd)</p> -->
 
 :::
 
 ## Blog
-<!-- Confira os últimos &nbsp;[Artigos](backend/blog/index.qmd)&nbsp; e &nbsp;[Mais »](backend/blog/index.qmd) -->
+<!-- Confira os últimos &nbsp;[Artigos](pages/blog/index.qmd)&nbsp; e &nbsp;[Mais »](pages/blog/index.qmd) -->
 
 ::: {#recent-blog}
 
 :::
 
-<p align="right"><span class="lang-pt">[Ver Todos »](backend/blog/index.qmd)</span><span class="lang-en">[See all »](backend/blog/index.qmd)</span></p>
+<p align="right"><span class="lang-pt">[Ver Todos »](pages/blog/index.qmd)</span><span class="lang-en">[See all »](pages/blog/index.qmd)</span></p>
 
 ## <span class="lang-pt">Portfólio</span><span class="lang-en">Portfolio</span>
 
@@ -137,7 +137,7 @@ listing:   # Recent news and events
 
 :::
 
-<p align="right"><span class="lang-pt">[Ver Todos »](backend/portfolio/index.qmd)</span><span class="lang-en">[See all »](backend/portfolio/index.qmd)</span></p>
+<p align="right"><span class="lang-pt">[Ver Todos »](pages/portfolio/index.qmd)</span><span class="lang-en">[See all »](pages/portfolio/index.qmd)</span></p>
 
 ### <span class="lang-pt">Clientes e Parceiros</span><span class="lang-en">Clients &amp; Partners</span>
 

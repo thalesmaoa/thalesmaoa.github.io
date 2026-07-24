@@ -1,0 +1,46 @@
+---
+title: "Geração Termoelétrica Customizada: Especificação e Comissionamento de Motogeradores"
+description: "Engenharia integral de sistema de geração elétrica: da especificação da máquina ao comissionamento do painel de controle e adaptações mecânicas."
+date: "2022-12-20"
+categories: [Geração de Energia, Motogeradores, Comissionamento, Eletrônica de Potência, P&D]
+image: "images/photo_2022-12-20_18-32-04.jpg"
+draft: false
+---
+
+**Escopo:** Engenharia de Sistemas de Geração, Comissionamento Elétrico e Adaptação Mecânica  
+
+![Motogerador de combustão interna, dimensionado e customizado para a conversão de energia em regimes de geração descentralizada.](images/photo_2022-12-20_18-32-04.jpg){width=85%}
+
+## O Desafio
+
+A viabilização de usinas termoelétricas descentralizadas operando com combustíveis alternativos e de baixo poder calorífico exige um rigor técnico extremo. Diferente da utilização de geradores a diesel ou gás natural comerciais comprados "de prateleira", esses sistemas demandam uma arquitetura de geração 100% customizada.
+
+O desafio deste projeto foi desenvolver integralmente o sistema de geração elétrica, garantindo que o motogerador entregasse energia com estabilidade, eficiência e segurança, independentemente das flutuações inerentes à queima do combustível utilizado.
+
+## Engenharia de Geração e Comissionamento
+
+Como responsável técnico pela engenharia do sistema gerador, atuei em todas as frentes para garantir a conversão eficiente da energia em eletricidade estável na rede. As principais etapas de desenvolvimento e execução incluíram:
+
+![Adaptações mecânicas e fluidodinâmicas no sistema de admissão do motor para garantir a mistura ar/combustível adequada para a combustão contínua.](images/adc0f398-393a-444f-9125-4eb8267209b4.jpg)
+
+* **Especificação do Motogerador:** Realizei o dimensionamento técnico completo da máquina. Isso envolveu a seleção de um bloco de motor com deslocamento volumétrico e taxa de compressão exatos para suportar a queima de gases de menor densidade energética sem perda crítica de rendimento.
+* **Adaptação Mecânica e Fluidodinâmica:** Para viabilizar o uso do combustível, projetei e executei adaptações severas no sistema de admissão de ar e nos coletores. Implementei misturadores e dutos específicos para garantir a estequiometria correta da mistura e prevenir falhas de combustão (*misfires*).
+* **Comissionamento Elétrico e Lógica de Controle:** A estabilidade da geração depende de um controle eletroeletrônico impecável. Fui o responsável por toda a montagem, fiação e comissionamento do painel controlador do gerador. Configurei as lógicas de partida, malhas de controle de tensão e frequência (AVR/GOV), parametrização de sincronismo de rede e todos os limites de proteção da máquina.
+
+![Cabeamento e comissionamento detalhado do módulo controlador do gerador, responsável pela estabilidade elétrica da geração e proteções do sistema.](images/photo_2022-02-17_10-35-48.jpg){width=85%}
+
+## Impacto
+
+O resultado do projeto foi a entrega de uma unidade termoelétrica compacta, robusta e totalmente proprietária. O desenvolvimento comprovou a capacidade de dominar a engenharia de ponta a ponta: desde o fluxo mecânico dos fluidos na admissão até o escovamento de bits no comissionamento do painel, garantindo uma geração de energia elétrica contínua, segura e de alto desempenho para aplicações operacionais críticas.
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+
+![](/files/images/partners/Fahren_vetorizado.svg){height=60px}
+
+<!-- ![](/files/images/partners/rima-industrial-seeklogo.png){height=60px} -->
+
+</div>
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

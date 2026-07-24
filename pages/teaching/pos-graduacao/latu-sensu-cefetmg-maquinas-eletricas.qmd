@@ -1,0 +1,15 @@
+---
+title: "Latu Sensu CEFET-MG — Máquinas Elétricas"
+description: "Especialização em Sistemas Eletroeletrônicos e Automação Industrial: máquinas elétricas e acionamentos."
+date: 2019-03-01
+categories: [Anterior, Máquinas Elétricas, Sistemas Industriais]
+draft: true
+---
+
+## Ementa
+
+Máquinas elétricas no contexto da automação industrial: motores de indução, máquinas síncronas e máquinas de corrente contínua. Curvas características, métodos de partida, variação de velocidade e seleção para aplicações industriais. Eficiência energética em sistemas motrizes.
+
+::: {.callout-note}
+Material didático em construção. Em breve disponibilizarei slides e listas de exercícios.
+:::

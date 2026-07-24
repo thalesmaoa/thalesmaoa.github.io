@@ -1,0 +1,16 @@
+---
+title: "ELE618 — Sistemas Elétricos Industriais"
+description: "Instalações elétricas industriais, subestações, proteção e coordenação de sistemas elétricos."
+date: 2026-02-01
+categories: [Atual, Sistemas Industriais, Instalações Elétricas]
+---
+
+## Ementa
+
+Projeto e dimensionamento de sistemas elétricos industriais: subestações, cabines primárias, circuitos de distribuição em baixa e média tensão, dispositivos de proteção e seccionamento, coordenação e seletividade, fator de potência, aterramento e SPDA.
+
+## Material de apoio
+
+- [Slides das aulas](#)
+- [Lista de exercícios](#)
+- [Bibliografia recomendada](#)

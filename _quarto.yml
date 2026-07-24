@@ -29,20 +29,20 @@ website:
       - text: "<span class='lang-pt'>Pesquisa</span><span class='lang-en'>Research</span>"
         menu:
           - text: "<span class='lang-pt'>Lista de publicações</span><span class='lang-en'>Publication List</span>"  # Automatically generated from publications.xlsx
-            href: backend/research/papers/pub-listing.qmd
+            href: pages/research/papers/pub-listing.qmd
           - text: "<span class='lang-pt'>Teses e Dissertações</span><span class='lang-en'>Theses &amp; Dissertations</span>"
-            href: backend/research/theses/theses.qmd
+            href: pages/research/theses/theses.qmd
           - text: SPHIN
-            href: backend/research/sphin_about.qmd
+            href: pages/research/sphin_about.qmd
 
       - text: "<span class='lang-pt'>Portfólio</span><span class='lang-en'>Portfolio</span>"
         menu:
           - text: "<span class='lang-pt'>Projetos de P&amp;D</span><span class='lang-en'>R&amp;D Projects</span>"
-            href: backend/portfolio/pd/index.qmd
+            href: pages/portfolio/pd/index.qmd
           - text: "<span class='lang-pt'>Indústria</span><span class='lang-en'>Industry</span>"
-            href: backend/portfolio/industria/index.qmd
+            href: pages/portfolio/industria/index.qmd
           # - text: Projects
-          #   href: backend/research/projects.qmd     
+          #   href: pages/research/projects.qmd     
           # - text: Selected Papers
           #   href: posts.qmd#category=paper
           # - text: Grants
@@ -51,13 +51,13 @@ website:
       - text: "<span class='lang-pt'>Ensino</span><span class='lang-en'>Teaching</span>"
         menu:
           - text: "<span class='lang-pt'>Graduação</span><span class='lang-en'>Undergraduate</span>"
-            href: backend/teaching/graduacao/index.qmd
+            href: pages/teaching/graduacao/index.qmd
           - text: "<span class='lang-pt'>Pós-Graduação</span><span class='lang-en'>Graduate</span>"
-            href: backend/teaching/pos-graduacao/index.qmd
+            href: pages/teaching/pos-graduacao/index.qmd
       - text: Blog
-        href: backend/blog/index.qmd
+        href: pages/blog/index.qmd
       - text: "<span class='lang-pt'>Notícias</span><span class='lang-en'>News</span>"
-        href: backend/news/index.qmd
+        href: pages/news/index.qmd
       - text: "<span class='lang-pt'>Sobre</span><span class='lang-en'>About</span>"
         href: about.qmd
       # - text: About
@@ -86,7 +86,7 @@ website:
         href: https://www.linkedin.com/in/thales-maia-38755a23
         target: _blank
       - icon: rss
-        href: backend/news/index.xml
+        href: pages/news/index.xml
         target: _blank
       # Language toggle inserido dinamicamente via files/includes/_lang-toggle.html
   

@@ -1,0 +1,65 @@
+---
+title: "<span class='lang-pt'>Publicações</span><span class='lang-en'>Publications</span>"
+description-meta: "Informações, pdfs, e métricas dos trabalhos"
+title-block-banner: false
+listing:
+  - id: peer-reviewed
+    contents: publications.yml
+    type: custom
+    page-size: 100
+    categories: numbered
+    template: pub-listing.ejs
+    include:
+      section: "Peer-reviewed Journal Paper"
+  
+  - id: conference
+    contents: publications.yml
+    type: custom
+    page-size: 100
+    categories: numbered
+    template: pub-listing.ejs
+    include:
+      section: "Conference Paper"
+css: pub-listing.css
+filters: [remove-stray-divfence.lua]  
+---
+
+## <span class="lang-pt">Artigos de revista</span><span class="lang-en">Journal Papers</span>
+
+::: {#peer-reviewed}
+
+:::
+
+## <span class="lang-pt">Artigos de Congressos</span><span class="lang-en">Conference Papers</span>
+
+::: {#conference}
+
+:::
+
+
+{{< include /files/includes/_socialshare.qmd >}}
+
+<script>
+// Reorder category filter: All -> Journal -> Conference -> years (desc)
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.quarto-listing-category').forEach(function(container) {
+    var cats = Array.from(container.querySelectorAll('.category'));
+    if (!cats.length) return;
+    cats.sort(function(a, b) {
+      var ta = a.textContent.trim(), tb = b.textContent.trim();
+      var aIsAll = ta.startsWith('All'), bIsAll = tb.startsWith('All');
+      if (aIsAll) return -1; if (bIsAll) return 1;
+      var aIsJournal = ta.startsWith('Journal'), bIsJournal = tb.startsWith('Journal');
+      if (aIsJournal && !bIsAll) return -1; if (bIsJournal && !aIsAll) return 1;
+      var aIsConf = ta.startsWith('Conference'), bIsConf = tb.startsWith('Conference');
+      if (aIsConf && !bIsAll && !bIsJournal) return -1;
+      if (bIsConf && !aIsAll && !aIsJournal) return 1;
+      // Years: descending numeric
+      var na = parseInt(ta), nb = parseInt(tb);
+      if (!isNaN(na) && !isNaN(nb)) return nb - na;
+      return ta.localeCompare(tb);
+    });
+    cats.forEach(function(c) { container.appendChild(c); });
+  });
+});
+</script>

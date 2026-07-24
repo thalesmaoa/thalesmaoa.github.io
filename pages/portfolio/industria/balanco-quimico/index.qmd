@@ -1,0 +1,57 @@
+---
+title: "Ciência de Dados e Balanço Químico em Combustão para Créditos de Carbono"
+description: "Engenharia reversa de analisadores de gás e modelagem de emissões termoquímicas para o mercado de sustentabilidade na indústria siderúrgica."
+date: "2012-05-15" # Ajuste para a data exata da execução do projeto
+categories: [Ciência de Dados, Instrumentação, Sustentabilidade, Engenharia Reversa]
+image: "images/DSC04388.JPG"
+draft: false
+---
+
+**Parceiro Industrial:** ArcelorMittal Bioflorestas  
+**Escopo:** Engenharia Reversa, Instrumentação Analítica e Ciência de Dados Aplicada  
+
+![Sistema de amostragem e condicionamento de gases instalado no ambiente agressivo dos fornos de carbonização.](images/DSC04383.JPG){width=70%}
+
+## O Desafio
+
+A produção de carvão vegetal (biomassa) para a indústria siderúrgica envolve processos termoquímicos complexos de carbonização. Para que empresas de grande porte, como a **ArcelorMittal Bioflorestas**, possam certificar suas operações e atuar ativamente no mercado internacional de créditos de carbono, é exigida uma precisão absoluta na medição das emissões de gases de efeito estufa (GEE) durante o processo.
+
+O grande obstáculo prático é que os analisadores de gás comerciais de alta precisão operam frequentemente como "caixas-pretas". Seus hardwares e softwares proprietários entregam dados pré-processados e engessados, o que inviabiliza a customização algorítmica necessária para a realização de cálculos estequiométricos e auditorias rigorosas exigidas pelos órgãos certificadores de carbono. 
+
+## Engenharia Reversa e Ciência de Dados
+
+Para contornar as restrições comerciais dos equipamentos de prateleira e garantir total controle sobre os dados das emissões, o projeto exigiu uma abordagem híbrida de instrumentação avançada e modelagem matemática. 
+
+A solução desenvolvida passou pelas seguintes etapas críticas de engenharia:
+
+* **Engenharia Reversa de Analisadores:** Atuei diretamente na desmontagem lógica e física dos analisadores de gás comerciais. O objetivo foi mapear e interceptar os sinais analógicos e digitais "crus" (*raw data*) diretamente nas saídas dos sensores óticos e químicos, antes que fossem filtrados pelo software proprietário do fabricante.
+* **Sistema de Aquisição e Condicionamento:** Projetei a arquitetura de coleta de dados capaz de operar no ambiente hostil do chão de fábrica (altas temperaturas e particulados). Isso garantiu que as leituras de concentração de gases (como $CO$, $CO_2$, $CH_4$ e $O_2$) fossem extraídas em tempo real e com alta fidelidade.
+
+  A pirólise da biomassa de eucalipto pode ser representada pela decomposição genérica:
+
+  $$C_n H_m O_p \;\xrightarrow{\;\Delta\;}\; a\,C_{(s)} + b\,H_2 + c\,C_x H_y + d\,CO + e\,CO_2 + f\,H_2O$$
+
+  onde os coeficientes $a, b, c, d, e, f$ dependem da composição da madeira e das condições do forno (temperatura, taxa de aquecimento e atmosfera), formando: carbono fixo (carvão), hidrogênio gasoso, hidrocarbonetos leves (alcatrão), monóxido e dióxido de carbono, e água.
+
+* **Balanço Químico e Modelagem:** Na camada de software, utilizei técnicas de Ciência de Dados para modelar a termodinâmica dos fornos. Desenvolvi algoritmos que cruzavam os dados crus dos sensores com as variáveis de entrada de biomassa, realizando o balanço químico estequiométrico e de massa contínuo da combustão.
+
+![Gráficos de dados gerados pelos algoritmos de análise, mostrando as curvas de emissão de gases ao longo do ciclo de carbonização.](images/CorridaCH4.png){width=85%}
+
+## Impacto
+
+Este desenvolvimento rompeu a limitação dos instrumentos comerciais, transformando equipamentos padrão em ferramentas de auditoria de precisão científica. A modelagem algorítmica do balanço de massa forneceu à ArcelorMittal Bioflorestas a transparência e a rastreabilidade exatas dos gases emitidos e evitados no processo de carbonização. 
+
+Como resultado direto, o sistema viabilizou a comprovação auditável das métricas de sustentabilidade da planta, fornecendo o lastro técnico necessário para a conversão das reduções de emissões em ativos financeiros no mercado global de créditos de carbono.
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+
+![](/files/images/partners/Fahren_vetorizado.svg){height=60px}
+
+![](/files/images/partners/Arcelormittal-logo.svg){height=60px}
+
+</div>
+
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

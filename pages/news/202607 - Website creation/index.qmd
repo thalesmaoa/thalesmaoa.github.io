@@ -1,0 +1,30 @@
+---
+title: "Bem-vindo ao meu novo site!"
+description: "O site foi construído com Quarto e está no ar."
+author: "Thales Maia"
+date: "2026-07-19"
+categories: [Notícias]
+image: "quarto-dark-bg.jpeg"
+draft: false
+---
+
+Estou muito feliz em anunciar o lançamento do meu novo site pessoal e acadêmico!
+
+Este espaço foi desenvolvido utilizando [Quarto](https://quarto.org/), uma ferramenta de publicação técnica e científica de código aberto que transforma notebooks computacionais e markdown em documentos e sites de alta qualidade.
+
+## Código Aberto
+
+A estrutura deste site é uma adaptação do excelente template [Quarto Academic Website](https://github.com/dr-gang-he/quarto-academic-website-template) criado pelo Dr. Gang He. Sou muito grato pela sua contribuição à comunidade.
+
+Todo o código-fonte e as modificações que realizei estão disponíveis publicamente no meu repositório do GitHub. Sinta-se à vontade para explorar, dar um "fork" e adaptar para seus próprios projetos.
+
+<div style="text-align: center; margin-top: 20px;">
+<a href="https://github.com/thalesmaoa/thalesmaoa.github.io" class="btn btn-primary" target="_blank" role="button"><i class="fab fa-github"></i>&nbsp; Ver o código no GitHub</a>
+</div>
+
+Espero que goste do conteúdo!
+
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

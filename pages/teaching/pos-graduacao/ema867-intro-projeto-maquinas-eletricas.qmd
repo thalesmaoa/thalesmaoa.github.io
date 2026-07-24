@@ -1,0 +1,15 @@
+---
+title: "EMA867 — Introdução ao Projeto de Máquinas Elétricas"
+description: "Dimensionamento analítico de máquinas elétricas, projeto de enrolamentos e otimização eletromagnética."
+date: 2022-02-01
+categories: [Anterior, Máquinas Elétricas, Projetos]
+draft: true
+---
+
+## Ementa
+
+Metodologia de projeto de máquinas elétricas rotativas. Dimensionamento analítico de circuitos magnéticos e enrolamentos. Projeto de máquinas de indução, síncronas de ímãs permanentes e de relutância variável. Análise de perdas e rendimento. Introdução à otimização por algoritmos genéticos e modelos substitutos.
+
+::: {.callout-note}
+Material didático em construção. Em breve disponibilizarei slides e listas de exercícios.
+:::

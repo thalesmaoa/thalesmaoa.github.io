@@ -1,0 +1,54 @@
+---
+title: "Eletrônica de Injeção Automotiva: Desenvolvimento Bare-Metal para Kits Turbo"
+description: "Desenvolvimento integral (TRL 1 a 9) de módulos eletrônicos de controle de injeção e calibração de pressão para o mercado de performance automotiva."
+date: "2016-06-01" # Ajuste para a data aproximada de lançamento do produto
+categories: [Sistemas Embarcados, Automotivo, Hardware, Bare-Metal, Desenvolvimento de Produto]
+image: "images/IMG20260724144055.jpg"
+draft: false
+---
+
+**Parceiros Industriais:** Biagio Turbos / Fahren  
+**Escopo:** Engenharia de Hardware (*Bare-Metal*), Firmware, Calibração Automotiva e Produtização  
+
+![Placa de circuito impresso (PCB) do módulo eDRIVE já em fase de produção. O desenvolvimento englobou todo o roteamento e arquitetura de hardware para suportar o ambiente elétrico hostil dos veículos.](images/20151210_091306.jpg){width=70%}
+
+## O Gargalo Tecnológico
+
+A evolução dos motores a combustão exige que qualquer modificação mecânica de performance seja milimetricamente acompanhada por um gerenciamento eletrônico preciso. Uma fabricante consolidada no mercado de turbocompressores (Biagio Turbos) havia desenvolvido um excelente kit mecânico para veículos Fiat, mas esbarrou em um gargalo crítico: a empresa não possuía a competência eletrônica necessária para controlar a injeção e a pressão do sistema.
+
+Sem um "cérebro" eletrônico adequado, a integridade mecânica dos motores originais ficava em risco. Assumi a responsabilidade de suprir essa lacuna tecnológica, desenvolvendo do zero uma Unidade de Controle Eletrônico (ECU/Piggyback) customizada para ler os sensores do veículo, interceptar sinais e atuar com precisão nos parâmetros de combustão.
+
+## Do Conceito à Linha de Produção (TRL 1 ao 9)
+
+O grande diferencial deste projeto foi percorrer toda a escala de Níveis de Maturidade Tecnológica (*Technology Readiness Levels* - TRL). O trabalho não se limitou a um protótipo de bancada (TRL 3), mas avançou até a certificação, operação em ambiente real e produção comercial em série (TRL 9). 
+
+O desenvolvimento *full-stack* envolveu as seguintes frentes de engenharia:
+
+![Modelagem 3D (CAD Eletrônico) da placa principal do módulo eDRIVE. Todo o design de hardware foi feito do zero para otimizar espaço e garantir proteção contra ruídos automotivos.](images/edrivev1.png){width=80%}
+
+* **Design de Hardware (*Bare-Metal*):** Projetei a arquitetura eletrônica completa, desde a seleção de microcontroladores até o roteamento avançado da placa de circuito impresso (PCB). O hardware precisava incluir proteções severas contra transientes de tensão e ruído eletromagnético, típicos do cofre do motor de um automóvel.
+* **Desenvolvimento de Firmware e Sensoriamento:** A programação *bare-metal* garantiu máxima velocidade de processamento e confiabilidade. Integramos sensores de pressão absoluta (MAP) na própria placa para leituras instantâneas do coletor de admissão, além de processar os sinais de rotação e sonda lambda do veículo em tempo real.
+
+![Detalhe da modelagem do *shield* de condicionamento de sinais e interface com o sensor MAP integrado, crucial para a leitura de pressão de turbo.](images/edriver00.png){width=80%}
+
+* **Calibração e Segurança de Motor:** Com a eletrônica funcional, fui a campo mapear e calibrar o funcionamento dinâmico dos motores. Ajustei mapas de ponto de injeção suplementar e limitei eletronicamente o pico de pressão do turbo. Essa calibração fina foi o que garantiu o ganho de potência desejado sem comprometer a durabilidade dos motores.
+
+## O Impacto e o Produto Comercial
+
+O que começou como a resolução de um problema técnico isolado tornou-se um produto comercial de sucesso. O módulo batizado de **eDRIVE** foi exaustivamente testado em campo, validado e lançado no mercado.
+
+A entrega dessa solução transformou o kit turbo da empresa em um produto inteligente e seguro (*plug-and-play*), culminando na comercialização de centenas de unidades. O projeto atesta a capacidade de traduzir a engenharia eletrônica profunda em viabilidade de negócios, entregando um hardware 100% projetado para a fabricação em escala.
+
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+
+![](/files/images/partners/Fahren_vetorizado.svg){height=60px}
+
+![](/files/images/partners/biagio-turbos-seeklogo.png){height=60px}
+
+</div>
+
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

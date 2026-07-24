@@ -1,0 +1,55 @@
+---
+title: "Simulação por Elementos Finitos (FEM): Otimização Eletromagnética de Motores de Indução"
+description: "Aplicação avançada do Método de Elementos Finitos (FEM) no design de um motor de indução de 5 CV. Maximização de fluxo enlaçado e mitigação de dispersões magnéticas via otimização geométrica."
+date: "2021-08-15"
+categories: [Elementos Finitos (FEM), Máquinas Elétricas, Otimização Geométrica, Eletromagnetismo]
+image: "images/MaqInd.gif"
+draft: false
+---
+
+**Escopo:** Análise Eletromagnética Computacional, Otimização Paramétrica e Design Numérico  
+**Atuação:** Especialista em Simulação e Design Eletromagnético  
+
+![Análise integral da densidade de fluxo magnético (T) na seção transversal de um motor de indução de 5 CV. O mapeamento visualiza a saturação do núcleo, as equipotenciais magnéticas e os vetores de direção do fluxo.](images/VetoresFluxo.png)
+
+## A Engenharia por Trás do Eletromagnetismo
+
+O desenvolvimento de máquinas elétricas de alta eficiência exige a transição dos cálculos analíticos tradicionais para a modelagem numérica avançada. Em motores de indução trifásicos — como o modelo de 5 CV otimizado neste projeto —, o grande desafio de engenharia é direcionar a energia magnética de forma cirúrgica para o entreferro, transformando o máximo de campo magnético em torque mecânico útil.
+
+O domínio do **Método de Elementos Finitos (FEM)** permite dissecar o circuito magnético "no nível do elétron". Através da simulação multifísica, torna-se possível mapear o comportamento vetorial do campo, identificar gargalos de saturação no aço silício e validar exaustivamente a topologia da máquina antes da usinagem de qualquer protótipo físico.
+
+## Otimização Geométrica e Controle Vetorial do Fluxo
+
+Neste projeto, a modelagem FEM foi o núcleo de uma otimização paramétrica agressiva focada no estator e no rotor. A estratégia abordou duas frentes críticas para a eficiência do motor:
+
+![Parametrização geométrica da ranhura do estator. O controle de cotas em milímetros e ângulos é o motor da otimização das relutâncias.](images/Parametric_Stator.png){width=70%}
+
+* **Maximização do Fluxo Enlaçado:** O torque de um motor é diretamente proporcional ao fluxo magnético que efetivamente cruza o entreferro e "abraça" as barras do rotor. Através da parametrização geométrica (ajustando a largura dos dentes e a profundidade da coroa do estator), a relutância do circuito principal foi minimizada. Isso garante a máxima densidade de fluxo útil sem saturar prematuramente o material ferromagnético.
+* **Mitigação da Dispersão de Fluxo (*Leakage*):** O fluxo de dispersão é a energia que "curto-circuita" pelas ranhuras sem cruzar o entreferro, degradando o fator de potência e a eficiência geral da máquina. A simulação iterativa permitiu redesenhar a abertura das ranhuras (*slot openings*) e o perfil das cunhas.
+
+
+## Validação Dinâmica e Resposta Elétrica
+
+Uma simulação FEM de alto nível não se limita a gerar mapas de calor estáticos; ela deve prever o comportamento elétrico dinâmico da máquina. 
+
+![Análise transiente do motor de indução: Animação do fluxo magnético girante e da variação da densidade de campo (T) ao longo do tempo.](images/anim.gif)
+
+![Sinais elétricos extraídos dinamicamente via FEM. A análise da bobina exploradora virtual mapeia as tensões induzidas (V) no entreferro, dente e estator ao longo do tempo.](images/BobinaExploradora.png)
+
+Para validar a integridade do design eletromagnético, o modelo foi submetido a análises transientes rigorosas. A extração de dados através de bobinas exploradoras virtuais permitiu traçar as curvas reais de tensão induzida (Força Eletromotriz) em diferentes seções do circuito magnético. Esse cruzamento entre o domínio espacial (geometria) e o domínio temporal (sinais elétricos) garante que distorções harmônicas e oscilações de torque (*torque ripple*) sejam neutralizadas na prancheta de projeto.
+
+## Impacto
+
+O emprego de simulações FEM converte o design de máquinas elétricas de um processo de "tentativa e erro" para uma ciência determinística. A capacidade de prever a saturação do aço, controlar vetorialmente os caminhos de relutância, eliminar dispersões de fluxo e validar as correntes trifásicas de alimentação resulta em motores estritamente otimizados: mais compactos, com maior torque específico e prontos para superar os padrões globais de eficiência energética.
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+
+![](/files/images/partners/Fahren_vetorizado.svg){height=60px}
+
+![](/files/icons/logo_UFMG.jpg){height=60px}
+
+</div>
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

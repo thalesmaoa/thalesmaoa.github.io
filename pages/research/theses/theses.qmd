@@ -1,0 +1,39 @@
+---
+title: "<span class='lang-pt'>Teses e Dissertações</span><span class='lang-en'>Theses &amp; Dissertations</span>"
+description-meta: "Banco de teses e dissertações orientadas"
+title-block-banner: false
+listing:
+  - id: doutorado
+    contents: theses.yml
+    type: custom
+    page-size: 100
+    categories: false
+    template: theses-listing.ejs
+    include:
+      section: "Doutorado"
+
+  - id: mestrado
+    contents: theses.yml
+    type: custom
+    page-size: 100
+    categories: false
+    template: theses-listing.ejs
+    include:
+      section: "Mestrado"
+css: ../papers/pub-listing.css
+filters: [remove-stray-divfence.lua]
+---
+
+## <span class="lang-pt">Teses de Doutorado</span><span class="lang-en">Doctoral Theses</span>
+
+::: {#doutorado}
+
+:::
+
+## <span class="lang-pt">Dissertações de Mestrado</span><span class="lang-en">Master&apos;s Theses</span>
+
+::: {#mestrado}
+
+:::
+
+{{< include /files/includes/_socialshare.qmd >}}

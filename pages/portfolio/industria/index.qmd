@@ -1,0 +1,15 @@
+---
+title: "Indústria"
+subtitle: "Projetos de consultoria e extensão para o setor industrial"
+page-layout: full
+listing:
+  contents: .
+  type: grid
+  grid-columns: 3
+  image-height: "200px"
+  fields: [image, title, description, categories]
+  sort: "date desc"
+  sort-ui: false
+  filter-ui: true
+  categories: true
+---
