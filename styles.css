@@ -131,6 +131,15 @@ html.lang-en .lang-pt       { display: none; }
 .carousel-arrow-left  { left: 4px; }
 .carousel-arrow-right { right: 4px; }
 
+/* ===== Partner logos (responsive) ===== */
+.partner-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 767px) {
   .carousel-arrow {
     width: 32px;
@@ -139,5 +148,10 @@ html.lang-en .lang-pt       { display: none; }
   }
   .carousel-arrow-left  { left: 2px; }
   .carousel-arrow-right { right: 2px; }
+
+  .partner-logos {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 

@@ -95,7 +95,7 @@ O desenvolvimento da arquitetura cibernética e algorítmica do SIMOI elevou a p
 The development of SIMOI's cybernetic and algorithmic architecture elevated theoretical research into a product applicable to critical infrastructure. The convergence between the precise acquisition hardware designed by the UFMG team and the embedded intelligence I structured ensures that Petrobras can scale predictive maintenance across its platforms in a robust, secure, and data-driven manner.
 </div>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/icons/logo_UFMG.jpg){height=60px}
 

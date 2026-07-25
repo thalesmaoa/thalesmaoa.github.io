@@ -81,7 +81,7 @@ To validate the physical impact of these losses, I performed steady-state thermo
 <span class="lang-pt">Este projeto atesta a capacidade de ultrapassar a engenharia teórica baseada em datasheets de fornecedores. O desenvolvimento de hardware próprio (inversor/modulador) para a criação de uma bancada de metrologia magnética garante que as decisões críticas de seleção de materiais em um P&D sejam embasadas em dados reais, validados experimentalmente sob as exatas condições harmônicas e geométricas do produto final.</span>
 <span class="lang-en">This project demonstrates the ability to go beyond theoretical engineering based on supplier datasheets. The development of custom hardware (inverter/modulator) to create a magnetic metrology bench ensures that critical material selection decisions in R&D are grounded in real data, experimentally validated under the exact harmonic and geometric conditions of the final product.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/images/partners/Fahren_vetorizado.svg){height=60px}
 

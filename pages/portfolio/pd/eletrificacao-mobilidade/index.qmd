@@ -112,7 +112,7 @@ The adaptation required mechanical challenges to scale the 16" wheel of the orig
 <span class="lang-pt">O projeto demonstrou que a engenharia de alta performance pode ter impacto direto na qualidade de vida das pessoas. Ao eliminar transmissões pesadas e substituir o chumbo por lítio, comprovamos a viabilidade de um produto inclusivo, portátil e à prova de falhas (já que o usuário nunca fica imobilizado por falta de bateria).</span>
 <span class="lang-en">The project demonstrated that high-performance engineering can have a direct impact on people's quality of life. By eliminating heavy transmissions and replacing lead with lithium, we proved the viability of an inclusive, portable, and fail-proof product (since the user is never immobilized due to lack of battery).</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/images/partners/Fahren_vetorizado.svg){height=60px}
 

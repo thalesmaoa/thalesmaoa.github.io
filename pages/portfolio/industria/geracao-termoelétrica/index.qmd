@@ -57,7 +57,7 @@ The challenge of this project was to integrally develop the electrical generatio
 <span class="lang-pt">O resultado do projeto foi a entrega de uma unidade termoelétrica compacta, robusta e totalmente proprietária. O desenvolvimento comprovou a capacidade de dominar a engenharia de ponta a ponta: desde o fluxo mecânico dos fluidos na admissão até o escovamento de bits no comissionamento do painel, garantindo uma geração de energia elétrica contínua, segura e de alto desempenho para aplicações operacionais críticas.</span>
 <span class="lang-en">The project resulted in the delivery of a compact, robust, and fully proprietary thermoelectric unit. The development proved the ability to master end-to-end engineering: from the mechanical fluid flow in the intake to the bit-level programming in the panel commissioning, ensuring continuous, safe, and high-performance electrical power generation for critical operational applications.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/images/partners/Fahren_vetorizado.svg){height=60px}
 

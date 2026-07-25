@@ -77,7 +77,7 @@ The system architecture required the sizing and integration of high-capacity mec
 <span class="lang-pt">A entrega deste sistema dotou o laboratório do CTM de uma infraestrutura de ensaios de padrão internacional. O desenvolvimento *full-stack* — unindo o dimensionamento do compressor, a termodinâmica dos 22 kW e a eletrônica de controle *bare-metal* — resultou em uma bancada capaz de simular dinamicamente e com precisão absoluta qualquer condição de sobrealimentação para testes de motores de combustão.</span>
 <span class="lang-en">The delivery of this system equipped the CTM laboratory with an international standard testing infrastructure. The *full-stack* development — combining compressor sizing, the thermodynamics of 22 kW, and *bare-metal* control electronics — resulted in a test bench capable of dynamically simulating with absolute precision any supercharging condition for combustion engine testing.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/images/partners/Fahren_vetorizado.svg){height=60px}
 

@@ -36,7 +36,7 @@ draft: false
 
 <span class="lang-pt">Além disso, o novo sistema supervisório tornou-se o coração digital da planta, garantindo total flexibilidade para a futura integração de inversores híbridos e sistemas de armazenamento de energia (baterias de Chumbo-Carbono, Sal Fundido e Íon-Lítio) em uma topologia pronta para o controle de despacho.</span><span class="lang-en">Furthermore, the new supervisory system became the digital heart of the plant, ensuring full flexibility for the future integration of hybrid inverters and energy storage systems (Lead-Carbon, Molten Salt, and Lithium-Ion batteries) in a topology ready for dispatch control.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/icons/logo_UFMG.jpg){height=60px}
 

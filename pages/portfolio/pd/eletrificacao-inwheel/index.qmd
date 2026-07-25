@@ -131,7 +131,7 @@ In this project, I worked on the development and experimental evaluation of an *
 <span class="lang-pt">O desenvolvimento destes projetos atesta a capacidade de transitar por todo o ciclo da engenharia automotiva eletrificada. Desde o uso de simulações em Elementos Finitos (FEM) para otimização do núcleo magnético e mitigação de saturação, até a usinagem, montagem mecânica e validação experimental em dinamômetro. Seja maximizando a relação kW/kg para o *motorsport* ou projetando topologias de baixo custo para o mercado de massa, o domínio da arquitetura *In-Wheel* demonstra uma execução completa do conceito à bancada.</span>
 <span class="lang-en">The development of these projects attests to the ability to navigate the entire electrified automotive engineering cycle. From the use of Finite Element Method (FEM) simulations for magnetic core optimization and saturation mitigation, to machining, mechanical assembly, and experimental validation on a dynamometer. Whether maximizing the kW/kg ratio for *motorsport* or designing low-cost topologies for the mass market, mastery of the *In-Wheel* architecture demonstrates complete execution from concept to bench.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/icons/logo_UFMG.jpg){height=60px}
 

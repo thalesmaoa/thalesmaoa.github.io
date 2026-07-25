@@ -86,7 +86,7 @@ As a direct result, the system enabled auditable verification of the plant's sus
 
 </div>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/images/partners/Fahren_vetorizado.svg){height=60px}
 

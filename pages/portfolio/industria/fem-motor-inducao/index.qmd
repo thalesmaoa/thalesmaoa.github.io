@@ -65,7 +65,7 @@ Mastery of the **Finite Element Method (FEM)** allows dissecting the magnetic ci
 <span class="lang-pt">O emprego de simulações FEM converte o design de máquinas elétricas de um processo de "tentativa e erro" para uma ciência determinística. A capacidade de prever a saturação do aço, controlar vetorialmente os caminhos de relutância, eliminar dispersões de fluxo e validar as correntes trifásicas de alimentação resulta em motores estritamente otimizados: mais compactos, com maior torque específico e prontos para superar os padrões globais de eficiência energética.</span>
 <span class="lang-en">The use of FEM simulations converts the design of electrical machines from a "trial and error" process into a deterministic science. The ability to predict steel saturation, vectorially control reluctance paths, eliminate flux leakage, and validate the three-phase supply currents results in strictly optimized motors: more compact, with higher specific torque, and ready to surpass global energy efficiency standards.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/images/partners/Fahren_vetorizado.svg){height=60px}
 

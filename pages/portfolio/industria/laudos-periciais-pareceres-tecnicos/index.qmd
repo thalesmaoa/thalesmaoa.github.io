@@ -28,6 +28,7 @@ Below, I present two real cases where investigative engineering served as defini
 <span class="lang-en">**Scope:** Forensic Engineering and Root Cause Analysis</span>
 
 ![Inspeção técnica e análise de fadiga em componentes de máquinas rotativas.](images/IMG20210805140930.jpg){width=60%}
+
 ### <span class="lang-pt">O Contexto</span><span class="lang-en">The Context</span>
 
 <span class="lang-pt">Investigação das causas da quebra catastrófica das barras do rotor de um motor síncrono de grande porte (1.500 kW, 3.450 V, 10 polos), ocorrida logo após um serviço de manutenção corretiva.</span>
@@ -51,6 +52,7 @@ Below, I present two real cases where investigative engineering served as defini
 <span class="lang-en">**Scope:** Software/Hardware Expert Analysis and Intellectual Property Dispute</span>
 
 ![Análise de placas de circuito impresso e auditoria de sistemas embarcados.](images/eletronica.png)
+
 ### <span class="lang-pt">O Contexto</span><span class="lang-en">The Context</span>
 
 <span class="lang-pt">Emissão de parecer técnico-científico para validar ou refutar judicialmente a alegação de invenção de um sistema de integração de automação industrial (envolvendo placas seriais e linhas de braços robóticos).</span>
@@ -95,7 +97,7 @@ The cases above illustrate just a fraction of my capacity in forensic engineerin
 
 </div>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/icons/logo_UFMG.jpg){height=60px}
 

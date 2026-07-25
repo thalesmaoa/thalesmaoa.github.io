@@ -89,7 +89,7 @@ For heavy industrial applications, such as static compensators and drives in the
 <span class="lang-pt">Os projetos térmicos vão além de aproximações empíricas básicas. O desenvolvimento envolve análise de convergência de malha (método GCI), medição de propriedades térmicas anisotrópicas, cálculo rigoroso de perda de carga para dimensionamento de bombas e validação experimental das temperaturas de junção em laboratório. O resultado é um dimensionamento térmico exato, seguro e pronto para a indústria.</span>
 <span class="lang-en">Thermal projects go beyond basic empirical approximations. Development involves mesh convergence analysis (GCI method), measurement of anisotropic thermal properties, rigorous head loss calculation for pump sizing, and experimental validation of junction temperatures in the laboratory. The result is an accurate, safe, industry-ready thermal design.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/icons/logo_UFMG.jpg){height=60px}
 

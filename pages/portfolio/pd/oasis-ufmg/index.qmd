@@ -37,7 +37,7 @@ draft: false
 
 <span class="lang-pt">O Projeto OÁSIS estabelece um novo paradigma de maturidade tecnológica para infraestruturas de grande porte no Brasil. A integração da usina solar, do armazenamento em baterias e da geração térmica descentralizada não apenas promove uma redução drástica nas despesas milionárias com energia e na pegada de carbono, mas transforma o campus em um gigantesco laboratório vivo (*living lab*). O resultado é uma infraestrutura resiliente, sustentável e com controle dinâmico de ponta a ponta.</span><span class="lang-en">The OÁSIS Project establishes a new paradigm of technological maturity for large-scale infrastructure in Brazil. The integration of the solar plant, battery storage, and decentralized thermal generation not only promotes a drastic reduction in million-dollar energy expenses and carbon footprint, but also transforms the campus into a gigantic living lab. The result is a resilient, sustainable infrastructure with end-to-end dynamic control.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/icons/logo_UFMG.jpg){height=60px}
 

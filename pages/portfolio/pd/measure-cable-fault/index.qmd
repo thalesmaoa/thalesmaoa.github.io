@@ -97,7 +97,7 @@ By extracting predictive information directly from the shield, the algorithm pro
 
 </div>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/icons/logo_UFMG.jpg){height=60px}
 

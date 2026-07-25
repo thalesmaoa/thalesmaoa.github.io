@@ -2,9 +2,24 @@
 (function() {
   const LANG_KEY = 'site-lang';
 
-  // Restaura preferência salva
-  if (localStorage.getItem(LANG_KEY) === 'en') {
+  // Restaura preferência salva ou detecta idioma do navegador
+  const saved = localStorage.getItem(LANG_KEY);
+  if (saved === 'en') {
     document.documentElement.classList.add('lang-en');
+  } else if (saved === 'pt') {
+    // pt é o default, não precisa adicionar classe
+  } else {
+    // Nenhuma preferência salva: detecta idioma do navegador
+    const browserLang = navigator.language || navigator.userLanguage || '';
+    if (browserLang.startsWith('en')) {
+      document.documentElement.classList.add('lang-en');
+      localStorage.setItem(LANG_KEY, 'en');
+    } else if (browserLang.startsWith('pt')) {
+      localStorage.setItem(LANG_KEY, 'pt');
+    }
+    // outros idiomas: default EN
+    document.documentElement.classList.add('lang-en');
+    localStorage.setItem(LANG_KEY, 'en');
   }
 
   function insertToggle() {

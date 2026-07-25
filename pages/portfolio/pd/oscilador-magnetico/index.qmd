@@ -32,7 +32,7 @@ draft: false
 
 <span class="lang-pt">O hardware desenvolvido forneceu a estabilidade de sinal e a potência necessárias para o funcionamento do equipamento. Com o sistema operando, foi possível defletir o arco elétrico de forma controlada (movimento difícil de ser conseguido manual ou mecanicamente), modificando a distribuição térmica na poça de fusão e produzindo cordões capazes de superar afastamentos desiguais durante a soldagem do passe de raiz.</span><span class="lang-en">The developed hardware provided the signal stability and power required for the equipment's operation. With the system running, it became possible to deflect the electric arc in a controlled manner (a movement difficult to achieve manually or mechanically), modifying the thermal distribution in the weld pool and producing beads capable of overcoming uneven gaps during root pass welding.</span>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 80px;">
+<div class="partner-logos">
 
 ![](/files/icons/logo_UFMG.jpg){height=60px}
 
