@@ -33,7 +33,7 @@ about:
       target: _blank
     - icon: github
       text: GitHub
-      href: https://github.com/thalesmaia
+      href: https://github.com/thalesmaoa
       target: _blank
     - icon: youtube
       text: YouTube
