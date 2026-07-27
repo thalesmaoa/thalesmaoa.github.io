@@ -11,6 +11,6 @@ Ensaios de laboratório abordando transformadores, máquinas de corrente contín
 
 ## Material de apoio
 
-- [Slides das aulas](#)
+- [Slides das aulas](https://nextcloud.fahren.com.br/public.php/dav/files/RFPeQdd2esYD8Jf/)
 - [Roteiros de laboratório](#)
 - [Bibliografia recomendada](#)
