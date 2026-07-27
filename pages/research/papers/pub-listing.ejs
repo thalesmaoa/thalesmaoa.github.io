@@ -56,7 +56,7 @@
    metadataAttrs(item) emits all the data-* attributes List.js needs for
    sort / filter / search. It MUST be on the element that wraps each item.
 */%>
-<div class="pub-item">
+<div class="pub-item" data-categories="<%= utils.b64encode(catsArr.join(',')) %>">
 
   <%/* Hidden fields for List.js */%>
   <span class="listing-title d-none"><%- item.title %></span>
@@ -67,12 +67,7 @@
      listing-categories: each span's onclick must use utils.b64encode(cat)
      — required for Quarto >= 1.6.42 where categories are base64-encoded.
   */%>
-  <div class="listing-categories d-none">
-    <% catsArr.forEach(function(cat) { %>
-    <span class="listing-category"
-          onclick="window.quartoListingCategory('<%= utils.b64encode(cat) %>'); return false;"><%- cat %></span>
-    <% }); %>
-  </div>
+<div class="listing-categories d-none"><% catsArr.forEach(function(cat) { %><span class="listing-category" onclick="window.quartoListingCategory('<%= utils.b64encode(cat) %>'); return false;"><%- cat %></span><% }); %></div>
 
   <%/* ── LINE 1: Citation ───────────────────────────────────────── */%>
   <p class="pub-citation"><%
