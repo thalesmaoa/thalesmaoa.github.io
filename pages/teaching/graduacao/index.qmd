@@ -3,7 +3,9 @@ title: "Graduação"
 subtitle: "Disciplinas ministradas na graduação em Engenharia Elétrica"
 page-layout: full
 listing:
-  contents: .
+  contents:
+    - ele035/index.qmd
+    - ele618-sistemas-eletricos-industriais.qmd
   type: default
   fields: [date, title, description, categories]
   field-display-names:
