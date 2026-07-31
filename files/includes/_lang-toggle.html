@@ -46,6 +46,282 @@
     applyTitleTranslation(currentLang);
   }
 
+  // ═══════════════════════════════════════════════════════════════
+  // Tradução dinâmica dos elementos de listagem do Quarto
+  // (categorias, datas, ordenação — gerados com base em lang: pt)
+  // ═══════════════════════════════════════════════════════════════
+
+  // Mapa de textos estáticos da UI (PT → EN)
+  var UI_PT_TO_EN = {
+    'Categorias': 'Categories',
+    'Tudo': 'All',
+    'Ordenar por': 'Sort by',
+    'Data - Mais velho': 'Date - Oldest',
+    'Data - O mais novo': 'Date - Newest',
+    'Autor': 'Author',
+    'Nenhum item correspondente': 'No matching items',
+    'Nenhum resultado': 'No results',
+    'Filtro': 'Filter',
+    'Alternar de navegação': 'Toggle navigation',
+    'Data de Publicação': 'Publication Date',
+    'Nesta página': 'On this page'
+  };
+  // Mapa reverso (EN → PT)
+  var UI_EN_TO_PT = {};
+  for (var k in UI_PT_TO_EN) { UI_EN_TO_PT[UI_PT_TO_EN[k]] = k; }
+  // Entradas adicionais para textos em inglês que aparecem em páginas legadas
+  UI_EN_TO_PT['Published'] = 'Data de Publicação';
+  UI_EN_TO_PT['Author'] = 'Autor';
+  UI_EN_TO_PT['Authors'] = 'Autores';
+
+  // Abreviações de meses (usadas em listagens: "30 de jul. de 2026")
+  var MONTHS_PT_ABBR = ['jan.','fev.','mar.','abr.','mai.','jun.','jul.','ago.','set.','out.','nov.','dez.'];
+  var MONTHS_EN_ABBR = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  // Meses por extenso (usados em páginas de detalhe: "30 de julho de 2026")
+  var MONTHS_PT_FULL = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+  var MONTHS_EN_FULL = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+  // Nomes de categorias que precisam de tradução (PT → EN)
+  var CAT_PT_TO_EN = {
+    'Estudo de Caso': 'Case Study',
+    'Manutenção Industrial': 'Industrial Maintenance',
+    'Defesa': 'Defense',
+    'Evento': 'Event',
+    'Notícias': 'News'
+  };
+  var CAT_EN_TO_PT = {};
+  for (var ck in CAT_PT_TO_EN) { CAT_EN_TO_PT[CAT_PT_TO_EN[ck]] = ck; }
+
+  // Injeta <span class="lang-pt"> + <span class="lang-en"> em um nó de texto,
+  // consistente com o sistema de tradução do resto do site.
+  function injectLangSpans(el, textNode, ptText, enText) {
+    var spanPt = document.createElement('span');
+    spanPt.className = 'lang-pt';
+    spanPt.textContent = ptText;
+
+    var spanEn = document.createElement('span');
+    spanEn.className = 'lang-en';
+    spanEn.textContent = enText;
+
+    textNode.parentNode.insertBefore(spanEn, textNode);
+    textNode.parentNode.insertBefore(spanPt, textNode);
+    textNode.parentNode.removeChild(textNode);
+
+    el.setAttribute('data-lang-wrapped', '1');
+  }
+
+  // Encontra o primeiro text node direto de um elemento
+  function firstDirectTextNode(el) {
+    for (var i = 0; i < el.childNodes.length; i++) {
+      if (el.childNodes[i].nodeType === 3) return el.childNodes[i];
+    }
+    return null;
+  }
+
+  // Injeta spans de tradução para categorias (executado apenas uma vez)
+  function injectCategorySpans() {
+    var catEls = document.querySelectorAll('.listing-category, .category[data-category]:not([data-category=""]), .quarto-category');
+    for (var i = 0; i < catEls.length; i++) {
+      var el = catEls[i];
+      if (el.hasAttribute('data-lang-wrapped')) continue;
+
+      var textNode = firstDirectTextNode(el);
+      if (!textNode) continue;
+
+      var t = textNode.textContent.trim();
+      var enText = CAT_PT_TO_EN[t];
+      var ptText = CAT_EN_TO_PT[t];
+
+      if (enText) {
+        // Texto atual é português → injeta ambos os spans
+        injectLangSpans(el, textNode, t, enText);
+      } else if (ptText) {
+        // Texto atual é inglês (página legada ou post em EN) → injeta ambos
+        injectLangSpans(el, textNode, ptText, t);
+      }
+      // Se não está no mapa, mantém como está (categoria já está no idioma correto ou é nome próprio)
+    }
+  }
+
+  // Substitui o textContent inteiro (elemento sem filhos importantes)
+  function replaceFullText(el, map) {
+    var t = el.textContent.trim();
+    if (map[t]) { el.textContent = map[t]; }
+  }
+
+  // Substitui texto no primeiro text node direto (preserva filhos como <span>)
+  function replaceDirectText(el, map) {
+    var textNode = firstDirectTextNode(el);
+    if (!textNode) return;
+    var t = textNode.textContent.trim();
+    if (map[t]) {
+      textNode.textContent = textNode.textContent.replace(t, map[t]);
+    }
+  }
+
+  // Traduz datas: "30 de jul. de 2026" → "Jul 30, 2026"  ou  "30 de julho de 2026" → "July 30, 2026"
+  function ptDateToEn(ptStr) {
+    // Tenta formato com mês abreviado: "30 de jul. de 2026"
+    var mAbbr = ptStr.match(/^(\d{1,2}) de (\w{3}\.) de (\d{4})$/);
+    if (mAbbr) {
+      var idxAbbr = MONTHS_PT_ABBR.indexOf(mAbbr[2]);
+      if (idxAbbr >= 0) return MONTHS_EN_ABBR[idxAbbr] + ' ' + mAbbr[1] + ', ' + mAbbr[3];
+    }
+    // Tenta formato com mês por extenso: "30 de julho de 2026"
+    var mFull = ptStr.match(/^(\d{1,2}) de (\w+) de (\d{4})$/);
+    if (mFull) {
+      var idxFull = MONTHS_PT_FULL.indexOf(mFull[2]);
+      if (idxFull >= 0) return MONTHS_EN_FULL[idxFull] + ' ' + mFull[1] + ', ' + mFull[3];
+    }
+    return ptStr;
+  }
+
+  function translateListingDates(lang) {
+    // Datas em cards de listagem (.listing-date) e em páginas de detalhe (.date dentro de .quarto-title-meta-contents)
+    var dates = document.querySelectorAll('.listing-date, .quarto-title-meta-contents .date');
+    for (var i = 0; i < dates.length; i++) {
+      var el = dates[i];
+      if (lang === 'en') {
+        if (!el.hasAttribute('data-pt-date')) {
+          el.setAttribute('data-pt-date', el.textContent.trim());
+        }
+        el.textContent = ptDateToEn(el.getAttribute('data-pt-date'));
+      } else {
+        var orig = el.getAttribute('data-pt-date');
+        if (orig) { el.textContent = orig; }
+      }
+    }
+  }
+
+  // Função principal de tradução da UI de listagem
+  function translateListingUI(lang) {
+    var toEN = lang === 'en';
+    var uiMap = toEN ? UI_PT_TO_EN : UI_EN_TO_PT;
+
+    // Título "Categorias"
+    var catTitles = document.querySelectorAll('.quarto-listing-category-title');
+    for (var i = 0; i < catTitles.length; i++) {
+      replaceFullText(catTitles[i], uiMap);
+    }
+
+    // Filtro "Tudo"
+    var allFilters = document.querySelectorAll('.category[data-category=""]');
+    for (var i = 0; i < allFilters.length; i++) {
+      replaceDirectText(allFilters[i], uiMap);
+    }
+
+    // Dropdown de ordenação (placeholder + opções)
+    var sortSelects = document.querySelectorAll('.quarto-listing-sort select');
+    for (var i = 0; i < sortSelects.length; i++) {
+      var sel = sortSelects[i];
+      // aria-label
+      var aria = sel.getAttribute('aria-label');
+      if (aria && uiMap[aria]) { sel.setAttribute('aria-label', uiMap[aria]); }
+      // opções
+      var opts = sel.querySelectorAll('option');
+      for (var j = 0; j < opts.length; j++) {
+        replaceFullText(opts[j], uiMap);
+      }
+    }
+
+    // Campo de filtro da listagem (placeholder)
+    var filterInputs = document.querySelectorAll('.quarto-listing-filter input');
+    for (var i = 0; i < filterInputs.length; i++) {
+      var ph = filterInputs[i].getAttribute('placeholder');
+      if (ph && uiMap[ph]) { filterInputs[i].setAttribute('placeholder', uiMap[ph]); }
+    }
+
+    // Input de busca da navbar
+    var searchInputs = document.querySelectorAll('#quarto-search input, .aa-Input');
+    for (var i = 0; i < searchInputs.length; i++) {
+      var sph = searchInputs[i].getAttribute('placeholder');
+      if (sph && uiMap[sph]) { searchInputs[i].setAttribute('placeholder', uiMap[sph]); }
+    }
+
+    // Estado vazio
+    var emptyStates = document.querySelectorAll('.listing-no-matching');
+    for (var i = 0; i < emptyStates.length; i++) {
+      replaceFullText(emptyStates[i], uiMap);
+    }
+
+    // Cabeçalhos de metadados: "Data de Publicação", "Autor", etc.
+    var metaHeadings = document.querySelectorAll('.quarto-title-meta-heading');
+    for (var i = 0; i < metaHeadings.length; i++) {
+      replaceFullText(metaHeadings[i], uiMap);
+    }
+
+    // TOC: "Nesta página" → "On this page"
+    var tocTitle = document.getElementById('toc-title');
+    if (tocTitle) { replaceFullText(tocTitle, uiMap); }
+
+    // Datas
+    translateListingDates(lang);
+
+    // Atualiza <html lang> para acessibilidade (também ao trocar idioma)
+    document.documentElement.lang = lang;
+    document.documentElement.setAttribute('xml:lang', lang);
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // Inicialização em duas etapas:
+  //   1) AGORA (síncrono): modifica config de busca antes que quarto-search leia
+  //   2) Depois do DOMContentLoaded + delay: traduz UI de listagem
+  // ═══════════════════════════════════════════════════════════════
+
+  // Etapa 1: modificar config de busca imediatamente (antes de DOMContentLoaded)
+  (function patchSearchConfig() {
+    var lang = document.documentElement.classList.contains('lang-en') ? 'en' : 'pt';
+    if (lang !== 'en') return;
+    var searchConfig = document.getElementById('quarto-search-options');
+    if (!searchConfig) return;
+    try {
+      var cfg = JSON.parse(searchConfig.textContent);
+      var changed = false;
+      var searchMap = {
+        'Nenhum resultado': 'No results',
+        'documentos correspondentes': 'matching documents',
+        'Copiar link para a busca': 'Copy link to search',
+        'Esconder correspondências adicionais': 'Hide additional matches',
+        'mais correspondência neste documento': 'more match in this document',
+        'mais correspondências neste documento': 'more matches in this document'
+      };
+      for (var ptKey in searchMap) {
+        if (cfg['search-no-results-text'] === ptKey) { cfg['search-no-results-text'] = searchMap[ptKey]; changed = true; }
+        if (cfg['search-matching-documents-text'] === ptKey) { cfg['search-matching-documents-text'] = searchMap[ptKey]; changed = true; }
+        if (cfg['search-copy-link-title'] === ptKey) { cfg['search-copy-link-title'] = searchMap[ptKey]; changed = true; }
+        if (cfg['search-hide-matches-text'] === ptKey) { cfg['search-hide-matches-text'] = searchMap[ptKey]; changed = true; }
+        if (cfg['search-more-match-text'] === ptKey) { cfg['search-more-match-text'] = searchMap[ptKey]; changed = true; }
+        if (cfg['search-more-matches-text'] === ptKey) { cfg['search-more-matches-text'] = searchMap[ptKey]; changed = true; }
+      }
+      if (changed) { searchConfig.textContent = JSON.stringify(cfg); }
+    } catch(e) { /* ignora erro de parse */ }
+  })();
+
+  // Atualiza <html lang> e xml:lang imediatamente (acessibilidade)
+  (function patchHtmlLang() {
+    var lang = document.documentElement.classList.contains('lang-en') ? 'en' : 'pt';
+    document.documentElement.lang = lang;
+    document.documentElement.setAttribute('xml:lang', lang);
+  })();
+
+  // Etapa 2: traduzir UI de listagem após list.js inicializar
+  function initListingTranslation() {
+    var lang = document.documentElement.classList.contains('lang-en') ? 'en' : 'pt';
+    translateListingUI(lang);
+    injectCategorySpans();  // injeta spans lang-pt/lang-en nas categorias (roda só 1x)
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      // Pequeno delay para garantir que o list.js inicializou
+      setTimeout(initListingTranslation, 150);
+    });
+  } else {
+    initListingTranslation();
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+
   function insertToggle() {
     // Encontra o <ul> direito da navbar do Quarto
     const rightNav = document.querySelector('.navbar-nav.ms-auto');
@@ -66,6 +342,7 @@
       var lang = isEn ? 'en' : 'pt';
       localStorage.setItem(LANG_KEY, lang);
       applyTitleTranslation(lang);
+      translateListingUI(lang);  // ← traduz UI de listagem ao trocar idioma
     });
 
     li.appendChild(a);
