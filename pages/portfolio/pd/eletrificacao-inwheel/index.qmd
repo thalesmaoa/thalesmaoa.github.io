@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Eletrificação Veicular e Motores In-Wheel: Da Alta Densidade ao Mercado Comercial</span><span class="lang-en">Vehicle Electrification and In-Wheel Motors: From High Density to Commercial Market</span>'
-description: "Desenvolvimento e dimensionamento de máquinas elétricas embutidas na roda (In-Wheel) para veículos de competição de alta performance e veículos de passageiros micro-híbridos."
+description: '<span class="lang-pt">Desenvolvimento e dimensionamento de máquinas elétricas embutidas na roda (In-Wheel) para veículos de competição de alta performance e veículos de passageiros micro-híbridos.</span><span class="lang-en">Development and design of in-wheel electric machines for high-performance competition vehicles and micro-hybrid passenger vehicles.</span>'
 date: "2022-08-16"
 categories: [Eletrificação Veicular, Máquinas Elétricas, P&D]
 image: "images/banner.jpg"
@@ -18,7 +18,7 @@ draft: false
 
 </div>
 
-![Motor elétrico de fluxo comutado montado no interior de uma roda comercial e posicionado sobre o rolo de um dinamômetro para ensaios de validação de frenagem regenerativa.](images/carro_inwheel.jpg)
+![<span class="lang-pt">Motor elétrico de fluxo comutado montado no interior de uma roda comercial e posicionado sobre o rolo de um dinamômetro para ensaios de validação de frenagem regenerativa.</span><span class="lang-en">Flux-switching electric motor mounted inside a commercial wheel and positioned on the dynamometer roller for regenerative braking validation tests.</span>](images/carro_inwheel.jpg)
 
 ## <span class="lang-pt">A Arquitetura *In-Wheel* na Eletrificação Veicular</span><span class="lang-en">The *In-Wheel* Architecture in Vehicle Electrification</span>
 
@@ -60,7 +60,7 @@ The electromechanical design was pushed to the limit to meet the stringent track
 
 </div>
 
-![Vista explodida em CAD 3D do conjunto trativo para a Fórmula SAE. O design integra um motor radial de alta rotação a uma caixa redutora planetária, tudo dimensionado para caber no interior do aro da roda.](images/formula-tesla.png){width=90%}
+![<span class="lang-pt">Vista explodida em CAD 3D do conjunto trativo para a Fórmula SAE. O design integra um motor radial de alta rotação a uma caixa redutora planetária, tudo dimensionado para caber no interior do aro da roda.</span><span class="lang-en">Exploded 3D CAD view of the traction assembly for Formula SAE. The design integrates a high-speed radial motor with a planetary gearbox, all sized to fit inside the wheel rim.</span>](images/formula-tesla.png){width=90%}
 
 <div class="lang-pt">
 * **Meta de Performance:** O sistema precisava fornecer potência e torque suficientes para acelerar um veículo de 280 kg por 75 metros em menos de 4 segundos.
@@ -98,7 +98,7 @@ In this project, I worked on the development and experimental evaluation of an *
 
 </div>
 
-![Análise em Elementos Finitos (FEM) da densidade de fluxo magnético para diferentes configurações de Máquinas de Fluxo Comutado (FSM). As simulações avaliaram topologias de 12s-5p, 24s-10p e 36s-15p para otimização do núcleo ferromagnético.](images/femm.jpg)
+![<span class="lang-pt">Análise em Elementos Finitos (FEM) da densidade de fluxo magnético para diferentes configurações de Máquinas de Fluxo Comutado (FSM). As simulações avaliaram topologias de 12s-5p, 24s-10p e 36s-15p para otimização do núcleo ferromagnético.</span><span class="lang-en">Finite Element Method (FEM) analysis of magnetic flux density for different Flux-Switching Machine (FSM) configurations. The simulations evaluated 12s-5p, 24s-10p, and 36s-15p topologies to optimize the ferromagnetic core.</span>](images/femm.jpg)
 
 <div class="lang-pt">
 * **Topologia sem Terras Raras:** Para evitar a volatilidade de preço e o alto custo dos ímãs de neodímio, optou-se por uma Máquina de Fluxo Comutado (FSM) com excitação por enrolamentos de campo. Essa escolha ofereceu um fluxo magnético controlável, estrutura de rotor robusta e capacidade de operar nas altas temperaturas inerentes à proximidade com os freios do veículo.
@@ -111,7 +111,7 @@ In this project, I worked on the development and experimental evaluation of an *
 
 </div>
 
-<!-- ![Integração mecânica do protótipo no eixo traseiro de um veículo comercial. O espaço ocioso entre o tambor de freio e o interior da roda foi utilizado para acoplar a máquina elétrica sem alterar a estrutura original da suspensão.](images/carro_inwheel.jpg) -->
+<!-- ![<span class="lang-pt">Integração mecânica do protótipo no eixo traseiro de um veículo comercial. O espaço ocioso entre o tambor de freio e o interior da roda foi utilizado para acoplar a máquina elétrica sem alterar a estrutura original da suspensão.</span><span class="lang-en">Mechanical integration of the prototype on the rear axle of a commercial vehicle. The idle space between the brake drum and the inside of the wheel was used to couple the electrical machine without altering the original suspension structure.</span>](images/carro_inwheel.jpg) -->
 
 <div class="lang-pt">
 * **Integração Mecânica Não-Invasiva:** O design foi projetado para montagem no eixo traseiro do veículo, aproveitando o volume interno da roda. Em um trabalho de usinagem e adaptação mecânica rigorosa, o próprio tambor do freio traseiro foi utilizado como o eixo/suporte do núcleo do rotor da máquina elétrica, expandido via aquecimento indutivo para montagem por interferência.
@@ -124,7 +124,7 @@ In this project, I worked on the development and experimental evaluation of an *
 
 </div>
 
-![Validação experimental do modelo numérico.](images/results.jpg)
+![<span class="lang-pt">Validação experimental do modelo numérico.</span><span class="lang-en">Experimental validation of the numerical model.</span>](images/results.jpg)
 
 ## <span class="lang-pt">Impacto</span><span class="lang-en">Impact</span>
 

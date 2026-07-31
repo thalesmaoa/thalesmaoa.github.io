@@ -1,6 +1,6 @@
 ---
 title: "Pós-Graduação"
-subtitle: "Disciplinas ministradas no Programa de Pós-Graduação em Engenharia Elétrica"
+subtitle: '<span class="lang-pt">Disciplinas ministradas no Programa de Pós-Graduação em Engenharia Elétrica</span><span class="lang-en">Courses taught in the Graduate Program in Electrical Engineering</span>'
 page-layout: full
 listing:
   contents: .

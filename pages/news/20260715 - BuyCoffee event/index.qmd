@@ -1,6 +1,6 @@
 ---
 title: "BuyCoffee — Networking, Tecnologia e Boas Conversas"
-description: "Participei do evento BuyCoffee e apresentei meus trabalhos como pesquisador e desenvolvedor de tecnologia."
+description: '<span class="lang-pt">Participei do evento BuyCoffee e apresentei meus trabalhos como pesquisador e desenvolvedor de tecnologia.</span><span class="lang-en">I attended the BuyCoffee event and presented my work as a researcher and technology developer.</span>'
 author: "Thales Maia"
 date: "2026-07-15"
 categories: [Notícias, Evento]

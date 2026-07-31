@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Minirredes Inteligentes (Projeto OÁSIS): Integração Fotovoltaica, Baterias e Cogeração Térmica</span><span class="lang-en">Smart Microgrids (OÁSIS Project): Photovoltaic Integration, Batteries and Thermal Cogeneration</span>'
-description: "Pesquisa e desenvolvimento para a implementação de uma minirrede universitária inédita no país, integrando energia solar, BESS (1MW/3MWh) e microturbinas a gás."
+description: '<span class="lang-pt">Pesquisa e desenvolvimento para a implementação de uma minirrede universitária inédita no país, integrando energia solar, BESS (1MW/3MWh) e microturbinas a gás.</span><span class="lang-en">Research and development toward the implementation of an unprecedented university microgrid in the country, integrating solar energy, BESS (1MW/3MWh) and gas microturbines.</span>'
 date: "2022-01-31" # Ajuste para a data correspondente ao fechamento do ciclo do projeto
 categories: [Geração de Energia, Armazenamento de Energia, P&D]
 image: "images/campus.png"

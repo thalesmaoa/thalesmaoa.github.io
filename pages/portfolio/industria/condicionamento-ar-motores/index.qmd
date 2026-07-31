@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Condicionamento de Ar para Ensaios de Motores: Fluidodinâmica e Controle Eletrônico</span><span class="lang-en">Air Conditioning for Engine Testing: Fluid Dynamics and Electronic Control</span>'
-description: "Desenvolvimento integral de um sistema de controle de pressão e temperatura para admissão de ar em testes de motores de combustão superalimentados."
+description: '<span class="lang-pt">Desenvolvimento integral de um sistema de controle de pressão e temperatura para admissão de ar em testes de motores de combustão superalimentados.</span><span class="lang-en">End-to-end development of a pressure and temperature control system for air intake in supercharged combustion engine testing.</span>'
 date: "2015-08-15"
 categories: [Automação, Eletrônica de Potência, Simulação Multifísica, Instrumentação, Desenvolvimento de Produto]
 image: "images/DSC_0293.JPG"
@@ -9,7 +9,7 @@ draft: false
 
 <span class="lang-pt">**Parceiros:** FARR / Centro de Tecnologia em Mobilidade (CTM - UFMG)<br>**Escopo:** Engenharia Fluidodinâmica, Eletrônica de Potência e Controle PID Customizado</span><span class="lang-en">**Partners:** FARR / Mobility Technology Center (CTM - UFMG)<br>**Scope:** Fluid Dynamics Engineering, Power Electronics and Custom PID Control</span>  
 
-![Sistema de condicionamento térmico de ar instalado no laboratório, evidenciando as tubulações isoladas termicamente e o arranjo fluidodinâmico de aquecimento.](images/DSC_0293.JPG)
+![<span class="lang-pt">Sistema de condicionamento térmico de ar instalado no laboratório, evidenciando as tubulações isoladas termicamente e o arranjo fluidodinâmico de aquecimento.</span><span class="lang-en">Air thermal conditioning system installed in the laboratory, highlighting the thermally insulated piping and the fluid-dynamic heating arrangement.</span>](images/DSC_0293.JPG)
 
 ## <span class="lang-pt">O Desafio da Sobrealimentação de Motores</span><span class="lang-en">The Challenge of Engine Supercharging</span>
 
@@ -52,7 +52,7 @@ The system architecture required the sizing and integration of high-capacity mec
 <span class="lang-pt">Gerenciar 22 kW de aquecimento e manter a pressão do ar milimetricamente estável exige uma eletrônica que não se encontra "de prateleira". Desenvolvi o hardware e o firmware de controle a partir do zero:</span>
 <span class="lang-en">Managing 22 kW of heating and keeping air pressure millimetrically stable requires electronics that are not "off-the-shelf". I developed the control hardware and firmware from scratch:</span>
 
-![Placa de circuito impresso (PCB) customizada desenvolvida para o processamento dos algoritmos PID e disparo dos estágios de potência.](images/controlador-ctm.jpg){width=70%}
+![<span class="lang-pt">Placa de circuito impresso (PCB) customizada desenvolvida para o processamento dos algoritmos PID e disparo dos estágios de potência.</span><span class="lang-en">Custom printed circuit board (PCB) developed for processing the PID algorithms and triggering the power stages.</span>](images/controlador-ctm.jpg){width=70%}
 
 <div class="lang-pt">
 
@@ -67,7 +67,7 @@ The system architecture required the sizing and integration of high-capacity mec
 
 </div>
 
-![Modelagem 3D do encapsulamento de sensores de pressão dedicados, projetados para suportar o ambiente do ensaio e enviar dados precisos para o controlador.](images/pressao.png){width=70%}
+![<span class="lang-pt">Modelagem 3D do encapsulamento de sensores de pressão dedicados, projetados para suportar o ambiente do ensaio e enviar dados precisos para o controlador.</span><span class="lang-en">3D modeling of the dedicated pressure sensor housing, designed to withstand the test environment and send accurate data to the controller.</span>](images/pressao.png){width=70%}
 
 <span class="lang-pt">* **Instrumentação e Sensoriamento:** Além do controle, projetei a mecânica e a eletrônica de integração dos sensores de temperatura e pressão frontal, garantindo que o tempo de resposta da leitura fosse rápido o suficiente para alimentar as malhas do PID sem instabilidade.</span>
 <span class="lang-en">* **Instrumentation and Sensing:** Beyond control, I designed the mechanics and integration electronics for the front-end temperature and pressure sensors, ensuring the reading response time was fast enough to feed the PID loops without instability.</span>

@@ -1,6 +1,6 @@
 ---
 title: "Defesa de Mestrado — William Andrade"
-description: "William Andrade defende dissertação no PPGEE-UFMG"
+description: '<span class="lang-pt">William Andrade defende dissertação no PPGEE-UFMG</span><span class="lang-en">William Andrade defends his dissertation at PPGEE-UFMG</span>'
 author: "Thales Maia"
 date: "2026-07-20"
 categories: [Notícias, Defesa]

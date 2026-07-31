@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Geração Termoelétrica Customizada: Especificação e Comissionamento de Motogeradores</span><span class="lang-en">Custom Thermoelectric Generation: Specification and Commissioning of Motor-Generators</span>'
-description: "Engenharia integral de sistema de geração elétrica: da especificação da máquina ao comissionamento do painel de controle e adaptações mecânicas."
+description: '<span class="lang-pt">Engenharia integral de sistema de geração elétrica: da especificação da máquina ao comissionamento do painel de controle e adaptações mecânicas.</span><span class="lang-en">Complete engineering of an electrical power generation system: from machine specification to commissioning of the control panel and mechanical adaptations.</span>'
 date: "2022-12-20"
 categories: [Geração de Energia, Máquinas Elétricas, Infraestrutura Elétrica, Eletrônica de Potência, P&D]
 image: "images/photo_2022-12-20_18-32-04.jpg"
@@ -9,7 +9,7 @@ draft: false
 
 <span class="lang-pt">**Escopo:** Engenharia de Sistemas de Geração, Comissionamento Elétrico e Adaptação Mecânica</span><span class="lang-en">**Scope:** Power Generation Systems Engineering, Electrical Commissioning and Mechanical Adaptation</span>
 
-![Motogerador de combustão interna, dimensionado e customizado para a conversão de energia em regimes de geração descentralizada.](images/photo_2022-12-20_18-32-04.jpg){width=85%}
+![<span class="lang-pt">Motogerador de combustão interna, dimensionado e customizado para a conversão de energia em regimes de geração descentralizada.</span><span class="lang-en">Internal combustion motor-generator, sized and customized for energy conversion in decentralized generation regimes.</span>](images/photo_2022-12-20_18-32-04.jpg){width=85%}
 
 ## <span class="lang-pt">O Desafio</span><span class="lang-en">The Challenge</span>
 
@@ -33,7 +33,7 @@ The challenge of this project was to integrally develop the electrical generatio
 <span class="lang-pt">Como responsável técnico pela engenharia do sistema gerador, atuei em todas as frentes para garantir a conversão eficiente da energia em eletricidade estável na rede. As principais etapas de desenvolvimento e execução incluíram:</span>
 <span class="lang-en">As the technical lead for the generator system engineering, I worked on all fronts to ensure efficient energy conversion into stable grid electricity. The main development and execution stages included:</span>
 
-![Adaptações mecânicas e fluidodinâmicas no sistema de admissão do motor para garantir a mistura ar/combustível adequada para a combustão contínua.](images/adc0f398-393a-444f-9125-4eb8267209b4.jpg)
+![<span class="lang-pt">Adaptações mecânicas e fluidodinâmicas no sistema de admissão do motor para garantir a mistura ar/combustível adequada para a combustão contínua.</span><span class="lang-en">Mechanical and fluid dynamic adaptations in the engine intake system to ensure the proper air/fuel mixture for continuous combustion.</span>](images/adc0f398-393a-444f-9125-4eb8267209b4.jpg)
 
 <div class="lang-pt">
 
@@ -50,7 +50,7 @@ The challenge of this project was to integrally develop the electrical generatio
 
 </div>
 
-![Cabeamento e comissionamento detalhado do módulo controlador do gerador, responsável pela estabilidade elétrica da geração e proteções do sistema.](images/photo_2022-02-17_10-35-48.jpg){width=85%}
+![<span class="lang-pt">Cabeamento e comissionamento detalhado do módulo controlador do gerador, responsável pela estabilidade elétrica da geração e proteções do sistema.</span><span class="lang-en">Detailed wiring and commissioning of the generator controller module, responsible for the electrical stability of generation and system protections.</span>](images/photo_2022-02-17_10-35-48.jpg){width=85%}
 
 ## <span class="lang-pt">Impacto</span><span class="lang-en">Impact</span>
 

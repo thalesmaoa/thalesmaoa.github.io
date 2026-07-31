@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Laudos Periciais e Pareceres Técnicos</span><span class="lang-en">Expert Reports and Technical Assessments</span>'
-description: "Atuação em engenharia forense, análise de causa-raiz e emissão de pareceres técnicos especializados para litígios e suporte jurídico."
+description: '<span class="lang-pt">Atuação em engenharia forense, análise de causa-raiz e emissão de pareceres técnicos especializados para litígios e suporte jurídico.</span><span class="lang-en">Work in forensic engineering, root-cause analysis, and the issuance of specialized technical assessments for litigation and legal support.</span>'
 date: "2022-09-27" # Data do laudo mais recente
 categories: [Consultoria & Perícia]
 image: "images/banner.png"
@@ -27,7 +27,7 @@ Below, I present two real cases where investigative engineering served as defini
 <span class="lang-pt">**Escopo:** Engenharia Forense e Análise de Causa-Raiz</span>
 <span class="lang-en">**Scope:** Forensic Engineering and Root Cause Analysis</span>
 
-![Inspeção técnica e análise de fadiga em componentes de máquinas rotativas.](images/IMG20210805140930.jpg){width=60%}
+![<span class="lang-pt">Inspeção técnica e análise de fadiga em componentes de máquinas rotativas.</span><span class="lang-en">Technical inspection and fatigue analysis of rotating machinery components.</span>](images/IMG20210805140930.jpg){width=60%}
 
 ### <span class="lang-pt">O Contexto</span><span class="lang-en">The Context</span>
 
@@ -51,7 +51,7 @@ Below, I present two real cases where investigative engineering served as defini
 <span class="lang-pt">**Escopo:** Perícia de Software/Hardware e Disputa de Propriedade Intelectual</span>
 <span class="lang-en">**Scope:** Software/Hardware Expert Analysis and Intellectual Property Dispute</span>
 
-![Análise de placas de circuito impresso e auditoria de sistemas embarcados.](images/eletronica.png)
+![<span class="lang-pt">Análise de placas de circuito impresso e auditoria de sistemas embarcados.</span><span class="lang-en">Analysis of printed circuit boards and audit of embedded systems.</span>](images/eletronica.png)
 
 ### <span class="lang-pt">O Contexto</span><span class="lang-en">The Context</span>
 

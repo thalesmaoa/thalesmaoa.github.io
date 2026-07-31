@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:4848/pages/portfolio/pd/eletrificacao-mobilidade/)",
+      "Bash(curl -s http://localhost:4848/pages/portfolio/pd/online-monitoring/)",
+      "Bash(curl -s http://localhost:4848/pages/portfolio/pd/hibridizacao-maquinario-off-road/)",
+      "Bash(curl -s http://localhost:4848/pages/portfolio/pd/)",
+      "Bash(curl -s http://localhost:4848/)"
+    ]
+  }
+}

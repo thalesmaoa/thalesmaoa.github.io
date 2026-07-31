@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Avaliação de Qualidade Magnética de Aços: Metrologia e Hardware em Alta Frequência</span><span class="lang-en">Magnetic Quality Assessment of Steels: High-Frequency Metrology and Hardware</span>'
-description: "Desenvolvimento de bancada de ensaios com inversor monofásico customizado para levantamento de perdas magnéticas e curvas B-H em geometrias reais de estatores."
+description: '<span class="lang-pt">Desenvolvimento de bancada de ensaios com inversor monofásico customizado para levantamento de perdas magnéticas e curvas B-H em geometrias reais de estatores.</span><span class="lang-en">Development of a test bench with a custom single-phase inverter for measuring magnetic losses and B-H curves in real stator geometries.</span>'
 date: "2016-08-15" # Ajuste para a data correta da sua pesquisa
 categories: [Instrumentação, Máquinas Elétricas, Eletrônica de Potência, P&D, Sistemas Embarcados]
 image: "images/banner.jpg"
@@ -9,7 +9,7 @@ draft: false
 
 <span class="lang-pt">**Escopo:** Eletrônica de Potência, Metrologia Magnética, Desenvolvimento de Hardware (*Bare-Metal*) e Ensaios de Materiais<br>**Aplicações:** Máquinas Elétricas de Alta Rotação (Microturbinas), Conversores de Frequência e Veículos Elétricos.</span><span class="lang-en">**Scope:** Power Electronics, Magnetic Metrology, Hardware Development (*Bare-Metal*) and Materials Testing<br>**Applications:** High-Speed Electrical Machines (Microturbines), Frequency Converters and Electric Vehicles.</span>  
 
-![Ensaio termográfico do núcleo do estator em operação a 1.200 Hz. O mapeamento valida o impacto térmico direto das perdas magnéticas no material de alta performance.](images/banner.jpg){width=70%}
+![<span class="lang-pt">Ensaio termográfico do núcleo do estator em operação a 1.200 Hz. O mapeamento valida o impacto térmico direto das perdas magnéticas no material de alta performance.</span><span class="lang-en">Thermographic test of the stator core in operation at 1,200 Hz. The mapping validates the direct thermal impact of magnetic losses on the high-performance material.</span>](images/banner.jpg){width=70%}
 
 ## <span class="lang-pt">O Limite dos Ensaios Tradicionais</span><span class="lang-en">The Limits of Traditional Testing</span>
 
@@ -37,7 +37,7 @@ To obtain real and applicable data, I designed a custom validation methodology, 
 <span class="lang-pt">Para excitar os corpos de prova em condições operacionais extremas, a eletrônica de bancada convencional não era suficiente. Desenvolvi, do zero, um conversor de frequência monofásico dedicado ao ensaio dos materiais.</span>
 <span class="lang-en">To excite the test specimens under extreme operational conditions, conventional bench electronics were insufficient. I developed, from scratch, a single-phase frequency converter dedicated to material testing.</span>
 
-![Conversor projetado para ensaios em frequências na faixa do kHz.](images/h-bridge.png){width=90%}
+![<span class="lang-pt">Conversor projetado para ensaios em frequências na faixa do kHz.</span><span class="lang-en">Converter designed for testing at frequencies in the kHz range.</span>](images/h-bridge.png){width=90%}
 
 <div class="lang-pt">
 
@@ -59,7 +59,7 @@ The test system architecture encompassed:
 <span class="lang-pt">Através da medição síncrona de tensão e corrente com equipamentos de alta precisão (osciloscópio Tektronix e pontas de prova de corrente), os dados brutos foram processados para reconstruir as reais características eletromagnéticas de cada aço na geometria do estator.</span>
 <span class="lang-en">Through synchronous voltage and current measurement with high-precision equipment (Tektronix oscilloscope and current probes), the raw data were processed to reconstruct the real electromagnetic characteristics of each steel in the stator geometry.</span>
 
-![Curvas de Densidade de Fluxo (B) versus Intensidade de Campo (H) obtidas em bancada a 1.200 Hz, evidenciando o efeito *skin* magnético nos materiais.](images/hbcurve.png)
+![<span class="lang-pt">Curvas de Densidade de Fluxo (B) versus Intensidade de Campo (H) obtidas em bancada a 1.200 Hz, evidenciando o efeito *skin* magnético nos materiais.</span><span class="lang-en">Flux Density (B) versus Field Intensity (H) curves obtained on the bench at 1,200 Hz, evidencing the magnetic *skin* effect in the materials.</span>](images/hbcurve.png)
 
 <div class="lang-pt">
 

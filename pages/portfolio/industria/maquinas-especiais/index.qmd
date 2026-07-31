@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Desenvolvimento Full-Stack de Máquinas Especiais: Design Eletromecânico para Cenários Extremos</span><span class="lang-en">Full-Stack Development of Special Machines: Electromechanical Design for Extreme Scenarios</span>'
-description: "Capacidade de execução do ciclo completo de engenharia (eletromagnetismo, rotodinâmica, fluidodinâmica e manufatura) para concepção de máquinas rotativas sob medida."
+description: '<span class="lang-pt">Capacidade de execução do ciclo completo de engenharia (eletromagnetismo, rotodinâmica, fluidodinâmica e manufatura) para concepção de máquinas rotativas sob medida.</span><span class="lang-en">Capability to execute the complete engineering cycle (electromagnetism, rotordynamics, fluid dynamics, and manufacturing) for the design of tailor-made rotating machines.</span>'
 date: "2020-08-01"
 categories: [Máquinas Elétricas, Desenvolvimento de Produto, Simulação Multifísica, Óleo e Gás, P&D]
 image: "images/Modelo03.jpg"
@@ -9,7 +9,7 @@ draft: false
 
 <span class="lang-pt">**Escopo:** Pesquisa & Desenvolvimento (P&D), Design Eletromecânico Full-Stack e Simulação Multifísica<br>**Atuação:** Arquiteto de Hardware e Liderança Técnica</span><span class="lang-en">**Scope:** Research & Development (R&D), Full-Stack Electromechanical Design and Multiphysics Simulation<br>**Role:** Hardware Architect and Technical Leadership</span>
 
-![Simulação em Elementos Finitos (FEM) do fluxo magnético em um gerador síncrono de ímãs permanentes projetado sob medida para altíssima densidade de potência.](images/Modelo03.jpg){width=65%}
+![<span class="lang-pt">Simulação em Elementos Finitos (FEM) do fluxo magnético em um gerador síncrono de ímãs permanentes projetado sob medida para altíssima densidade de potência.</span><span class="lang-en">Finite Element Method (FEM) simulation of the magnetic flux in a custom-designed permanent magnet synchronous generator for extremely high power density.</span>](images/Modelo03.jpg){width=65%}
 
 ## <span class="lang-pt">A Engenharia "Full-Stack" de Máquinas Especiais</span><span class="lang-en">"Full-Stack" Engineering of Special-Purpose Machinery</span>
 
@@ -57,7 +57,7 @@ The engineering constraints pushed the limits of materials:
 
 </span>
 
-![Análise da densidade de fluxo magnético em uma topologia otimizada de 14 polos com ímãs embutidos para maximizar a conversão de energia.](images/Aperam 14polos_rad.png){width=90%}
+![<span class="lang-pt">Análise da densidade de fluxo magnético em uma topologia otimizada de 14 polos com ímãs embutidos para maximizar a conversão de energia.</span><span class="lang-en">Magnetic flux density analysis of an optimized 14-pole topology with interior magnets to maximize energy conversion.</span>](images/Aperam 14polos_rad.png){width=90%}
 
 <div class="lang-pt">
 * **Eletromagnetismo e Materiais:** Optei por uma arquitetura de ímãs permanentes embutidos (IPM) de fluxo tangencial, utilizando ímãs de Samário-Cobalto (SmCo) que suportam altíssimas temperaturas e tensões de compressão de até 1.000 MPa. Para viabilizar a prototipagem com a indústria nacional, dimensionei o estator utilizando aço elétrico de alta performance (Aperam NO30-16-HP), garantindo o equilíbrio entre saturação magnética e perdas no núcleo.
@@ -71,15 +71,15 @@ The engineering constraints pushed the limits of materials:
 
 </div>
 
-![Estudo paramétrico de deflexão de torção para seleção do material do eixo.](images/lineartorsion_complete.png){width=85%}
+![<span class="lang-pt">Estudo paramétrico de deflexão de torção para seleção do material do eixo.</span><span class="lang-en">Parametric torsional deflection study for shaft material selection.</span>](images/lineartorsion_complete.png){width=85%}
 
-![Curvas detalhadas de Torque e Potência do Gerador.](images/performance_machines.png){width=85%}
+![<span class="lang-pt">Curvas detalhadas de Torque e Potência do Gerador.</span><span class="lang-en">Detailed Torque and Power curves of the Generator.</span>](images/performance_machines.png){width=85%}
 
 ### <span class="lang-pt">Da Simulação à Manufatura</span><span class="lang-en">From Simulation to Manufacturing</span>
 
 <span class="lang-pt">Uma máquina especial só tem valor se puder ser fabricada. Além das simulações computacionais em elementos finitos, estruturei o projeto para a vida real: dimensionei as ranhuras para bobinas pré-conformadas com fio retangular, calculando o melhor fator de preenchimento de cobre (*fill factor*), e especifiquei tolerâncias mecânicas, mancais e acoplamentos ranhurados que suportassem a expansão térmica dos materiais.</span><span class="lang-en">A special-purpose machine only has value if it can be manufactured. Beyond finite element computer simulations, I structured the project for real-world production: I sized the slots for pre-formed coils with rectangular wire, calculating the optimal copper fill factor, and specified mechanical tolerances, bearings, and splined couplings that would withstand the thermal expansion of materials.</span>
 
-![Inspeção física do dimensionamento das bobinas de cobre isoladas. Essa etapa garante o máximo fator de preenchimento nas ranhuras estreitas da máquina durante a montagem.](images/bobinas.jpg)
+![<span class="lang-pt">Inspeção física do dimensionamento das bobinas de cobre isoladas. Essa etapa garante o máximo fator de preenchimento nas ranhuras estreitas da máquina durante a montagem.</span><span class="lang-en">Physical inspection of the sizing of the insulated copper coils. This step ensures the maximum fill factor in the machine's narrow slots during assembly.</span>](images/bobinas.jpg)
 
 ## <span class="lang-pt">Impacto e Inovação Patenteada</span><span class="lang-en">Impact and Patented Innovation</span>
 
@@ -98,9 +98,9 @@ The centralization of development — combining mitigation of thermo-fluid-dynam
 
 <div class="partner-logos">
 
-![](/files/icons/logo_UFMG.jpg){height=60px}
+![<span class="lang-pt">Logotipo da Universidade Federal de Minas Gerais (UFMG)</span><span class="lang-en">Federal University of Minas Gerais (UFMG) logo</span>](/files/icons/logo_UFMG.jpg){height=60px}
 
-![](/files/images/partners/Halliburton_logo.svg){height=16px}
+![<span class="lang-pt">Logotipo da Halliburton</span><span class="lang-en">Halliburton logo</span>](/files/images/partners/Halliburton_logo.svg){height=16px}
 
 </div>
 

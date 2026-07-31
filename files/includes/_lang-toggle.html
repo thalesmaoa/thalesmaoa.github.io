@@ -83,11 +83,41 @@
 
   // Nomes de categorias que precisam de tradução (PT → EN)
   var CAT_PT_TO_EN = {
+    // News / Blog
     'Estudo de Caso': 'Case Study',
     'Manutenção Industrial': 'Industrial Maintenance',
     'Defesa': 'Defense',
     'Evento': 'Event',
-    'Notícias': 'News'
+    'Notícias': 'News',
+    // Portfolio / Teaching
+    'Anterior': 'Previous',
+    'Armazenamento': 'Storage',
+    'Armazenamento de Energia': 'Energy Storage',
+    'Atual': 'Current',
+    'Automação': 'Automation',
+    'Automotivo': 'Automotive',
+    'Ciência de Dados': 'Data Science',
+    'Consultoria & Perícia': 'Consulting & Expertise',
+    'Conversão de Energia': 'Energy Conversion',
+    'Desenvolvimento de Produto': 'Product Development',
+    'Eletrificação Veicular': 'Vehicle Electrification',
+    'Eletrônica de Potência': 'Power Electronics',
+    'Energias Renováveis': 'Renewable Energy',
+    'Engenharia Reversa': 'Reverse Engineering',
+    'Geração de Energia': 'Power Generation',
+    'Gerenciamento Térmico': 'Thermal Management',
+    'Infraestrutura Elétrica': 'Electrical Infrastructure',
+    'Instalações Elétricas': 'Electrical Installations',
+    'Instrumentação': 'Instrumentation',
+    'Laboratório': 'Laboratory',
+    'Máquinas Elétricas': 'Electrical Machines',
+    'Óleo e Gás': 'Oil & Gas',
+    'P&D': 'R&D',
+    'Projetos': 'Projects',
+    'Propulsão Elétrica': 'Electric Propulsion',
+    'Simulação Multifísica': 'Multiphysics Simulation',
+    'Sistemas Embarcados': 'Embedded Systems',
+    'Sistemas Industriais': 'Industrial Systems'
   };
   var CAT_EN_TO_PT = {};
   for (var ck in CAT_PT_TO_EN) { CAT_EN_TO_PT[CAT_PT_TO_EN[ck]] = ck; }
@@ -151,11 +181,14 @@
 
   // Substitui texto no primeiro text node direto (preserva filhos como <span>)
   function replaceDirectText(el, map) {
-    var textNode = firstDirectTextNode(el);
-    if (!textNode) return;
-    var t = textNode.textContent.trim();
-    if (map[t]) {
-      textNode.textContent = textNode.textContent.replace(t, map[t]);
+    for (var i = 0; i < el.childNodes.length; i++) {
+      var node = el.childNodes[i];
+      if (node.nodeType === 3) { // TextNode
+        var t = node.textContent.trim();
+        if (map[t]) {
+          node.textContent = node.textContent.replace(t, map[t]);
+        }
+      }
     }
   }
 
@@ -254,6 +287,19 @@
     var tocTitle = document.getElementById('toc-title');
     if (tocTitle) { replaceFullText(tocTitle, uiMap); }
 
+    // Categorias / tags (text replacement, bidirecional)
+    var catMap = toEN ? CAT_PT_TO_EN : CAT_EN_TO_PT;
+    // .quarto-category: elementos simples, só texto → replaceFullText
+    var quartoCats = document.querySelectorAll('.quarto-category');
+    for (var i = 0; i < quartoCats.length; i++) {
+      replaceFullText(quartoCats[i], catMap);
+    }
+    // .listing-category e .category[data-category]: podem ter filhos (<span>)
+    var otherCats = document.querySelectorAll('.listing-category, .category[data-category]:not([data-category=""])');
+    for (var i = 0; i < otherCats.length; i++) {
+      replaceDirectText(otherCats[i], catMap);
+    }
+
     // Datas
     translateListingDates(lang);
 
@@ -308,7 +354,6 @@
   function initListingTranslation() {
     var lang = document.documentElement.classList.contains('lang-en') ? 'en' : 'pt';
     translateListingUI(lang);
-    injectCategorySpans();  // injeta spans lang-pt/lang-en nas categorias (roda só 1x)
   }
 
   if (document.readyState === 'loading') {

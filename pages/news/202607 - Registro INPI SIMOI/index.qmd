@@ -1,6 +1,6 @@
 ---
 title: "Registro de Software no INPI — Projeto SIMOI"
-description: "Software para monitoramento e previsão de falha de isolamento em motores de indução trifásicos recebe certificado de registro no INPI."
+description: '<span class="lang-pt">Software para monitoramento e previsão de falha de isolamento em motores de indução trifásicos recebe certificado de registro no INPI.</span><span class="lang-en">Software for monitoring and predicting insulation failure in three-phase induction motors receives INPI registration certificate.</span>'
 author: "Thales Maia"
 date: "2026-07-14"
 categories: [Notícias, INPI]

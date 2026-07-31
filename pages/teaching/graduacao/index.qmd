@@ -1,6 +1,6 @@
 ---
 title: "Graduação"
-subtitle: "Disciplinas ministradas na graduação em Engenharia Elétrica"
+subtitle: '<span class="lang-pt">Disciplinas ministradas na graduação em Engenharia Elétrica</span><span class="lang-en">Courses taught in the Undergraduate Program in Electrical Engineering</span>'
 page-layout: full
 listing:
   contents:

@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Diagnóstico Preditivo de Cabos Subterrâneos: Localização de Falhas Incipientes via Blindagem</span><span class="lang-en">Predictive Diagnostics of Underground Cables: Incipient Fault Location via Shielding</span>'
-description: "Pesquisa e desenvolvimento de algoritmo baseado no método de impedância de dois terminais aplicado à blindagem metálica para detecção online de falhas (Water Tree)."
+description: '<span class="lang-pt">Pesquisa e desenvolvimento de algoritmo baseado no método de impedância de dois terminais aplicado à blindagem metálica para detecção online de falhas (Water Tree).</span><span class="lang-en">Research and development of an algorithm based on the two-terminal impedance method applied to the metallic shielding for online fault detection (Water Tree).</span>'
 date: "2025-07-04" 
 categories: [Infraestrutura Elétrica, Instrumentação, Simulação Multifísica, P&D, Ciência de Dados]
 image: "images/banner.png" # Sugestão: Use a Figura 1.4 da tese (Formas de onda de corrente da falha incipiente)
@@ -9,7 +9,7 @@ draft: false
 
 <span class="lang-pt">**Escopo:** Eletromagnetismo Aplicado, Processamento de Sinais, Instrumentação e P&D.</span><span class="lang-en">**Scope:** Applied Electromagnetism, Signal Processing, Instrumentation and R&D.</span>  
 
-![Formas de onda evidenciando a ocorrência de uma falha incipiente (subcíclica e autoextinguível) antes de sua evolução para uma falha permanente.](images/falha-incipiente.png){width=80%}
+![<span class="lang-pt">Formas de onda evidenciando a ocorrência de uma falha incipiente (subcíclica e autoextinguível) antes de sua evolução para uma falha permanente.</span><span class="lang-en">Waveforms evidencing the occurrence of an incipient fault (sub-cycle and self-extinguishing) before its evolution into a permanent fault.</span>](images/falha-incipiente.png){width=80%}
 
 ## <span class="lang-pt">O Desafio Oculto das Redes Subterrâneas</span><span class="lang-en">The Hidden Challenge of Underground Grids</span>
 
@@ -58,7 +58,7 @@ The central innovation of this project was shifting the instrumentation focus. T
 
 </div>
 
-![Gráfico comparativo provando a superioridade do método: a análise via blindagem metálica (azul) apresenta erros drasticamente menores em relação ao uso do condutor principal (vermelho).](images/comparativo.png){width=90%}
+![<span class="lang-pt">Gráfico comparativo provando a superioridade do método: a análise via blindagem metálica (azul) apresenta erros drasticamente menores em relação ao uso do condutor principal (vermelho).</span><span class="lang-en">Comparative chart proving the method's superiority: the metallic shield analysis (blue) shows drastically smaller errors compared to the main conductor approach (red).</span>](images/comparativo.png){width=90%}
 
 <div class="lang-pt">
 

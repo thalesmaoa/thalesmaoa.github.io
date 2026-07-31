@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Eletrônica de Injeção Automotiva: Desenvolvimento Bare-Metal para Kits Turbo</span><span class="lang-en">Automotive Injection Electronics: Bare-Metal Development for Turbo Kits</span>'
-description: "Desenvolvimento integral (TRL 1 a 9) de módulos eletrônicos de controle de injeção e calibração de pressão para o mercado de performance automotiva."
+description: '<span class="lang-pt">Desenvolvimento integral (TRL 1 a 9) de módulos eletrônicos de controle de injeção e calibração de pressão para o mercado de performance automotiva.</span><span class="lang-en">Full development (TRL 1 to 9) of electronic modules for injection control and pressure calibration for the automotive performance market.</span>'
 date: "2016-06-01" # Ajuste para a data aproximada de lançamento do produto
 categories: [Sistemas Embarcados, Automotivo, Desenvolvimento de Produto]
 image: "images/IMG20260724144055.jpg"
@@ -9,7 +9,7 @@ draft: false
 
 <span class="lang-pt">**Parceiros Industriais:** Biagio Turbos / Fahren<br>**Escopo:** Engenharia de Hardware (*Bare-Metal*), Firmware, Calibração Automotiva e Produtização</span><span class="lang-en">**Industrial Partners:** Biagio Turbos / Fahren<br>**Scope:** Hardware Engineering (*Bare-Metal*), Firmware, Automotive Calibration and Productization</span>
 
-![Placa de circuito impresso (PCB) do módulo eDRIVE já em fase de produção. O desenvolvimento englobou todo o roteamento e arquitetura de hardware para suportar o ambiente elétrico hostil dos veículos.](images/20151210_091306.jpg){width=70%}
+![<span class="lang-pt">Placa de circuito impresso (PCB) do módulo eDRIVE já em fase de produção. O desenvolvimento englobou todo o roteamento e arquitetura de hardware para suportar o ambiente elétrico hostil dos veículos.</span><span class="lang-en">Printed circuit board (PCB) of the eDRIVE module already in production phase. The development encompassed all the routing and hardware architecture to support the hostile electrical environment of vehicles.</span>](images/20151210_091306.jpg){width=70%}
 
 ## <span class="lang-pt">O Gargalo Tecnológico</span><span class="lang-en">The Technological Bottleneck</span>
 
@@ -45,7 +45,7 @@ The full-stack development involved the following engineering fronts:
 
 </div>
 
-![Modelagem 3D (CAD Eletrônico) da placa principal do módulo eDRIVE. Todo o design de hardware foi feito do zero para otimizar espaço e garantir proteção contra ruídos automotivos.](images/edrivev1.png){width=80%}
+![<span class="lang-pt">Modelagem 3D (CAD Eletrônico) da placa principal do módulo eDRIVE. Todo o design de hardware foi feito do zero para otimizar espaço e garantir proteção contra ruídos automotivos.</span><span class="lang-en">3D modeling (Electronic CAD) of the main board of the eDRIVE module. All the hardware design was done from scratch to optimize space and ensure protection against automotive noise.</span>](images/edrivev1.png){width=80%}
 
 <div class="lang-pt">
 
@@ -60,7 +60,7 @@ The full-stack development involved the following engineering fronts:
 
 </div>
 
-![Detalhe da modelagem do *shield* de condicionamento de sinais e interface com o sensor MAP integrado, crucial para a leitura de pressão de turbo.](images/edriver00.png){width=80%}
+![<span class="lang-pt">Detalhe da modelagem do *shield* de condicionamento de sinais e interface com o sensor MAP integrado, crucial para a leitura de pressão de turbo.</span><span class="lang-en">Modeling detail of the signal conditioning *shield* and interface with the integrated MAP sensor, crucial for turbo pressure reading.</span>](images/edriver00.png){width=80%}
 
 <span class="lang-pt">* **Calibração e Segurança de Motor:** Com a eletrônica funcional, fui a campo mapear e calibrar o funcionamento dinâmico dos motores. Ajustei mapas de ponto de injeção suplementar e limitei eletronicamente o pico de pressão do turbo. Essa calibração fina foi o que garantiu o ganho de potência desejado sem comprometer a durabilidade dos motores.</span>
 <span class="lang-en">* **Calibration and Engine Safety:** With the electronics functional, I went to the field to map and calibrate the dynamic operation of the engines. I adjusted supplemental injection timing maps and electronically limited the turbo's peak pressure. This fine calibration was what ensured the desired power gain without compromising engine durability.</span>

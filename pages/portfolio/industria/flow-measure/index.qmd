@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Sistemas de Medição de Fluxo Customizados: Design de Tubo Venturi e Eletrônica Integrada</span><span class="lang-en">Custom Flow Measurement Systems: Venturi Tube Design and Integrated Electronics</span>'
-description: "Desenvolvimento ponta a ponta de medidores de vazão industriais. Do cálculo fluidodinâmico de tubos Venturi para baixíssima perda de carga até a eletrônica de aquisição de dados."
+description: '<span class="lang-pt">Desenvolvimento ponta a ponta de medidores de vazão industriais. Do cálculo fluidodinâmico de tubos Venturi para baixíssima perda de carga até a eletrônica de aquisição de dados.</span><span class="lang-en">End-to-end development of industrial flow meters. From the fluid dynamics calculation of Venturi tubes for extremely low pressure loss to the data acquisition electronics.</span>'
 date: "2023-10-15" # Ajuste para a data desejada
 categories: [Instrumentação, Simulação Multifísica, Sistemas Embarcados, Automação]
 image: "images/venturi.png" # Adicione uma foto de um tubo Venturi usinado ou da eletrônica
@@ -9,7 +9,7 @@ draft: false
 
 <span class="lang-pt">**Escopo:** Engenharia Fluidodinâmica, Usinagem Mecânica, Instrumentação e Eletrônica Embarcada<br>**Aplicações:** Processos industriais, bancadas de teste, automação de fluidos e P&D.</span><span class="lang-en">**Scope:** Fluid Dynamics Engineering, Mechanical Machining, Instrumentation and Embedded Electronics<br>**Applications:** Industrial processes, test benches, fluid automation and R&D.</span>
 
-![Projeto e fabricação de sistema de medição de fluxo baseado em Tubo Venturi.](images/venturi.png)
+![<span class="lang-pt">Projeto e fabricação de sistema de medição de fluxo baseado em Tubo Venturi.</span><span class="lang-en">Design and fabrication of a flow measurement system based on a Venturi Tube.</span>](images/venturi.png)
 
 ## <span class="lang-pt">O Desafio da Medição de Fluxo na Indústria</span><span class="lang-en">The Challenge of Flow Measurement in Industry</span>
 
@@ -59,7 +59,7 @@ The delivery covers the complete cycle:
 
 </div>
 
-![Eletrônica para condicionamento de sinal.](images/eletronica.png){width=80%}
+![<span class="lang-pt">Eletrônica para condicionamento de sinal.</span><span class="lang-en">Electronics for signal conditioning.</span>](images/eletronica.png){width=80%}
 
 ## <span class="lang-pt">Por que desenvolver um sistema customizado?</span><span class="lang-en">Why develop a custom system?</span>
 

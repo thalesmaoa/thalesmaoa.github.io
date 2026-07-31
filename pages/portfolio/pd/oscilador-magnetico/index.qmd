@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Oscilador Magnético para Processos de Soldagem: Otimização TIG e MIG/MAG</span><span class="lang-en">Magnetic Oscillator for Welding Processes: TIG and MIG/MAG Optimization</span>'
-description: "Desenvolvimento de eletrônica de potência (Amplificadores AB e D) e simulações eletromagnéticas de elementos finitos (FEMM) para deflexão de arco elétrico."
+description: '<span class="lang-pt">Desenvolvimento de eletrônica de potência (Amplificadores AB e D) e simulações eletromagnéticas de elementos finitos (FEMM) para deflexão de arco elétrico.</span><span class="lang-en">Development of power electronics (Class AB and D amplifiers) and finite element electromagnetic simulations (FEMM) for electric arc deflection.</span>'
 date: "2021-03-01" # Data de publicação da tese
 categories: [Eletrônica de Potência, Simulação Multifísica, Sistemas Embarcados, P&D]
 image: "images/simulacao.png"

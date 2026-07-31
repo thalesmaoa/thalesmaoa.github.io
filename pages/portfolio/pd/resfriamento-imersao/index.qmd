@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Resfriamento por Imersão e Gerenciamento Térmico: Simulação CFD e Validação Experimental</span><span class="lang-en">Immersion Cooling and Thermal Management: CFD Simulation and Experimental Validation</span>'
-description: "Especialista em thermal management e immersion cooling para eletrônica de potência e baterias veiculares (Li-ion), unindo simulação fluidodinâmica (CFD) e testes em bancada."
+description: '<span class="lang-pt">Especialista em thermal management e immersion cooling para eletrônica de potência e baterias veiculares (Li-ion), unindo simulação fluidodinâmica (CFD) e testes em bancada.</span><span class="lang-en">Expert in thermal management and immersion cooling for power electronics and automotive Li-ion batteries, combining computational fluid dynamics (CFD) simulation and bench testing.</span>'
 date: "2023-12-20"
 categories: [Gerenciamento Térmico, Simulação Multifísica, Armazenamento de Energia, Eletrônica de Potência]
 image: "images/banner.jpg"
@@ -18,7 +18,7 @@ draft: false
 
 </div>
 
-![Imagem termográfica evidenciando o fluxo de calor convectivo em um dispositivo de potência submerso em tanque de óleo.](images/banner.jpg)
+![<span class="lang-pt">Imagem termográfica evidenciando o fluxo de calor convectivo em um dispositivo de potência submerso em tanque de óleo.</span><span class="lang-en">Thermographic image showing the convective heat flow in a power device submerged in an oil tank.</span>](images/banner.jpg)
 
 ## <span class="lang-pt">O Gargalo Térmico na Alta Potência</span><span class="lang-en">The Thermal Bottleneck in High Power</span>
 
@@ -62,14 +62,14 @@ For heavy industrial applications, such as static compensators and drives in the
 
 </div>
 
-![Validação experimental.](images/experimento.jpg)
+![<span class="lang-pt">Validação experimental.</span><span class="lang-en">Experimental validation.</span>](images/experimento.jpg)
 
 ## <span class="lang-pt">Baterias Veiculares (BTMS): Imersão com Escoamento Axial</span><span class="lang-en">Vehicle Batteries (BTMS): Immersion with Axial Flow</span>
 
 <span class="lang-pt">Em veículos elétricos, a temperatura é o principal fator que determina a degradação, a autonomia e a segurança (evitando o *thermal runaway*) das baterias de íons de lítio. Para o Sistema de Gerenciamento Térmico de Baterias (BTMS), a imersão apresenta vantagens incomparáveis.</span>
 <span class="lang-en">In electric vehicles, temperature is the main factor determining degradation, range, and safety (preventing thermal runaway) of lithium-ion batteries. For the Battery Thermal Management System (BTMS), immersion offers unparalleled advantages.</span>
 
-![Simulação CFD comparando o gradiente de temperatura em um pack de baterias: o escoamento axial (à direita) garante uniformidade térmica entre as células.](images/baterias.jpg)
+![<span class="lang-pt">Simulação CFD comparando o gradiente de temperatura em um pack de baterias: o escoamento axial (à direita) garante uniformidade térmica entre as células.</span><span class="lang-en">CFD simulation comparing the temperature gradient in a battery pack: axial flow (on the right) ensures thermal uniformity among the cells.</span>](images/baterias.jpg)
 
 <div class="lang-pt">
 * **Eliminação de Gradientes Térmicos:** Utilizo o OpenFOAM para modelar o resfriamento direto de células cilíndricas submersas em fluidos dielétricos comerciais (como o Novec 774).
@@ -91,9 +91,9 @@ For heavy industrial applications, such as static compensators and drives in the
 
 <div class="partner-logos">
 
-![](/files/icons/logo_UFMG.jpg){height=60px}
+![<span class="lang-pt"></span><span class="lang-en">UFMG logo</span>](/files/icons/logo_UFMG.jpg){height=60px}
 
-<!-- ![](/files/images/partners/Petrobras_logo.svg){height=60px} -->
+<!-- ![<span class="lang-pt"></span><span class="lang-en">Petrobras logo</span>](/files/images/partners/Petrobras_logo.svg){height=60px} -->
 
 </div>
 

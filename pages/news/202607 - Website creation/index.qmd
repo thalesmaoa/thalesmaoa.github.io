@@ -1,6 +1,6 @@
 ---
 title: "Bem-vindo ao meu novo site!"
-description: "O site foi construído com Quarto e está no ar."
+description: '<span class="lang-pt">O site foi construído com Quarto e está no ar.</span><span class="lang-en">The website was built with Quarto and is now live.</span>'
 author: "Thales Maia"
 date: "2026-07-19"
 categories: [Notícias]

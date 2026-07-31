@@ -81,14 +81,14 @@ listing:   # Recent news and events
       - pages/portfolio/pd
       - pages/portfolio/industria
     exclude:
-      title:
-        - '<span class="lang-pt">Projetos de P&D</span><span class="lang-en">R&D Projects</span>'
-        - '<span class="lang-pt">Indústria</span><span class="lang-en">Industry</span>'
+      hide_from_listing: true     # - "pages/portfolio/pd/index.qmd"
+      # title:
+      #   # - '<span class="lang-pt">Projetos de P&D</span><span class="lang-en">R&D Projects</span>'
+      #   - '<span class="lang-pt">Indústria</span><span class="lang-en">Industry</span>'
     type: grid
     max-items: 25
     page-size: 25
-    fields: [image, title, description]
-    max-description-length: 75
+    fields: [image, title, categories]
     sort:
       - "date desc"
       - "title asc"

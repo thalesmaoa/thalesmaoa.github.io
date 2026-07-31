@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Simulação por Elementos Finitos (FEM): Otimização Eletromagnética de Motores de Indução</span><span class="lang-en">Finite Element Simulation (FEM): Electromagnetic Optimization of Induction Motors</span>'
-description: "Aplicação avançada do Método de Elementos Finitos (FEM) no design de um motor de indução de 5 CV. Maximização de fluxo enlaçado e mitigação de dispersões magnéticas via otimização geométrica."
+description: '<span class="lang-pt">Aplicação avançada do Método de Elementos Finitos (FEM) no design de um motor de indução de 5 CV. Maximização de fluxo enlaçado e mitigação de dispersões magnéticas via otimização geométrica.</span><span class="lang-en">Advanced application of the Finite Element Method (FEM) in the design of a 5 HP induction motor. Maximization of flux linkage and mitigation of magnetic flux leakage through geometric optimization.</span>'
 date: "2021-08-15"
 categories: [Simulação Multifísica, Máquinas Elétricas]
 image: "images/MaqInd.gif"
@@ -9,7 +9,7 @@ draft: false
 
 <span class="lang-pt">**Escopo:** Análise Eletromagnética Computacional, Otimização Paramétrica e Design Numérico<br>**Atuação:** Especialista em Simulação e Design Eletromagnético</span><span class="lang-en">**Scope:** Computational Electromagnetic Analysis, Parametric Optimization and Numerical Design<br>**Role:** Specialist in Simulation and Electromagnetic Design</span>
 
-![Análise integral da densidade de fluxo magnético (T) na seção transversal de um motor de indução de 5 CV. O mapeamento visualiza a saturação do núcleo, as equipotenciais magnéticas e os vetores de direção do fluxo.](images/VetoresFluxo.png)
+![<span class="lang-pt">Análise integral da densidade de fluxo magnético (T) na seção transversal de um motor de indução de 5 CV. O mapeamento visualiza a saturação do núcleo, as equipotenciais magnéticas e os vetores de direção do fluxo.</span><span class="lang-en">Integral analysis of the magnetic flux density (T) in the cross-section of a 5 HP induction motor. The mapping visualizes core saturation, magnetic equipotentials, and flux direction vectors.</span>](images/VetoresFluxo.png)
 
 ## <span class="lang-pt">A Engenharia por Trás do Eletromagnetismo</span><span class="lang-en">The Engineering Behind Electromagnetism</span>
 
@@ -33,7 +33,7 @@ Mastery of the **Finite Element Method (FEM)** allows dissecting the magnetic ci
 <span class="lang-pt">Neste projeto, a modelagem FEM foi o núcleo de uma otimização paramétrica agressiva focada no estator e no rotor. A estratégia abordou duas frentes críticas para a eficiência do motor:</span>
 <span class="lang-en">In this project, FEM modeling was the core of an aggressive parametric optimization focused on the stator and rotor. The strategy addressed two critical fronts for motor efficiency:</span>
 
-![Parametrização geométrica da ranhura do estator. O controle de cotas em milímetros e ângulos é o motor da otimização das relutâncias.](images/Parametric_Stator.png){width=70%}
+![<span class="lang-pt">Parametrização geométrica da ranhura do estator. O controle de cotas em milímetros e ângulos é o motor da otimização das relutâncias.</span><span class="lang-en">Geometric parameterization of the stator slot. The control of dimensions in millimeters and angles drives the optimization of the reluctance paths.</span>](images/Parametric_Stator.png){width=70%}
 
 <div class="lang-pt">
 
@@ -53,9 +53,9 @@ Mastery of the **Finite Element Method (FEM)** allows dissecting the magnetic ci
 <span class="lang-pt">Uma simulação FEM de alto nível não se limita a gerar mapas de calor estáticos; ela deve prever o comportamento elétrico dinâmico da máquina.</span>
 <span class="lang-en">A high-level FEM simulation does not merely generate static heat maps; it must predict the machine's dynamic electrical behavior.</span>
 
-![Análise transiente do motor de indução: Animação do fluxo magnético girante e da variação da densidade de campo (T) ao longo do tempo.](images/anim.gif)
+![<span class="lang-pt">Análise transiente do motor de indução: Animação do fluxo magnético girante e da variação da densidade de campo (T) ao longo do tempo.</span><span class="lang-en">Transient analysis of the induction motor: Animation of the rotating magnetic flux and the variation of field density (T) over time.</span>](images/anim.gif)
 
-![Sinais elétricos extraídos dinamicamente via FEM. A análise da bobina exploradora virtual mapeia as tensões induzidas (V) no entreferro, dente e estator ao longo do tempo.](images/BobinaExploradora.png)
+![<span class="lang-pt">Sinais elétricos extraídos dinamicamente via FEM. A análise da bobina exploradora virtual mapeia as tensões induzidas (V) no entreferro, dente e estator ao longo do tempo.</span><span class="lang-en">Electrical signals dynamically extracted via FEM. The analysis of the virtual search coil maps the induced voltages (V) in the air gap, tooth, and stator over time.</span>](images/BobinaExploradora.png)
 
 <span class="lang-pt">Para validar a integridade do design eletromagnético, o modelo foi submetido a análises transientes rigorosas. A extração de dados através de bobinas exploradoras virtuais permitiu traçar as curvas reais de tensão induzida (Força Eletromotriz) em diferentes seções do circuito magnético. Esse cruzamento entre o domínio espacial (geometria) e o domínio temporal (sinais elétricos) garante que distorções harmônicas e oscilações de torque (*torque ripple*) sejam neutralizadas na prancheta de projeto.</span>
 <span class="lang-en">To validate the integrity of the electromagnetic design, the model was subjected to rigorous transient analyses. Data extraction through virtual search coils allowed tracing the actual induced voltage curves (Electromotive Force) in different sections of the magnetic circuit. This cross-referencing between the spatial domain (geometry) and the temporal domain (electrical signals) ensures that harmonic distortions and torque ripple are neutralized at the design stage.</span>

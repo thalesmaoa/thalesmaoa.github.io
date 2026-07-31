@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-subtitle: "Artigos técnicos, pesquisas e reflexões"
+subtitle: '<span class="lang-pt">Artigos técnicos, pesquisas e reflexões</span><span class="lang-en">Technical articles, research, and reflections</span>'
 description-meta: "Blog com artigos técnicos e reflexões"
 listing: 
   sort: "date desc"

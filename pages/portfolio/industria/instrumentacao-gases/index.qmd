@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Instrumentação Industrial em Gases: Sistemas de Medição e Condicionamento</span><span class="lang-en">Industrial Gas Instrumentation: Measurement and Conditioning Systems</span>'
-description: "Desenvolvimento e integração de painéis de análise e condicionamento de gases em tempo real com CLPs industriais, incluindo engenharia reversa e calibração."
+description: '<span class="lang-pt">Desenvolvimento e integração de painéis de análise e condicionamento de gases em tempo real com CLPs industriais, incluindo engenharia reversa e calibração.</span><span class="lang-en">Development and integration of real-time gas analysis and conditioning panels with industrial PLCs, including reverse engineering and calibration.</span>'
 date: "2014-08-20"
 categories: [Instrumentação, Automação, Engenharia Reversa]
 image: "images/condicionador.jpg"
@@ -9,7 +9,7 @@ draft: false
 
 <span class="lang-pt">**Parceiros Industriais:** Rima<br>**Escopo:** Desenvolvimento de Produto, Engenharia Reversa, Metrologia e Integração de Automação (CLP)</span><span class="lang-en">**Industrial Partners:** Rima<br>**Scope:** Product Development, Reverse Engineering, Metrology and Automation Integration (PLC)</span>
 
-![Painel de condicionamento de gases desenvolvido para operação no chão de fábrica, contendo sistemas de filtragem, resfriamento e análise.](images/condicionador.jpg){width=70%}
+![<span class="lang-pt">Painel de condicionamento de gases desenvolvido para operação no chão de fábrica, contendo sistemas de filtragem, resfriamento e análise.</span><span class="lang-en">Gas conditioning panel developed for factory floor operation, containing filtering, cooling, and analysis systems.</span>](images/condicionador.jpg){width=70%}
 
 ## <span class="lang-pt">O Desafio</span><span class="lang-en">The Challenge</span>
 
@@ -31,7 +31,7 @@ Building on validated expertise in thermochemical analyses for carbon credits, t
 <span class="lang-pt">A entrega consistiu em um produto completo, englobando a coleta física da amostra, o condicionamento mecânico e a integração lógica da telemetria. O desenvolvimento foi estruturado nas seguintes frentes:</span>
 <span class="lang-en">The delivery consisted of a complete product, encompassing physical sample collection, mechanical conditioning, and logical telemetry integration. The development was structured across the following fronts:</span>
 
-![Detalhe do arranjo do Tubo de Pitot e conexões de amostragem instalados para a coleta primária dos gases no processo.](images/Pitot2_blur.jpg)
+![<span class="lang-pt">Detalhe do arranjo do Tubo de Pitot e conexões de amostragem instalados para a coleta primária dos gases no processo.</span><span class="lang-en">Detail of the Pitot tube arrangement and sampling connections installed for primary gas collection in the process.</span>](images/Pitot2_blur.jpg)
 
 <div class="lang-pt">
 * **Coleta e Condicionamento Físico:** Para que os sensores de precisão pudessem operar sem degradação, o gás extraído dos fornos (via sondas e tubos de Pitot customizados) precisava ser tratado. O painel projetado incluiu sistemas mecânicos e pneumáticos para a remoção de particulados, controle de fluxo e resfriamento da amostra antes de atingir os módulos de análise.
@@ -46,7 +46,7 @@ Building on validated expertise in thermochemical analyses for carbon credits, t
 
 </div>
 
-![Diagrama de arquitetura da rede de instrumentação, detalhando a integração dos analisadores e sensores ao módulo ABB via PROFINET até a IHM da planta.](images/DIAFisicoPLC.png){width=90%}
+![<span class="lang-pt">Diagrama de arquitetura da rede de instrumentação, detalhando a integração dos analisadores e sensores ao módulo ABB via PROFINET até a IHM da planta.</span><span class="lang-en">Architecture diagram of the instrumentation network, detailing the integration of analyzers and sensors to the ABB module via PROFINET up to the plant HMI.</span>](images/DIAFisicoPLC.png){width=90%}
 
 ---
 
@@ -55,17 +55,17 @@ Building on validated expertise in thermochemical analyses for carbon credits, t
 <span class="lang-pt">Durante a execução do projeto, o núcleo analítico exigiu intervenções de baixo nível para garantir a confiabilidade dos dados no ambiente industrial. Ao invés de operar o analisador como uma "caixa-preta", foi necessário realizar a manutenção e a engenharia reversa do equipamento para ajustes finos em sua eletrônica e pneumática.</span>
 <span class="lang-en">During project execution, the analytical core required low-level interventions to ensure data reliability in the industrial environment. Instead of operating the analyzer as a "black box," it was necessary to perform maintenance and reverse engineering of the equipment for fine adjustments to its electronics and pneumatics.</span>
 
-![Analisador Gasboard 3100 em operação durante os testes de bancada.](images/IMG_0111.JPG){width=75%}
+![<span class="lang-pt">Analisador Gasboard 3100 em operação durante os testes de bancada.</span><span class="lang-en">Gasboard 3100 analyzer in operation during bench tests.</span>](images/IMG_0111.JPG){width=75%}
 
 <span class="lang-pt">Para assegurar a precisão das leituras de emissões e atestar a qualidade da solução entregue, projetei e construí uma bancada de calibração de fluxo customizada do zero.</span>
 <span class="lang-en">To ensure the accuracy of emissions readings and certify the quality of the delivered solution, I designed and built a custom flow calibration bench from scratch.</span>
 
-![Bancada de calibração de fluxo projetada com rotâmetros de precisão para atestar a metrologia do sistema.](images/IMG_0116.JPG){width=75%}
+![<span class="lang-pt">Bancada de calibração de fluxo projetada com rotâmetros de precisão para atestar a metrologia do sistema.</span><span class="lang-en">Flow calibration bench designed with precision rotameters to certify the system's metrology.</span>](images/IMG_0116.JPG){width=75%}
 
 <span class="lang-pt">Utilizando rotâmetros de precisão, tubulações pneumáticas estruturadas e componentes usinados sob medida para a câmara de fluxo, o sistema permitiu a calibração fina e a aferição cruzada das vazões dos gases de amostra e de referência, garantindo a certificação metrológica da solução antes de sua ida para o chão de fábrica.</span>
 <span class="lang-en">Using precision rotameters, structured pneumatic tubing, and custom-machined components for the flow chamber, the system enabled fine calibration and cross-verification of sample and reference gas flow rates, ensuring the metrological certification of the solution before it went to the factory floor.</span>
 
-![Sensor de metano NDIR.](images/IMG_0059.JPG){width=90%}
+![<span class="lang-pt">Sensor de metano NDIR.</span><span class="lang-en">NDIR methane sensor.</span>](images/IMG_0059.JPG){width=90%}
 
 ---
 

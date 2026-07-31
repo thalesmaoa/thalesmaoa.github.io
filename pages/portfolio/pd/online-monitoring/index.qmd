@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Monitoramento On-Line de Isolamento (SIMOI): IoT e Predição de Falhas na Indústria de O&G</span><span class="lang-en">Online Insulation Monitoring (SIMOI): IoT and Fault Prediction in the O&G Industry</span>'
-description: "Concepção de arquitetura embarcada, algoritmos e estratégia de computação em nuvem para detecção preditiva de degradação em motores de média tensão."
+description: '<span class="lang-pt">Concepção de arquitetura embarcada, algoritmos e estratégia de computação em nuvem para detecção preditiva de degradação em motores de média tensão.</span><span class="lang-en">Design of embedded architecture, algorithms and cloud computing strategy for predictive detection of degradation in medium-voltage motors.</span>'
 date: "2024-05-09" # Ajuste para a data desejada
 categories: [Automação, Sistemas Embarcados, Ciência de Dados, Instrumentação, P&D]
 image: "images/fluxo-dados.png"
@@ -9,7 +9,7 @@ draft: false
 
 <span class="lang-pt">**Parceiros:** UFMG / Petrobras<br>**Escopo:** Arquitetura de Sistemas (Edge/Cloud), Computação Embarcada, Algoritmos Preditivos e IIoT.</span><span class="lang-en">**Partners:** UFMG / Petrobras<br>**Scope:** Systems Architecture (Edge/Cloud), Embedded Computing, Predictive Algorithms and IIoT.</span>  
 
-![Arquitetura lógica do sistema SIMOI, evidenciando o fluxo de dados desde os conversores A/D até os algoritmos de predição de falha e a infraestrutura de nuvem (IIoT).](images/fluxo-dados.png)
+![<span class="lang-pt">Arquitetura lógica do sistema SIMOI, evidenciando o fluxo de dados desde os conversores A/D até os algoritmos de predição de falha e a infraestrutura de nuvem (IIoT).</span><span class="lang-en">Logical architecture of the SIMOI system, showing the data flow from A/D converters to fault prediction algorithms and the cloud infrastructure (IIoT).</span>](images/fluxo-dados.png)
 
 ## <span class="lang-pt">O Desafio da Manutenção Preditiva Offshore</span><span class="lang-en">The Challenge of Offshore Predictive Maintenance</span>
 
@@ -39,7 +39,7 @@ Para que o diagnóstico preditivo ocorresse em tempo real no chão de fábrica (
 For predictive diagnostics to occur in real time on the factory floor (inside the platform's medium-voltage panels), I designed the embedded hardware architecture:
 </div>
 
-![Topologia de hardware embarcada projetada para o SIMOI, integrando o processamento central aos módulos de aquisição de dados (DAQ) e comunicação.](images/hardware.png)
+![<span class="lang-pt">Topologia de hardware embarcada projetada para o SIMOI, integrando o processamento central aos módulos de aquisição de dados (DAQ) e comunicação.</span><span class="lang-en">Embedded hardware topology designed for SIMOI, integrating central processing with data acquisition (DAQ) and communication modules.</span>](images/hardware.png)
 
 <div class="lang-pt">
 
@@ -63,7 +63,7 @@ Um sistema preditivo só entrega valor se a informação chegar com segurança a
 A predictive system only delivers value if the information reaches maintenance engineers safely. I was responsible for designing the connectivity strategy for the project's Industrial IoT (IIoT) infrastructure.
 </div>
 
-![Estratégia de telemetria e conectividade em nuvem, estruturada em níveis de segurança para garantir flexibilidade e proteção cibernética em infraestrutura crítica.](images/cloud.png)
+![<span class="lang-pt">Estratégia de telemetria e conectividade em nuvem, estruturada em níveis de segurança para garantir flexibilidade e proteção cibernética em infraestrutura crítica.</span><span class="lang-en">Cloud telemetry and connectivity strategy, structured in security levels to ensure flexibility and cyber protection in critical infrastructure.</span>](images/cloud.png)
 
 <div class="lang-pt">
 A topologia de rede foi concebida em três níveis de operação para atender aos rigorosos requisitos de segurança da informação em ambientes *offshore*:

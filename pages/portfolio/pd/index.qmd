@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Projetos de P&D</span><span class="lang-en">R&D Projects</span>'
-subtitle: "Pesquisa e Desenvolvimento — máquinas elétricas, energia e automação"
+subtitle: '<span class="lang-pt">Pesquisa e Desenvolvimento — máquinas elétricas, energia e automação</span><span class="lang-en">Research and Development — electrical machines, energy, and automation</span>'
 page-layout: full
 listing:
   contents: .
@@ -8,8 +8,10 @@ listing:
   grid-columns: 3
   image-height: "200px"
   fields: [image, title, description, categories]
+  max-description-length: 500
   sort: "date desc"
   sort-ui: false
   filter-ui: true
   categories: true
+hide_from_listing: true
 ---

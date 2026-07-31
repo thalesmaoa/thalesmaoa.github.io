@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Eletrificação Assistiva e Motores Leves: Acionamentos Híbridos para Mobilidade</span><span class="lang-en">Assistive Electrification and Lightweight Motors: Hybrid Drives for Mobility</span>'
-description: "Desenvolvimento de motores síncronos de fluxo axial de alta eficiência aplicados a veículos de competição e hibridização de cadeiras de rodas."
+description: '<span class="lang-pt">Desenvolvimento de motores síncronos de fluxo axial de alta eficiência aplicados a veículos de competição e hibridização de cadeiras de rodas.</span><span class="lang-en">Development of high-efficiency axial flux synchronous motors applied to competition vehicles and the hybridization of wheelchairs.</span>'
 date: "2019-12-01"
 categories: [Máquinas Elétricas, Eletrificação Veicular, Desenvolvimento de Produto, P&D]
 image: "images/hallbach.jpg"
@@ -37,7 +37,7 @@ Below, I detail my experience in developing axial flux synchronous motors with *
 
 </div>
 
-![Motor de fluxo axial projetado para operar diretamente no interior da roda de 16 polegadas do veículo.](images/FM1_009.JPG)
+![<span class="lang-pt">Motor de fluxo axial projetado para operar diretamente no interior da roda de 16 polegadas do veículo.</span><span class="lang-en">Axial flux motor designed to operate directly inside the vehicle's 16-inch wheel.</span>](images/FM1_009.JPG)
 
 ### <span class="lang-pt">O Contexto</span><span class="lang-en">The Context</span>
 
@@ -59,9 +59,9 @@ To compensate for the increased effective air gap caused by the absence of the c
 
 </div>
 
-![Detalhe da montagem do rotor em Nylon com a colagem dos ímãs de Neodímio, seguindo o rigoroso alinhamento de fluxo magnético.](images/hallbach.jpg)
+![<span class="lang-pt">Detalhe da montagem do rotor em Nylon com a colagem dos ímãs de Neodímio, seguindo o rigoroso alinhamento de fluxo magnético.</span><span class="lang-en">Detail of the Nylon rotor assembly with the Neodymium magnets bonded in place, following the rigorous magnetic flux alignment.</span>](images/hallbach.jpg)
 
-![Simulação da corrente trifásica de alimentação do motor a vazio, validando o projeto eletromagnético do acionamento.](images/Corrente Alimentação.png)
+![<span class="lang-pt">Simulação da corrente trifásica de alimentação do motor a vazio, validando o projeto eletromagnético do acionamento.</span><span class="lang-en">Simulation of the motor's three-phase supply current at no load, validating the electromagnetic design of the drive.</span>](images/Corrente Alimentação.png)
 
 ### <span class="lang-pt">O Impacto</span><span class="lang-en">The Impact</span>
 
@@ -85,7 +85,7 @@ To compensate for the increased effective air gap caused by the absence of the c
 
 </div>
 
-![Modelo da inserção do motor em uma cadeira de rodas.](images/cadeira-rodas.jpg)
+![<span class="lang-pt">Modelo da inserção do motor em uma cadeira de rodas.</span><span class="lang-en">Model of the motor insertion into a wheelchair.</span>](images/cadeira-rodas.jpg)
 
 ### <span class="lang-pt">O Contexto</span><span class="lang-en">The Context</span>
 

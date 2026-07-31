@@ -1,6 +1,6 @@
 ---
 title: "Notícias e Eventos"
-subtitle: "Novidades sobre pesquisa, eventos e atividades"
+subtitle: '<span class="lang-pt">Novidades sobre pesquisa, eventos e atividades</span><span class="lang-en">News about research, events, and activities</span>'
 description-meta: "Notícias, eventos e atividades acadêmicas"
 listing: 
   sort: "date desc"

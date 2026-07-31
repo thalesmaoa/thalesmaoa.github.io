@@ -1,6 +1,6 @@
 ---
 title: '<span class="lang-pt">Sistema Supervisório IoT para Usinas Fotovoltaicas: Substituição de Plataformas Proprietárias</span><span class="lang-en">IoT Supervisory System for Photovoltaic Plants: Replacing Proprietary Platforms</span>'
-description: "Desenvolvimento full-stack de uma arquitetura SCADA/IoT open-source para monitoramento e controle de planta solar, rompendo a dependência de fornecedores comerciais (Meteocontrol)."
+description: '<span class="lang-pt">Desenvolvimento full-stack de uma arquitetura SCADA/IoT open-source para monitoramento e controle de planta solar, rompendo a dependência de fornecedores comerciais (Meteocontrol).</span><span class="lang-en">Full-stack development of an open-source SCADA/IoT architecture for monitoring and controlling a solar plant, breaking the dependency on commercial vendors (Meteocontrol).</span>'
 date: "2021-04-06" # Data da defesa do mestrado
 categories: [Automação, Geração de Energia, Desenvolvimento de Produto]
 image: "images/banner.jpg"
