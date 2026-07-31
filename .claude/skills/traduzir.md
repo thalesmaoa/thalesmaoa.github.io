@@ -99,11 +99,82 @@ exclude:
 
 | Arquivo | Função |
 |---------|--------|
-| `files/includes/_lang-toggle.html` | Script de detecção + toggle + tradução de títulos |
+| `files/includes/_lang-toggle.html` | Script de detecção + toggle + tradução de títulos + tradução dinâmica da UI do Quarto |
 | `styles.css` | Regras CSS de visibilidade `.lang-pt`/`.lang-en` |
 | `_quarto.yml` | Config do site, inclui o toggle via `include-after-body` |
 | `pages/` | Fontes Markdown/qmd (editáveis) |
 | `docs/` | HTML gerado (não editar manualmente — é sobrescrito pelo build) |
+
+## Tradução dinâmica da UI do Quarto
+
+O Quarto gera vários textos de interface com base no `lang: pt` do `_quarto.yml`. Esses textos **não** passam pelo sistema de `<span>` e precisam ser traduzidos via JavaScript no `_lang-toggle.html`.
+
+### Textos traduzidos dinamicamente
+
+| Texto PT | EN | Local |
+|----------|-----|-------|
+| `Categorias` | `Categories` | Título da seção de categorias |
+| `Tudo` | `All` | Filtro "todas as categorias" |
+| `Ordenar por` | `Sort by` | Dropdown de ordenação |
+| `Data - Mais velho` | `Date - Oldest` | Opção de ordenação |
+| `Data - O mais novo` | `Date - Newest` | Opção de ordenação |
+| `Autor` | `Author` | Opção de ordenação |
+| `Nenhum item correspondente` | `No matching items` | Estado vazio do filtro |
+| `Nenhum resultado` | `No results` | Busca sem resultados |
+| `Filtro` | `Filter` | Placeholder do campo de filtro |
+| `Alternar de navegação` | `Toggle navigation` | Aria-label da navbar |
+| `Data de Publicação` | `Publication Date` | Cabeçalho de metadados |
+| `Nesta página` | `On this page` | TOC sidebar |
+| `Procurar` | `Search` | Placeholder da busca (via config JSON) |
+
+### Datas
+
+As datas são geradas pelo Quarto em dois formatos e precisam de tratamento especial:
+
+| Formato | Exemplo PT | Exemplo EN |
+|---------|-----------|-----------|
+| Abreviado (listagens) | `30 de jul. de 2026` | `Jul 30, 2026` |
+| Por extenso (detalhe) | `30 de julho de 2026` | `July 30, 2026` |
+
+A função `ptDateToEn()` usa regex para detectar o formato e converter usando arrays de meses.
+
+### Categorias
+
+**NÃO é possível** colocar `<span>` no frontmatter YAML do Quarto — o HTML é escapado. Exemplo do que **não funciona**:
+```yaml
+categories:
+  - "<span class='lang-pt'>Estudo de Caso</span><span class='lang-en'>Case Study</span>"
+```
+
+A solução é JavaScript: a função `injectCategorySpans()` encontra elementos `.quarto-category`, `.listing-category` e `.category[data-category]`, e injeta os spans no runtime. O mapa de tradução fica em `CAT_PT_TO_EN`:
+
+```javascript
+var CAT_PT_TO_EN = {
+  'Estudo de Caso': 'Case Study',
+  'Manutenção Industrial': 'Industrial Maintenance',
+  'Defesa': 'Defense',
+  'Evento': 'Event',
+  'Notícias': 'News'
+};
+```
+
+Para adicionar novas categorias traduzíveis, basta adicionar entradas nesse mapa.
+
+### Estrutura do script de tradução
+
+O `_lang-toggle.html` executa em duas etapas:
+
+1. **Síncrona** (antes do `DOMContentLoaded`): patch do config JSON da busca e correção do `<html lang>`
+2. **Assíncrona** (após `DOMContentLoaded` + 150ms): tradução da UI de listagem e injeção de spans nas categorias
+
+Ao clicar no toggle PT/EN, `translateListingUI(lang)` é chamada novamente para inverter textos (datas, cabeçalhos). As categorias usam spans e o CSS controla a visibilidade — não precisam de nova chamada.
+
+### Armadilhas comuns
+
+- **Nunca remover uma função que ainda é usada** — se `replaceDirectText` for removida, `translateListingUI` quebra e **tudo** para de funcionar (datas, cabeçalhos, tudo)
+- **Não usar text replacement + span injection no mesmo elemento** — conflito: o replace de texto roda antes do inject de spans, e o inject encontra o texto já traduzido
+- **Cuidado com o mapa reverso (EN→PT)** — ele é gerado automaticamente invertendo `UI_PT_TO_EN`. Se duas chaves PT mapeiam para o mesmo valor EN, a segunda sobrescreve a primeira no mapa reverso. Para entradas adicionais só no sentido EN→PT, adicione diretamente em `UI_EN_TO_PT` após a construção do mapa reverso
+- **Datas têm dois formatos**: o regex precisa testar o formato abreviado (`\w{3}\.`) antes do formato por extenso (`\w+`), senão captura errado
 
 ## Fluxo de trabalho
 
