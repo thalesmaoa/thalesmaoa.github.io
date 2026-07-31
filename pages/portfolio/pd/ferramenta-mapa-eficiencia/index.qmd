@@ -1,5 +1,5 @@
 ---
-title: "Mapeamento de Eficiência em Máquinas Síncronas (MSIP): Ferramenta Computacional Open-Source"
+title: '<span class="lang-pt">Mapeamento de Eficiência em Máquinas Síncronas (MSIP): Ferramenta Computacional Open-Source</span><span class="lang-en">Efficiency Mapping in Synchronous Machines (IPMSM): Open-Source Computational Tool</span>'
 description: "Desenvolvimento de ferramenta computacional de código aberto para construção de mapas de eficiência, integrando simulações por elementos finitos e modelos analíticos de perdas."
 date: "2025-05-26"
 categories: [Máquinas Elétricas, Simulação Multifísica, Desenvolvimento de Produto, Geração de Energia, P&D]

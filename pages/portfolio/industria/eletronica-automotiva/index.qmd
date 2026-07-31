@@ -1,5 +1,5 @@
 ---
-title: "Eletrônica de Injeção Automotiva: Desenvolvimento Bare-Metal para Kits Turbo"
+title: '<span class="lang-pt">Eletrônica de Injeção Automotiva: Desenvolvimento Bare-Metal para Kits Turbo</span><span class="lang-en">Automotive Injection Electronics: Bare-Metal Development for Turbo Kits</span>'
 description: "Desenvolvimento integral (TRL 1 a 9) de módulos eletrônicos de controle de injeção e calibração de pressão para o mercado de performance automotiva."
 date: "2016-06-01" # Ajuste para a data aproximada de lançamento do produto
 categories: [Sistemas Embarcados, Automotivo, Desenvolvimento de Produto]

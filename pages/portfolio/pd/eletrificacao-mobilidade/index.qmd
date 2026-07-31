@@ -1,5 +1,5 @@
 ---
-title: "Eletrificação Assistiva e Motores Leves: Acionamentos Híbridos para Mobilidade"
+title: '<span class="lang-pt">Eletrificação Assistiva e Motores Leves: Acionamentos Híbridos para Mobilidade</span><span class="lang-en">Assistive Electrification and Lightweight Motors: Hybrid Drives for Mobility</span>'
 description: "Desenvolvimento de motores síncronos de fluxo axial de alta eficiência aplicados a veículos de competição e hibridização de cadeiras de rodas."
 date: "2019-12-01"
 categories: [Máquinas Elétricas, Eletrificação Veicular, Desenvolvimento de Produto, P&D]

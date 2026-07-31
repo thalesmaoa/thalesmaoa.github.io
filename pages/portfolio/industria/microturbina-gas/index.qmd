@@ -1,5 +1,5 @@
 ---
-title: "Microturbinas a Gás de Alta Rotação: Engenharia Full-Stack para Geração de Energia"
+title: '<span class="lang-pt">Microturbinas a Gás de Alta Rotação: Engenharia Full-Stack para Geração de Energia</span><span class="lang-en">High-Speed Gas Microturbines: Full-Stack Engineering for Power Generation</span>'
 description: "Desenvolvimento integral de um gerador síncrono acionado por microturbina, englobando controle de fluidos, eletrônica de potência e balanceamento mecânico."
 date: "2016-11-01" # Ajuste para a data de defesa do Doutorado / fim da Fahren
 categories: [Máquinas Elétricas, Geração de Energia, Eletrônica de Potência, P&D]

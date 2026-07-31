@@ -1,5 +1,5 @@
 ---
-title: "Geração Termoelétrica Customizada: Especificação e Comissionamento de Motogeradores"
+title: '<span class="lang-pt">Geração Termoelétrica Customizada: Especificação e Comissionamento de Motogeradores</span><span class="lang-en">Custom Thermoelectric Generation: Specification and Commissioning of Motor-Generators</span>'
 description: "Engenharia integral de sistema de geração elétrica: da especificação da máquina ao comissionamento do painel de controle e adaptações mecânicas."
 date: "2022-12-20"
 categories: [Geração de Energia, Máquinas Elétricas, Infraestrutura Elétrica, Eletrônica de Potência, P&D]

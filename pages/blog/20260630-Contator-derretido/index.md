@@ -1,5 +1,5 @@
 ---
-title: "Falta de fase intermitente: O perigo invisível do borne frouxo"
+title: '<span class="lang-pt">Falta de fase intermitente: O perigo invisível do borne frouxo</span><span class="lang-en">Intermittent Phase Loss: The Hidden Danger of Loose Terminals</span>'
 date: 2026-07-30
 categories: 
   - "Manutenção Industrial"

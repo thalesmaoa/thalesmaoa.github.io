@@ -1,5 +1,5 @@
 ---
-title: "Automação Full-Stack e IoT para Produção de Biochar"
+title: '<span class="lang-pt">Automação Full-Stack e IoT para Produção de Biochar</span><span class="lang-en">Full-Stack Automation and IoT for Biochar Production</span>'
 description: "Projeto e implementação integral da arquitetura de fábrica, desde o Centro de Controle de Motores (CCM) até hardwares de comunicação redundante e integração em nuvem."
 date: "2026-03-15" # Ajuste para a data de conclusão ou marco do projeto
 categories: [Automação, Infraestrutura Elétrica, P&D]

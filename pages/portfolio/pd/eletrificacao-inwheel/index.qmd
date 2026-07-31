@@ -1,5 +1,5 @@
 ---
-title: "Eletrificação Veicular e Motores In-Wheel: Da Alta Densidade ao Mercado Comercial"
+title: '<span class="lang-pt">Eletrificação Veicular e Motores In-Wheel: Da Alta Densidade ao Mercado Comercial</span><span class="lang-en">Vehicle Electrification and In-Wheel Motors: From High Density to Commercial Market</span>'
 description: "Desenvolvimento e dimensionamento de máquinas elétricas embutidas na roda (In-Wheel) para veículos de competição de alta performance e veículos de passageiros micro-híbridos."
 date: "2022-08-16"
 categories: [Eletrificação Veicular, Máquinas Elétricas, P&D]

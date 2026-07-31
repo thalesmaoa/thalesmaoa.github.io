@@ -1,5 +1,5 @@
 ---
-title: "Ciência de Dados e Balanço Químico em Combustão para Créditos de Carbono"
+title: '<span class="lang-pt">Ciência de Dados e Balanço Químico em Combustão para Créditos de Carbono</span><span class="lang-en">Data Science and Chemical Balance in Combustion for Carbon Credits</span>'
 description: "Engenharia reversa de analisadores de gás e modelagem de emissões termoquímicas para o mercado de sustentabilidade na indústria siderúrgica."
 date: "2012-05-15" # Ajuste para a data exata da execução do projeto
 categories: [Ciência de Dados, Instrumentação, Geração de Energia, Engenharia Reversa]

@@ -1,5 +1,5 @@
 ---
-title: "Instrumentação Industrial em Gases: Sistemas de Medição e Condicionamento"
+title: '<span class="lang-pt">Instrumentação Industrial em Gases: Sistemas de Medição e Condicionamento</span><span class="lang-en">Industrial Gas Instrumentation: Measurement and Conditioning Systems</span>'
 description: "Desenvolvimento e integração de painéis de análise e condicionamento de gases em tempo real com CLPs industriais, incluindo engenharia reversa e calibração."
 date: "2014-08-20"
 categories: [Instrumentação, Automação, Engenharia Reversa]

@@ -1,5 +1,5 @@
 ---
-title: "Portfólio"
+title: '<span class="lang-pt">Portfólio</span><span class="lang-en">Portfolio</span>'
 page-layout: full
 ---
 

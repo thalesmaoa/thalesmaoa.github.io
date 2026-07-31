@@ -1,5 +1,5 @@
 ---
-title: "Simulação por Elementos Finitos (FEM): Otimização Eletromagnética de Motores de Indução"
+title: '<span class="lang-pt">Simulação por Elementos Finitos (FEM): Otimização Eletromagnética de Motores de Indução</span><span class="lang-en">Finite Element Simulation (FEM): Electromagnetic Optimization of Induction Motors</span>'
 description: "Aplicação avançada do Método de Elementos Finitos (FEM) no design de um motor de indução de 5 CV. Maximização de fluxo enlaçado e mitigação de dispersões magnéticas via otimização geométrica."
 date: "2021-08-15"
 categories: [Simulação Multifísica, Máquinas Elétricas]

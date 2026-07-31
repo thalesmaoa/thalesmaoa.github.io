@@ -1,5 +1,5 @@
 ---
-title: "Avaliação de Qualidade Magnética de Aços: Metrologia e Hardware em Alta Frequência"
+title: '<span class="lang-pt">Avaliação de Qualidade Magnética de Aços: Metrologia e Hardware em Alta Frequência</span><span class="lang-en">Magnetic Quality Assessment of Steels: High-Frequency Metrology and Hardware</span>'
 description: "Desenvolvimento de bancada de ensaios com inversor monofásico customizado para levantamento de perdas magnéticas e curvas B-H em geometrias reais de estatores."
 date: "2016-08-15" # Ajuste para a data correta da sua pesquisa
 categories: [Instrumentação, Máquinas Elétricas, Eletrônica de Potência, P&D, Sistemas Embarcados]

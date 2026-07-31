@@ -1,5 +1,5 @@
 ---
-title: "Condicionamento de Ar para Ensaios de Motores: Fluidodinâmica e Controle Eletrônico"
+title: '<span class="lang-pt">Condicionamento de Ar para Ensaios de Motores: Fluidodinâmica e Controle Eletrônico</span><span class="lang-en">Air Conditioning for Engine Testing: Fluid Dynamics and Electronic Control</span>'
 description: "Desenvolvimento integral de um sistema de controle de pressão e temperatura para admissão de ar em testes de motores de combustão superalimentados."
 date: "2015-08-15"
 categories: [Automação, Eletrônica de Potência, Simulação Multifísica, Instrumentação, Desenvolvimento de Produto]

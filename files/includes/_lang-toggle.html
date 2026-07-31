@@ -16,10 +16,34 @@
       localStorage.setItem(LANG_KEY, 'en');
     } else if (browserLang.startsWith('pt')) {
       localStorage.setItem(LANG_KEY, 'pt');
+    } else {
+      // outros idiomas: default EN
+      document.documentElement.classList.add('lang-en');
+      localStorage.setItem(LANG_KEY, 'en');
     }
-    // outros idiomas: default EN
-    document.documentElement.classList.add('lang-en');
-    localStorage.setItem(LANG_KEY, 'en');
+  }
+
+  // Corrige <title> e OG tags lendo do <h1> (que tem os <span> preservados)
+  function applyTitleTranslation(lang) {
+    var h1 = document.querySelector('h1.title');
+    if (!h1) return;
+    var span = h1.querySelector('.lang-' + lang);
+    if (!span) return;
+    var title = span.textContent.trim();
+    var suffix = (document.title.match(/ – .+$/) || [''])[0];
+    document.title = title + suffix;
+    var og = document.querySelector('meta[property="og:title"]');
+    if (og) og.setAttribute('content', title + suffix);
+    var tw = document.querySelector('meta[name="twitter:title"]');
+    if (tw) tw.setAttribute('content', title + suffix);
+  }
+
+  // Aplica no carregamento
+  var currentLang = document.documentElement.classList.contains('lang-en') ? 'en' : 'pt';
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() { applyTitleTranslation(currentLang); });
+  } else {
+    applyTitleTranslation(currentLang);
   }
 
   function insertToggle() {
@@ -39,7 +63,9 @@
     a.addEventListener('click', function(e) {
       e.preventDefault();
       var isEn = document.documentElement.classList.toggle('lang-en');
-      localStorage.setItem(LANG_KEY, isEn ? 'en' : 'pt');
+      var lang = isEn ? 'en' : 'pt';
+      localStorage.setItem(LANG_KEY, lang);
+      applyTitleTranslation(lang);
     });
 
     li.appendChild(a);

@@ -1,5 +1,5 @@
 ---
-title: "Monitoramento On-Line de Isolamento (SIMOI): IoT e Predição de Falhas na Indústria de O&G"
+title: '<span class="lang-pt">Monitoramento On-Line de Isolamento (SIMOI): IoT e Predição de Falhas na Indústria de O&G</span><span class="lang-en">Online Insulation Monitoring (SIMOI): IoT and Fault Prediction in the O&G Industry</span>'
 description: "Concepção de arquitetura embarcada, algoritmos e estratégia de computação em nuvem para detecção preditiva de degradação em motores de média tensão."
 date: "2024-05-09" # Ajuste para a data desejada
 categories: [Automação, Sistemas Embarcados, Ciência de Dados, Instrumentação, P&D]

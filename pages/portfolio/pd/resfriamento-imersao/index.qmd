@@ -1,5 +1,5 @@
 ---
-title: "Resfriamento por Imersão e Gerenciamento Térmico: Simulação CFD e Validação Experimental"
+title: '<span class="lang-pt">Resfriamento por Imersão e Gerenciamento Térmico: Simulação CFD e Validação Experimental</span><span class="lang-en">Immersion Cooling and Thermal Management: CFD Simulation and Experimental Validation</span>'
 description: "Especialista em thermal management e immersion cooling para eletrônica de potência e baterias veiculares (Li-ion), unindo simulação fluidodinâmica (CFD) e testes em bancada."
 date: "2023-12-20"
 categories: [Gerenciamento Térmico, Simulação Multifísica, Armazenamento de Energia, Eletrônica de Potência]

@@ -1,5 +1,5 @@
 ---
-title: "Projetos de P&D"
+title: '<span class="lang-pt">Projetos de P&D</span><span class="lang-en">R&D Projects</span>'
 subtitle: "Pesquisa e Desenvolvimento — máquinas elétricas, energia e automação"
 page-layout: full
 listing:

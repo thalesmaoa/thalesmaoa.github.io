@@ -1,5 +1,5 @@
 ---
-title: "Oscilador Magnético para Processos de Soldagem: Otimização TIG e MIG/MAG"
+title: '<span class="lang-pt">Oscilador Magnético para Processos de Soldagem: Otimização TIG e MIG/MAG</span><span class="lang-en">Magnetic Oscillator for Welding Processes: TIG and MIG/MAG Optimization</span>'
 description: "Desenvolvimento de eletrônica de potência (Amplificadores AB e D) e simulações eletromagnéticas de elementos finitos (FEMM) para deflexão de arco elétrico."
 date: "2021-03-01" # Data de publicação da tese
 categories: [Eletrônica de Potência, Simulação Multifísica, Sistemas Embarcados, P&D]

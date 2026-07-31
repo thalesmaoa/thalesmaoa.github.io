@@ -1,5 +1,5 @@
 ---
-title: "Indústria"
+title: '<span class="lang-pt">Indústria</span><span class="lang-en">Industry</span>'
 subtitle: "Projetos de consultoria e extensão para o setor industrial"
 page-layout: full
 listing:

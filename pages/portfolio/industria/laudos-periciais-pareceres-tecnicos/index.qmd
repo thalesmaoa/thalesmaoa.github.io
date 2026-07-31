@@ -1,5 +1,5 @@
 ---
-title: "Laudos Periciais e Pareceres Técnicos"
+title: '<span class="lang-pt">Laudos Periciais e Pareceres Técnicos</span><span class="lang-en">Expert Reports and Technical Assessments</span>'
 description: "Atuação em engenharia forense, análise de causa-raiz e emissão de pareceres técnicos especializados para litígios e suporte jurídico."
 date: "2022-09-27" # Data do laudo mais recente
 categories: [Consultoria & Perícia]

@@ -1,5 +1,5 @@
 ---
-title: "Desenvolvimento Full-Stack de Máquinas Especiais: Design Eletromecânico para Cenários Extremos"
+title: '<span class="lang-pt">Desenvolvimento Full-Stack de Máquinas Especiais: Design Eletromecânico para Cenários Extremos</span><span class="lang-en">Full-Stack Development of Special Machines: Electromechanical Design for Extreme Scenarios</span>'
 description: "Capacidade de execução do ciclo completo de engenharia (eletromagnetismo, rotodinâmica, fluidodinâmica e manufatura) para concepção de máquinas rotativas sob medida."
 date: "2020-08-01"
 categories: [Máquinas Elétricas, Desenvolvimento de Produto, Simulação Multifísica, Óleo e Gás, P&D]

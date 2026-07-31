@@ -1,5 +1,5 @@
 ---
-title: "Sistemas de Medição de Fluxo Customizados: Design de Tubo Venturi e Eletrônica Integrada"
+title: '<span class="lang-pt">Sistemas de Medição de Fluxo Customizados: Design de Tubo Venturi e Eletrônica Integrada</span><span class="lang-en">Custom Flow Measurement Systems: Venturi Tube Design and Integrated Electronics</span>'
 description: "Desenvolvimento ponta a ponta de medidores de vazão industriais. Do cálculo fluidodinâmico de tubos Venturi para baixíssima perda de carga até a eletrônica de aquisição de dados."
 date: "2023-10-15" # Ajuste para a data desejada
 categories: [Instrumentação, Simulação Multifísica, Sistemas Embarcados, Automação]

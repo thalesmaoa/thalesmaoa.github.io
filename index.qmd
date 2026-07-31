@@ -82,8 +82,8 @@ listing:   # Recent news and events
       - pages/portfolio/industria
     exclude:
       title:
-        - "Projetos de P&D"
-        - "Indústria"
+        - '<span class="lang-pt">Projetos de P&D</span><span class="lang-en">R&D Projects</span>'
+        - '<span class="lang-pt">Indústria</span><span class="lang-en">Industry</span>'
     type: grid
     max-items: 25
     page-size: 25

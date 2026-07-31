@@ -1,5 +1,5 @@
 ---
-title: "Diagnóstico Preditivo de Cabos Subterrâneos: Localização de Falhas Incipientes via Blindagem"
+title: '<span class="lang-pt">Diagnóstico Preditivo de Cabos Subterrâneos: Localização de Falhas Incipientes via Blindagem</span><span class="lang-en">Predictive Diagnostics of Underground Cables: Incipient Fault Location via Shielding</span>'
 description: "Pesquisa e desenvolvimento de algoritmo baseado no método de impedância de dois terminais aplicado à blindagem metálica para detecção online de falhas (Water Tree)."
 date: "2025-07-04" 
 categories: [Infraestrutura Elétrica, Instrumentação, Simulação Multifísica, P&D, Ciência de Dados]
