@@ -14,6 +14,7 @@ Ensaios de laboratório abordando transformadores, máquinas de corrente contín
 <details>
 <summary>Material de apoio</summary>
 
+- [Modelo 3D do contator](https://cad.onshape.com/documents/8820e8d7ea6dd44d51386efd/w/41ccc6ba8c1405b27ee3d5a3/e/479d4a41a35a66eb9f078fe4)
 - [Regressão linear](files/Regressão linear.ipynb)
 - [Integral numérica](files/Integral numérica.ipynb)
 - [Curva HB](https://nextcloud.fahren.com.br/public.php/dav/files/4nzqQF9J4GApy2x/NO30-16-HP.mat)
