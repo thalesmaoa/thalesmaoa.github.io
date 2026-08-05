@@ -1,0 +1,16 @@
+---
+title: "Em construção"
+description: "Este conteúdo ainda está sendo elaborado"
+date: 2026-08-01
+draft: false
+---
+
+🚧
+
+# Em construção
+
+Este material ainda está sendo elaborado e será disponibilizado em breve.
+
+Volte em algumas semanas ou acompanhe as atualizações pelo repositório.
+
+[← Voltar para a lista de capítulos](../)

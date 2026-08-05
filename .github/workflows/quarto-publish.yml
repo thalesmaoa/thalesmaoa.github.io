@@ -49,7 +49,6 @@ jobs:
           mkdir -p "$DEST"
           cp -r _roteiro-rendered/Cap*  "$DEST/" 2>/dev/null || true
           cp -r _roteiro-rendered/Ap*   "$DEST/" 2>/dev/null || true
-          cp -r _roteiro-rendered/site_libs "$DEST/" 2>/dev/null || true
           cp    _roteiro-rendered/*.css "$DEST/" 2>/dev/null || true
           echo "Slides copiados para docs/$DEST"
 
