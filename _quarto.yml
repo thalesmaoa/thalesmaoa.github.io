@@ -54,6 +54,8 @@ website:
             href: pages/teaching/graduacao/index.qmd
           - text: "<span class='lang-pt'>Pós-Graduação</span><span class='lang-en'>Graduate</span>"
             href: pages/teaching/pos-graduacao/index.qmd
+          - text: "<span class='lang-pt'>Roteiros dos Livros</span><span class='lang-en'>Book Roadmaps</span>"
+            href: pages/teaching/livros/index.qmd
       - text: Blog
         href: pages/blog/index.qmd
       - text: "<span class='lang-pt'>Notícias</span><span class='lang-en'>News</span>"
