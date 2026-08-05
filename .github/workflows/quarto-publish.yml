@@ -22,38 +22,40 @@ jobs:
           token: ${{ secrets.ROTEIRO_REPO_TOKEN }}
           path: _roteiro-rendered
 
-      - name: Copy rendered slides into site
-        run: |
-          DEST="pages/teaching/livros/cotrim"
-          # Copia diretórios de capítulos (Cap1, Cap2, ..., ApA, ApB) e CSS
-          cp -r _roteiro-rendered/Cap*  "$DEST/" 2>/dev/null || true
-          cp -r _roteiro-rendered/Ap*   "$DEST/" 2>/dev/null || true
-          cp    _roteiro-rendered/*.css "$DEST/" 2>/dev/null || true
-          echo "Slides copiados para $DEST"
-      # ----------------------------------------
-
-      # --- NOVOS PASSOS PARA O PYTHON ---
+      # --- PYTHON ---
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10' # Você pode ajustar para a versão que costuma usar
+          python-version: '3.10'
 
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          # Substitua os nomes abaixo pelas bibliotecas exatas que o seu xlsx_to_yml.py precisa:
-          pip install pandas openpyxl pyyaml 
-          
-          # Se você tiver um arquivo requirements.txt no repositório, apague o comando de cima e use este:
-          # pip install -r requirements.txt
-      # ----------------------------------
+          pip install pandas openpyxl pyyaml
 
+      # --- QUARTO RENDER ---
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Render site
+        run: |
+          quarto render
+
+      # --- COPIA SLIDES APÓS O RENDER (evita que o .gitignore do Quarto bloqueie) ---
+      - name: Copy rendered slides into docs
+        run: |
+          DEST="docs/pages/teaching/livros/cotrim"
+          mkdir -p "$DEST"
+          cp -r _roteiro-rendered/Cap*  "$DEST/" 2>/dev/null || true
+          cp -r _roteiro-rendered/Ap*   "$DEST/" 2>/dev/null || true
+          cp -r _roteiro-rendered/site_libs "$DEST/" 2>/dev/null || true
+          cp    _roteiro-rendered/*.css "$DEST/" 2>/dev/null || true
+          echo "Slides copiados para docs/$DEST"
+
+      # --- PUBLICA ---
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs
+          force_orphan: true
