@@ -8,3 +8,9 @@ docs/
 .quarto/
 _site/
 .cache/
+
+# Slides importados do repo privado (CI)
+pages/teaching/livros/cotrim/Cap*/
+pages/teaching/livros/cotrim/Ap*/
+pages/teaching/livros/cotrim/*.css
+_roteiro-rendered/

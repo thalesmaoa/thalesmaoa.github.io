@@ -13,6 +13,25 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      # --- IMPORTA SLIDES DO REPO PRIVADO ---
+      - name: Checkout rendered slides
+        uses: actions/checkout@v4
+        with:
+          repository: thalesmaoa/roteiro-estudo
+          ref: rendered
+          token: ${{ secrets.ROTEIRO_REPO_TOKEN }}
+          path: _roteiro-rendered
+
+      - name: Copy rendered slides into site
+        run: |
+          DEST="pages/teaching/livros/cotrim"
+          # Copia diretórios de capítulos (Cap1, Cap2, ..., ApA, ApB) e CSS
+          cp -r _roteiro-rendered/Cap*  "$DEST/" 2>/dev/null || true
+          cp -r _roteiro-rendered/Ap*   "$DEST/" 2>/dev/null || true
+          cp    _roteiro-rendered/*.css "$DEST/" 2>/dev/null || true
+          echo "Slides copiados para $DEST"
+      # ----------------------------------------
+
       # --- NOVOS PASSOS PARA O PYTHON ---
       - name: Set up Python
         uses: actions/setup-python@v5

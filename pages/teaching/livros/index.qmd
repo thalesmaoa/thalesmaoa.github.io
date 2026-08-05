@@ -1,0 +1,20 @@
+---
+title: '<span class="lang-pt">Roteiros dos Livros</span><span class="lang-en">Book Roadmaps</span>'
+description-meta: "Resumos e apresentações dos capítulos de livros-texto de Engenharia Elétrica"
+listing:
+  sort: "date desc"
+  type: default
+  page-size: 100
+  categories: false
+  sort-ui: false
+  filter-ui: true
+  contents: ./
+---
+
+<span class="lang-pt">Ao longo dos anos, tenho me dedicado ao aprendizado da Engenharia Elétrica. Embora eu ainda reflita se a Engenharia é puramente uma disciplina ou uma ciência aplicada — discussão que foge ao escopo deste texto —, o propósito deste prefácio é justificar a criação destas apresentações-resumo, baseadas nos livros-texto que adoto em minhas disciplinas.</span><span class="lang-en">Over the years, I have dedicated myself to learning Electrical Engineering. Although I still reflect on whether Engineering is purely a discipline or an applied science — a discussion beyond the scope of this text — the purpose of this preface is to justify the creation of these summary presentations, based on the textbooks I adopt in my courses.</span>
+
+<span class="lang-pt">Vivemos uma época em que o acesso à informação e às respostas imediatas é cada vez mais fácil. Contudo, nesse processo, muitas vezes perde-se o conhecimento tácito, aquele que só é construído com o passar dos anos. Na minha visão, o livro ainda representa a forma mais genuína de resgatar e transmitir o aprendizado às gerações futuras. Gosto de manter meus livros na prateleira e me pego constantemente revisitando essas obras, sempre encontrando uma oportunidade para aprender um pouco mais. É fascinante como o mesmo material sempre nos revela uma informação nova a cada leitura.</span><span class="lang-en">We live in an era where access to information and immediate answers is increasingly easy. However, in this process, tacit knowledge — the kind built only over years — is often lost. In my view, the book still represents the most genuine way to rescue and transmit learning to future generations. I enjoy keeping my books on the shelf and constantly find myself revisiting these works, always finding an opportunity to learn a little more. It is fascinating how the same material always reveals new information with each reading.</span>
+
+<span class="lang-pt">Para fomentar esse estudo constante, iniciei o processo de estruturar apresentações por capítulos. O objetivo aqui é criar um material de rápida consulta, que não substitui o estudo direto na obra, mas o complementa, valorizando o conteúdo produzido com tanto esforço por seus autores.</span><span class="lang-en">To foster this constant study, I began the process of structuring chapter-by-chapter presentations. The goal here is to create a quick-reference material that does not replace direct study of the work, but complements it, honoring the content produced with so much effort by its authors.</span>
+
+<span class="lang-pt">Esse espaço foi desenvolvido com propósitos específicos, mas segue em constante expansão e evolução. Sugestões, considerações e ponderações serão sempre muito bem-vindas.</span><span class="lang-en">This space was developed with specific purposes, but remains in constant expansion and evolution. Suggestions, considerations, and feedback will always be most welcome.</span>
