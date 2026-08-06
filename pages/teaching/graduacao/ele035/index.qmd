@@ -5,10 +5,8 @@ date: 2026-02-01
 categories: [Atual, Laboratório, Conversão de Energia]
 ---
 
-**Turma:** L1, L2, L4 (Sexta-feira) — Laboratório de Conversão da Energia
-
-**Professor:** Thales Alexandre Carvalho Maia — Sala 2222, Bloco I
-
+**Turma:** L1, L2, L4 (Sexta-feira) — Laboratório de Conversão da Energia<br>
+**Professor:** Thales Alexandre Carvalho Maia — Sala 2222, Bloco I<br>
 **Contato:** thalesmaiaufmg@gmail.com
 
 ## Carga horária

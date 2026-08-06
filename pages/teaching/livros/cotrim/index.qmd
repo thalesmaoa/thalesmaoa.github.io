@@ -7,10 +7,8 @@ categories: ["Livro"]
 image: "images/capa.png"
 ---
 
-**Autor:** Ademaro A. M. B. Cotrim
-
-**Editora:** Pearson
-
+**Autor:** Ademaro A. M. B. Cotrim<br>
+**Editora:** Pearson<br>
 **Edição:** 4ª edição
 
 ---

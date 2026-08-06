@@ -5,10 +5,8 @@ date: 2026-02-01
 categories: [Atual, Sistemas Industriais, Instalações Elétricas]
 ---
 
-**Turma:** TPA1/PTAAA (Quinta-feira) — Sala 1024, Bloco 3 — 13:00 às 16:35
-
-**Professor:** Thales Alexandre Carvalho Maia — Sala 2222, Bloco 1
-
+**Turma:** TPA1/PTAAA (Quinta-feira) — Sala 1024, Bloco 3 — 13:00 às 16:35<br>
+**Professor:** Thales Alexandre Carvalho Maia — Sala 2222, Bloco 1<br>
 **Contato:** thalesmaiaufmg@gmail.com
 
 ## Carga horária
@@ -39,7 +37,7 @@ Desenvolver conhecimento acerca dos: principais sistemas elétricos industriais 
 
 1. Lobosco, Orlando S. **Seleção e aplicação de motores elétricos**. Vol. 1 e 2. McGraw-Hill, Série Brasileira de Tecnologia.
 2. Beeman, Donald. **Industrial Power System Handbook**. McGraw-Hill.
-3. Cotrim, Ademaro A. M. B. **Instalações Elétricas**. 4ª ed. Pearson. — [Apresentações dos capítulos](../../livros/cotrim/)
+3. [Cotrim, Ademaro A. M. B. **Instalações Elétricas**. 4ª ed. Pearson.](../../livros/cotrim/)
 4. Apostila do professor.
 5. IEEE Std. 141 (*Red Book*).
 6. IEEE Std. 142 (*Green Book*).
