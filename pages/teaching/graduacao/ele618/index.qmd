@@ -1,0 +1,47 @@
+---
+title: "ELE618 — Sistemas Elétricos Industriais"
+description: "Instalações elétricas industriais, subestações, proteção e coordenação de sistemas elétricos."
+date: 2026-02-01
+categories: [Atual, Sistemas Industriais, Instalações Elétricas]
+---
+
+**Turma:** TPA1/PTAAA (Quinta-feira) — Sala 1024, Bloco 3 — 13:00 às 16:35
+**Professor:** Thales Alexandre Carvalho Maia — Sala 2222, Bloco 1
+**Contato:** thalesmaiaufmg@gmail.com
+
+## Carga horária
+
+60 horas-aula (4 créditos)
+
+## Ementa
+
+Critério de seleção, dimensionamento e proteção de motores elétricos para diferentes situações de instalação e regime de trabalho exigidas pelos sistemas de acionamentos industriais. Análise das características elétricas típicas dos principais sistemas elétricos industriais.
+
+## Objetivos
+
+Desenvolver conhecimento acerca dos: principais sistemas elétricos industriais e dos respectivos sistemas elétricos envolvidos; principais tipos de máquinas elétricas e suas características em regime permanente; cargas mecânicas e características para a aplicação industrial envolvida; especificar um motor elétrico; projetar sistema de proteção; desenvolver conceitos de sistemas de automação de processos industriais e manutenção de sistemas elétricos industriais.
+
+## Programa
+
+### I. Seleção e aplicação de motores elétricos
+
+### II. Ambientes industriais
+- Proteção e manutenção
+- Regulamentação e geração de energia
+- Projeto de sistemas elétricos de potência industrial
+
+### III. Prática
+- Visita em campo
+
+## Referências
+
+1. Lobosco, Orlando S. **Seleção e aplicação de motores elétricos**. Vol. 1 e 2. McGraw-Hill, Série Brasileira de Tecnologia.
+2. Beeman, Donald. **Industrial Power System Handbook**. McGraw-Hill.
+3. Cotrim, Ademaro A. M. B. **Instalações Elétricas**. 4ª ed. Pearson. — [Apresentações dos capítulos](../../livros/cotrim/)
+4. Apostila do professor.
+5. IEEE Std. 141 (*Red Book*).
+6. IEEE Std. 142 (*Green Book*).
+7. IEEE Std. 242 (*Buff Book*).
+8. IEEE Std. 399 (*Brown Book*).
+
+Materiais disponibilizados pelo professor no Moodle.
