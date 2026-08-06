@@ -5,19 +5,15 @@ date: 2026-02-01
 categories: [Atual, Laboratório, Conversão de Energia]
 ---
 
-**Turma:** L1, L2, L4 (Sexta-feira) — Laboratório de Conversão da Energia<br>
-**Professor:** Thales Alexandre Carvalho Maia — Sala 2222, Bloco I<br>
-**Contato:** thalesmaiaufmg@gmail.com
-
-## Carga horária
-
-30 horas-aula (2 créditos)
-
 ## Ementa
 
 Experimentos em transformadores, máquinas de corrente contínua, síncronas e de indução.
 
-## Objetivos
+### Carga horária
+
+30 horas-aula (2 créditos)
+
+### Objetivos
 
 Aplicar conhecimentos desenvolvidos ao longo da disciplina de conversão da energia através de ensaios em laboratório e simulações computacionais.
 
