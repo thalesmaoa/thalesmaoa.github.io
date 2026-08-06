@@ -8,6 +8,7 @@ docs/
 .quarto/
 _site/
 .cache/
+.claude/
 
 # Checkout temporário do CI
 _roteiro-rendered/

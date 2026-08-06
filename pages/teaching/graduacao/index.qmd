@@ -5,7 +5,7 @@ page-layout: full
 listing:
   contents:
     - ele035/index.qmd
-    - ele618-sistemas-eletricos-industriais.qmd
+    - ele618/index.qmd
   type: default
   fields: [date, title, description, categories]
   field-display-names:
