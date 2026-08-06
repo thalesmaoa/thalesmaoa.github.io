@@ -5,9 +5,47 @@ date: 2026-02-01
 categories: [Atual, Laboratório, Conversão de Energia]
 ---
 
+**Turma:** L1, L2, L4 (Sexta-feira) — Laboratório de Conversão da Energia
+**Professor:** Thales Alexandre Carvalho Maia — Sala 2222, Bloco I
+**Contato:** thalesmaiaufmg@gmail.com
+
+## Carga horária
+
+30 horas-aula (2 créditos)
+
 ## Ementa
 
-Ensaios de laboratório abordando transformadores, máquinas de corrente contínua, motores de indução, máquinas síncronas e conversores eletrônicos de potência. A disciplina integra os conceitos teóricos de conversão eletromecânica de energia com a prática experimental.
+Experimentos em transformadores, máquinas de corrente contínua, síncronas e de indução.
+
+## Objetivos
+
+Aplicar conhecimentos desenvolvidos ao longo da disciplina de conversão da energia através de ensaios em laboratório e simulações computacionais.
+
+## Programa
+
+### I. Indutores
+- Fluxo e forma magnética
+
+### II. Máquina CC
+- Princípio de operação
+- Aspectos construtivos
+- Características operacionais
+
+### III. Campo girante
+- Máquina síncrona
+- Máquina de indução
+- Motor monofásico
+
+## Referências
+
+1. Pyrhonen, Juha, Tapani Jokinen, and Valeria Hrabovcova. **Design of rotating electrical machines**. John Wiley & Sons, 2013.
+2. Gieras, Jacek F. **Permanent magnet motor technology: design and applications**. CRC Press, 2009.
+3. Chapman, Stephen. **Electric machinery fundamentals**. Tata McGraw-Hill Education, 2005.
+4. Boldea, Ion, and Syed A. Nasar. **The induction machines design handbook**. CRC Press, 2009.
+
+Materiais disponibilizados pelo professor no Moodle.
+
+---
 
 - [Slides de aula](https://nextcloud.fahren.com.br/public.php/dav/files/4nzqQF9J4GApy2x/2026%20-%20Praticas%20de%20laborat%C3%B3rio.pdf)
 
