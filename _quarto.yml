@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - "CNAME"
+    - "files/images/404.json"
   pre-render:  # This can be deleted if you are using the manually curated list of publications in publications.qmd
     - python xlsx_to_yml.py  # Automatically generate publications.yml from publications.xlsx
     

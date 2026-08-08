@@ -1,7 +1,39 @@
 ---
-title: Page Unplugged
+title: "<span class='lang-pt'>404 - Página não encontrada</span><span class='lang-en'>404 - Page Not Found</span>"
+page-layout: full
+page-navigation: false
+toc: false
+include-in-header:
+  - files/includes/_lottie.html
 ---
+<lottie-player src="/files/images/404.json" background="transparent" speed="1" style="width: 320px; height: 320px; margin: 0 auto; filter: hue-rotate(160deg) saturate(0.7);" loop autoplay></lottie-player>
 
-The page you requested cannot be found (perhaps it was unplugged).
+::: {.lang-pt}
 
-You may want to try searching to find the page's new plug.
+A página que você procura não está aqui. Talvez tenha sido movida, renomeada ou nunca tenha existido.
+
+:::
+
+::: {.lang-en}
+
+The page you're looking for isn't here. It may have been moved, renamed, or never existed.
+
+:::
+
+
+
+::: {.lang-pt}
+
+- Confira a **URL** — pode ter um erro de digitação
+- Use a **[busca](/search.html)** no topo da página
+- Volte para a **[página inicial](/)** e navegue a partir de lá
+
+:::
+
+::: {.lang-en}
+
+- Check the **URL** — there might be a typo
+- Use the **[search](/search.html)** at the top of the page
+- Go back to the **[home page](/)** and navigate from there
+
+:::
