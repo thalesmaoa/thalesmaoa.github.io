@@ -47,9 +47,10 @@ jobs:
         run: |
           DEST="docs/pages/teaching/livros/cotrim"
           mkdir -p "$DEST"
-          cp -r _roteiro-rendered/Cap*  "$DEST/" 2>/dev/null || true
-          cp -r _roteiro-rendered/Ap*   "$DEST/" 2>/dev/null || true
-          cp    _roteiro-rendered/*.css "$DEST/" 2>/dev/null || true
+          SRC="_roteiro-rendered/cotrim-sistemas-eletricos"
+          cp -r "$SRC"/Cap*  "$DEST/" 2>/dev/null || true
+          cp -r "$SRC"/Ap*   "$DEST/" 2>/dev/null || true
+          cp    "$SRC"/*.css "$DEST/" 2>/dev/null || true
           echo "Slides copiados para docs/$DEST"
 
       # --- PUBLICA ---

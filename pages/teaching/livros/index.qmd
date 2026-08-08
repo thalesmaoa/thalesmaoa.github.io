@@ -3,12 +3,14 @@ title: '<span class="lang-pt">Roteiros dos Livros</span><span class="lang-en">Bo
 description-meta: "Resumos e apresentações dos capítulos de livros-texto de Engenharia Elétrica"
 listing:
   sort: "date desc"
+  contents:
+    - cotrim/index.qmd
+    # - ele618/index.qmd
   type: default
   page-size: 100
   categories: false
   sort-ui: false
   filter-ui: true
-  contents: ./
 ---
 
 <span class="lang-pt">Ao longo dos anos, tenho me dedicado ao aprendizado da Engenharia Elétrica. Embora eu ainda reflita se a Engenharia é puramente uma disciplina ou uma ciência aplicada — discussão que foge ao escopo deste texto —, o propósito deste prefácio é justificar a criação destas apresentações-resumo, baseadas nos livros-texto que adoto em minhas disciplinas.</span><span class="lang-en">Over the years, I have dedicated myself to learning Electrical Engineering. Although I still reflect on whether Engineering is purely a discipline or an applied science — a discussion beyond the scope of this text — the purpose of this preface is to justify the creation of these summary presentations, based on the textbooks I adopt in my courses.</span>
