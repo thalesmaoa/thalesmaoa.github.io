@@ -1,0 +1,36 @@
+---
+title: '<span class="lang-pt">Dissertação Aprovada — William Andrade</span><span class="lang-en">Thesis Approved — William Andrade</span>'
+description: '<span class="lang-pt">William Andrade é aprovado no mestrado do PPGEE-UFMG</span><span class="lang-en">William Andrade approved in his master''s thesis defense at PPGEE-UFMG</span>'
+author: "Thales Maia"
+date: "2026-08-04"
+categories: [Notícias, Defesa]
+image: "ufmg_m.png"
+draft: false
+---
+
+<figure style="text-align: center;">
+
+![](defesa.jpeg){width=70%}
+
+<figcaption>
+
+<span class="lang-pt">Fig. 1 — William Andrade após a aprovação da dissertação de mestrado.</span><span class="lang-en">Fig. 1 — William Andrade after the approval of his master's thesis.</span>
+
+</figcaption>
+
+</figure>
+
+<span class="lang-pt">**William Santos Andrade** foi aprovado em sua defesa de dissertação de mestrado intitulada **"Projeto, Implantação e Avaliação Comparativa de Uma Rede CC Para Aplicações Industriais"** no Programa de Pós-Graduação em Engenharia Elétrica da UFMG.</span><span class="lang-en">**William Santos Andrade** was approved in his master's thesis defense entitled **"Design, Implementation and Comparative Evaluation of a DC Network for Industrial Applications"** at the Graduate Program in Electrical Engineering of UFMG.</span>
+
+<span class="lang-pt">Agradecemos à banca avaliadora pela participação e contribuições:</span><span class="lang-en">We thank the examining committee for their participation and contributions:</span>
+
+- <span class="lang-pt">**Prof. Sidelmo Magalhães Silva** — DEE</span><span class="lang-en">**Prof. Sidelmo Magalhães Silva** — DEE</span>
+- <span class="lang-pt">**Prof. João Marcus S. Callegari** — DELT</span><span class="lang-en">**Prof. João Marcus S. Callegari** — DELT</span>
+
+<span class="lang-pt">**Orientador:** Prof. Thales Alexandre Carvalho Maia</span><span class="lang-en">**Advisor:** Prof. Thales Alexandre Carvalho Maia</span>
+
+<span class="lang-pt">Parabéns ao William pela conquista! 🎉</span><span class="lang-en">Congratulations to William on this achievement! 🎉</span>
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
