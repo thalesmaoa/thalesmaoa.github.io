@@ -15,7 +15,7 @@ image: "images/capa.png"
 
 - [Capítulo 1 — Fundamentos](./Cap1/){target="_blank"}
 - [Capítulo 2 — Conceitos Fundamentais](./Cap2/){target="_blank"}
-- [Capítulo 3 — Rascunho](./rascunho/)
+- [Capítulo 3 — Proteção contra coques elétricos - fundamentos](./Cap3/){target="_blank"}
 - [Capítulo 4 — Rascunho](./rascunho/)
 - [Capítulo 5 — Rascunho](./rascunho/)
 - [Capítulo 6 — Rascunho](./rascunho/)
