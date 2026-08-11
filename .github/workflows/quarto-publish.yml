@@ -51,6 +51,7 @@ jobs:
           cp -r "$SRC"/Cap*  "$DEST/" 2>/dev/null || true
           cp -r "$SRC"/Ap*   "$DEST/" 2>/dev/null || true
           cp    "$SRC"/*.css "$DEST/" 2>/dev/null || true
+          cp    "$SRC"/favicon.png "$DEST/" 2>/dev/null || true
           echo "Slides copiados para docs/$DEST"
 
       # --- PUBLICA ---
