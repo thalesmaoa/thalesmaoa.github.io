@@ -24,12 +24,13 @@ jobs:
           path: _roteiro-rendered
 
       # --- IMPORTA FERRAMENTAS DO REPO ee-web-tools ---
+      # Usa o mesmo token cross-repo do roteiro-estudo
       - name: Checkout EE Web Tools
         uses: actions/checkout@v4
         with:
           repository: thalesmaoa/ee-web-tools
           ref: main
-          token: ${{ secrets.EE_WEB_TOOLS_TOKEN }}
+          token: ${{ secrets.ROTEIRO_REPO_TOKEN }}
           path: _ee-web-tools
 
       # --- PYTHON ---
