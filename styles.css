@@ -229,3 +229,5 @@ a.webtools-card:hover {
 @media (max-width: 520px) {
   .webtools-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
 }
+
+/* v2: grid de apps EE Web Tools */
