@@ -4,6 +4,10 @@ project:
   resources:
     - "CNAME"
     - "files/images/404.json"
+    # Ícones referenciados só via JS/futuro (o Quarto não os copia sozinho)
+    - "files/icons/ee-webtools-alt.svg"
+    - "files/icons/webtools-im-calc-map.svg"
+    - "files/icons/webtools-winding-factor.svg"
   pre-render:  # This can be deleted if you are using the manually curated list of publications in publications.qmd
     - python xlsx_to_yml.py  # Automatically generate publications.yml from publications.xlsx
     
