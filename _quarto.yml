@@ -81,7 +81,9 @@ website:
       # - text: Group   # Comment the Group part out to remove the Group page
       #   href: people.qmd
 
-    right: 
+    right:
+      - text: '<img src="/files/icons/ee-webtools.svg" style="height: 1.05em; vertical-align: -0.18em;" title="EE Tools"> EE Tools'
+        href: tools/index.qmd
       - text: "{{< ai lattes >}} CV"
         href: http://lattes.cnpq.br/8637504941507702
         target: _blank
