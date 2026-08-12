@@ -1,0 +1,21 @@
+---
+title: '<span class="lang-pt">Lançamento — EE Web Tools: ferramentas de engenharia elétrica no site</span><span class="lang-en">Launch — EE Web Tools: electrical engineering tools on the site</span>'
+description: '<span class="lang-pt">Nova seção de ferramentas web interativas em thalesmaia.com, começando pela calculadora de fator de bobinamento</span><span class="lang-en">New interactive web tools section on thalesmaia.com, starting with the winding factor calculator</span>'
+author: "Thales Maia"
+date: "2026-08-12"
+categories: [Notícias, Ferramentas]
+draft: false
+---
+
+<span class="lang-pt">Hoje o site ganha uma nova área: a **EE Web Tools**, uma seção de ferramentas web interativas de engenharia elétrica, gratuitas e sem cadastro. A primeira ferramenta publicada é a calculadora de **fator de bobinamento**.</span><span class="lang-en">Today the site gains a new area: **EE Web Tools**, a section of interactive electrical engineering web tools, free and with no sign-up. The first published tool is the **winding factor** calculator.</span>
+
+<span class="lang-pt">A ferramenta calcula o esquema de bobinamento de máquinas elétricas a partir do número de ranhuras e polos magnéticos — incluindo o fator de bobinamento, passos de cogging e a animação do enrolamento. Basta informar ranhuras e polos e o cálculo é imediato.</span><span class="lang-en">The tool calculates the winding scheme of electrical machines from the number of slots and magnet poles — including the winding factor, cogging steps and the winding animation. Just enter slots and poles and the result is immediate.</span>
+
+- <span class="lang-pt">**Acesse a ferramenta:** [Winding Factor](/tools/winding-factor/)</span><span class="lang-en">**Open the tool:** [Winding Factor](/tools/winding-factor/)</span>
+- <span class="lang-pt">**Veja todas as ferramentas:** [EE Web Tools](/tools/)</span><span class="lang-en">**Browse all tools:** [EE Web Tools](/tools/)</span>
+
+<span class="lang-pt">A calculadora é baseada no Winding Scheme Calculator (Bewicklungsrechner XL), de Felix Niessen, distribuído sob a licença GNU GPL v3. Mais ferramentas estão em desenvolvimento — acompanhe.</span><span class="lang-en">The calculator is based on the Winding Scheme Calculator (Bewicklungsrechner XL) by Felix Niessen, distributed under the GNU GPL v3 license. More tools are under development — stay tuned.</span>
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
