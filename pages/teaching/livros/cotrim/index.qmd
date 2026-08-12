@@ -16,9 +16,9 @@ image: "images/capa.png"
 - [Capítulo 1 — Fundamentos](./Cap1/){target="_blank"}
 - [Capítulo 2 — Conceitos Fundamentais](./Cap2/){target="_blank"}
 - [Capítulo 3 — Proteção contra coques elétricos - fundamentos](./Cap3/){target="_blank"}
-- [Capítulo 4 — Rascunho](./rascunho/)
-- [Capítulo 5 — Rascunho](./rascunho/)
-- [Capítulo 6 — Rascunho](./rascunho/)
+- [Capítulo 4 — Planejamento da instalação](./Cap4/){target="_blank"}
+- [Capítulo 5 — Linhas elétricas](./Cap5/){target="_blank"}
+<!-- - [Capítulo 6 — Rascunho](./rascunho/)
 - [Capítulo 7 — Rascunho](./rascunho/)
 - [Capítulo 8 — Rascunho](./rascunho/)
 - [Capítulo 9 — Rascunho](./rascunho/)
@@ -30,4 +30,4 @@ image: "images/capa.png"
 - [Capítulo 15 — Rascunho](./rascunho/)
 - [Capítulo 16 — Rascunho](./rascunho/)
 - [Apêndice A — Rascunho](./rascunho/)
-- [Apêndice B — Rascunho](./rascunho/)
+- [Apêndice B — Rascunho](./rascunho/) -->
