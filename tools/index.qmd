@@ -1,0 +1,60 @@
+---
+title: "<span class='lang-pt'>Ferramentas de Engenharia Elétrica</span><span class='lang-en'>Electrical Engineering Tools</span>"
+description: "<span class='lang-pt'>Ferramentas web interativas de engenharia elétrica: mapa de eficiência de motores de indução, fator de enrolamento e mais. Gratuitas e abertas.</span><span class='lang-en'>Interactive web tools for electrical engineering: induction motor efficiency map, winding factor and more. Free and open.</span>"
+page-layout: full
+page-navigation: false
+toc: false
+---
+
+<span class="lang-pt">Use diretamente no navegador. Gratuitas, sem cadastro.</span>
+<span class="lang-en">Use right in your browser. Free, no sign-up.</span>
+
+<div class="webtools-grid" id="webtools-grid"></div>
+
+<script>
+  (function () {
+    // ── Apps: para adicionar uma ferramenta, basta incluir uma entrada ──
+    var APPS = [
+      {
+        name: 'im-calc-map',
+        icon: '<img src="/files/icons/webtools-im-calc-map.svg" alt="">',
+        tint: '#f5a623',
+        soon: true,
+        desc: {
+          pt: 'Mapa de eficiência de motor de indução',
+          en: 'Induction motor efficiency map'
+        }
+      },
+      {
+        name: 'Winding Factor',
+        icon: '<img src="/files/icons/webtools-winding-factor.svg" alt="">',
+        tint: '#4a90d9',
+        href: '/tools/winding-factor/',
+        soon: false,
+        desc: {
+          pt: 'Fator de bobinamento de máquinas elétricas',
+          en: 'Winding factor of electrical machines'
+        }
+      }
+    ];
+
+    var grid = document.getElementById('webtools-grid');
+    APPS.forEach(function (a) {
+      var el = document.createElement(a.soon ? 'div' : 'a');
+      el.className = 'webtools-card' + (a.soon ? ' is-coming' : '');
+      if (!a.soon) { el.href = a.href; }
+      el.style.setProperty('--tint', a.tint);
+      el.innerHTML =
+        '<div class="webtools-icon">' + a.icon + '</div>' +
+        '<div class="webtools-name">' + a.name + '</div>' +
+        '<div class="webtools-desc"><span class="lang-pt">' + a.desc.pt + '</span><span class="lang-en">' + a.desc.en + '</span></div>' +
+        (a.soon
+          ? '<span class="webtools-badge"><span class="lang-pt">Em breve</span><span class="lang-en">Coming soon</span></span>'
+          : '');
+      grid.appendChild(el);
+    });
+  })();
+</script>
+
+<span class="lang-pt">Mais ferramentas em breve.</span>
+<span class="lang-en">More tools coming soon.</span>
