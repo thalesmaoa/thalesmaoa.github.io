@@ -4,6 +4,7 @@ description: '<span class="lang-pt">Nova seção de ferramentas web interativas 
 author: "Thales Maia"
 date: "2026-08-12"
 categories: [Notícias, Ferramentas]
+image: "ee-webtools.svg"
 draft: false
 ---
 
