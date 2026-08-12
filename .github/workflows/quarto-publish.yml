@@ -23,6 +23,15 @@ jobs:
           token: ${{ secrets.ROTEIRO_REPO_TOKEN }}
           path: _roteiro-rendered
 
+      # --- IMPORTA FERRAMENTAS DO REPO ee-web-tools ---
+      - name: Checkout EE Web Tools
+        uses: actions/checkout@v4
+        with:
+          repository: thalesmaoa/ee-web-tools
+          ref: main
+          token: ${{ secrets.EE_WEB_TOOLS_TOKEN }}
+          path: _ee-web-tools
+
       # --- PYTHON ---
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -53,6 +62,39 @@ jobs:
           cp    "$SRC"/*.css "$DEST/" 2>/dev/null || true
           cp    "$SRC"/favicon.png "$DEST/" 2>/dev/null || true
           echo "Slides copiados para docs/$DEST"
+
+      # --- COPIA FERRAMENTAS APÓS O RENDER (só as pastas dos apps,
+      #     sem sobrescrever o index da vitrine em docs/tools/) ---
+      - name: Copy EE Web Tools into docs
+        run: |
+          DEST="docs/tools"
+          mkdir -p "$DEST"
+          cp -r _ee-web-tools/winding-calculator "$DEST/winding-factor"
+          echo "Ferramenta copiada para docs/$DEST/winding-factor"
+
+      # --- SITEMAP: adiciona as ferramentas copiadas (não são
+      #     renderizadas pelo Quarto, então não entram sozinhas) ---
+      - name: Append imported tools to sitemap
+        run: |
+          python - <<'EOF'
+          import glob
+          base = "https://thalesmaia.com/"
+          sitemap = "docs/sitemap.xml"
+          urls = [
+              base + f[len("docs/"):]
+              for f in sorted(glob.glob("docs/tools/**/index.html", recursive=True))
+              if f != "docs/tools/index.html"
+          ]
+          if urls:
+              with open(sitemap) as fh:
+                  content = fh.read()
+              entries = "".join(f"  <url>\n    <loc>{u}</loc>\n  </url>\n" for u in urls)
+              with open(sitemap, "w") as fh:
+                  fh.write(content.replace("</urlset>", entries + "</urlset>"))
+              print(f"Sitemap atualizado: {len(urls)} ferramenta(s)")
+          else:
+              print("Nenhuma ferramenta importada; sitemap inalterado")
+          EOF
 
       # --- PUBLICA ---
       - name: Deploy to gh-pages
