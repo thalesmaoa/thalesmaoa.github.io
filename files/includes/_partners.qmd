@@ -57,7 +57,6 @@
     <div class="logo-box"><img src="files/images/partners/NetZero.svg" alt="NetZero"></div>
     <div class="logo-box"><img src="files/images/partners/data-eng.png" alt="DATA Engenharia"></div>
     <div class="logo-box"><img src="files/images/partners/Arcelormittal-logo.svg" alt="ArcelorMittal Bioflorestas"></div>
-    <!-- grupo 2 (idêntico ao grupo 1) -->
     <div class="logo-box"><img src="files/images/partners/lapem-logo.png" alt="LAPEM"></div>
     <div class="logo-box"><img src="files/images/partners/rima-industrial-seeklogo.png" alt="RIMA Industrial"></div>
     <div class="logo-box"><img src="files/images/partners/biagio-turbos-seeklogo.png" alt="RIMA Industrial"></div>
@@ -66,10 +65,11 @@
 <div class="logo-box"><img src="files/images/partners/Fahren_vetorizado.svg" alt="Fahren"></div>
 <div class="logo-box"><img src="files/images/partners/STA_logomarca_SET11.svg" alt="STA"></div>
 <div class="logo-box"><img src="files/images/partners/CTM_logomarca_SET11.svg" alt="CTM"></div>
+    <div class="logo-box"><img src="files/images/partners/alateon.png" alt="Alateon"></div>
 
-  
 
- <div class="logo-box"><img src="files/images/partners/olivapss.png" alt="OlivaPSS"></div>
+
+<div class="logo-box"><img src="files/images/partners/olivapss.png" alt="OlivaPSS"></div>
     <div class="logo-box"><img src="files/images/partners/Stellantis.svg" alt="Stellantis"></div>
     <div class="logo-box"><img src="files/images/partners/CNH_Industrial.svg" alt="CNHi"></div>
     <div class="logo-box"><img src="files/images/partners/Petrobras_logo.svg" alt="Petrobras"></div>
@@ -77,7 +77,6 @@
     <div class="logo-box"><img src="files/images/partners/NetZero.svg" alt="NetZero"></div>
     <div class="logo-box"><img src="files/images/partners/data-eng.png" alt="DATA Engenharia"></div>
     <div class="logo-box"><img src="files/images/partners/Arcelormittal-logo.svg" alt="ArcelorMittal Bioflorestas"></div>
-    <!-- grupo 2 (idêntico ao grupo 1) -->
     <div class="logo-box"><img src="files/images/partners/lapem-logo.png" alt="LAPEM"></div>
     <div class="logo-box"><img src="files/images/partners/rima-industrial-seeklogo.png" alt="RIMA Industrial"></div>
     <div class="logo-box"><img src="files/images/partners/biagio-turbos-seeklogo.png" alt="RIMA Industrial"></div>
@@ -86,6 +85,7 @@
 <div class="logo-box"><img src="files/images/partners/Fahren_vetorizado.svg" alt="Fahren"></div>
 <div class="logo-box"><img src="files/images/partners/STA_logomarca_SET11.svg" alt="STA"></div>
 <div class="logo-box"><img src="files/images/partners/CTM_logomarca_SET11.svg" alt="CTM"></div>
+    <div class="logo-box"><img src="files/images/partners/alateon.png" alt="Alateon"></div>
  
  </div>
 </div>

@@ -77,3 +77,16 @@ Many companies stall the development of test benches or industrial processes bec
 By mastering both **fluid mechanics** and **acquisition electronics**, I can deliver a complete metrology solution. You don't just receive a 3D project or an electronic board; you receive the complete instrument, calibrated and ready to communicate with your PLC or supervision system.
 
 </div>
+
+<div class="partner-logos">
+
+![](/files/images/partners/alateon.png){height=60px}
+
+<!-- ![](/files/images/partners/Stellantis.svg){height=60px} -->
+
+</div>
+
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
