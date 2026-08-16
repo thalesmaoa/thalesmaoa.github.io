@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Thales A. C. Maia">
+  <title>ELE618 - Sistemas Elétricos Industriais</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-2abc1c5b7b5c7eecd6137558e106e4c3.css">
+  <link rel="stylesheet" href="../reveal-site-like.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">ELE618 - Sistemas Elétricos Industriais</h1>
+  <p class="subtitle">Instalações Elétricas - Ademaro A. M. B. Cotrim<br>Capítulo 5 - Linhas elétricas</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Prof.&nbsp;Dr.&nbsp;Thales A. C. Maia
+</div>
+        <p class="quarto-title-affiliation">
+            UFMG - DEE
+          </p>
+    </div>
+</div>
+
+</section>
+<section>
+<section id="aspectos-gerais" class="title-slide slide level1 center">
+<h1>Aspectos gerais</h1>
+
+</section>
+<section id="condutores-elétricos---1-parte" class="slide level2">
+<h2>Condutores elétricos - 1 parte</h2>
+<p>Os condutores elétricos são os principais componentes das linhas elétricas. Os componentes “elementares” são:</p>
+<ul>
+<li class="fragment"><strong>Fio:</strong> produto metálico maciço e flexível, de seção transversal invariável.</li>
+<li class="fragment"><strong>Condutor encordoado:</strong> fios dispostos helicoidalmente, conferindo maior flexibilidade. Pode ser compactado ou não.</li>
+<li class="fragment"><strong>Cabo:</strong> conjunto de fios encordoados, isolados ou não entre si, podendo o conjunto ser isolado ou não.</li>
+<li class="fragment"><strong>Corda:</strong> componente de um cabo, constituído por um conjunto de fios encordoados e não isolados.</li>
+<li class="fragment"><strong>Barra:</strong> condutor rígido, em forma de tubo ou perfilado, fornecido em trechos retilíneos.</li>
+<li class="fragment"><strong>Linha pré-fabricada:</strong> peças em tamanhos padronizados, com proteção mecânica (ex: barramentos blindados).</li>
+<li class="fragment"><strong>Barramento:</strong> conjunto de barras de mesma tensão nominal.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+
+<img data-src="images/index_2026-08-12-11-15-19.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-5_2"><p class="caption">
+Fig.&nbsp;1: Cabos com encordoamento simples (a) e composto (b). Os espaços vazios do terceiro ao último cabo de (b) são os mesmos da perna preenchida.
+</p></section>
+<section id="condutores-elétricos---classe-de-encordoamento" class="slide level2">
+<h2>Condutores elétricos - Classe de encordoamento</h2>
+<p>A NBR NM 280 define seis classes de encordoamento para cobre:</p>
+<ul>
+<li class="fragment"><strong>Classe 1:</strong> sólidos (fios).</li>
+<li class="fragment"><strong>Classe 2:</strong> encordoados, compactados ou não.</li>
+<li class="fragment"><strong>Classe 3:</strong> encordoados não compactados.</li>
+<li class="fragment"><strong>Classes 4, 5 e 6:</strong> flexíveis, com graus de flexibilidade crescentes.</li>
+</ul>
+</section>
+<section id="condutores-elétricos---2-parte" class="slide level2">
+<h2>Condutores elétricos - 2 parte</h2>
+<ul>
+<li class="fragment"><strong>Cabo:</strong> é o conjunto de fios encordoados, isolados ou não entre si, podendo o conjunto ser isolado ou não.</li>
+<li class="fragment"><strong>Corda:</strong> é um componente de um cabo, constituído por um conjunto de fios encordoados e não isolados entre si.</li>
+<li class="fragment"><strong>Coroa:</strong> conjunto de componentes ou de partes de componentes de um cabo, dispostos helicoidalmente e eqüidistantes de um centro de referência.</li>
+<li class="fragment"><strong>Alma:</strong> fio ou conjunto de fios que formam o núcleo central do cabo, para aumentar a sua resistência mecânica.</li>
+<li class="fragment"><strong>Cabos de potência:</strong> são os cabos usados para o transporte de energia elétrica em instalações de geração, transmissão, distribuição e utilização.</li>
+<li class="fragment"><strong>Cabos de controle:</strong> são utilizados nos circuitos de controle de sistemas e equipamentos.</li>
+<li class="fragment"><strong>Cabo revestido:</strong> é um cabo sem isolação ou cobertura, constituído por fios revestidos.</li>
+<li class="fragment"><strong>Isolação:</strong> é o conjunto dos materiais isolantes utilizados para isolar eletricamente.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+
+<img data-src="images/index_2026-08-12-11-25-20.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-5_3"><p class="caption">
+Fig.&nbsp;2: Exemplo de cabos de alumínio com alma de aço (CAA).
+</p></section>
+<section class="slide level2">
+
+
+<img data-src="images/index_2026-08-12-11-26-24.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-5_4"><p class="caption">
+Fig.&nbsp;3: Cabo de controle tipo Sintenax.
+</p></section>
+<section id="condutores-elétricos---3-parte" class="slide level2">
+<h2>Condutores elétricos - 3 parte</h2>
+<ul>
+<li class="fragment"><strong>Condutor isolado:</strong> o fio ou cabo dotado apenas de isolação, e esta pode ser constituída por uma ou mais camadas.</li>
+<li class="fragment"><strong>Cobertura:</strong> em um fio ou cabo é um invólucro externo não metálico e contínuo.</li>
+<li class="fragment"><strong>Fio nu:</strong> é um fio sem revestimento, isolação ou cobertura.</li>
+<li class="fragment"><strong>Cabo unipolar:</strong> é um cabo isolado dotado de cobertura<span class="math inline">\({}^{1}\)</span>.</li>
+<li class="fragment"><strong>Cabo multipolar:</strong> é constituído por dois ou mais cabos isolados e dotado, no mínimo, de cobertura<span class="math inline">\({}^{1}\)</span>.</li>
+<li class="fragment"><strong>Armação:</strong> é o elemento metálico de um cabo que o protege contra esforços mecânicos.</li>
+<li class="fragment"><strong>Acolchoamento:</strong> consiste no material não metálico que protege mecanicamente o componente situado sob a armação.</li>
+<li class="fragment"><strong>Cabo multiplexado:</strong> é um cabo formado por dois ou mais condutores isolados ou por cabos unipolares, dispostos helicoidalmente.</li>
+</ul>
+<p><span class="math inline">\({}^{1}\)</span>Em ambos, a cobertura age como proteção da isolação.</p>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<div id="fig-5_5" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-11-43-28.png" class="quarto-figure quarto-figure-center" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;4: Condutores isolados da linha Superastic cuja isolação é constituída por duas camadas de PVC, sendo a camada externa mais resistente à abrasão e bastante deslizante.
+</figcaption>
+</figure>
+</div>
+<div id="fig-5_7" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-11-46-14.png" class="quarto-figure quarto-figure-center" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;5: Cabos uni e multipolar.
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div id="fig-5_6" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-11-43-41.png" class="quarto-figure quarto-figure-center" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;6: Cabo coberto utilizado em redes aéreas de distribuição.
+</figcaption>
+</figure>
+</div>
+<div id="fig-5_9" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-11-47-57.png" class="quarto-figure quarto-figure-center" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;7: Cabo multiplexado.
+</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="condutores-elétricos---4-parte" class="slide level2">
+<h2>Condutores elétricos - 4 parte</h2>
+<ul>
+<li class="fragment"><strong>Condutor setorial:</strong> é um condutor cuja seção transversal tem a forma aproximada de um setor de um círculo.</li>
+<li class="fragment"><strong>Cabo setorial:</strong> é um cabo multipolar cujas veias são condutores isolados setoriais.</li>
+<li class="fragment"><strong>Cordoalha:</strong> é um condutor com forma de tecido de fios metálicos.</li>
+<li class="fragment"><strong>Cordão:</strong> é um cabo flexível com reduzido número de condutores isolados.</li>
+<li class="fragment"><strong>Blindagem:</strong> é o envoltório condutor ou semicondutor, aplicado sobre o condutor ou sobre o condutor isolado.</li>
+<li class="fragment"><strong>Cabos secos:</strong> são cabos unipolares ou multipolares cuja isolação é constituída exclusivamente por material sólido.</li>
+<li class="fragment"><strong>Cabo sob pressão:</strong> é um cabo de potência cuja isolação é mantida sob pressão superior à pressão atmosférica.</li>
+<li class="fragment"><strong>Cabo concêntrico:</strong> é um cabo multipolar constituído por um condutor central isolado.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div id="fig-5_10" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-11-53-25.png" class="quarto-figure quarto-figure-center" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;8: Cabo tripolar setorial.
+</figcaption>
+</figure>
+</div>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div id="fig-5_11" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-11-55-55.png" class="quarto-figure quarto-figure-center" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;9: Cordões.
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<div id="fig-5_12" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-11-56-08.png" class="quarto-figure quarto-figure-center" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;10: Cabo concêntrico.
+</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="aplicação-dos-cabos-de-potência" class="slide level2">
+<h2>Aplicação dos cabos de potência</h2>
+<ul>
+<li class="fragment"><strong>Condutores isolados:</strong> circuitos terminais, circuitos de distribuição e ligações internas de quadros de distribuição (principalmente os flexíveis).</li>
+<li class="fragment"><strong>Cabos unipolares:</strong> circuitos terminais e circuitos de distribuição.</li>
+<li class="fragment"><strong>Cabos multipolares:</strong> circuitos terminais, circuitos de distribuição e ligações de equipamentos móveis ou portáteis (os cabos flexíveis).</li>
+<li class="fragment"><strong>Cabos multiplexados:</strong> circuitos de distribuição e circuitos terminais (em certos casos).</li>
+<li class="fragment"><strong>Cordões:</strong> ligações de equipamentos móveis ou portáteis.</li>
+</ul>
+</section>
+<section id="temperaturas-de-serviço" class="slide level2">
+<h2>Temperaturas de Serviço</h2>
+<ul>
+<li><strong>Regime permanente:</strong> temperatura máxima para serviço contínuo.</li>
+<li><strong>Sobrecarga:</strong> temperatura alcançada em regime de sobrecarga.</li>
+<li><strong>Curto-circuito:</strong> temperatura alcançada durante o período de curto-circuito.</li>
+</ul>
+</section>
+<section id="cobre-versus-alumínio" class="slide level2">
+<h2>Cobre versus Alumínio</h2>
+<ul>
+<li><strong>Cobre:</strong> Mais usado, melhor condutividade, menos oxidação, maior eletropositividade (menos corrosão galvânica).</li>
+<li><strong>Alumínio:</strong> Mais leve (densidade menor), custo menor, ideal para linhas aéreas de transmissão/distribuição.</li>
+</ul>
+<div class="fragment">
+<p>Resistência de um condutor: <span class="math display">\[
+   R = \rho \frac{l}{S} ~ (\Omega)
+\]</span></p>
+<p>onde, <span class="math inline">\(\rho\)</span> é a resistividade do material.</p>
+<p><span class="math display">\[
+   \rho = R \frac{S}{l} ~ (\Omega \cdotp m \hspace{0.5em}  \text{ou} \hspace{0.5em}  \Omega \cdotp mm^2 / m)
+\]</span></p>
+<p>Variação da resistividade com a temperatura: <span class="math inline">\(\rho_2 = \rho_1 [1 + \alpha_1 (\theta_2 - \theta_1)]\)</span></p>
+<p>A resistência em corrente alternada é aumentada pelos <strong>efeitos pelicular</strong> e de <strong>proximidade</strong>.</p>
+</div>
+</section>
+<section id="correção-pela-temperatura" class="slide level2">
+<h2>Correção pela temperatura</h2>
+<div id="tbl-5_5" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-5_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tab.&nbsp;1: Fatores de correção da temperatura (<span class="math inline">\(K_{\theta}\)</span>) para condutores de cobre.
+</figcaption>
+<div aria-describedby="tbl-5_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Temp. (°C)</th>
+<th style="text-align: center;">Fator <span class="math inline">\(K_\theta\)</span></th>
+<th style="text-align: center;">Temp. (°C)</th>
+<th style="text-align: center;">Fator <span class="math inline">\(K_\theta\)</span></th>
+<th style="text-align: center;">Temp. (°C)</th>
+<th style="text-align: center;">Fator <span class="math inline">\(K_\theta\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1,064</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">1,025</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">0,988</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">1,059</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">1,020</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">0,984</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">1,055</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">1,016</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">0,980</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">1,050</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">1,012</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">0,977</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">1,046</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">1,008</td>
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">0,973</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">1,042</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">1,004</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">0,969</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">1,037</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">1,000</td>
+<td style="text-align: center;">29</td>
+<td style="text-align: center;">0,965</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">1,033</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">0,996</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">0,962</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">1,029</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;">0,992</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: center;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><em>Nota: Os valores dos fatores de correção <span class="math inline">\(K_\theta\)</span> estão baseados no coeficiente de temperatura de resistência de 0,004°C⁻¹ a 20°C.</em></p>
+</section>
+<section id="reatância-indutiva" class="slide level2">
+<h2>Reatância Indutiva</h2>
+<p>A indutância (<span class="math inline">\(L\)</span>) e a reatância (<span class="math inline">\(X_L\)</span>) dependem da distância entre os condutores:</p>
+<p><span class="math display">\[
+   L = k + 0,46 \log \frac{2S_M}{d_c} \quad (mH/km)
+\]</span></p>
+<p><span class="math display">\[
+   X_L = 2\pi f L \times 10^{-3} \quad (\Omega/km)
+\]</span></p>
+</section></section>
+<section>
+<section id="isolações" class="title-slide slide level1 center">
+<h1>Isolações</h1>
+
+</section>
+<section id="gradiente-e-rigidez-dielétrica" class="slide level2">
+<h2>Gradiente e Rigidez Dielétrica</h2>
+<ul>
+<li>A isolação é o material dielétrico que separa o condutor do meio, suportando a diferença de potencial entre eles.</li>
+<li><strong>Gradiente de potencial:</strong> A variação do campo elétrico no dielétrico. A rigidez dielétrica é crucial na escolha do material.</li>
+</ul>
+<div id="fig-5_13" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-12-25-21.png" class="quarto-figure quarto-figure-center" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;11: Gradiente de potencial no dielétrico.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="materiais-utilizados" class="slide level2">
+<h2>Materiais Utilizados</h2>
+<p>Podem ser estratificados (papel impregnado a óleo) ou sólidos (termoplásticos e termofixos).</p>
+<ul>
+<li><strong>Papel impregnado:</strong> ainda utilizado, principalmente, em cabos de média e de alta tensão.</li>
+<li><strong>Cabo OF (oil-filled):</strong> cabo a óleo mineral fluido submetido a uma baixa pressão.</li>
+<li><strong>Isolantes sólidos:</strong> são, hoje em dia, os mais utilizados nos cabos de baixa e de média tensão.</li>
+</ul>
+</section>
+<section id="características-comuns-dos-isolantes-sólidos" class="slide level2">
+<h2>Características comuns dos isolantes sólidos</h2>
+<ul>
+<li class="fragment">Homogeneidade da isolação e boa resistência ao envelhecimento em serviço.</li>
+<li class="fragment">Ausência de escoamento.</li>
+<li class="fragment">Reduzida sensibilidade à umidade.</li>
+<li class="fragment">Insensibilidade às vibrações.</li>
+<li class="fragment">Bom comportamento ao fogo.</li>
+</ul>
+</section>
+<section id="cloreto-de-polivinila-pvc" class="slide level2">
+<h2>Cloreto de Polivinila (PVC)</h2>
+<ul>
+<li class="fragment"><strong>Composição:</strong> mistura de cloreto de polivinila puro (polímero) com plastificantes, estabilizantes e cargas. Termoplástico.</li>
+<li class="fragment"><strong>Rigidez dielétrica:</strong> elevada.</li>
+<li class="fragment"><strong>Perdas dielétricas:</strong> elevadas.</li>
+<li class="fragment"><strong>Estabilidade química:</strong> considerável.</li>
+<li class="fragment"><strong>Fogo:</strong> transmite mal o fogo.</li>
+<li class="fragment"><strong>Envelhecimento térmico:</strong> pode ser eficazmente combatido com estabilizantes.</li>
+<li class="fragment"><strong>Coloração:</strong> facilmente colorido com cores vivas.</li>
+<li class="fragment"><strong>Aplicação:</strong> ótimo isolante para cabos de potência em BT e MT (até 10 kV).</li>
+</ul>
+</section>
+<section id="borracha-etileno-propileno-epr" class="slide level2">
+<h2>Borracha Etileno-Propileno (EPR)</h2>
+<ul>
+<li class="fragment"><strong>Reticulação:</strong> compostos de EPR são, em geral, reticulados por meio de peróxidos orgânicos (termofixo).</li>
+<li class="fragment"><strong>Flexibilidade:</strong> muito grande.</li>
+<li class="fragment"><strong>Descargas e radiações ionizantes:</strong> resistência excepcional.</li>
+<li class="fragment"><strong>Ângulo de perdas:</strong> bastante baixo.</li>
+<li class="fragment"><strong>Deformação térmica:</strong> boa resistência.</li>
+<li class="fragment"><strong>Umidade:</strong> absorção razoável.</li>
+<li class="fragment"><strong>Envelhecimento térmico:</strong> bom comportamento.</li>
+<li class="fragment"><strong>Rigidez dielétrica:</strong> baixa dispersão.</li>
+<li class="fragment"><strong>Conclusão:</strong> ótimo isolante sólido.</li>
+</ul>
+</section>
+<section id="polietileno-reticulado-xlpe" class="slide level2">
+<h2>Polietileno Reticulado (XLPE)</h2>
+<ul>
+<li class="fragment"><strong>Reticulação:</strong> a reticulação química do polietileno torna-o termofixo, adequado à construção de isolações de cabos.</li>
+<li class="fragment"><strong>Deformação térmica:</strong> resistente (suporta até 250 °C no curto-circuito).</li>
+<li class="fragment"><strong>Fissuração (stress cracking):</strong> a reticulação faz desaparecer por completo essa tendência.</li>
+<li class="fragment"><strong>Baixas temperaturas:</strong> a reticulação não modifica sensivelmente o bom comportamento do polietileno.</li>
+<li class="fragment"><strong>Cargas minerais e orgânicas:</strong> a reticulação permite a incorporação, melhorando o comportamento mecânico.</li>
+<li class="fragment"><strong>Aplicação:</strong> cabos de baixa e de média tensão.</li>
+</ul>
+</section></section>
+<section>
+<section id="blindagens" class="title-slide slide level1 center">
+<h1>Blindagens</h1>
+
+</section>
+<section id="blindagens-1" class="slide level2">
+<h2>Blindagens</h2>
+<ul>
+<li><strong>Sobre o condutor (interna):</strong> Torna o campo elétrico uniforme, evitando ionizações localizadas e depreciação.</li>
+<li><strong>Sobre a isolação:</strong> Distribui uniformemente o campo radial dentro do cabo isolado.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div id="fig-5_14" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-12-46-54.png" class="quarto-figure quarto-figure-center" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;12: Campo elétrico do condutor (a) sem blindagem e (b) com blindagem.
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<div id="fig-5_15" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/campo_blindagem.png" class="quarto-figure quarto-figure-center" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;13: Blindagem sobre a isolação.
+</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section class="slide level2">
+
+<p>Nos cabos secos, a camada condutora é constituída por fitas ou fios de cobre e fornece um caminho de baixa impedância para a condução das correntes induzidas provenientes das correntes de curto-circuito de outros cabos.</p>
+<div id="fig-5_16" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-13-00-48.png" class="quarto-figure quarto-figure-center" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;14: Cabos blindados.
+</figcaption>
+</figure>
+</div>
+</section></section>
+<section>
+<section id="proteção" class="title-slide slide level1 center">
+<h1>Proteção</h1>
+
+</section>
+<section id="proteções" class="slide level2">
+<h2>Proteções</h2>
+<ul>
+<li><strong>Não Metálicas:</strong> Cobertura externa contra sol, chuva e produtos químicos (geralmente PVC, neoprene).</li>
+<li><strong>Metálicas:</strong> Armações (fita de aço) aplicadas para resistir a danos mecânicos e esforço de tração.</li>
+</ul>
+<div id="fig-5_17" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-13-01-36.png" class="quarto-figure quarto-figure-center" style="width:30.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;15: Proteção não metálica.
+</figcaption>
+</figure>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="images/index_2026-08-12-13-03-22.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-5_18"><p class="caption">
+Fig.&nbsp;16: Proteções metálicas dos cabos.
+</p></section></section>
+<section>
+<section id="níveis-de-isolamento-de-tensão" class="title-slide slide level1 center">
+<h1>Níveis de isolamento de tensão</h1>
+
+</section>
+<section id="tensão-de-isolamento" class="slide level2">
+<h2>Tensão de isolamento</h2>
+<p>A escolha da tensão de isolamento (<span class="math inline">\(V_0/V\)</span>) depende da categoria do sistema (como ele aterra seu neutro):</p>
+<ul>
+<li><strong>Categoria 1:</strong> Sistemas que eliminam a falta terra rapidamente (máximo 1h).</li>
+<li><strong>Categoria 2:</strong> Sistemas que operam mais tempo em condição de falta fase-terra, submetendo as fases não afetadas a sobretensões maiores (<span class="math inline">\(U \times \sqrt{3}\)</span>).</li>
+</ul>
+</section></section>
+<section>
+<section id="perdas-dielétricas" class="title-slide slide level1 center">
+<h1>Perdas dielétricas</h1>
+
+</section>
+<section id="parcela-resistiva-e-capacitiva" class="slide level2">
+<h2>Parcela resistiva e capacitiva</h2>
+<ul>
+<li>Ocorrem nos cabos energizados em AC.</li>
+<li>A corrente <span class="math inline">\(I\)</span> que flui pelo dielétrico é composta por duas parcelas:
+<ul>
+<li>Ativa (perdas)</li>
+<li>Puramente reativa (capacitiva)</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+  I = \sqrt{I_p^2 + I_c^2}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(I_p\)</span>: corrente em fase com a tensão fase-terra <span class="math inline">\(V_0\)</span>, responsável pelas perdas.</li>
+<li><span class="math inline">\(I_c\)</span>: corrente que flui pelo capacitor equivalente (adiantada 90° em relação a <span class="math inline">\(U_0\)</span>).</li>
+</ul>
+</section>
+<section id="perdas-dielétricas-1" class="slide level2">
+<h2>Perdas dielétricas</h2>
+<p><span class="math display">\[
+  P_d = U_0 I_p \quad \text{e} \quad I_p = I_c \cdot \text{tg } \delta
+\]</span></p>
+<p>Logo: <span class="math display">\[
+  P_d = U_0 I_c \text{ tg } \delta
+\]</span></p>
+<p><span class="math display">\[
+  X_c = \frac{1}{2\pi f C} (\Omega \cdot \text{km}) \quad \text{e} \quad I_c = \frac{U_0}{X_c}
+\]</span></p>
+<p>Obtêm-se duas expressões para as perdas dielétricas:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[
+  P_d = 2\pi f C U_0^2 \cdot \text{tg } \delta \text{ (W/km)}
+\]</span> <span class="math display">\[
+  P_d = \frac{U_0^2 \cdot \text{tg } \delta}{X_c} \text{ (W/km)}
+\]</span></p>
+</div><div class="column" style="width:50%;">
+<div id="fig-5_26" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_26-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-13-25-00.png" class="quarto-figure quarto-figure-center" style="width:65.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_26-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;17: Definição do ângulo <span class="math inline">\(\delta\)</span>
+</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="fator-de-perdas-texttg-delta" class="slide level2">
+<h2>Fator de perdas (<span class="math inline">\(\text{tg } \delta\)</span>)</h2>
+<p>O fator <span class="math inline">\(\text{tg } \delta\)</span> é chamado <strong>fator de perdas</strong>. Seus valores máximos admissíveis à temperatura de serviço são:</p>
+<ul>
+<li><strong>0,100</strong> para cabos com isolação em PVC.</li>
+<li><strong>0,040</strong> para cabos com isolação em EPR.</li>
+<li><strong>0,008</strong> para cabos com isolação em XLPE.</li>
+</ul>
+</section></section>
+<section>
+<section id="cabos-sob-fogo-e-incêndio" class="title-slide slide level1 center">
+<h1>Cabos sob fogo e incêndio</h1>
+
+</section>
+<section id="classificação" class="slide level2">
+<h2>Classificação</h2>
+<p>Os cabos elétricos possuem volume de orgânicos combustíveis. Classificação:</p>
+<ol type="1">
+<li><strong>Propagador da chama:</strong> Entra em combustão e mantém o fogo (ex: XLPE, EPR puro).</li>
+<li><strong>Propagação reduzida:</strong> O material isolante/cobertura é auto-extinguível dependendo do tempo de exposição (ex: PVC).</li>
+<li><strong>Resistente à chama:</strong> Não propaga a chama mesmo com exposição longa.</li>
+<li><strong>Baixa emissão de fumaça e gases tóxicos:</strong> Isentos de compostos halogenados, vitais para locais de alta densidade de público.</li>
+<li><strong>Circuitos de segurança:</strong> Mantêm a integridade do circuito (ex: alarmes, bombas) mesmo durante o incêndio.</li>
+</ol>
+</section></section>
+<section>
+<section id="designação-e-normas" class="title-slide slide level1 center">
+<h1>Designação e Normas</h1>
+
+</section>
+<section id="norma" class="slide level2">
+<h2>Norma</h2>
+<ul>
+<li><strong>NBR 9311:</strong> Define a designação (Número, Seção Nominal, Material, Isolação, Blindagem).</li>
+<li>As normas definem os ensaios de propagação vertical da chama, queima em feixes e emissão de fumaça para a aprovação dos materiais.</li>
+</ul>
+</section>
+<section id="exemplos-de-designação-de-cabos---parte-1" class="slide level2">
+<h2>Exemplos de Designação de Cabos - Parte 1</h2>
+<p><strong>Como ler a designação de um cabo?</strong> A nomenclatura nos informa quantidade, seção, encordoamento, isolação e tensão suportada.</p>
+<ul>
+<li><code>1 x 6 MV-F 450/750 V</code>
+<ul>
+<li><strong>1 x 6:</strong> 1 condutor de 6 mm² (cobre).</li>
+<li><strong>M:</strong> Maciço.</li>
+<li><strong>V-F:</strong> Isolação em PVC (70°C) resistente à chama.</li>
+<li><strong>450/750 V:</strong> Tensão de isolamento.</li>
+</ul></li>
+<li><code>1 x 35 R2 VV-F 0,6/1 kV</code>
+<ul>
+<li><strong>1 x 35:</strong> 1 condutor de 35 mm² (cobre).</li>
+<li><strong>R2:</strong> Encordoamento classe 2.</li>
+<li><strong>VV-F:</strong> Isolação em PVC (V) + Cobertura em PVC (V), resistente à chama (F).</li>
+<li><strong>0,6/1 kV:</strong> Tensão de isolamento.</li>
+</ul></li>
+</ul>
+</section>
+<section id="exemplos-de-designação---parte-2" class="slide level2">
+<h2>Exemplos de Designação - Parte 2</h2>
+<ul>
+<li><code>3 x 25 R2 E OV 0,6/1 kV</code>
+<ul>
+<li><strong>3 x 25:</strong> Cabo tripolar, condutores de 25 mm² (cobre).</li>
+<li><strong>R2:</strong> Encordoamento classe 2.</li>
+<li><strong>E OV:</strong> Isolação de EPR para 90°C (E) com cobertura de PVC (V).</li>
+<li><strong>0,6/1 kV:</strong> Tensão de isolamento.</li>
+</ul></li>
+<li><code>3 x 1 x 95 + 50 N AR 2 Z 0,6/1 kV</code>
+<ul>
+<li><strong>Cabo multiplexado auto-sustentado.</strong></li>
+<li><strong>Fases:</strong> 3 condutores de alumínio (A) de 95 mm², classe 2 (R2), isolados em XLPE (Z) para 90°C.</li>
+<li><strong>Neutro:</strong> 1 condutor de sustentação de alumínio liga NU (N) de 50 mm².</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="linhas-elétricas" class="title-slide slide level1 center">
+<h1>Linhas elétricas</h1>
+
+</section>
+<section id="tipos-de-linhas-elétricas" class="slide level2">
+<h2>Tipos de linhas elétricas</h2>
+<p><strong>Linha (elétrica):</strong> conjunto constituído por um ou mais condutores, com os elementos de sua fixação e proteção mecânica.</p>
+<p><strong>Tipos de Linhas:</strong></p>
+<ul>
+<li>Linha aberta e Linha aérea</li>
+<li>Linha aparente e Linha em parede ou no teto</li>
+<li>Linha embutida e Linha subterrânea</li>
+<li>Linha pré-fabricada</li>
+</ul>
+<p><strong>Elementos de fixação, suporte e proteção mecânica:</strong></p>
+<ul>
+<li>Bandeja, Prateleira, Escada ou leito para cabos, Suportes horizontais.</li>
+<li>Eletroduto, Eletrocalha, Canaleta, Moldura, Bloco alveolado, Perfilado.</li>
+<li>Caixa de derivação, Condulete.</li>
+<li>Galeria, Poço, Espaço de construção.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:30%;">
+<div id="fig-5_29" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_29-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-15-13-33.png" class="quarto-figure quarto-figure-center" style="width:65.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_29-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;18: Eletrocalha com paredes perfuradas e tampa removível encaixada.
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:70%;">
+<div id="fig-5_31" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_31-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-15-13-48.png" class="quarto-figure quarto-figure-center" style="width:65.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_31-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;19: Corte de uma canaleta (com tampa) ventilada.
+</figcaption>
+</figure>
+</div>
+</div></div>
+<div id="fig-5_30" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-5_30-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-12-15-14-02.png" class="quarto-figure quarto-figure-center" style="width:65.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5_30-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;20: Corte de um bloco alveolado com dois furos
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="eletrodutos---part-1" class="slide level2">
+<h2>Eletrodutos - Part 1</h2>
+<p>A função principal de um eletroduto é conter o caminho da fiação elétrica e proteger os condutores contra certas influências externas (como choques mecânicos).</p>
+<p><strong>Materiais de Fabricação:</strong></p>
+<ul>
+<li><strong>Metálicos:</strong> Geralmente de aço-carbono, são resistentes à corrosão (galvanizados, zincados ou esmaltados).</li>
+<li><strong>Isolantes:</strong> Geralmente em PVC ou polietileno. Os de PVC são os mais utilizados no Brasil.</li>
+</ul>
+<p><strong>Eletrodutos metálicos rígidos:</strong></p>
+<ul>
+<li>NBR 5597: tipos <em>pesado</em> e <em>extra</em>.</li>
+<li>NBR 5598: um único tipo, de paredes mais grossas.</li>
+<li>Destinados, em princípio, a instalações industriais e análogas.</li>
+</ul>
+</section>
+<section id="eletrodutos---part-2" class="slide level2">
+<h2>Eletrodutos - Part 2</h2>
+<p><strong>Classificação (Rígidos ou Isolantes):</strong></p>
+<ul>
+<li><strong>Rígido:</strong> não pode ser curvado a não ser com ajuda mecânica.</li>
+<li><strong>Curvável:</strong> pode ser curvado com a mão, usando uma força razoável.</li>
+<li><strong>Transversalmente elástico:</strong> curvável; deformado sob força transversal, retoma a forma original logo após.</li>
+<li><strong>Flexível:</strong> metálico ou isolante, curvado com força reduzida, destinado a ser freqüentemente dobrado.</li>
+</ul>
+</section>
+<section id="ocupação-de-eletrodutos-e-instalações" class="slide level2">
+<h2>Ocupação de Eletrodutos e Instalações</h2>
+<ul>
+<li><strong>Ocupação Máxima:</strong> Apenas <span class="math inline">\(53\%\)</span> da área útil para 1 cabo, <span class="math inline">\(31\%\)</span> para 2 cabos, e <span class="math inline">\(40\%\)</span> para 3 ou mais.</li>
+<li><strong>Trechos Contínuos:</strong> Até 15m (internos) e 30m (externos) se retilíneos. Subtrair 3m para cada curva de 90°.</li>
+<li><strong>Caixas de Derivação:</strong> Obrigatórias em pontos de entrada/saída, emendas, derivações ou para dividir a tubulação.</li>
+</ul>
+</section>
+<section id="cálculo-da-ocupação-de-um-eletroduto" class="slide level2">
+<h2>Cálculo da Ocupação de um Eletroduto</h2>
+<p>A área útil (<span class="math inline">\(A_E\)</span>) de um eletroduto: <span class="math display">\[ A_E = \frac{\pi}{4}(d_e - 2e)^2 \quad (\text{mm}^2) \]</span> onde <span class="math inline">\(d_e\)</span> é o diâmetro externo e <span class="math inline">\(e\)</span> a espessura.</p>
+<p>A área total de um condutor/cabo isolado (<span class="math inline">\(A_c\)</span>): <span class="math display">\[ A_c = \frac{\pi}{4}d^2 \quad (\text{mm}^2) \]</span></p>
+<p>O número máximo (<span class="math inline">\(N\)</span>) de condutores iguais (para 3 ou mais): <span class="math display">\[ N = \frac{0,4 A_E}{A_c} \]</span></p>
+</section>
+<section id="exemplo-1" class="slide level2">
+<h2>Exemplo 1</h2>
+<p>Queremos instalar condutores isolados de 2,5 mm² (diâmetro <span class="math inline">\(d = 3,7\)</span> mm) em um eletroduto de aço carbono tamanho 20 (<span class="math inline">\(d_e = 26,5\)</span> mm e <span class="math inline">\(e = 2,25\)</span> mm). Quantos condutores cabem no eletroduto?</p>
+<div id="cell-42" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="" aria-label="1"></a><span class="co"># Dados do Exemplo 1</span></span>
+<span id="cb1-2"><a href="" aria-label="2"></a>d <span class="op">=</span> <span class="fl">3.7</span>       <span class="co"># diâmetro do condutor isolado (mm)</span></span>
+<span id="cb1-3"><a href="" aria-label="3"></a>de <span class="op">=</span> <span class="fl">26.5</span>     <span class="co"># diâmetro externo do eletroduto (mm)</span></span>
+<span id="cb1-4"><a href="" aria-label="4"></a><span class="cn">e</span> <span class="op">=</span> <span class="fl">2.25</span>      <span class="co"># espessura do eletroduto (mm)</span></span>
+<span id="cb1-5"><a href="" aria-label="5"></a></span>
+<span id="cb1-6"><a href="" aria-label="6"></a><span class="co"># Cálculo das áreas</span></span>
+<span id="cb1-7"><a href="" aria-label="7"></a>Ac <span class="op">=</span> (<span class="cn">pi</span> <span class="op">/</span> <span class="fl">4</span>) <span class="op">*</span> d<span class="op">^</span><span class="fl">2</span></span>
+<span id="cb1-8"><a href="" aria-label="8"></a>Ae <span class="op">=</span> (<span class="cn">pi</span> <span class="op">/</span> <span class="fl">4</span>) <span class="op">*</span> (de <span class="op">-</span> <span class="fl">2</span><span class="op">*</span><span class="cn">e</span>)<span class="op">^</span><span class="fl">2</span></span>
+<span id="cb1-9"><a href="" aria-label="9"></a></span>
+<span id="cb1-10"><a href="" aria-label="10"></a><span class="co"># Cálculo do número de cabos (ocupação de 40%)</span></span>
+<span id="cb1-11"><a href="" aria-label="11"></a>N <span class="op">=</span> (<span class="fl">0.4</span> <span class="op">*</span> Ae) <span class="op">/</span> Ac</span>
+<span id="cb1-12"><a href="" aria-label="12"></a></span>
+<span id="cb1-13"><a href="" aria-label="13"></a><span class="fu">println</span>(<span class="st">"Área útil do eletroduto (Ae): "</span>, <span class="fu">round</span>(Ae, digits<span class="op">=</span><span class="fl">2</span>), <span class="st">" mm²"</span>)</span>
+<span id="cb1-14"><a href="" aria-label="14"></a><span class="fu">println</span>(<span class="st">"Área do condutor (Ac): "</span>, <span class="fu">round</span>(Ac, digits<span class="op">=</span><span class="fl">2</span>), <span class="st">" mm²"</span>)</span>
+<span id="cb1-15"><a href="" aria-label="15"></a><span class="fu">println</span>(<span class="st">"O número máximo de condutores é: "</span>, <span class="fu">floor</span>(<span class="dt">Int</span>, N))</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Área útil do eletroduto (Ae): 380.13 mm²
+Área do condutor (Ac): 10.75 mm²
+O número máximo de condutores é: 14</code></pre>
+</div>
+</div>
+</section>
+<section id="exemplo-2" class="slide level2">
+<h2>Exemplo 2</h2>
+<p>Devemos instalar três circuitos em um mesmo eletroduto rígido de PVC:</p>
+<ul>
+<li>Circuito 1: 3 condutores de 2,5 mm² (d = 3,7 mm).</li>
+<li>Circuito 2: 3 condutores de 4 mm² (d = 4,2 mm).</li>
+<li>Circuito 3: 4 condutores de 6 mm² (d = 4,8 mm).</li>
+</ul>
+<p>Qual a área mínima útil necessária para esse eletroduto?</p>
+<div id="cell-45" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="" aria-label="1"></a><span class="co"># Dados do Exemplo 2</span></span>
+<span id="cb3-2"><a href="" aria-label="2"></a>    c1_qtd, c1_d <span class="op">=</span> <span class="fl">3</span>, <span class="fl">3.7</span></span>
+<span id="cb3-3"><a href="" aria-label="3"></a>    c2_qtd, c2_d <span class="op">=</span> <span class="fl">3</span>, <span class="fl">4.2</span></span>
+<span id="cb3-4"><a href="" aria-label="4"></a>    c3_qtd, c3_d <span class="op">=</span> <span class="fl">4</span>, <span class="fl">4.8</span></span>
+<span id="cb3-5"><a href="" aria-label="5"></a></span>
+<span id="cb3-6"><a href="" aria-label="6"></a>    <span class="co"># Cálculo das áreas de cada circuito</span></span>
+<span id="cb3-7"><a href="" aria-label="7"></a>    Ac1 <span class="op">=</span> c1_qtd <span class="op">*</span> (<span class="cn">pi</span> <span class="op">/</span> <span class="fl">4</span>) <span class="op">*</span> c1_d<span class="op">^</span><span class="fl">2</span></span>
+<span id="cb3-8"><a href="" aria-label="8"></a>    Ac2 <span class="op">=</span> c2_qtd <span class="op">*</span> (<span class="cn">pi</span> <span class="op">/</span> <span class="fl">4</span>) <span class="op">*</span> c2_d<span class="op">^</span><span class="fl">2</span></span>
+<span id="cb3-9"><a href="" aria-label="9"></a>    Ac3 <span class="op">=</span> c3_qtd <span class="op">*</span> (<span class="cn">pi</span> <span class="op">/</span> <span class="fl">4</span>) <span class="op">*</span> c3_d<span class="op">^</span><span class="fl">2</span></span>
+<span id="cb3-10"><a href="" aria-label="10"></a></span>
+<span id="cb3-11"><a href="" aria-label="11"></a>    Ac_total <span class="op">=</span> Ac1 <span class="op">+</span> Ac2 <span class="op">+</span> Ac3</span>
+<span id="cb3-12"><a href="" aria-label="12"></a></span>
+<span id="cb3-13"><a href="" aria-label="13"></a>    <span class="co"># Área útil exigida (ocupação máxima de 40% para 3 ou mais condutores)</span></span>
+<span id="cb3-14"><a href="" aria-label="14"></a>    Ae_min <span class="op">=</span> Ac_total <span class="op">/</span> <span class="fl">0.4</span></span>
+<span id="cb3-15"><a href="" aria-label="15"></a></span>
+<span id="cb3-16"><a href="" aria-label="16"></a>    <span class="fu">println</span>(<span class="st">"Área total dos condutores (Ac): "</span>, <span class="fu">round</span>(Ac_total, digits<span class="op">=</span><span class="fl">2</span>), <span class="st">" mm²"</span>)</span>
+<span id="cb3-17"><a href="" aria-label="17"></a>    <span class="fu">println</span>(<span class="st">"A área mínima útil do eletroduto deve ser de: "</span>, <span class="fu">round</span>(Ae_min, digits<span class="op">=</span><span class="fl">2</span>),</span>
+<span id="cb3-18"><a href="" aria-label="18"></a>  <span class="st">" mm²"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Área total dos condutores (Ac): 146.2 mm²
+A área mínima útil do eletroduto deve ser de: 365.5 mm²</code></pre>
+</div>
+</div>
+<p>Com base nessa área, escolhemos nas tabelas comerciais o eletroduto cujo tamanho atenda esse requisito.</p>
+</section>
+<section id="perfilados" class="slide level2">
+<h2>Perfilados</h2>
+<ul>
+<li>Nos perfilados, podem ser instalados condutores isolados, cabos unipolares e multipolares.</li>
+<li><strong>Atenção:</strong> O uso de condutores isolados em perfilados abertos, perfurados ou sem tampa só é admitido se:
+<ul>
+<li>Estiverem instalados em locais só acessíveis a pessoas advertidas (BA4) ou qualificadas (BA5).</li>
+<li>Ou instalados a uma altura <strong>mínima de 2,50 m do piso</strong>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="exemplos-de-tipos-de-linhas" class="slide level2">
+<h2>Exemplos de Tipos de Linhas</h2>
+<div id="tbl-5_27" class="quarto-float quarto-figure quarto-figure-center" data-tbl-colwidths="[5, 25, 55, 15]">
+<figure class="quarto-float quarto-float-tbl">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-5_27-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tab.&nbsp;2: Tipos de linhas elétricas (maneira de instalar).
+</figcaption>
+<div aria-describedby="tbl-5_27-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 25%">
+<col style="width: 55%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Nº</th>
+<th style="text-align: center;">Esquema Ilustrativo</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: center;">Método Ref.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><img data-src="images/index_2026-08-12-15-50-37.png" style="width:50.0%"></td>
+<td style="text-align: left;">Condutores isolados unipolares em eletroduto circular embutido em parede termicamente isolante.</td>
+<td style="text-align: center;">A1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>12</strong></td>
+<td style="text-align: center;"><img data-src="images/index_%60(incluir%20figura%2012)%60.png" style="width:50.0%"></td>
+<td style="text-align: left;">Cabos unipolares ou cabo multipolar em bandeja não perfurada, perfilado ou prateleira.</td>
+<td style="text-align: center;">C</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>21</strong></td>
+<td style="text-align: center;"><img data-src="images/index_%60(incluir%20figura%2021)%60.png" style="width:50.0%"></td>
+<td style="text-align: left;">Cabos unipolares ou multipolares em espaço de construção.</td>
+<td style="text-align: center;">B1/B2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>52</strong></td>
+<td style="text-align: center;"><img data-src="images/index_2026-08-12-15-54-22.png" style="width:20.0%"></td>
+<td style="text-align: left;">Cabos unipolares/multipolar embutido(s) diretamente em alvenaria sem proteção adicional.</td>
+<td style="text-align: center;">C</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="linhas-subterrâneas-e-em-canaletas" class="slide level2">
+<h2>Linhas Subterrâneas e em Canaletas</h2>
+<ul>
+<li><strong>Cabos enterrados:</strong> A NBR 5410 admite, em linhas enterradas (cabos diretamente enterrados ou em eletrodutos enterrados), somente <strong>cabos unipolares ou multipolares</strong>.</li>
+<li>Em linhas com cabos diretamente enterrados <strong>sem proteção mecânica adicional</strong>, só são admitidos <strong>cabos armados</strong>.</li>
+<li>Condutores isolados em eletroduto enterrado só são admitidos se, no trecho enterrado, não houver nenhuma caixa de passagem e/ou derivação enterrada e for garantida a estanqueidade do eletroduto.</li>
+<li><strong>Profundidades mínimas:</strong>
+<ul>
+<li><span class="math inline">\(0,70\)</span> m em terreno normal;</li>
+<li><span class="math inline">\(1,00\)</span> m na travessia de vias acessíveis a veículos (e com <span class="math inline">\(0,50\)</span> m de largura disponível).</li>
+</ul></li>
+</ul>
+</section></section>
+<section id="referências" class="title-slide slide level1 center">
+<h1>Referências</h1>
+<p>COTRIM, Ademaro A. M. B. <strong>Instalações Elétricas</strong>. 5ª Edição. São Paulo: Pearson Prentice Hall, 2009.</p>
+</section>
+
+<section>
+<section id="exercícios" class="title-slide slide level1 center">
+<h1>Exercícios</h1>
+
+</section>
+<section id="exercício-1" class="slide level2">
+<h2>Exercício 1</h2>
+<p><strong>Qual a diferença entre condutor elétrico e fio elétrico?</strong></p>
+<div class="fragment">
+<p>Condutor elétrico é um termo genérico para designar o produto que transporta energia (fios, cabos, barramentos).</p>
+<p>Fio é especificamente o produto metálico maciço e flexível, de seção transversal invariável.</p>
+</div>
+</section>
+<section id="exercício-2" class="slide level2">
+<h2>Exercício 2</h2>
+<p><strong>Quais as seis classes de encordoamento dos condutores de cobre?</strong></p>
+<div class="fragment">
+<ol type="1">
+<li>Classe 1: condutores sólidos (fios).</li>
+<li>Classe 2: condutores encordoados, compactados ou não.</li>
+<li>Classe 3: condutores encordoados não compactados.</li>
+<li>Classes 4, 5 e 6: condutores flexíveis com graus de flexibilidade crescentes.</li>
+</ol>
+<p><em>Obs.: para condutores de alumínio, a NBR NM 280 indica as classes 1, 2, 3, B, C e D, que também diferem entre si pelo grau de flexibilidade.</em></p>
+</div>
+</section>
+<section id="exercício-3" class="slide level2">
+<h2>Exercício 3</h2>
+<p><strong>O que são cabos de potência?</strong></p>
+<div class="fragment">
+<p>São os cabos utilizados no transporte de energia elétrica em instalações de geração, transmissão, distribuição e utilização.</p>
+</div>
+</section>
+<section id="exercício-4" class="slide level2">
+<h2>Exercício 4</h2>
+<p><strong>O que é isolação de um cabo elétrico?</strong></p>
+<div class="fragment">
+<p>É o conjunto de materiais isolantes utilizados para isolar o condutor eletricamente do ambiente que o circunda e de outros condutores.</p>
+</div>
+</section>
+<section id="exercício-5" class="slide level2">
+<h2>Exercício 5</h2>
+<p><strong>Quais as três temperaturas que caracterizam um cabo de potência?</strong></p>
+<div class="fragment">
+<ol type="1">
+<li>Temperatura em regime permanente (serviço contínuo).</li>
+<li>Temperatura em regime de sobrecarga.</li>
+<li>Temperatura em regime de curto-circuito.</li>
+</ol>
+</div>
+</section>
+<section id="exercício-6" class="slide level2">
+<h2>Exercício 6</h2>
+<p><strong>Qual expressão permite calcular a variação da resistividade em função da mudança de temperatura?</strong></p>
+<div class="fragment">
+<p><span class="math inline">\(\rho_2 = \rho_1 [1 + \alpha_1 (\theta_2 - \theta_1)]\)</span>.</p>
+</div>
+</section>
+<section id="exercício-7" class="slide level2">
+<h2>Exercício 7</h2>
+<p><strong>Quais efeitos devem ser considerados para corrigir a resistência em corrente alternada?</strong></p>
+<div class="fragment">
+<p>Devem ser considerados o efeito pelicular (Skin) e o efeito de proximidade, que aumentam a resistência aparente do cabo.</p>
+</div>
+</section>
+<section id="exercício-8" class="slide level2">
+<h2>Exercício 8</h2>
+<p><strong>Qual expressão permite calcular a reatância indutiva <span class="math inline">\(X_L\)</span> de um condutor?</strong></p>
+<div class="fragment">
+<p><span class="math inline">\(X_L = 2\pi f L \times 10^{-3} (\Omega/\text{km})\)</span>,</p>
+<p>onde <span class="math inline">\(L = k + 0,46 \log(2S_M / d_c)\)</span> em mH/km.</p>
+</div>
+</section>
+<section id="exercício-9" class="slide level2">
+<h2>Exercício 9</h2>
+<p><strong>Qual a principal finalidade da blindagem de um cabo?</strong></p>
+<div class="fragment">
+<p>A blindagem garante que o campo elétrico no isolante seja radial e uniformemente distribuído, eliminando concentrações de esforço elétrico e ionizações localizadas que depreciam o cabo.</p>
+</div>
+</section>
+<section id="exercício-10" class="slide level2">
+<h2>Exercício 10</h2>
+<p><strong>Quais os principais tipos de condutos elétricos utilizados?</strong></p>
+<div class="fragment">
+<ol type="1">
+<li>Eletrodutos (rígidos e flexíveis).</li>
+<li>Bandejas.</li>
+<li>Leitos (escadas para cabos).</li>
+<li>Prateleiras.</li>
+<li>Eletrocalhas.</li>
+<li>Canaletas.</li>
+<li>Blocos alveolados.</li>
+</ol>
+</div>
+</section></section>
+<section id="obrigado" class="title-slide slide level1 center">
+<h1>Obrigado!</h1>
+<div style="text-align: center;">
+<p><a href="http://thalesmaia.com/">http://thalesmaia.com/</a></p>
+</div>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>UFMG | ELE618 - Sistemas Elétricos Industriais</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'h.v',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 5.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
