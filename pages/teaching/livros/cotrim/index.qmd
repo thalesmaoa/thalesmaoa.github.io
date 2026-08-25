@@ -18,6 +18,8 @@ image: "images/capa.png"
 - [Capítulo 3 — Proteção contra coques elétricos - fundamentos](./Cap3/){target="_blank"}
 - [Capítulo 4 — Planejamento da instalação](./Cap4/){target="_blank"}
 - [Capítulo 5 — Linhas elétricas](./Cap5/){target="_blank"}
+- [Capítulo 6 — Dispositivos de manobra, proteção, comando e seccionamento não automático](./Cap6/){target="_blank"}
+- [Capítulo 9 — O aquecimento dos condutores e a queda de tensão](./Cap9/){target="_blank"}
 
 <!-- - [Capítulo 6 — Rascunho](./rascunho/)
 - [Capítulo 7 — Rascunho](./rascunho/)
