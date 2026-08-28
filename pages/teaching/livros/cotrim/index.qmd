@@ -20,15 +20,15 @@ image: "images/capa.png"
 - [Capítulo 5 — Linhas elétricas](./Cap5/){target="_blank"}
 - [Capítulo 6 — Dispositivos de manobra, proteção, comando e seccionamento não automático](./Cap6/){target="_blank"}
 - [Capítulo 9 — O aquecimento dos condutores e a queda de tensão](./Cap9/){target="_blank"}
+- [Capítulo 10 — Correntes de Curto-Circuito](./Cap10/){target="_blank"}
+- [Capítulo 11 — Proteção contra Sobrecorrentes](./Cap11/){target="_blank"}
+- [Capítulo 13 — Dimensionamentos](./Cap13/){target="_blank"}
 
 <!-- - [Capítulo 6 — Rascunho](./rascunho/)
 - [Capítulo 7 — Rascunho](./rascunho/)
 - [Capítulo 8 — Rascunho](./rascunho/)
 - [Capítulo 9 — Rascunho](./rascunho/)
-- [Capítulo 10 — Rascunho](./rascunho/)
-- [Capítulo 11 — Rascunho](./rascunho/)
 - [Capítulo 12 — Rascunho](./rascunho/)
-- [Capítulo 13 — Rascunho](./rascunho/)
 - [Capítulo 14 — Rascunho](./rascunho/)
 - [Capítulo 15 — Rascunho](./rascunho/)
 - [Capítulo 16 — Rascunho](./rascunho/)
