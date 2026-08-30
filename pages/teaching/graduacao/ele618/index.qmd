@@ -33,7 +33,7 @@ Desenvolver conhecimento acerca dos: principais sistemas elétricos industriais 
 
 1. Lobosco, Orlando S. **Seleção e aplicação de motores elétricos**. Vol. 1 e 2. McGraw-Hill, Série Brasileira de Tecnologia.
 2. Beeman, Donald. **Industrial Power System Handbook**. McGraw-Hill.
-3. [Cotrim, Ademaro A. M. B. **Instalações Elétricas**. 4ª ed. Pearson.](../../livros/cotrim/)
+3. Cotrim, Ademaro A. M. B. **Instalações Elétricas**. 4ª ed. Pearson.
 4. Apostila do professor.
 5. IEEE Std. 141 (*Red Book*).
 6. IEEE Std. 142 (*Green Book*).
@@ -41,3 +41,17 @@ Desenvolver conhecimento acerca dos: principais sistemas elétricos industriais 
 8. IEEE Std. 399 (*Brown Book*).
 
 Materiais disponibilizados pelo professor no Moodle.
+
+## Material da disciplina
+
+- [Cotrim, Ademaro A. M. B. **Instalações Elétricas**](../../livros/cotrim/)
+
+<details>
+<summary>Apostila de Sistemas Elétricos Industriais</summary>
+
+- [Apostila (PDF)](https://nextcloud.fahren.com.br/public.php/dav/files/DAKYYJ8p8QpteZW/Apostila%20de%20Sistemas%20El%C3%A9tricos%20Industriais.pdf)
+- [Slides — Introdução](apostila/Introducao/)
+- [Slides — Operação da Máquina Elétrica](apostila/OperacaoMaquinaEletrica/)
+- [Slides — Seleção da Máquina Elétrica](apostila/SelecaoMaquinaEletrica/)
+
+</details>

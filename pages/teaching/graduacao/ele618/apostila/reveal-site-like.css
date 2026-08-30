@@ -1,0 +1,122 @@
+/* Estilo de slides inspirado no visual do site (flatly-like) */
+
+.reveal {
+  font-family: "Lato", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slide-background,
+.reveal .slide-background-content,
+.reveal .slides section {
+  background: #ffffff !important;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  color: #2c3e50;
+  font-family: "Lato", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.reveal h2 {
+  border-bottom: 2px solid #5b6f82;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.6em;
+}
+
+.reveal h1 {
+  font-size: 1.75em;
+}
+
+.reveal h2 {
+  font-size: 1.35em;
+}
+
+.reveal h3 {
+  font-size: 1.1em;
+}
+
+/* Ajusta o tamanho da fonte do botão de expandir o código ("▶ Código") */
+.reveal details summary {
+    font-size: 0.6em; /* Ajuste este valor para mais ou para menos conforme achar melhor */
+    margin-bottom: 10px; /* Dá um pequeno respiro entre o botão e a caixa de resultado */
+}
+
+.reveal p,
+.reveal li,
+.reveal td,
+.reveal th,
+.reveal blockquote {
+  color: #2c3e50;
+  line-height: 1.45;
+}
+
+.reveal a {
+  color: #1c6ea4;
+}
+
+.reveal blockquote {
+  background: #f5f9fc;
+  border-left: 5px solid #3f95c9;
+  border-radius: 6px;
+  padding: 0.35em 0.75em;
+}
+
+.reveal table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82em;
+  background: #ffffff;
+  border: 1px solid #d7e3ee;
+}
+
+.reveal table th {
+  background: #1f3f5b;
+  color: #ffffff;
+  border: 1px solid #1f3f5b;
+  padding: 10px 12px;
+  vertical-align: middle;
+}
+
+.reveal table td {
+  border: 1px solid #d7e3ee;
+  padding: 10px 12px;
+  vertical-align: middle;
+}
+
+.reveal pre code {
+  color: #2c3e50;
+}
+
+.reveal .progress {
+  color: #3f95c9;
+}
+
+.reveal .slide-number {
+  color: #5b6f82;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* Ajuste para evitar sobreposição dos botões de controle com o número do slide */
+.reveal .controls {
+    bottom: 45px !important;
+}
+
+/* Centralizando os títulos principais (h1) */
+.reveal h1 {
+    text-align: center;
+}
+
+/* Remove o scroll interno do código quando o slide já for scrollable */
+.reveal .scrollable pre code {
+    max-height: none !important;
+}
