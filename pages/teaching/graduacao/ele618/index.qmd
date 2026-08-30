@@ -55,3 +55,12 @@ Materiais disponibilizados pelo professor no Moodle.
 - [Slides — Seleção da Máquina Elétrica](apostila/SelecaoMaquinaEletrica/)
 
 </details>
+
+<details>
+<summary>Apostila de Comandos Elétricos</summary>
+
+- [Apostila (PDF)](https://nextcloud.fahren.com.br/public.php/dav/files/DAKYYJ8p8QpteZW/Apostila%20de%20Comandos%20El%C3%A9tricos.pdf)
+- [Slides — Dispositivos](apostila/ComandosEletricos_Dispositivos/)
+- [Slides — Partida de Motores](apostila/ComandosEletricos_PartidaMotores/)
+
+</details>
