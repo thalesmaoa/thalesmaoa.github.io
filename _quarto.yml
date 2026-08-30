@@ -142,9 +142,6 @@ website:
   
   # site-url: "https://www.thalesmaia.com"
   
-  google-analytics:
-    tracking-id: "G-J0BZ9QZDBD"  # Please delete or replace with your own tracking ID
-    anonymize-ip: true 
 
 bibliography: references.bib  # Add references.bib to the root folder to enable the bibliography function
 

@@ -1,0 +1,6 @@
+project:
+  type: website
+
+google-analytics:
+  tracking-id: "G-J0BZ9QZDBD"
+  anonymize-ip: true

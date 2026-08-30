@@ -50,7 +50,7 @@ jobs:
 
       - name: Render site
         run: |
-          quarto render
+          quarto render --profile production
 
       # --- COPIA SLIDES APÓS O RENDER (evita que o .gitignore do Quarto bloqueie) ---
       - name: Copy rendered slides into docs
