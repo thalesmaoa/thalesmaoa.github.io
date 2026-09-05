@@ -1,223 +1,153 @@
 ---
-title: '<span class="lang-pt">Estimando os parâmetros do motor de indução: comparando 3 metodologias</span><span class="lang-en">Estimating induction motor parameters: comparing 3 methodologies</span>'
+title: '<span class="lang-pt">Parâmetros do motor de indução a partir da placa: a metodologia que uso em campo</span><span class="lang-en">Induction motor parameters from the nameplate: the methodology I use in the field</span>'
 date: 2026-09-03
 categories:
   - "Máquinas Elétricas"
   - "Metodologia"
 ---
 
-<span class="lang-pt">Este post é a base metodológica da [calculadora de parâmetros de motor de indução](/tools/im-calc-map/): a partir só dos dados de placa, ela estima os seis parâmetros do circuito equivalente por fase ($R_1$, $X_1$, $R_2$, $X_2$, $X_M$, $R_M$). Existem várias formas de fazer essa estimativa — aqui comparamos três, todas aplicadas ao mesmo motor de exemplo, em Julia (linguagem escolhida pela sintaxe limpa para números complexos e algoritmos iterativos).</span><span class="lang-en">This post is the methodological basis of the [induction motor parameter calculator](/tools/im-calc-map/): starting only from nameplate data, it estimates the six per-phase equivalent-circuit parameters ($R_1$, $X_1$, $R_2$, $X_2$, $X_M$, $R_M$). There is more than one way to do this estimation — here we compare three, all applied to the same example motor, in Julia (chosen for its clean complex-number syntax and its fit for iterative algorithms).</span>
+![](images/capa-motor-inducao.jpg)
 
-<span class="lang-pt">**Método 1** é uma estimativa direta baseada no livro *Principal Laws and Methods in Electrical Machine Design*, de Juha Pyrhönen — sem iteração, só relações físicas diretas. **Método 2** é um algoritmo iterativo simplificado, que ajusta os parâmetros em três etapas até bater com os dados de placa; ele aproxima a metodologia usada em normas de ensaio, mas de forma simplificada, sem tabelas normativas de perdas. **Método 3** também é iterativo, mas parte de uma inicialização ancorada em tabelas normativas de proporção de perdas por potência (IEEE / de Almeida & Ferreira) — é o método que hoje roda por trás da calculadora.</span><span class="lang-en">**Method 1** is a direct estimate based on Juha Pyrhönen's book *Principal Laws and Methods in Electrical Machine Design* — no iteration, just direct physical relations. **Method 2** is a simplified iterative algorithm that adjusts the parameters in three stages until they match the nameplate; it approximates the methodology used in test standards, but in a simplified way, without normative loss tables. **Method 3** is also iterative, but starts from an initialization anchored in normative power-vs-loss-fraction tables (IEEE / de Almeida & Ferreira) — it is the method that actually powers the calculator today.</span>
+<span class="lang-pt">Recorrentemente encontro problemas em comissionamento de inversores de baixa tensão acionando motores de indução. O procedimento de autoajuste do drive é sempre o melhor caminho para resolver 99% dos casos, mas, de tempos em tempos, deter a teoria e o conhecimento resolve o restante. Há um tempo venho usando uma metodologia própria para estimar os parâmetros do circuito equivalente do motor a partir só dos dados de placa — recentemente resolvi aprimorá-la, corrigir um punhado de simplificações que vinha carregando havia tempo, e disponibilizá-la a quem possa ser útil.</span><span class="lang-en">In my day-to-day commissioning low-voltage drives on induction motors, the drive's auto-tuning routine is almost always the best path — it solves 99% of the cases cleanly. But every so often you hit the remaining 1%, and that's when knowing the theory pays off. I've been using my own methodology to estimate a motor's equivalent-circuit parameters from nameplate data alone for a while now — I recently sat down to refine it, fix a handful of simplifications it had been carrying for too long, and put it out there for anyone who can use it.</span>
+
+<span class="lang-pt">Este post documenta essa metodologia — a que roda hoje por trás da [calculadora de parâmetros de motor de indução](/tools/im-calc-map/). Cada seção abaixo corresponde a uma decisão de projeto tomada ao longo do caminho — junto com o exemplo (em Julia, executado de verdade, não pseudocódigo) que motivou a decisão.</span><span class="lang-en">This post documents that methodology — the one that actually runs behind the [induction motor parameter calculator](/tools/im-calc-map/) today. Each section below corresponds to a design decision made along the way — together with the example (in Julia, actually executed, not pseudocode) that motivated it.</span>
 
 ## <span class="lang-pt">O motor de exemplo</span><span class="lang-en">The example motor</span>
 
-<span class="lang-pt">Para comparar os três métodos lado a lado, usamos os mesmos dados de placa nos três: um motor de indução trifásico de 200 kW, 400 V, 50 Hz, 4 polos.</span><span class="lang-en">To compare the three methods side by side, we use the same nameplate data in all three: a 200 kW, 400 V, 50 Hz, 4-pole three-phase induction motor.</span>
+<span class="lang-pt">Para acompanhar o texto com números de verdade, uso a placa de um motor real que fotografei em campo: um WEG W22 Premium trifásico de 5,5 kW, 380 V, 60 Hz, 4 polos, categoria N.</span><span class="lang-en">To follow the text with real numbers, I use the nameplate of a real motor I photographed in the field: a three-phase WEG W22 Premium, 5.5 kW, 380 V, 60 Hz, 4 poles, design class N.</span>
 
 ```julia
-using Printf
-
-# ─── Dados de placa (nameplate) ───
-const P_N_kW   = 200.0       # Potência nominal [kW]
-const V_N      = 400.0       # Tensão nominal de linha [V]
-const f_N      = 50.0        # Frequência nominal [Hz]
-const polos    = 4           # Número de polos
-const n_N      = 1485.0      # Rotação nominal [rpm]
-const I_N      = 343.0       # Corrente nominal [A]
-const η_N      = 0.95        # Rendimento nominal [pu]
-const cos_φ_N  = 0.89        # Fator de potência nominal [pu]
-const Ip_In    = 6.9         # Razão I_partida / I_nominal
-const I_0      = 121.0       # Corrente a vazio [A] (usada só no Método 1)
-
-# ─── Grandezas derivadas ───
-V_ph  = V_N / √3                  # Tensão de fase [V]
-ω_e   = 2π * f_N                  # Frequência angular elétrica [rad/s]
-n_syn = 120.0 * f_N / polos       # Rotação síncrona [rpm]
-s_N   = (n_syn - n_N) / n_syn     # Escorregamento nominal
-φ_N   = acos(cos_φ_N)             # Ângulo do FP nominal [rad]
+const P_N_kW  = 5.5      # Potência nominal [kW]
+const V_N     = 380.0    # Tensão nominal de linha [V]
+const f_N     = 60.0     # Frequência nominal [Hz]
+const polos   = 4
+const n_N     = 1750.0   # Rotação nominal [rpm]
+const I_N     = 11.9     # Corrente nominal [A]
+const η_N     = 0.91      # Rendimento nominal [pu]
+const cosφ_N  = 0.77      # Fator de potência nominal [pu]
+const Ip_In   = 7.3       # Razão I_partida / I_nominal (de placa)
+const categoria = "N"     # Categoria de conjugado de partida (N ≈ NEMA B)
 ```
 
-```
-Tensão de fase nominal:     V_ph  = 230.94 V
-Rotação síncrona:           n_syn = 1500 rpm
-Escorregamento nominal:     s_N   = 0.0100 (1.00%)
-Freq. angular elétrica:     ω_e   = 314.159 rad/s
-```
+## <span class="lang-pt">O que a placa não diz: perdas mecânicas</span><span class="lang-en">What the nameplate doesn't tell you: mechanical losses</span>
 
-<span class="lang-pt">E a mesma função resolve o circuito equivalente por fase nos três métodos — dado um conjunto de parâmetros e o escorregamento, ela devolve corrente, potência de entrada, potência mecânica desenvolvida, rendimento e fator de potência:</span><span class="lang-en">And the same function solves the per-phase equivalent circuit in all three methods — given a set of parameters and the slip, it returns current, input power, developed mechanical power, efficiency, and power factor:</span>
+<span class="lang-pt">A placa nunca informa como as perdas totais se dividem — cobre do estator, cobre do rotor, núcleo, perdas suplementares (*stray load*) e atrito+ventilação. Sem essa divisão, não dá para inicializar $R_1$, $R_2$ e $R_M$ com algo melhor que um chute às cegas. A saída é uma tabela normativa: de Almeida, Ferreira & Fong ("Standards for Efficiency of Electric Motors", IEEE Ind. Appl. Magazine, 2011) publicam essa divisão em função da potência nominal, a partir de um levantamento estatístico de motores reais.</span><span class="lang-en">The nameplate never tells you how total losses split — stator copper, rotor copper, core, stray-load, and friction+windage. Without that split, there's no way to initialize $R_1$, $R_2$ and $R_M$ with anything better than a blind guess. The way out is a normative table: de Almeida, Ferreira & Fong ("Standards for Efficiency of Electric Motors," IEEE Ind. Appl. Magazine, 2011) publish that split as a function of rated power, from a statistical survey of real motors.</span>
 
 ```julia
-function solve_circuit(R₁, X₁, R₂, X₂, R_M, X_M, s; V₁::Float64=1.0)
-    Z₂ = complex(R₂ / s, X₂)
-    Z_M = R_M > 1e-9 ? (R_M * 1im * X_M) / (R_M + 1im * X_M) : 1im * X_M
-    Z_par = (Z_M * Z₂) / (Z_M + Z₂)
-    Z_eq = complex(R₁, X₁) + Z_par
+# Frações de perda por potência nominal (interpoladas na tabela — ver ref/valores.csv)
+f_s, f_r, f_stray, f_c, f_fw = obter_fracoes_perdas(P_N_kW)   # 0.46, 0.20, 0.06, 0.23, 0.05
+P_loss_pu = 1.0/η_N - 1.0            # perdas totais, em pu da potência de EIXO — 0.0989 pu
+k_r = f_s / f_r                       # 2.30 — razão de perdas Cu estator/rotor
 
-    i₁ = complex(V₁, 0.0) / Z_eq
-    i₂ = i₁ * Z_M / (Z_M + Z₂)
+R2 = s_N                              # chute inicial: R2 ≈ escorregamento nominal
+R1 = k_r * s_N                        # chute inicial de R1, pela proporção da tabela
+R_M = 1.0 / (f_c * P_loss_pu)         # fecha o balanço de perdas do núcleo
+```
 
-    P_in  = real(complex(V₁, 0.0) * conj(i₁))
-    P_mec = abs2(i₂) * R₂ * (1.0 - s) / s   # potência mecânica DESENVOLVIDA (entreferro)
+<span class="lang-pt">O pulo do gato é que o circuito equivalente calcula a potência **eletromagnética** — a desenvolvida no entreferro, descontadas só as perdas Joule do rotor. Atrito, ventilação e perdas suplementares acontecem **depois** disso, a caminho do eixo, e nenhum elemento do circuito os representa. Isso significa que o alvo de convergência não pode ser o valor de placa puro: tem que ser o valor de placa ajustado pela fração mecânica das perdas, sempre um pouco **acima** do que a placa informa.</span><span class="lang-en">The equivalent circuit computes **electromagnetic** power — the power developed in the air gap, net only of the rotor's Joule losses. Friction, windage and stray-load losses happen **after** that, on the way to the shaft, and no circuit element represents them. That means the convergence target can't be the raw nameplate value: it has to be the nameplate value adjusted by the mechanical loss fraction, always a bit **above** what the plate reports.</span>
 
-    return (; i₁_mag = abs(i₁), P_in, P_mec, η = P_mec / P_in, fp = cos(angle(i₁)))
+```julia
+f_mech = f_fw + f_stray                            # fração do total de perdas que é mecânica
+P_mec_alvo_pu = 1.0 + f_mech * P_loss_pu            # 1.0109 pu — sempre > 1.0
+η_alvo = η_N + f_mech * (1.0 - η_N)                 # 91.99% — sempre > η_N
+```
+
+## <span class="lang-pt">Fechando o ramo magnetizante</span><span class="lang-en">Closing the magnetizing branch</span>
+
+<span class="lang-pt">Um dos caminhos para determinar $X_M$ e $R_M$ é iterá-los por ganho proporcional junto com todo o resto, disputando o mesmo grau de liberdade que a corrente e o fator de potência — o que deixa a convergência instável e o resultado dependente da ordem dos ajustes. Mas a placa já dá módulo e ângulo da corrente nominal ($I_N$, $\cos\varphi$), o que é informação aproximada para achar a corrente de magnetização através de subtração fasorial, em forma fechada:</span><span class="lang-en">One of the paths to determine $X_M$ and $R_M$ is to iterate them by proportional gain alongside everything else, fighting over the same degree of freedom as current and power factor — which makes convergence unstable and the result dependent on adjustment order. But the nameplate already gives the magnitude and angle of the rated current ($I_N$, $\cos\varphi$), which is approximate information for finding the magnetizing current through phasor subtraction, in closed form:</span>
+
+```julia
+# V_m = V1 - I1*(R1+jX1)   (tensão no ramo magnetizante, pela queda no estator)
+# I2  = V_m / (R2/s + jX2) (corrente de rotor, pela impedância do ramo série)
+# Im  = I1 - I2            (o que sobra é a corrente de magnetização)
+Vm = complex(1.0, 0.0) - I1fasor * complex(R1, X1)
+I2fasor = Vm / complex(R2/s_N, X2)
+Im = I1fasor - I2fasor
+Ym = Im / Vm                             # Y_m = 1/R_M + 1/(jX_M)
+real(Ym) > 1e-9 && (R_M = 1.0/real(Ym))  # mantém o último valor válido se Y_m ainda não fechar fisicamente
+-imag(Ym) > 1e-9 && (X_M = -1.0/imag(Ym))
+```
+
+<span class="lang-pt">Com isso, $|I_1|$ e $\cos\varphi$ ficam exatos por construção — não sobra grau de liberdade disputado entre parâmetros que deveriam ser independentes. Nas primeiras iterações, antes de $R_1$ e $R_2$ estabilizarem, $Y_m$ pode sair momentaneamente com parte real negativa — fisicamente impossível, já que $I_1 = I_2 + I_M$. Por isso $R_M$ e $X_M$ só são atualizados quando o resultado é fisicamente válido; caso contrário, o valor da iteração anterior é mantido até o resto do circuito estabilizar.</span><span class="lang-en">With this, $|I_1|$ and $\cos\varphi$ come out exact by construction — no degree of freedom is left contested between parameters that should be independent. In the first few iterations, before $R_1$ and $R_2$ settle, $Y_m$ can momentarily come out with a negative real part — physically impossible, since $I_1 = I_2 + I_M$. That's why $R_M$ and $X_M$ are only updated when the result is physically valid; otherwise, the previous iteration's value is kept until the rest of the circuit settles.</span>
+
+## <span class="lang-pt">A dupla personalidade do motor</span><span class="lang-en">The motor's split personality</span>
+
+<span class="lang-pt">A mesma corrente de partida usada para calibrar $X_1+X_2$ também deveria, em tese, servir para prever o torque de partida — só que o torque calculado desvia sistematicamente menor que o de qualquer motor real. Um exemplo de livro-texto com dados medidos (Fitzgerald, *Electric Machinery*, Exemplo 6.5) mostra a explicação: aquela máquina tem **dois** ensaios de rotor bloqueado, um a 15 Hz e outro a 60 Hz. O primeiro dá os parâmetros "limpos" de regime; o segundo, na frequência de rede, mostra o efeito pelicular em ação nas barras do rotor — a resistência do rotor sobe **2,84 vezes**, e a reatância de dispersão cai para **0,65** do valor de regime (a corrente de partida, de 5 a 8 vezes a nominal, também satura os caminhos de dispersão magnética, empurrando a reatância pra baixo pelo mesmo motivo).</span><span class="lang-en">The same starting current used to calibrate $X_1+X_2$ should, in theory, also predict the starting torque — except the computed torque deviates systematically lower than any real motor's. A textbook example with measured data (Fitzgerald, *Electric Machinery*, Example 6.5) shows the explanation: that machine has **two** locked-rotor tests, one at 15 Hz and one at 60 Hz. The first gives the "clean" running parameters; the second, at line frequency, shows skin effect acting on the rotor bars in practice — rotor resistance rises **2.84×**, and leakage reactance drops to **0.65×** the running value (the starting current, 5 to 8 times rated, also saturates the leakage flux paths, pushing reactance down for the same reason).</span>
+
+<span class="lang-pt">Um único conjunto de parâmetros constantes simplesmente não representa a máquina nas duas condições. A solução foi manter dois conjuntos — regime e partida — ligados por dois fatores, $K_R$ e $K_X$, tabelados pela categoria de conjugado de partida do motor (N, A, H, D — equivalentes a NEMA B, A, C e D):</span><span class="lang-en">A single set of constant parameters simply does not represent the machine under both conditions. The fix was to keep two parameter sets — running and starting — linked by two factors, $K_R$ and $K_X$, tabulated by the motor's starting-torque design class (N, A, H, D — equivalent to NEMA B, A, C and D):</span>
+
+```julia
+FATORES_PARTIDA = Dict(
+    "N" => (kR=2.0, kX=0.8),   # barra profunda, a mais comum (≈ NEMA B)
+    "A" => (kR=1.2, kX=0.85),  # barra rasa de baixa resistência (≈ NEMA A)
+    "H" => (kR=3.0, kX=0.75),  # dupla gaiola, conjugado de partida alto (≈ NEMA C)
+    "D" => (kR=1.1, kX=0.85),  # barra de alta resistência, escorregamento alto (≈ NEMA D)
+)
+```
+
+<span class="lang-pt">Para o WEG de 5,5 kW (categoria N), isso dá o circuito de regime abaixo — usado no ponto nominal — e um segundo conjunto de partida, usado só para calcular o rotor bloqueado e a sequência negativa:</span><span class="lang-en">For the 5.5 kW WEG (design class N), this gives the running circuit below — used at the rated point — and a second starting set, used only to compute locked rotor and the negative-sequence circuit:</span>
+
+| <span class="lang-pt">Parâmetro</span><span class="lang-en">Parameter</span> | <span class="lang-pt">Regime</span><span class="lang-en">Running</span> |
+|:--|--:|
+| R₁ (Ω) | 0.6894 |
+| R₂ (Ω) | 0.6113 |
+| X₁ (mH) | 2.730 |
+| X₂ (mH) | 4.095 |
+| Xₘ (mH) | 80.66 |
+
+<span class="lang-pt">Erro contra os dados nominais: potência mecânica 0,01%, corrente 0,00%, fator de potência 0,00%, rendimento 0,20% — todos dentro da tolerância de 2%.</span><span class="lang-en">Error against rated data: mechanical power 0.01%, current 0.00%, power factor 0.00%, efficiency 0.20% — all within the 2% tolerance.</span>
+
+## <span class="lang-pt">Quando o catálogo dá o conjugado de partida</span><span class="lang-en">When the catalogue gives you starting torque</span>
+
+<span class="lang-pt">Tabela por categoria é um bom ponto de partida, mas é só isso — um ponto de partida. Se o usuário tiver o conjugado de partida do catálogo do fabricante ($C_p/C_n$), dá pra fazer melhor: em vez de tabelar $K_R$, ele vira a incógnita resolvida por bisseção, ajustada até o circuito reproduzir o conjugado de partida informado — o mesmo papel que $I_p/I_n$ já cumpre para $X_1+X_2$.</span><span class="lang-en">A table by design class is a good starting point, but that's all it is — a starting point. If the user has the starting torque from the manufacturer's catalogue ($C_p/C_n$), you can do better: instead of tabulating $K_R$, it becomes the unknown solved by bisection, adjusted until the circuit reproduces the reported starting torque — the same role $I_p/I_n$ already plays for $X_1+X_2$.</span>
+
+```julia
+# T_p(K_R) tem máximo em R2p=√(R1²+X²) e não é monotônica em todo o domínio — mas na faixa
+# física (K_R ≤ 4) estamos no ramo crescente, então a bisseção é segura.
+lo, hi = 1.0, 4.0
+for _ in 1:40
+    meio = 0.5*(lo+hi)
+    torque_partida_pu(meio) < alvo_pu ? (lo = meio) : (hi = meio)
 end
+K_R = 0.5*(lo+hi)
 ```
 
-<span class="lang-pt">Um detalhe físico importante, que retomamos no Método 3: `P_mec` aqui é a potência mecânica **desenvolvida** no entreferro (potência de entreferro menos as perdas Joule no rotor) — ainda não é a potência de **eixo** que a placa informa, porque falta descontar as perdas por atrito, ventilação e as perdas suplementares (*stray load*), que não são representadas pelos elementos do circuito.</span><span class="lang-en">One important physical detail, which we revisit in Method 3: `P_mec` here is the mechanical power **developed** in the air gap (air-gap power minus the rotor's Joule losses) — it is not yet the **shaft** power the nameplate reports, because friction, windage, and stray-load losses still need to be subtracted, and none of those are represented by the circuit elements.</span>
+<span class="lang-pt">O teste mais forte que tenho até hoje: a máquina do Fitzgerald (dupla gaiola, categoria H, $C_p/C_n = 0,87$ de catálogo) resolve para $K_R = 2,95$ — contra o $K_R = 2,84$ **medido** diretamente nos dois ensaios de rotor bloqueado dela. Duas fontes de dado completamente independentes, a 4% de distância uma da outra.</span><span class="lang-en">The strongest test I have so far: the Fitzgerald machine (double-cage, class H, catalogue $C_p/C_n = 0.87$) solves to $K_R = 2.95$ — against the $K_R = 2.84$ **measured** directly from its two locked-rotor tests. Two completely independent data sources, 4% apart.</span>
 
-## <span class="lang-pt">Método 1 — Estimativa direta (Pyrhönen)</span><span class="lang-en">Method 1 — Direct estimate (Pyrhönen)</span>
+## <span class="lang-pt">Sequência negativa não herda os parâmetros de regime</span><span class="lang-en">Negative sequence doesn't inherit the running parameters</span>
 
-<span class="lang-pt">Em vez de iterar, este método estima cada parâmetro diretamente a partir de considerações físicas: a indutância do estator vem do ensaio a vazio ($I_0$), a indutância de curto-circuito vem da razão de corrente de partida, a resistência do rotor é aproximada pelo escorregamento nominal, e a resistência de magnetização fecha o balanço de perdas.</span><span class="lang-en">Instead of iterating, this method estimates each parameter directly from physical considerations: the stator inductance comes from the no-load test ($I_0$), the short-circuit inductance comes from the starting-current ratio, the rotor resistance is approximated by the rated slip, and the magnetizing resistance closes the loss balance.</span>
+<span class="lang-pt">Para desequilíbrio de tensão, o campo de sequência negativa gira em sentido contrário ao rotor — o escorregamento efetivo visto por ele é $(2-s)$, não $s$. Não basta trocar esse divisor e reaproveitar $R_2$, $X_2$ de regime: a razão é a mesma da dupla personalidade do motor — a frequência induzida no rotor por esse campo é $f_2 \approx (2-s)\cdot f_1 \approx 2f_1$, maior até que a do próprio ensaio de rotor bloqueado. O mesmo efeito pelicular que distingue partida de regime se aplica com ainda mais força aqui (confirmado contra Ion Boldea, *Induction Machines Handbook*, seções sobre alimentação desequilibrada e sequências).</span><span class="lang-en">Under voltage unbalance, the negative-sequence field rotates opposite to the rotor — the slip it sees is $(2-s)$, not $s$. Simply swapping that divisor and reusing the running $R_2$, $X_2$ isn't enough: the reason is the same as in the motor's split personality — the frequency induced in the rotor by that field is $f_2 \approx (2-s)\cdot f_1 \approx 2f_1$, higher even than the locked-rotor test's own frequency. The same skin effect that separates starting from running applies with even more force here (confirmed against Ion Boldea, *Induction Machines Handbook*, the sections on unbalanced supply and sequence circuits).</span>
 
 ```julia
-# Passo 1: base de indutância
-Ψ_b = √2 * V_ph / ω_e
-Î_N = √2 * I_N
-L_b = Ψ_b / Î_N                      # L_b = 2.143 mH
-
-# Passo 2: indutância do estator, via corrente a vazio (97% magnetizante, 3% dispersão)
-L_s  = V_ph / (I_0 * ω_e)            # L_s = 6.075 mH
-l_m_pu    = (0.97 * L_s) / L_b       # l_m,pu  = 2.7497 pu
-l_sσ_pu_1 = (0.03 * L_s) / L_b       # (usado só como referência do ensaio a vazio)
-
-# Passo 3: indutância de curto-circuito ≈ 1/(I_partida/I_nominal), dividida 50:50
-l_k_pu   = 1.0 / Ip_In                # l_k,pu = 0.1449 pu
-l_sσ_pu  = l_k_pu / 2.0                # 0.0725 pu
-l_rσ_pu  = l_k_pu / 2.0                # 0.0725 pu
-
-# Passo 4: resistências — r_r ≈ s_N, r_s por regra prática ≈ 0.01 pu
-r_r_pu = s_N                           # 0.0100 pu
-r_s_pu = 0.01                          # 0.0100 pu
-
-# Passo 5: balanço de perdas fecha R_M (5% de perdas totais, 0.5% suplementares fixo)
-P_perdas_tot_pu = 1.0 - η_N            # 5.0%
-P_ferro_pu = P_perdas_tot_pu - r_s_pu - r_r_pu - 0.005   # 2.5%
-R_M_pu = 1.0^2 / P_ferro_pu             # 40.00 pu
+# R1, X1, R_M, X_M continuam os de REGIME (a frequência do estator é a mesma f1 nas duas
+# sequências) — só R2 e X2 do ramo do rotor usam o conjunto de PARTIDA.
+seq_negativa = resolver_circuito(
+    ParametrosPU(R1=R1, R2=R2*K_R, X1=X1, X2=X2*K_X, Xm=X_M, Rm=R_M),
+    bases, 2 - s_N,
+)
 ```
 
-```
---- Comparação com Dados Nominais ---
-P_mec : 180.7 kW (Placa: 200 kW) -> Erro: -9.66%
-|i₁|  : 306.6 A  (Placa: 343 A)  -> Erro: -10.61%
-η     : 95.42 %  (Placa: 95.0 %) -> Erro: +0.44%
-cos φ : 0.8914   (Placa: 0.89)   -> Erro: +0.15%
-```
+<span class="lang-pt">Para o WEG de 5,5 kW, uma tensão de sequência negativa de mesma magnitude que a nominal produziria 89,3 A — mais de 7 vezes a corrente nominal — com fator de potência de 0,43. Na prática, um desequilíbrio de tensão de apenas 2% já bastaria para produzir uma corrente de sequência negativa considerável, e é por isso que motores de indução são tão sensíveis a desequilíbrio de tensão entre fases.</span><span class="lang-en">For the 5.5 kW WEG, a negative-sequence voltage of the same magnitude as rated would produce 89.3 A — more than 7 times rated current — at a power factor of 0.43. In practice, a mere 2% voltage unbalance is already enough to produce a considerable negative-sequence current, which is why induction motors are so sensitive to phase voltage unbalance.</span>
 
-<span class="lang-pt">O rendimento e o fator de potência ficam muito próximos da placa, mas a corrente e a potência mecânica erram por mais de 9%. Isso é esperado: o Método 1 é uma estimativa rápida, útil para um primeiro chute ou para ganhar intuição física — não para bater precisamente com os dados nominais.</span><span class="lang-en">Efficiency and power factor land very close to the nameplate, but current and mechanical power miss by more than 9%. That's expected: Method 1 is a quick estimate, useful as a first guess or to build physical intuition — not to precisely match the rated values.</span>
+## <span class="lang-pt">Trazendo o multímetro para o jogo</span><span class="lang-en">Bringing the multimeter into the game</span>
 
-## <span class="lang-pt">Método 2 — Algoritmo iterativo simplificado</span><span class="lang-en">Method 2 — Simplified iterative algorithm</span>
+<span class="lang-pt">Tudo até aqui parte só de dados de placa. Mas se o usuário tem a máquina em mãos, dois ensaios simples melhoram a estimativa sem exigir nada além de um multímetro e, opcionalmente, um variador de tensão.</span><span class="lang-en">Everything so far starts only from nameplate data. But if the user has the machine in hand, two simple tests improve the estimate without requiring anything beyond a multimeter and, optionally, a variac.</span>
 
-<span class="lang-pt">Aqui trocamos a estimativa direta por um algoritmo de três etapas: cada etapa ajusta um subconjunto dos parâmetros por ganho proporcional, até que a grandeza correspondente bata com a placa dentro da tolerância.</span><span class="lang-en">Here we trade the direct estimate for a three-stage algorithm: each stage nudges a subset of the parameters by proportional gain until the corresponding quantity matches the nameplate within tolerance.</span>
+<span class="lang-pt">**Resistência de fase (DC).** $R_1$ nunca é medido no caminho normativo — vem só da proporção tabelada a partir das perdas mecânicas. Com a resistência de fase medida (terminal a terminal, num motor de 6 terminais, evitando qualquer conversão de ligação Y/Δ), ela substitui esse chute inicial, corrigida da temperatura do ensaio para uma referência "a quente" pela fórmula clássica do cobre:</span><span class="lang-en">**Phase resistance (DC).** $R_1$ is never measured in the normative path — it only comes from the tabulated ratio derived from mechanical losses. With the measured phase resistance (terminal to terminal, on a 6-terminal motor, avoiding any Y/Δ connection conversion), it replaces that initial guess, corrected from the test temperature to a "hot" reference via the classic copper formula:</span>
 
 ```julia
-# Chute inicial (sem tabela normativa — só regras de bolso)
-R₂ = s_N; R₁ = R₂
-X_sum = 1.0 / Ip_In
-X₁ = X_sum / 2.0; X₂ = X_sum / 2.0
-X_M = 1.0 / ((I_N / i_B) * sin(φ_N))   # i_B = base de corrente (P_N / (3·V_ph))
-R_M = 20.0
-
-# Etapa 1: ajusta R₂ até a potência mecânica desenvolvida bater 1.0 pu (±2%)
-# Etapa 2: ajusta X_M, X₁, X₂, R_M até |i₁| e fp baterem a placa (±1.5%)
-# Etapa 3: ajusta R₁ até η bater a placa (±2%)
+# R(T) ∝ (k + T), k=234,5°C para cobre. 75°C como referência padrão sem a classe de isolação.
+R1_quente = R1_medido * (234.5 + 75.0) / (234.5 + T_ensaio)
 ```
 
-```
---- Comparação com Dados Nominais ---
-P_mec : 196.5 kW (Placa: 200 kW) -> Erro: -1.77%
-|i₁|  : 343.0 A  (Placa: 343 A)  -> Erro: +0.00%
-η     : 95.23 %  (Placa: 95.0 %) -> Erro: +0.25%
-cos φ : 0.8681   (Placa: 0.89)   -> Erro: -2.46%
-```
+<span class="lang-pt">O ajuste de $R_1$ contra a eficiência continua rodando por cima desse valor medido — ele absorve o resíduo do efeito pelicular CA (a medição é DC) e da incerteza dessa referência de temperatura, então não é preciso modelar os dois efeitos à parte.</span><span class="lang-en">The efficiency-matching adjustment of $R_1$ still runs on top of this measured value — it absorbs the residual from AC skin effect (the measurement is DC) and from the uncertainty in that temperature reference, so there's no need to model both effects separately.</span>
 
-<span class="lang-pt">O ajuste iterativo reduz bastante o erro de potência e corrente frente ao Método 1. Mas repare: a Etapa 1 mira a potência mecânica **desenvolvida** contra 1.0 pu, e a Etapa 3 mira o rendimento **desenvolvido** (P_mec/P_in) contra η_N — sem descontar perdas mecânicas em nenhum momento, porque este método não tem de onde tirar essa proporção (não usa tabela normativa). Na prática, isso empurra parte do erro para o fator de potência (-2.46%).</span><span class="lang-en">The iterative adjustment cuts the power and current error substantially compared with Method 1. But notice: Stage 1 targets the **developed** mechanical power against 1.0 pu, and Stage 3 targets the **developed** efficiency (P_mec/P_in) against η_N — without ever subtracting mechanical losses, because this method has no table to draw that proportion from. In practice, that pushes part of the error onto the power factor (-2.46%).</span>
-
-## <span class="lang-pt">Método 3 — Inicialização normativa IEEE/NEMA + refino iterativo</span><span class="lang-en">Method 3 — IEEE/NEMA normative initialization + iterative refinement</span>
-
-<span class="lang-pt">É o método que a calculadora usa. Ele parte de uma tabela de proporção de perdas por potência nominal — lida da Figura 2 de A. T. de Almeida, F. J. T. E. Ferreira e J. A. C. Fong, *"Standards for Efficiency of Electric Motors"*, IEEE Industry Applications Magazine, 2011 — que separa as perdas totais em cinco frações: cobre do estator ($f_s$), cobre do rotor ($f_r$), perdas suplementares/*stray load* ($f_{stray}$), núcleo ($f_c$) e atrito+ventilação ($f_{fw}$).</span><span class="lang-en">This is the method the calculator uses. It starts from a loss-proportion-by-rated-power table — read off Figure 2 of A. T. de Almeida, F. J. T. E. Ferreira, and J. A. C. Fong, *"Standards for Efficiency of Electric Motors,"* IEEE Industry Applications Magazine, 2011 — which splits total losses into five fractions: stator copper ($f_s$), rotor copper ($f_r$), stray-load losses ($f_{stray}$), core ($f_c$), and friction + windage ($f_{fw}$).</span>
-
-```julia
-# Frações de perda por potência nominal (interpoladas linearmente na tabela — ver ref/valores.csv)
-f_s, f_r, f_stray, f_c, f_fw = obter_fracoes_perdas(P_N_kW)   # 0.2556, 0.2300, 0.1344, 0.2556, 0.1244
-f_mech = f_fw + f_stray              # fração do total de perdas que é mecânica — 0.2589
-
-P_loss_pu = 1.0/η_N - 1.0            # perdas totais, em pu da potência de EIXO — 0.0526 pu
-K_r = f_s / f_r                      # 1.1111 — razão de perdas Cu estator/rotor
-
-R₂ = s_N                             # 0.0100 pu
-R₁ = K_r * s_N                       # 0.0111 pu  (não é mais ≈ R₂ "no chute": vem da proporção real)
-R_M = 1.0 / (f_c * P_loss_pu)        # 74.35 pu
-
-X_σ = 1.0 / Ip_In
-X₁ = 0.4 * X_σ                       # divisão NEMA Design B: 40% estator
-X₂ = 0.6 * X_σ                       # 60% rotor
-X_M = 1.0 / ((I_N / i_B) * sin(φ_N))
-```
-
-<span class="lang-pt">A diferença estrutural em relação ao Método 2 está exatamente aqui: como agora sabemos, pela tabela, qual fração das perdas totais é mecânica ($f_{mech}=f_{fw}+f_{stray}$), conseguimos calcular os alvos corretos de convergência — não contra o valor de placa puro, mas contra a potência e a eficiência **eletromagnéticas** (o que o circuito de fato representa, sem atrito, ventilação ou perdas suplementares).</span><span class="lang-en">The structural difference from Method 2 is exactly here: since we now know, from the table, what fraction of total losses is mechanical ($f_{mech}=f_{fw}+f_{stray}$), we can compute the correct convergence targets — not against the raw nameplate value, but against the **electromagnetic** power and efficiency (what the circuit actually represents, without friction, windage, or stray-load losses).</span>
-
-```julia
-# Potência eletromagnética que o circuito precisa entregar (sempre MAIOR que a de placa, porque
-# uma fatia dela ainda vira atrito/ventilação/stray antes de chegar ao eixo):
-P_mec_alvo_pu = 1.0 + f_mech * P_loss_pu          # 1.0136 pu (202.7 kW)
-
-# Eficiência eletromagnética alvo (também maior que η_N, pelo mesmo motivo):
-η_alvo = η_N + f_mech * (1.0 - η_N)               # 0.9629 (96.29%)
-
-# Etapa 1: ajusta R₂ até a potência ELETROMAGNÉTICA bater P_mec_alvo_pu (±2%).
-
-# Etapa 2: ajusta X_M, X₁, X₂ até |i₁| e fp baterem a placa (±1.5%). Diferente do Método 2,
-#          R_M NÃO participa mais dessa etapa — uma análise de sensibilidade mostra que R_M tem
-#          efeito quase nulo sobre fp nessa faixa de valores (é X_M quem realmente move os dois).
-X_M *= 1.0 + (i₁ - i₁_alvo) * 0.30 + (cos_φ_N - fp) * 0.60
-
-# Etapa 3b: ajusta R₁ e R_M em conjunto até a eficiência ELETROMAGNÉTICA bater η_alvo (±2%).
-```
-
-```
---- Comparação com Dados Nominais (alvo eletromagnético) ---
-P_mec : 200.9 kW (Alvo: 202.7 kW) -> Erro: -0.90%
-|i₁|  : 342.9 A  (Placa: 343 A)   -> Erro: -0.02%
-η     : 96.34 %  (Alvo: 96.29 %) -> Erro: +0.05%
-cos φ : 0.8777   (Placa: 0.89)    -> Erro: -1.39%
-```
-
-<span class="lang-pt">Todas as quatro grandezas ficam dentro da tolerância de 2%. Note que a coluna "alvo" de P_mec e η não é mais o valor de placa: é o valor de placa ajustado pela fração mecânica — o circuito nunca vai "ver" atrito, ventilação ou perdas suplementares, então cobrar dele o valor de placa puro é pedir uma coisa que ele estrutural­mente não modela. O fator de potência, que nos Métodos 1 e 2 sobra como o erro residual, aqui fecha em -1.39% porque $X_M$ passa a responder tanto à corrente quanto ao próprio fp — nos Métodos 1 e 2, essa alavanca não existe.</span><span class="lang-en">All four quantities land within the 2% tolerance. Note that the "target" column for P_mec and η is no longer the raw nameplate value: it's the nameplate value adjusted by the mechanical fraction — the circuit never "sees" friction, windage, or stray-load losses, so holding it to the raw nameplate figure is asking it to model something it structurally doesn't. Power factor, which is left as the residual error in Methods 1 and 2, closes to -1.39% here because $X_M$ now responds to both current and power factor directly — that lever doesn't exist in Methods 1 and 2.</span>
-
-## <span class="lang-pt">Comparação</span><span class="lang-en">Comparison</span>
-
-<span class="lang-pt">Parâmetros do circuito equivalente, em unidades do SI, para o motor de exemplo de 200 kW:</span><span class="lang-en">Equivalent-circuit parameters, in SI units, for the 200 kW example motor:</span>
-
-| <span class="lang-pt">Parâmetro</span><span class="lang-en">Parameter</span> | <span class="lang-pt">Método 1</span><span class="lang-en">Method 1</span> | <span class="lang-pt">Método 2</span><span class="lang-en">Method 2</span> | <span class="lang-pt">Método 3</span><span class="lang-en">Method 3</span> |
-|:--|--:|--:|--:|
-| R₁ (Ω) | 0.0080 | 0.0080 | 0.0089 |
-| R₂ (Ω) | 0.0080 | 0.0071 | 0.0071 |
-| X₁ (mH) | 0.1845 | 0.2070 | 0.1521 |
-| X₂ (mH) | 0.1845 | 0.2070 | 0.2282 |
-| X_M (mH) | 7.0020 | 5.9109 | 6.0760 |
-| R_M (Ω) | 32.00 | 28.42 | 59.48 |
-
-<span class="lang-pt">Erro percentual contra os dados nominais (Método 3 contra o alvo eletromagnético, os demais contra a placa direto):</span><span class="lang-en">Percent error against rated data (Method 3 against the electromagnetic target, the others directly against the nameplate):</span>
-
-| <span class="lang-pt">Grandeza</span><span class="lang-en">Quantity</span> | <span class="lang-pt">Método 1</span><span class="lang-en">Method 1</span> | <span class="lang-pt">Método 2</span><span class="lang-en">Method 2</span> | <span class="lang-pt">Método 3</span><span class="lang-en">Method 3</span> |
-|:--|--:|--:|--:|
-| P_mec | -9.66% | -1.77% | -0.90% |
-| I₁ | -10.61% | 0.00% | -0.02% |
-| η | +0.44% | +0.25% | +0.05% |
-| cos φ | +0.15% | -2.46% | -1.39% |
-
-## <span class="lang-pt">Discussão e conclusão</span><span class="lang-en">Discussion and conclusion</span>
-
-<span class="lang-pt">Os três métodos resolvem o mesmo circuito equivalente, mas partem de premissas diferentes. O Método 1 é rápido e dá intuição física, mas exige a corrente a vazio ($I_0$) — um dado que raramente está disponível numa placa comum — e erra bastante em corrente e potência. O Método 2 dispensa esse dado e converge bem em corrente e potência, mas ajusta R₁/R_M contra a eficiência **eletromagnética** do circuito como se fosse igual à eficiência de placa, sem separar as perdas mecânicas — o que empurra o erro para o fator de potência, e não tem como corrigir, pois R_M sozinho tem efeito fraco sobre fp.</span><span class="lang-en">All three methods solve the same equivalent circuit, but start from different premises. Method 1 is fast and gives physical intuition, but requires the no-load current ($I_0$) — a value rarely available on an ordinary nameplate — and misses badly on current and power. Method 2 drops that requirement and converges well on current and power, but adjusts R₁/R_M against the circuit's **electromagnetic** efficiency as if it equaled the nameplate efficiency, without separating out mechanical losses — which pushes the error onto power factor, with no way to fix it, since R_M alone has weak leverage over fp.</span>
-
-<span class="lang-pt">O Método 3 resolve os dois pontos. Primeiro, ao herdar uma proporção de perdas mecânicas de uma referência normativa (mesmo sem um ensaio de perdas dedicado), ele sabe que o circuito precisa mirar numa potência e numa eficiência **eletromagnéticas**, sempre um pouco acima do valor de placa — não o valor de placa puro. Segundo, ele troca a alavanca de fator de potência: em vez de forçar $R_M$ (que mal influencia fp nessa faixa — chegamos a testar $R_M \to \infty$ e o ganho foi quase nulo), ele deixa $X_M$ responder tanto à corrente quanto ao fp, já que $X_M$ tem forte influência sobre os dois ao mesmo tempo. O resultado é o único dos três métodos com todas as quatro grandezas dentro de ±2% — e, junto com não precisar de $I_0$, é por isso que ele roda por trás da calculadora.</span><span class="lang-en">Method 3 fixes both points. First, by inheriting a mechanical-loss proportion from a normative reference (even without a dedicated loss test), it knows the circuit must target an **electromagnetic** power and efficiency, always somewhat above the nameplate value — not the raw nameplate value. Second, it swaps the power-factor lever: instead of forcing $R_M$ (which barely moves fp in this range — we even tested $R_M \to \infty$ and the gain was nearly zero), it lets $X_M$ respond to both current and fp, since $X_M$ has strong leverage over both at once. The result is the only one of the three methods with all four quantities within ±2% — that, together with not needing $I_0$, is why it runs behind the calculator.</span>
-
-<span class="lang-pt">Uma observação final: as bases usadas em pu diferem entre métodos (o Método 1 usa base de indutância via fluxo concatenado; os Métodos 2 e 3 usam base de potência no eixo), então os valores em pu não são diretamente comparáveis entre si — a comparação correta é sempre em unidades do SI (Ω, mH), como na tabela acima.</span><span class="lang-en">One final note: the per-unit bases differ between methods (Method 1 uses a flux-linkage-derived inductance base; Methods 2 and 3 use a shaft-power base), so the per-unit values are not directly comparable across methods — the correct comparison is always in SI units (Ω, mH), as in the table above.</span>
+<span class="lang-pt">**Rotor bloqueado.** Tensão e corrente de um ensaio de rotor bloqueado (tipicamente em tensão reduzida, para não superaquecer o motor) servem de conferência cruzada: escalando a corrente linearmente até a tensão nominal, comparo a razão de partida implícita com o $I_p/I_n$ de placa. Se divergirem mais de 15%, o app avisa — pode ser erro de leitura, saturação forte na tensão de ensaio, ou um dos dois dados errado.</span><span class="lang-en">**Locked rotor.** Voltage and current from a locked-rotor test (typically at reduced voltage, to avoid overheating the motor) serve as a cross-check: scaling the current linearly up to rated voltage, I compare the implied starting-current ratio against the nameplate's $I_p/I_n$. If they diverge by more than 15%, the app warns — it could be a reading error, strong saturation at the test voltage, or one of the two values being wrong.</span>
 
 ## <span class="lang-pt">Referências</span><span class="lang-en">References</span>
 
-1. J. Pyrhönen, T. Jokinen, V. Hrabovcová, *Design of Rotating Electrical Machines* (also published as *Principal Laws and Methods in Electrical Machine Design*), Example 1.11.
-2. A. T. de Almeida, F. J. T. E. Ferreira, J. A. C. Fong, "Standards for Efficiency of Electric Motors," *IEEE Industry Applications Magazine*, Jan/Feb 2011.
-3. F. J. T. E. Ferreira, A. T. de Almeida, "Method for Estimating Motor Loading and Efficiency," *IEEE Transactions on Industry Applications*, 2006.
+1. A. T. de Almeida, F. J. T. E. Ferreira, J. A. C. Fong, "Standards for Efficiency of Electric Motors," *IEEE Industry Applications Magazine*, Jan/Feb 2011.
+2. A. E. Fitzgerald, C. Kingsley, S. D. Umans, *Electric Machinery*, 7ª ed. (McGraw-Hill, 2013), Cap. 6, Exemplo 6.5.
+3. I. Boldea, *Induction Machines Handbook*, 3ª ed. (CRC Press) — capítulos sobre alimentação com tensão desequilibrada e operação de geradores de indução em desequilíbrio.
 4. IEEE Std 112-2017, *Standard Test Procedure for Polyphase Induction Motors and Generators*.
 5. NEMA MG 1-2016, *Motors and Generators*.

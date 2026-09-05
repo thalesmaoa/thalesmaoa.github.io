@@ -19,10 +19,11 @@ toc: false
         name: 'im-calc-map',
         icon: '<img src="/files/icons/webtools-im-calc-map.svg" alt="">',
         tint: '#f5a623',
-        soon: true,
+        href: '/tools/im-calc-map/',
+        soon: false,
         desc: {
-          pt: 'Mapa de eficiência de motor de indução',
-          en: 'Induction motor efficiency map'
+          pt: 'Parâmetros de motor de indução a partir da placa',
+          en: 'Induction motor parameters from the nameplate'
         }
       },
       {

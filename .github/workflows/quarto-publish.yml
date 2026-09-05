@@ -44,6 +44,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas openpyxl pyyaml
 
+      # --- BUILD DAS FERRAMENTAS REACT/VITE (im-calc-map) ---
+      # winding-calculator é HTML/JS estático puro, não precisa de build — só im-calc-map.
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Build im-calc-map
+        run: |
+          cd _ee-web-tools/im-calc-map
+          npm ci
+          npm run build
+
       # --- QUARTO RENDER ---
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -72,6 +85,8 @@ jobs:
           mkdir -p "$DEST"
           cp -r _ee-web-tools/winding-calculator "$DEST/winding-factor"
           echo "Ferramenta copiada para docs/$DEST/winding-factor"
+          cp -r _ee-web-tools/im-calc-map/dist "$DEST/im-calc-map"
+          echo "Ferramenta copiada para docs/$DEST/im-calc-map"
 
       # --- SITEMAP: adiciona as ferramentas copiadas (não são
       #     renderizadas pelo Quarto, então não entram sozinhas) ---
