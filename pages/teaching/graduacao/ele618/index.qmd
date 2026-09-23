@@ -50,9 +50,9 @@ Materiais disponibilizados pelo professor no Moodle.
 <summary>Apostila de Sistemas Elétricos Industriais</summary>
 
 - [Apostila (PDF)](https://nextcloud.fahren.com.br/public.php/dav/files/DAKYYJ8p8QpteZW/Apostila%20de%20Sistemas%20El%C3%A9tricos%20Industriais.pdf)
-- [Slides — Introdução](apostila/Introducao/)
-- [Slides — Operação da Máquina Elétrica](apostila/OperacaoMaquinaEletrica/)
-- [Slides — Seleção da Máquina Elétrica](apostila/SelecaoMaquinaEletrica/)
+- [Slides — Introdução](apostila/Introducao/){target="_blank"}
+- [Slides — Operação da Máquina Elétrica](apostila/OperacaoMaquinaEletrica/){target="_blank"}
+- [Slides — Seleção da Máquina Elétrica](apostila/SelecaoMaquinaEletrica/){target="_blank"}
 
 </details>
 
@@ -60,7 +60,7 @@ Materiais disponibilizados pelo professor no Moodle.
 <summary>Apostila de Comandos Elétricos</summary>
 
 - [Apostila (PDF)](https://nextcloud.fahren.com.br/public.php/dav/files/DAKYYJ8p8QpteZW/Apostila%20de%20Comandos%20El%C3%A9tricos.pdf)
-- [Slides — Dispositivos](apostila/ComandosEletricos_Dispositivos/)
-- [Slides — Partida de Motores](apostila/ComandosEletricos_PartidaMotores/)
+- [Slides — Dispositivos](apostila/ComandosEletricos_Dispositivos/){target="_blank"}
+- [Slides — Partida de Motores](apostila/ComandosEletricos_PartidaMotores/){target="_blank"}
 
 </details>
