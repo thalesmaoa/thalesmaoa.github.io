@@ -8,6 +8,7 @@ project:
     - "files/icons/ee-webtools-alt.svg"
     - "files/icons/webtools-im-calc-map.svg"
     - "files/icons/webtools-winding-factor.svg"
+    - "files/icons/webtools-magfem.png"
     # Slides do ELE618 pré-renderizados (revealjs, outro projeto Quarto) —
     # são HTML estático, não devem ser re-renderizados, só copiados
     - "pages/teaching/graduacao/ele618/apostila/**"

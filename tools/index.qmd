@@ -16,6 +16,17 @@ toc: false
     // ── Apps: para adicionar uma ferramenta, basta incluir uma entrada ──
     var APPS = [
       {
+        name: 'MagFEM',
+        icon: '<img src="/files/icons/webtools-magfem.png" alt="">',
+        tint: '#1f5f7a',
+        href: '/tools/magfem-web/',
+        soon: false,
+        desc: {
+          pt: 'Elementos finitos magnéticos 2D no navegador (em desenvolvimento)',
+          en: '2D magnetic finite elements in the browser (under development)'
+        }
+      },
+      {
         name: 'im-calc-map',
         icon: '<img src="/files/icons/webtools-im-calc-map.svg" alt="">',
         tint: '#f5a623',

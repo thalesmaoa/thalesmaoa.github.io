@@ -33,6 +33,14 @@ jobs:
           token: ${{ secrets.ROTEIRO_REPO_TOKEN }}
           path: _ee-web-tools
 
+      # --- MagFEM: site estático já compilado pelo CI do repo (branch dist; repo público) ---
+      - name: Checkout MagFEM (dist)
+        uses: actions/checkout@v4
+        with:
+          repository: thalesmaoa/magfem
+          ref: dist
+          path: _magfem
+
       # --- PYTHON ---
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -87,6 +95,9 @@ jobs:
           echo "Ferramenta copiada para docs/$DEST/winding-factor"
           cp -r _ee-web-tools/im-calc-map/dist "$DEST/im-calc-map"
           echo "Ferramenta copiada para docs/$DEST/im-calc-map"
+          rm -rf _magfem/.git
+          cp -r _magfem "$DEST/magfem-web"
+          echo "Ferramenta copiada para docs/$DEST/magfem-web"
 
       # --- SITEMAP: adiciona as ferramentas copiadas (não são
       #     renderizadas pelo Quarto, então não entram sozinhas) ---
