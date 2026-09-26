@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Thales A. C. Maia">
+  <title>ELE618 - Sistemas Elétricos Industriais</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-2abc1c5b7b5c7eecd6137558e106e4c3.css">
+  <link rel="stylesheet" href="../reveal-site-like.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">ELE618 - Sistemas Elétricos Industriais</h1>
+  <p class="subtitle">Instalações Elétricas - Ademaro A. M. B. Cotrim<br>Capítulo 11 - Proteção contra Sobrecorrentes</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Prof.&nbsp;Dr.&nbsp;Thales A. C. Maia
+</div>
+        <p class="quarto-title-affiliation">
+            UFMG - DEE
+          </p>
+    </div>
+</div>
+
+</section>
+<section>
+<section id="introdução-às-sobrecorrentes" class="title-slide slide level1 center">
+<h1>Introdução às Sobrecorrentes</h1>
+
+</section>
+<section id="conceitos-básicos" class="slide level2">
+<h2>Conceitos Básicos</h2>
+<p>Nas instalações elétricas, as sobrecorrentes são tradicionalmente divididas em dois tipos fundamentais:</p>
+<ul>
+<li class="fragment"><strong>Correntes de Sobrecarga:</strong> Ocorrem em um circuito sem que haja qualquer falta elétrica.</li>
+<li class="fragment"><strong>Correntes de Curto-Circuito:</strong> Provenientes de uma falta elétrica (curto).</li>
+</ul>
+<div class="fragment">
+<p>As partidas de muitos equipamentos dão lugar a <strong>sobrecargas transitórias</strong>:</p>
+<ul>
+<li class="fragment"><strong>Lâmpadas incandescentes:</strong> ~12x a corrente nominal.</li>
+<li class="fragment"><strong>Motores de indução:</strong> ~7x a corrente nominal (por poucos segundos).</li>
+<li class="fragment"><strong>Lâmpadas de descarga (alta pressão):</strong> 2x a 3x a corrente nominal (por alguns minutos).</li>
+</ul>
+</div>
+</section>
+<section id="causas-comuns" class="slide level2">
+<h2>Causas Comuns</h2>
+<p>A longo prazo, as sobrecorrentes assumem caráter permanente ou de falta, sendo as principais causas:</p>
+<ul>
+<li class="fragment"><strong>Sobrecargas:</strong> Provocadas pela substituição de equipamentos de utilização previstos por outros de maior potência.</li>
+<li class="fragment"><strong>Sobrecargas:</strong> Provocadas por motores mecanicamente sobrecarregados.</li>
+<li class="fragment"><strong>Curtos-Circuitos:</strong> Provocados por erros de ligação ou falha severa na isolação.</li>
+</ul>
+</section>
+<section id="limitação-da-duração" class="slide level2">
+<h2>Limitação da Duração</h2>
+<p>Qualquer sobrecarga eleva perigosamente a temperatura do cabo (10 ºC a 15 °C acima do limite). Mas o fio tem <strong>inércia térmica</strong>: ele não derrete instantaneamente.</p>
+<ul>
+<li class="fragment">Uma sobrecarga <strong>pequena</strong> demora dezenas de minutos para causar danos.</li>
+<li class="fragment">Uma sobrecarga <strong>severa</strong> (ex: rotor de motor travado) danifica o isolante em poucos segundos.</li>
+</ul>
+<div class="fragment">
+<p>Por isso, o disjuntor não pode ter um “temporizador” fixo. A sua resposta deve se adaptar à gravidade do problema.</p>
+</div>
+</section>
+<section id="o-que-é-atuação-a-tempo-inverso" class="slide level2">
+<h2>O que é Atuação a Tempo Inverso?</h2>
+<p>Para espelhar o comportamento físico do cabo, a proteção térmica (do disjuntor ou relé) possui uma curva de <strong>Tempo Inverso</strong>.</p>
+<p>O conceito é uma regra de três intuitiva: &gt; <strong>MUITO calor gerado (Corrente Alta) <span class="math inline">\(\longrightarrow\)</span> POUCO tempo tolerado para o desarme.</strong></p>
+<p>A curva do disjuntor “imita” a curva de aquecimento do cabo, protegendo-o sem desligar a fábrica à toa por causa de um pico de partida rápido.</p>
+</section>
+<section id="atuação-a-tempo-inverso" class="slide level2">
+<h2>Atuação a Tempo Inverso</h2>
+
+<img data-src="images/index_2026-08-29-09-54-38.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_1"><p class="caption">
+Fig.&nbsp;1: Atuação a tempo inverso.
+</p></section>
+<section id="zona-de-atuação-ideal" class="slide level2">
+<h2>Zona de Atuação Ideal</h2>
+<p>As curvas de sobrecarga do cabo (partida a frio e a quente) delimitam a zona ideal para a curva de atuação do dispositivo de proteção:</p>
+
+<img data-src="images/index_2026-08-29-09-55-59.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_2"><p class="caption">
+Fig.&nbsp;2: Curvas-limite de sobrecarga e curva de atuação ideal.
+</p></section>
+<section id="impactos-térmicos" class="slide level2">
+<h2>Impactos Térmicos</h2>
+<p>Sobrecorrentes prolongadas afetam perigosamente o isolamento dos condutores, elevando a temperatura de 10 ºC a 15 °C acima do limite de serviço contínuo.</p>
+<p>Limites regulamentados:</p>
+<ul>
+<li><strong>PVC:</strong> <span class="math inline">\(70^\circ\text{C}\)</span> (serviço) / <span class="math inline">\(100^\circ\text{C}\)</span> (sobrecarga) / <span class="math inline">\(160^\circ\text{C}\)</span> (curto-circuito).</li>
+<li><strong>XLPE / EPR:</strong> <span class="math inline">\(90^\circ\text{C}\)</span> (serviço) / <span class="math inline">\(130^\circ\text{C}\)</span> (sobrecarga) / <span class="math inline">\(250^\circ\text{C}\)</span> (curto-circuito).</li>
+</ul>
+<blockquote>
+<p>Um condutor PVC operando continuamente a <span class="math inline">\(70^\circ\text{C}\)</span> possui vida útil estimada de cerca de 20 anos.</p>
+</blockquote>
+</section></section>
+<section>
+<section id="a-integral-de-joule" class="title-slide slide level1 center">
+<h1>A Integral de Joule</h1>
+
+</section>
+<section id="conceituação" class="slide level2">
+<h2>Conceituação</h2>
+<p>A <strong>integral de Joule</strong> (<span class="math inline">\(I^2t\)</span>) mede o “esforço térmico” total de um pulso de corrente de curta duração — como um curto-circuito.</p>
+<p>Para correntes muito elevadas e tempos muito curtos, não se pode mais tratar a corrente como um valor eficaz constante: é preciso considerar corrente e tempo <strong>em conjunto</strong>, no produto integral:</p>
+<p><span class="math display">\[\int_0^t i(t)^2\, dt = I^2t \tag{11.1}\]</span></p>
+<blockquote>
+<p>Segundo o <em>Buff Book</em> do IEEE: o conceito de <span class="math inline">\(I^2t\)</span> substitui a corrente simétrica porque representa os esforços térmicos e magnéticos <strong>reais</strong> impostos a um componente nos primeiros ciclos de um curto-circuito.</p>
+</blockquote>
+</section>
+<section id="interpretação-gráfica" class="slide level2">
+<h2>Interpretação Gráfica</h2>
+<p><span class="math inline">\(I^2t\)</span> é proporcional à área sob a curva <span class="math inline">\(i^2 = f(t)\)</span>:</p>
+
+<img data-src="images/index_2026-08-29-09-58-12.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_4"><p class="caption">
+Fig.&nbsp;3: Interpretação da integral de Joule.
+</p></section>
+<section id="proteção-parcial-do-condutor" class="slide level2">
+<h2>Proteção Parcial do Condutor</h2>
+<p>Duas situações comuns em que o dispositivo só protege parcialmente a faixa de sobrecarga:</p>
+
+<img data-src="images/index_2026-08-29-10-16-15.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_3"><p class="caption">
+Fig.&nbsp;4: Proteção de condutor contra correntes de sobrecarga: (a) dispositivo só protege a partir de nA; (b) dispositivo só protege até nA
+</p></section>
+<section id="integral-de-joule-dos-condutores" class="slide level2">
+<h2>Integral de Joule dos Condutores</h2>
+<p>Nos condutores, a integral de Joule está diretamente ligada à <strong>vida útil da isolação</strong>.</p>
+<ul>
+<li>A 70 °C contínuos, um cabo com isolação de <strong>PVC</strong> tem vida útil estimada de ~20 anos.</li>
+<li>Cada ocorrência de sobrecorrente “consome” uma fração dessa vida útil — adota-se, por segurança, que cada sobrecorrente pode durar até <strong>1/1.000</strong> da vida útil total do cabo.</li>
+</ul>
+
+<img data-src="images/index_2026-08-29-10-17-17.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_5"><p class="caption">
+Fig.&nbsp;5: Curvas de vida útil relativas às isolações de PVC e EPR.
+</p></section>
+<section id="a-curva-i2t-fi-do-condutor" class="slide level2">
+<h2>A Curva <span class="math inline">\((I^2t) = f(I)\)</span> do Condutor</h2>
+
+<img data-src="images/index_2026-08-29-10-18-17.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_6"><p class="caption">
+Fig.&nbsp;6: Curva <span class="math inline">\(I^2t = f(I)\)</span> típica de um cabo
+</p><ul>
+<li class="fragment"><strong>Assíntota vertical</strong> em <span class="math inline">\(I = I_Z\)</span>: o condutor atinge a temperatura máxima de serviço contínuo; <span class="math inline">\(I^2t \to \infty\)</span>.</li>
+<li class="fragment"><strong>Assíntota horizontal</strong> (<em>limite adiabático</em>): sem troca de calor com o meio, <span class="math inline">\(I^2t \approx\)</span> constante.</li>
+</ul>
+</section>
+<section id="cálculo-do-k-nbr-5410" class="slide level2">
+<h2>Cálculo do <span class="math inline">\(K\)</span> (NBR 5410)</h2>
+<p>A integral de Joule admissível por um condutor, em regime adiabático, entre a temperatura de serviço contínuo <span class="math inline">\(\theta_Z\)</span> e a de curto-circuito <span class="math inline">\(\theta_k\)</span>:</p>
+<p><span class="math display">\[\int_0^t i^2\, dt = K^2S^2 \tag{11.7}\]</span></p>
+<p>onde <span class="math inline">\(S\)</span> é a seção do condutor (mm²) e <span class="math inline">\(K\)</span> depende do material condutor e da isolação:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Isolação</th>
+<th>Metal</th>
+<th><span class="math inline">\(\theta_k\)</span> (°C)</th>
+<th><span class="math inline">\(K\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PVC</td>
+<td>Cobre</td>
+<td>160</td>
+<td>115</td>
+</tr>
+<tr class="even">
+<td>EPR/XLPE</td>
+<td>Cobre</td>
+<td>250</td>
+<td>135</td>
+</tr>
+<tr class="odd">
+<td>PVC</td>
+<td>Alumínio</td>
+<td>160</td>
+<td>74</td>
+</tr>
+<tr class="even">
+<td>EPR/XLPE</td>
+<td>Alumínio</td>
+<td>250</td>
+<td>87</td>
+</tr>
+</tbody>
+</table>
+<p><em>(Tabela 11.1 ■ Obtenção dos valores de K — 2 de 4 linhas, a título de ilustração)</em></p>
+</section>
+<section id="exemplo-condutor-cupvc-de-10-mm²" class="slide level2">
+<h2>Exemplo: Condutor Cu/PVC de 10 mm²</h2>
+
+<img data-src="images/index_2026-08-29-10-21-58.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_7"><p class="caption">
+Fig.&nbsp;7: Curvas <span class="math inline">\(I^2t = f(I)\)</span> para condutores e cabos isolados de cobre, com isolação de PVC, considerando a maneira de instalar B e dois condutores carregados (Cortesia da Bticino)
+</p><p>Um condutor Cu/PVC de 10 mm² conduzindo <strong>200 A</strong> possui uma energia de aproximadamente <span class="math inline">\(4\times10^6\ A^2s\)</span>.</p>
+<p>Já próximo ao seu <strong>limite adiabático</strong> (≈1.030 A), a energia máxima admissível cai para <span class="math inline">\(1.322{,}5\times10^3\ A^2s\)</span>.</p>
+</section>
+<section id="exemplo-condutor-cupvc-de-10-mm²-1" class="slide level2 scrollable">
+<h2>Exemplo: Condutor Cu/PVC de 10 mm²</h2>
+<p>Vamos calcular, em Julia, por quanto tempo o condutor suporta cada uma dessas correntes — e visualizar a curva <span class="math inline">\((I^2t)=f(I)\)</span> completa.</p>
+<div id="d87d5975" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="" aria-label="1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
+<span id="cb1-2"><a href="" aria-label="2"></a></span>
+<span id="cb1-3"><a href="" aria-label="3"></a><span class="co"># Dados do condutor Cu/PVC 10 mm² (Figura 11.7a)</span></span>
+<span id="cb1-4"><a href="" aria-label="4"></a>I2t_200A  <span class="op">=</span> <span class="fl">4e6</span>      <span class="co"># A²s, a 200 A (bem abaixo do limite adiabático)</span></span>
+<span id="cb1-5"><a href="" aria-label="5"></a>I2t_adiab <span class="op">=</span> <span class="fl">1322.5e3</span> <span class="co"># A²s, no limite adiabático (~1030 A)</span></span>
+<span id="cb1-6"><a href="" aria-label="6"></a>I_adiab   <span class="op">=</span> <span class="fl">1030.0</span>    <span class="co"># A</span></span>
+<span id="cb1-7"><a href="" aria-label="7"></a></span>
+<span id="cb1-8"><a href="" aria-label="8"></a>t_200  <span class="op">=</span> I2t_200A <span class="op">/</span> <span class="fl">200.0</span><span class="op">^</span><span class="fl">2</span></span>
+<span id="cb1-9"><a href="" aria-label="9"></a>t_2000 <span class="op">=</span> I2t_adiab <span class="op">/</span> <span class="fl">2000.0</span><span class="op">^</span><span class="fl">2</span></span>
+<span id="cb1-10"><a href="" aria-label="10"></a></span>
+<span id="cb1-11"><a href="" aria-label="11"></a><span class="fu">println</span>(<span class="st">"Corrente de 200 A  -&gt; tempo máximo: "</span>, <span class="fu">round</span>(t_200, digits<span class="op">=</span><span class="fl">1</span>), <span class="st">" s"</span>)</span>
+<span id="cb1-12"><a href="" aria-label="12"></a><span class="fu">println</span>(<span class="st">"Corrente de 2000 A -&gt; tempo máximo: "</span>, <span class="fu">round</span>(t_2000, digits<span class="op">=</span><span class="fl">2</span>), <span class="st">" s"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Corrente de 200 A  -&gt; tempo máximo: 100.0 s
+Corrente de 2000 A -&gt; tempo máximo: 0.33 s</code></pre>
+</div>
+</div>
+</section>
+<section id="integral-de-joule-dos-disjuntores-termomagnéticos" class="slide level2">
+<h2>Integral de Joule dos Disjuntores Termomagnéticos</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div id="fig-11_9" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-11_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-29-10-32-03.png" class="quarto-figure quarto-figure-center">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-11_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;8: Característica <span class="math inline">\(I^2t = f(t)\)</span> típica de um dis- juntor termomagnético
+</figcaption>
+</figure>
+</div>
+</div><div class="column fragment" style="width:50%;">
+<p>A curva <span class="math inline">\((I^2t)=f(I)\)</span> de um disjuntor apresenta <strong>quatro regiões</strong>:</p>
+<ul>
+<li class="fragment"><strong>(I)</strong> <span class="math inline">\(I \le I_N\)</span>: sem limitação de tempo.</li>
+<li class="fragment"><strong>(II)</strong> <span class="math inline">\(I_N &lt; I \le I_M\)</span>: atua o disparador <strong>térmico</strong> (tempos longos).</li>
+<li class="fragment"><strong>(III)</strong> <span class="math inline">\(I_M &lt; I \le I_{CN}\)</span>: atua o disparador <strong>eletromagnético</strong> — <span class="math inline">\(I^2t\)</span> cresce com a corrente.</li>
+<li class="fragment"><strong>(IV)</strong> <span class="math inline">\(I &gt; I_{CN}\)</span>: o disjuntor não deve ser utilizado.</li>
+</ul>
+<p>Para os disjuntores rápidos, na região (III), <span class="math inline">\(I^2t\)</span> é aproximadamente proporcional a <span class="math inline">\(I^2\)</span> — a curva aparece como uma reta em escala log-log.</p>
+</div></div>
+</section>
+<section id="ação-de-um-disjuntor-limitador-de-corrente" class="slide level2">
+<h2>Ação de um Disjuntor Limitador de Corrente</h2>
+<p>O oscilograma mostra a corrente de curto-circuito sendo interrompida antes de atingir seu pico presumido — a área sob a curva até a interrupção é proporcional à integral de Joule que o disjuntor efetivamente deixa passar.</p>
+
+<img data-src="images/index_2026-08-29-11-35-51.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_12"><p class="caption">
+Fig.&nbsp;9: Ação de um disjuntor limitador de corrente.
+</p></section>
+<section id="curvas-de-curto-circuito-dos-cabos" class="slide level2">
+<h2>Curvas de Curto-Circuito dos Cabos</h2>
+
+<img data-src="images/index_2026-08-29-11-30-21.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_8"><p class="caption">
+Fig.&nbsp;10: Curvas de corrente de curto-circuito em função das seções, com o tempo em ciclos) como parâmetro para os cabos Sintenax 0,6/1 kV da Prysmian.
+</p></section>
+<section id="integral-de-joule-dos-fusíveis" class="slide level2">
+<h2>Integral de Joule dos Fusíveis</h2>
+<p>Ao contrário dos disjuntores (reutilizáveis), dos fusíveis exige-se apenas que <strong>não ofereçam perigo</strong> na interrupção.</p>
+<ul>
+<li class="fragment">O <strong>tempo de pré-arco</strong> é, com boa aproximação, inversamente proporcional a <span class="math inline">\(I^2\)</span> — grande poder de limitação sobre a corrente de crista.</li>
+<li class="fragment">Há três valores relevantes de <span class="math inline">\(I^2t\)</span>: de <strong>fusão</strong>, de <strong>arco</strong>, e de <strong>interrupção</strong> (fusão + arco) — este último é o que interessa à proteção dos condutores.</li>
+</ul>
+</section></section>
+<section>
+<section id="critérios-gerais-da-proteção-contra-sobrecorrentes" class="title-slide slide level1 center">
+<h1>Critérios Gerais da Proteção contra Sobrecorrentes</h1>
+
+</section>
+<section id="o-dispositivo-de-proteção-ideal" class="slide level2">
+<h2>O Dispositivo de Proteção Ideal</h2>
+<p>Os condutores vivos de um circuito devem ser protegidos contra sobrecorrentes. Um dispositivo <strong>ideal</strong>:</p>
+<ul>
+<li class="fragment"><strong>Não intervém</strong> para correntes <span class="math inline">\(\le I_Z\)</span> (capacidade de condução do condutor).</li>
+<li class="fragment"><strong>Intervém sempre</strong>, ainda que em tempo longo, para sobrecargas até <span class="math inline">\(1{,}45\,I_Z\)</span>.</li>
+<li class="fragment"><strong>Intervém em tempos decrescentes</strong> entre <span class="math inline">\(1{,}45\)</span> e <span class="math inline">\(6\)</span>–<span class="math inline">\(7\,I_Z\)</span>.</li>
+<li class="fragment"><strong>Intervém em tempos brevíssimos</strong> para correntes de curto-circuito.</li>
+</ul>
+</section>
+<section id="característica-de-atuação-ideal-real" class="slide level2">
+<h2>Característica de Atuação Ideal × Real</h2>
+
+<img data-src="images/index_2026-08-29-15-48-44.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_17"><p class="caption">
+Fig.&nbsp;11: Característica de atuação ideal comparada com disjuntores e fusíveis
+</p><p>Disjuntores termomagnéticos aproximam-se do ideal para sobrecargas e curtos moderados; fusíveis comportam-se melhor em curtos elevados, pior em sobrecargas leves.</p>
+</section>
+<section id="regras-de-ouro-nbr-5410" class="slide level2">
+<h2>Regras de Ouro (NBR 5410)</h2>
+<p>A NBR 5410 estabelece duas regras de ouro para coordenar o dispositivo (disjuntor/fusível) e o condutor:</p>
+<p><strong>Condição 1:</strong> <span class="math display">\[ I_B \le I_N \le I_Z \]</span></p>
+<p><strong>Condição 2 (Proteção contra superaquecimento):</strong> <span class="math display">\[ I_2 \le 1{,}45\, I_Z \]</span></p>
+<p>onde <span class="math inline">\(I_2\)</span> é a corrente convencional de atuação (disjuntores) ou de fusão (fusíveis), <span class="math inline">\(I_2 = \alpha\, I_N\)</span>.</p>
+</section>
+<section id="curvas-comerciais-de-fusíveis" class="slide level2">
+<h2>Curvas Comerciais de Fusíveis</h2>
+<p>Fabricantes fornecem, para cada corrente nominal, os valores de <span class="math inline">\(I^2t\)</span> de fusão, arco e interrupção — a característica que interessa à proteção dos condutores é a de <strong>interrupção</strong>:</p>
+
+<img data-src="images/index_2026-08-29-15-50-09.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_14"><p class="caption">
+Fig.&nbsp;12: Características I 2t de interrupção para alguns fusíveis tipo gG (Cortesia da Bticino)G
+</p></section>
+<section id="tipos-de-gráficos-i2t-dos-fabricantes" class="slide level2">
+<h2>Tipos de Gráficos <span class="math inline">\(I^2t\)</span> dos Fabricantes</h2>
+
+<img data-src="images/index_2026-08-29-15-51-10.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_15"><p class="caption">
+Fig.&nbsp;13: Tipos de gráficos <span class="math inline">\(I^2t\)</span> apresentados pelos fabricantes de fusíveis.
+</p><p>Usados principalmente para a verificação da <strong>seletividade</strong> entre fusíveis (adiante).</p>
+</section>
+<section id="tipos-de-gráficos-i2t-dos-fabricantes-1" class="slide level2">
+<h2>Tipos de Gráficos <span class="math inline">\(I^2t\)</span> dos Fabricantes</h2>
+
+<img data-src="images/index_2026-08-29-15-53-04.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_16"><p class="caption">
+Fig.&nbsp;14: Valores de I²t para fusíveis gG (Legrand)
+</p></section>
+<section id="exemplo-verificação-de-disjuntor" class="slide level2">
+<h2>Exemplo: Verificação de Disjuntor</h2>
+<p>Considere um circuito com <span class="math inline">\(I_B = 28 \text{ A}\)</span>, condutores PVC e disjuntor com <span class="math inline">\(I_N = 30 \text{ A}\)</span>. O disjuntor protegerá termicamente o circuito sem desarmes falsos?</p>
+<div id="0a46f985" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="" aria-label="1"></a>I_B <span class="op">=</span> <span class="fl">28.0</span>  <span class="co"># Corrente de projeto</span></span>
+<span id="cb3-2"><a href="" aria-label="2"></a>I_N <span class="op">=</span> <span class="fl">30.0</span>  <span class="co"># Corrente do Disjuntor</span></span>
+<span id="cb3-3"><a href="" aria-label="3"></a></span>
+<span id="cb3-4"><a href="" aria-label="4"></a><span class="co"># Cabo 6 mm² (suporta 32.8 A em dada condição)</span></span>
+<span id="cb3-5"><a href="" aria-label="5"></a>I_Z <span class="op">=</span> <span class="fl">32.8</span></span>
+<span id="cb3-6"><a href="" aria-label="6"></a></span>
+<span id="cb3-7"><a href="" aria-label="7"></a><span class="co"># Para disjuntores DIN, a corrente convencional de atuação I_2 é 1.45 * I_N</span></span>
+<span id="cb3-8"><a href="" aria-label="8"></a>I_2 <span class="op">=</span> <span class="fl">1.45</span> <span class="op">*</span> I_N</span>
+<span id="cb3-9"><a href="" aria-label="9"></a></span>
+<span id="cb3-10"><a href="" aria-label="10"></a>cond_1 <span class="op">=</span> (I_B <span class="op">&lt;=</span> I_N) <span class="op">&amp;&amp;</span> (I_N <span class="op">&lt;=</span> I_Z)</span>
+<span id="cb3-11"><a href="" aria-label="11"></a>cond_2 <span class="op">=</span> I_2 <span class="op">&lt;=</span> (<span class="fl">1.45</span> <span class="op">*</span> I_Z)</span>
+<span id="cb3-12"><a href="" aria-label="12"></a></span>
+<span id="cb3-13"><a href="" aria-label="13"></a><span class="fu">println</span>(<span class="st">"Condição 1 (</span><span class="sc">$</span>I_B<span class="st"> &lt;= I_N &lt;= I_Z): "</span>, cond_1 ? <span class="st">"OK (28 &lt;= 30 &lt;= 32.8)"</span> <span class="op">:</span> <span class="st">"FALHOU"</span>)</span>
+<span id="cb3-14"><a href="" aria-label="14"></a><span class="fu">println</span>(<span class="st">"Condição 2 (</span><span class="sc">$</span>I_2<span class="st"> &lt;= 1.45 I_Z): "</span>, cond_2 ? <span class="st">"OK (</span><span class="sc">$</span>(I_2)<span class="st"> &lt;= </span><span class="sc">$</span>(<span class="fl">1.45</span><span class="op">*</span>I_Z)<span class="st">)"</span> <span class="op">:</span> <span class="st">"FALHOU"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Condição 1 (28.0 &lt;= I_N &lt;= I_Z): OK (28 &lt;= 30 &lt;= 32.8)
+Condição 2 (43.5 &lt;= 1.45 I_Z): OK (43.5 &lt;= 47.559999999999995)</code></pre>
+</div>
+</div>
+</section>
+<section id="exemplo-proteção-com-fusível-gg" class="slide level2">
+<h2>Exemplo: Proteção com Fusível gG</h2>
+<p>Se usássemos um fusível gG de 35 A (<span class="math inline">\(I_N = 35\)</span>) para proteger o mesmo fio de <span class="math inline">\(6 \text{ mm}^2\)</span> (<span class="math inline">\(I_Z = 32.8\)</span>). Funciona?</p>
+<div id="a99b26e0" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb5-1"><a href="" aria-label="1"></a>I_B <span class="op">=</span> <span class="fl">28.0</span></span>
+<span id="cb5-2"><a href="" aria-label="2"></a>I_N <span class="op">=</span> <span class="fl">35.0</span></span>
+<span id="cb5-3"><a href="" aria-label="3"></a>I_Z <span class="op">=</span> <span class="fl">32.8</span></span>
+<span id="cb5-4"><a href="" aria-label="4"></a></span>
+<span id="cb5-5"><a href="" aria-label="5"></a><span class="co"># Para fusíveis gG, a corrente I_2 é 1.6 * I_N (Tabela 6.2)</span></span>
+<span id="cb5-6"><a href="" aria-label="6"></a>I_2_fus <span class="op">=</span> <span class="fl">1.6</span> <span class="op">*</span> I_N</span>
+<span id="cb5-7"><a href="" aria-label="7"></a></span>
+<span id="cb5-8"><a href="" aria-label="8"></a>cond_2 <span class="op">=</span> I_2_fus <span class="op">&lt;=</span> (<span class="fl">1.45</span> <span class="op">*</span> I_Z)</span>
+<span id="cb5-9"><a href="" aria-label="9"></a><span class="fu">println</span>(<span class="st">"Para fusível 35A em cabo 6mm²:"</span>)</span>
+<span id="cb5-10"><a href="" aria-label="10"></a><span class="fu">println</span>(<span class="st">"Condição 2: </span><span class="sc">$</span>(I_2_fus)<span class="st"> &lt;= </span><span class="sc">$</span>(<span class="fu">round</span>(<span class="fl">1.45</span><span class="op">*</span>I_Z, digits<span class="op">=</span><span class="fl">1</span>))<span class="st"> ? "</span>, cond_2 ? <span class="st">"OK"</span> <span class="op">:</span> <span class="st">"FALHA NA NORMA!"</span>)</span>
+<span id="cb5-11"><a href="" aria-label="11"></a><span class="fu">println</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Solução: Engrossar o cabo para 10mm² (Iz=45.6A)."</span>)</span>
+<span id="cb5-12"><a href="" aria-label="12"></a><span class="fu">println</span>(<span class="st">"Condição 2 (novo cabo): </span><span class="sc">$</span>(I_2_fus)<span class="st"> &lt;= </span><span class="sc">$</span>(<span class="fu">round</span>(<span class="fl">1.45</span><span class="op">*</span><span class="fl">45.6</span>, digits<span class="op">=</span><span class="fl">1</span>))<span class="st"> -&gt; OK"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Para fusível 35A em cabo 6mm²:
+Condição 2: 56.0 &lt;= 47.6 ? FALHA NA NORMA!
+
+Solução: Engrossar o cabo para 10mm² (Iz=45.6A).
+Condição 2 (novo cabo): 56.0 &lt;= 66.1 -&gt; OK</code></pre>
+</div>
+</div>
+</section></section>
+<section>
+<section id="proteção-contra-sobrecargas" class="title-slide slide level1 center">
+<h1>Proteção contra Sobrecargas</h1>
+
+</section>
+<section id="aquecimento-sob-sobrecarga-de-145i_z" class="slide level2">
+<h2>Aquecimento sob Sobrecarga de <span class="math inline">\(1{,}45\,I_Z\)</span></h2>
+<p>Quando percorrido por <span class="math inline">\(I = 1{,}45\, I_Z\)</span>, o condutor atinge uma temperatura de regime <span class="math inline">\(\theta_R\)</span>:</p>
+<ul>
+<li><strong>PVC:</strong> <span class="math inline">\(\theta_R = 114^\circ\text{C}\)</span></li>
+<li><strong>EPR/XLPE:</strong> <span class="math inline">\(\theta_R = 156^\circ\text{C}\)</span></li>
+</ul>
+<p>O tempo para atingir a temperatura de sobrecarga <span class="math inline">\(\theta_S\)</span> depende da <strong>constante de tempo térmica</strong> <span class="math inline">\(k_T\)</span> do condutor:</p>
+<p><span class="math display">\[k_T = \frac{10^4}{a^2}\left(0{,}7\,S^{0{,}75} + 0{,}8\,S^{0{,}5} + 0{,}36\,S^{0{,}25}\right) \tag{9.46}\]</span></p>
+<p>onde <span class="math inline">\(S\)</span> é a seção (mm²) e <span class="math inline">\(a\)</span> é o fator de capacidade de condução para seção unitária (Tabela 9.3).</p>
+</section>
+<section id="tempos-característicos-pvc" class="slide level2">
+<h2>Tempos Característicos (PVC)</h2>
+<p>Todos os tempos vêm da mesma equação geral do transitório térmico:</p>
+<p><span class="math display">\[t = k_T \ln\frac{\Delta\theta_R-\Delta\theta_0}{\Delta\theta_R-\Delta\theta_{alvo}}\]</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(\Delta\theta_R\)</span>: sobretemperatura de <strong>regime</strong> — onde a curva se estabiliza: <span class="math inline">\(\Delta\theta_R=n^2\Delta\theta_Z\)</span>, com <span class="math inline">\(n=I/I_Z\)</span>. O quadrado vem do aquecimento Joule (<span class="math inline">\(P=I^2R\)</span>): dobrar a corrente <strong>quadruplica</strong> o calor gerado, não dobra.</li>
+<li class="fragment"><span class="math inline">\(\Delta\theta_0\)</span>: sobretemperatura <strong>inicial</strong> — partida a <strong>frio</strong> (<span class="math inline">\(\theta_0=\theta_A\)</span>): <span class="math inline">\(\Delta\theta_0=0\)</span>; partida a <strong>quente</strong> (<span class="math inline">\(\theta_0=\theta_Z\)</span>): <span class="math inline">\(\Delta\theta_0=\theta_Z-\theta_A\)</span>.</li>
+<li class="fragment"><span class="math inline">\(\Delta\theta_{alvo}\)</span>: sobretemperatura que queremos <strong>atingir</strong> — <span class="math inline">\(\theta_S\)</span> (sobrecarga) ou <span class="math inline">\(\theta_R\)</span> (o próprio regime).</li>
+</ul>
+<div class="fragment">
+<p>Para o PVC (<span class="math inline">\(\theta_A=30^\circ\text{C}\)</span>, <span class="math inline">\(\theta_Z=70^\circ\text{C}\)</span>): partida a <strong>frio</strong> <span class="math inline">\(\Delta\theta_0=0\)</span>; partida a <strong>quente</strong> <span class="math inline">\(\Delta\theta_0=40^\circ\text{C}\)</span>.</p>
+</div>
+</section>
+<section id="de-onde-vêm-os-coeficientes" class="slide level2">
+<h2>De onde Vêm os Coeficientes?</h2>
+<p>Para PVC, <span class="math inline">\(n=1{,}45\)</span>:</p>
+<p><span class="math display">\[\Delta\theta_R=n^2(\theta_Z-\theta_A)=1{,}45^2\times40=84°C\]</span></p>
+<p>Faltam só <span class="math inline">\(\Delta\theta_0\)</span> (de onde parte) e <span class="math inline">\(\Delta\theta_{alvo}\)</span> (até onde vai):</p>
+<div id="tbl-11_coefa" class="quarto-float quarto-figure quarto-figure-center" data-tbl-colwidths="[22,15,18,45]">
+<figure class="quarto-float quarto-float-tbl">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-11_coefa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tab.&nbsp;1: (a) Derivação de <span class="math inline">\(t_{S1}\)</span> e <span class="math inline">\(t_{S2}\)</span>.
+</figcaption>
+<div aria-describedby="tbl-11_coefa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 15%">
+<col style="width: 18%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Caso</th>
+<th style="text-align: center;"><span class="math inline">\(\Delta\theta_0\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\Delta\theta_{alvo}\)</span></th>
+<th>Substituindo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(t_{S1}\)</span> (frio → <span class="math inline">\(\theta_S\)</span>)</td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\theta_S-\theta_A=70\)</span></td>
+<td><span class="math inline">\(k_T\ln\dfrac{84}{84-70}=k_T\ln 6\approx\mathbf{1{,}79\,k_T}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(t_{S2}\)</span> (quente → <span class="math inline">\(\theta_S\)</span>)</td>
+<td style="text-align: center;"><span class="math inline">\(\theta_Z-\theta_A=40\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(70\)</span></td>
+<td><span class="math inline">\(k_T\ln\dfrac{84-40}{84-70}=k_T\ln 3{,}14\approx\mathbf{1{,}15\,k_T}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="de-onde-vêm-os-coeficientes-1" class="slide level2">
+<h2>De onde Vêm os Coeficientes?</h2>
+<div id="tbl-11_coefb" class="quarto-float quarto-figure quarto-figure-center" data-tbl-colwidths="[22,15,18,45]">
+<figure class="quarto-float quarto-float-tbl">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-11_coefb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tab.&nbsp;2: (b) Derivação de <span class="math inline">\(t_{R1}\)</span> e <span class="math inline">\(t_{R2}\)</span>.
+</figcaption>
+<div aria-describedby="tbl-11_coefb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 15%">
+<col style="width: 18%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Caso</th>
+<th style="text-align: center;"><span class="math inline">\(\Delta\theta_0\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\Delta\theta_{alvo}\)</span></th>
+<th>Substituindo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(t_{R1}\)</span> (frio → <span class="math inline">\(99\%\,\theta_R\)</span>)</td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0{,}99\times84\)</span></td>
+<td><span class="math inline">\(k_T\ln\dfrac{1}{0{,}01}=k_T\ln 100\approx\mathbf{4{,}6\,k_T}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(t_{R2}\)</span> (quente → <span class="math inline">\(99\%\,\theta_R\)</span>)</td>
+<td style="text-align: center;"><span class="math inline">\(40\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0{,}99\times84\)</span></td>
+<td><span class="math inline">\(k_T\ln\dfrac{84-40}{0{,}01\times84}=k_T\ln 52{,}4\approx\mathbf{3{,}95\,k_T}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<blockquote>
+<p>“Chegar ao regime” levaria tempo infinito (<span class="math inline">\(e^{-t/k_T}\to0\)</span> só quando <span class="math inline">\(t\to\infty\)</span>) — por isso <span class="math inline">\(t_{R1}\)</span>/<span class="math inline">\(t_{R2}\)</span> usam a convenção prática de <strong>99% do valor final</strong>.</p>
+</blockquote>
+<blockquote>
+<p>Dedução completa: <a href="../Cap9/index.html#curvas-de-sobrecarga-t-fn" target="_blank">Expressões 9.35/9.36 (Cap. 9 — Curvas de Sobrecarga)</a></p>
+</blockquote>
+</section>
+<section id="cálculo-dos-tempos" class="slide level2">
+<h2>Cálculo dos Tempos</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Grandeza</th>
+<th>Partida a frio (<span class="math inline">\(\theta_A\)</span>)</th>
+<th>Partida a quente (<span class="math inline">\(\theta_Z\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Até <span class="math inline">\(\theta_S\)</span></td>
+<td><span class="math inline">\(t_{S1}=1{,}79\,k_T\)</span></td>
+<td><span class="math inline">\(t_{S2}=1{,}15\,k_T\)</span></td>
+</tr>
+<tr class="even">
+<td>Até <span class="math inline">\(\theta_R\)</span></td>
+<td><span class="math inline">\(t_{R1}=4{,}6\,k_T\)</span></td>
+<td><span class="math inline">\(t_{R2}=3{,}95\,k_T\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Vamos aplicar isso a dois condutores Cu/PVC reais do livro — 1,5 mm² e 10 mm² — no mesmo tipo de instalação.</p>
+<div id="af758359" class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb7-1"><a href="" aria-label="1"></a><span class="co"># Constante de tempo térmica -- Expressão 9.46</span></span>
+<span id="cb7-2"><a href="" aria-label="2"></a><span class="fu">kT</span>(S, a) <span class="op">=</span> (<span class="fl">1e4</span> <span class="op">/</span> a<span class="op">^</span><span class="fl">2</span>) <span class="op">*</span> (<span class="fl">0.7</span><span class="op">*</span>S<span class="op">^</span><span class="fl">0.75</span> <span class="op">+</span> <span class="fl">0.8</span><span class="op">*</span>S<span class="op">^</span><span class="fl">0.5</span> <span class="op">+</span> <span class="fl">0.36</span><span class="op">*</span>S<span class="op">^</span><span class="fl">0.25</span>)</span>
+<span id="cb7-3"><a href="" aria-label="3"></a></span>
+<span id="cb7-4"><a href="" aria-label="4"></a><span class="co"># Eletroduto embutido em alvenaria, 2 condutores carregados (letra B1)</span></span>
+<span id="cb7-5"><a href="" aria-label="5"></a>a <span class="op">=</span> <span class="fl">13.5</span>   <span class="co"># Tabela 9.3</span></span>
+<span id="cb7-6"><a href="" aria-label="6"></a></span>
+<span id="cb7-7"><a href="" aria-label="7"></a>secoes <span class="op">=</span> <span class="fu">Dict</span>(<span class="st">"1.5 mm²"</span> <span class="op">=&gt;</span> (S<span class="op">=</span><span class="fl">1.5</span>, Iz<span class="op">=</span><span class="fl">17.5</span>), <span class="st">"10 mm²"</span> <span class="op">=&gt;</span> (S<span class="op">=</span><span class="fl">10.0</span>, Iz<span class="op">=</span><span class="fl">57.0</span>))</span>
+<span id="cb7-8"><a href="" aria-label="8"></a></span>
+<span id="cb7-9"><a href="" aria-label="9"></a><span class="cf">for</span> (nome, d) <span class="kw">in</span> secoes</span>
+<span id="cb7-10"><a href="" aria-label="10"></a>    k <span class="op">=</span> <span class="fu">kT</span>(d.S, a)</span>
+<span id="cb7-11"><a href="" aria-label="11"></a>    tS1, tS2 <span class="op">=</span> <span class="fl">1.79</span><span class="op">*</span>k, <span class="fl">1.15</span><span class="op">*</span>k</span>
+<span id="cb7-12"><a href="" aria-label="12"></a>    tR1, tR2 <span class="op">=</span> <span class="fl">4.6</span><span class="op">*</span>k, <span class="fl">3.95</span><span class="op">*</span>k</span>
+<span id="cb7-13"><a href="" aria-label="13"></a>    <span class="fu">println</span>(<span class="st">"== Condutor </span><span class="sc">$</span>nome<span class="st"> (Iz=</span><span class="sc">$</span>(d.Iz)<span class="st"> A) =="</span>)</span>
+<span id="cb7-14"><a href="" aria-label="14"></a>    <span class="fu">println</span>(<span class="st">"  k_T  = </span><span class="sc">$</span>(<span class="fu">round</span>(k, digits<span class="op">=</span><span class="fl">1</span>))<span class="st"> s"</span>)</span>
+<span id="cb7-15"><a href="" aria-label="15"></a>    <span class="fu">print</span>(<span class="st">"  t_S1 (frio→sobrecarga)  = </span><span class="sc">$</span>(<span class="fu">round</span>(tS1, digits<span class="op">=</span><span class="fl">1</span>))<span class="st"> s    "</span>)</span>
+<span id="cb7-16"><a href="" aria-label="16"></a>    <span class="fu">println</span>(<span class="st">"  t_S2 (quente→sobrecarga)= </span><span class="sc">$</span>(<span class="fu">round</span>(tS2, digits<span class="op">=</span><span class="fl">1</span>))<span class="st"> s"</span>)</span>
+<span id="cb7-17"><a href="" aria-label="17"></a>    <span class="fu">print</span>(<span class="st">"  t_R1 (frio→regime)      = </span><span class="sc">$</span>(<span class="fu">round</span>(tR1, digits<span class="op">=</span><span class="fl">1</span>))<span class="st"> s   "</span>)</span>
+<span id="cb7-18"><a href="" aria-label="18"></a>    <span class="fu">println</span>(<span class="st">"  t_R2 (quente→regime)    = </span><span class="sc">$</span>(<span class="fu">round</span>(tR2, digits<span class="op">=</span><span class="fl">1</span>))<span class="st"> s"</span>)</span>
+<span id="cb7-19"><a href="" aria-label="19"></a><span class="cf">end</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>== Condutor 1.5 mm² (Iz=17.5 A) ==
+  k_T  = 127.7 s
+  t_S1 (frio→sobrecarga)  = 228.5 s      t_S2 (quente→sobrecarga)= 146.8 s
+  t_R1 (frio→regime)      = 587.3 s      t_R2 (quente→regime)    = 504.3 s
+== Condutor 10 mm² (Iz=57.0 A) ==
+  k_T  = 389.9 s
+  t_S1 (frio→sobrecarga)  = 698.0 s      t_S2 (quente→sobrecarga)= 448.4 s
+  t_R1 (frio→regime)      = 1793.7 s      t_R2 (quente→regime)    = 1540.2 s</code></pre>
+</div>
+</div>
+</section>
+<section id="interpretação" class="slide level2">
+<h2>Interpretação</h2>
+<p>O <strong>tempo convencional</strong> de 1 hora (3.600 s) para <span class="math inline">\(I=1{,}45\,I_N\)</span> é o prazo <strong>máximo</strong> que a norma dá para o dispositivo atuar — não uma garantia de que ele atua exatamente nesse instante.</p>
+<ul>
+<li class="fragment">Para o condutor de <strong>1,5 mm²</strong>, <span class="math inline">\(t_{R1}\approx 598\,s\)</span>: o cabo atinge o regime (<span class="math inline">\(\theta_R=114^\circ\text{C}\)</span>) em <strong>menos de 10 minutos</strong>.</li>
+<li class="fragment">O cabo está <strong>acima do próprio limite</strong> que a norma considera aceitável.</li>
+<li class="fragment">O cabo pode passar até <strong>~3.000 s a mais</strong> (o resto da hora) nessa condição de sobretemperatura antes do desarme garantido.</li>
+</ul>
+</section>
+<section id="interpretação-1" class="slide level2">
+<h2>Interpretação</h2>
+<p>Para o condutor de <strong>10 mm²</strong>, o mesmo raciocínio dá <span class="math inline">\(t_{R1}\approx 1.812\,s\)</span> — ainda crítico, mas com mais margem (seção maior <span class="math inline">\(\Rightarrow\)</span> <span class="math inline">\(k_T\)</span> maior <span class="math inline">\(\Rightarrow\)</span> esquenta mais devagar).</p>
+<p>Por isso a NBR 5410 não confia só no critério de <span class="math inline">\(1{,}45\,I_Z\)</span>/1h: para disjuntores, exige <strong>sempre</strong> também <span class="math inline">\(I_N \le I_Z\)</span> (Expressão 11.12) — essa condição sozinha já é <strong>mais restritiva</strong>, evitando esse cenário desde o início.</p>
+<p>O <span class="math inline">\(\alpha\)</span> (multiplicador de <span class="math inline">\(I_N\)</span> que define <span class="math inline">\(I_2\)</span>) muda conforme a norma do disjuntor (<a href="../Cap6/index.html#tbl-6_3" target="_blank">Tabela 6.3</a>):</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(\alpha\)</span></th>
+<th>Norma</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(1{,}30\)</span></td>
+<td>NBR IEC 60947-2 (industrial)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(1{,}35\)</span></td>
+<td>RTQ / Inmetro 243 (residencial, compulsória)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(1{,}45\)</span></td>
+<td>NBR NM 60898 (residencial/similar)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="curva-limite-de-sobrecarga" class="slide level2">
+<h2>Curva-Limite de Sobrecarga</h2>
+<div id="fig-11_20" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-11_20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/index_2026-08-29-17-33-26.png" style="width:70.0%"></p>
+<figcaption><span class="math inline">\(k_T = 130\)</span> s (cabo pequeno)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/index_2026-08-29-17-33-56.png" style="width:70.0%"></p>
+<figcaption><span class="math inline">\(k_T = 300\)</span> s (cabo médio)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/index_2026-08-29-17-34-36.png" style="width:36.0%"></p>
+<figcaption><span class="math inline">\(k_T = 500\)</span> s (cabo grande)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-11_20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;15: Curva-limite de sobrecarga nas condições da NBR 5410 para m=2 e kT=130, 300 e 500 segundos.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="exemplo-dimensionamento-completo" class="slide level2">
+<h2>Exemplo: Dimensionamento Completo</h2>
+<p>Circuito com condutores Cu/PVC, eletroduto embutido em alvenaria, dois condutores carregados, corrente de projeto <span class="math inline">\(I_B = 28\ A\)</span>, temperatura ambiente <span class="math inline">\(30^\circ\text{C}\)</span>, compartilhando o eletroduto com outro circuito.</p>
+<p><strong>(a) Capacidade de condução:</strong> fator de agrupamento <span class="math inline">\(f_3=0{,}8\)</span> (Tabela 9.10) <span class="math inline">\(\Rightarrow\)</span> corrente fictícia <span class="math inline">\(I_B' = I_B/f_3\)</span>.</p>
+<div id="7b330de4" class="cell" data-execution_count="9">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb9-1"><a href="" aria-label="1"></a>I_B <span class="op">=</span> <span class="fl">28.0</span></span>
+<span id="cb9-2"><a href="" aria-label="2"></a>f3 <span class="op">=</span> <span class="fl">0.8</span></span>
+<span id="cb9-3"><a href="" aria-label="3"></a>I_B_ficticia <span class="op">=</span> I_B <span class="op">/</span> f3</span>
+<span id="cb9-4"><a href="" aria-label="4"></a><span class="fu">println</span>(<span class="st">"Corrente fictícia de projeto: I_B' = </span><span class="sc">$</span>(<span class="fu">round</span>(I_B_ficticia, digits<span class="op">=</span><span class="fl">1</span>))<span class="st"> A"</span>)</span>
+<span id="cb9-5"><a href="" aria-label="5"></a></span>
+<span id="cb9-6"><a href="" aria-label="6"></a><span class="co"># Tabela 5.27 (letra B1) + Tabela 9.4 -&gt; seção de 6 mm² com capacidade tabelada de 41 A</span></span>
+<span id="cb9-7"><a href="" aria-label="7"></a>Iz_tabelado_6mm <span class="op">=</span> <span class="fl">41.0</span></span>
+<span id="cb9-8"><a href="" aria-label="8"></a>Iz_6mm <span class="op">=</span> Iz_tabelado_6mm <span class="op">*</span> f3</span>
+<span id="cb9-9"><a href="" aria-label="9"></a><span class="fu">println</span>(<span class="st">"Seção escolhida: 6 mm²  -&gt;  Iz = </span><span class="sc">$</span>(Iz_tabelado_6mm)<span class="st"> × </span><span class="sc">$</span>(f3)<span class="st"> = </span><span class="sc">$</span>(Iz_6mm)<span class="st"> A"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Corrente fictícia de projeto: I_B' = 35.0 A
+Seção escolhida: 6 mm²  -&gt;  Iz = 41.0 × 0.8 = 32.800000000000004 A</code></pre>
+</div>
+</div>
+</section>
+<section id="b-proteção-com-disjuntor-termomagnético" class="slide level2">
+<h2>(b) Proteção com Disjuntor Termomagnético</h2>
+<p>Disjuntor em caixa moldada, corrente nominal referida a 40 °C (30 °C ambiente + 10 °C do quadro).</p>
+<div id="2586c9ee" class="cell" data-execution_count="10">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="" aria-label="1"></a>I_B, I_Z <span class="op">=</span> <span class="fl">28.0</span>, <span class="fl">32.8</span></span>
+<span id="cb11-2"><a href="" aria-label="2"></a>disjuntores_comerciais <span class="op">=</span> [<span class="fl">10</span>,<span class="fl">16</span>,<span class="fl">20</span>,<span class="fl">25</span>,<span class="fl">30</span>,<span class="fl">32</span>,<span class="fl">40</span>,<span class="fl">50</span>]</span>
+<span id="cb11-3"><a href="" aria-label="3"></a></span>
+<span id="cb11-4"><a href="" aria-label="4"></a><span class="co"># Expressão 11.11: I_B &lt;= I_N   /  Expressão 11.12: I_N &lt;= I_Z</span></span>
+<span id="cb11-5"><a href="" aria-label="5"></a>I_N <span class="op">=</span> <span class="fu">minimum</span>(<span class="fu">filter</span>(x <span class="op">-&gt;</span> x <span class="op">&gt;=</span> I_B, disjuntores_comerciais))</span>
+<span id="cb11-6"><a href="" aria-label="6"></a>cond_11_12 <span class="op">=</span> I_N <span class="op">&lt;=</span> I_Z</span>
+<span id="cb11-7"><a href="" aria-label="7"></a></span>
+<span id="cb11-8"><a href="" aria-label="8"></a><span class="fu">println</span>(<span class="st">"Menor disjuntor comercial com I_N &gt;= I_B=28A: I_N = </span><span class="sc">$</span>(I_N)<span class="st"> A"</span>)</span>
+<span id="cb11-9"><a href="" aria-label="9"></a><span class="fu">println</span>(<span class="st">"Condição 11.12 (I_N &lt;= I_Z=</span><span class="sc">$</span>(I_Z)<span class="st">A): "</span>, cond_11_12 ? <span class="st">"OK"</span> <span class="op">:</span> <span class="st">"FALHOU"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Menor disjuntor comercial com I_N &gt;= I_B=28A: I_N = 30 A
+Condição 11.12 (I_N &lt;= I_Z=32.8A): OK</code></pre>
+</div>
+</div>
+</section>
+<section id="c-proteção-com-fusível-gg-falha-e-correção" class="slide level2">
+<h2>(c) Proteção com Fusível gG — Falha e Correção</h2>
+<p>Um fusível gG de <span class="math inline">\(I_N=35\,A\)</span> (menor comercial <span class="math inline">\(\ge 28\,A\)</span>) tem <span class="math inline">\(\alpha=1{,}6\)</span> (Tabela 6.2). Testamos a Expressão 11.14 (<span class="math inline">\(\alpha I_N \le 1{,}45\,I_Z\)</span>) no cabo de 6 mm² e, se necessário, no de 10 mm².</p>
+<div id="28584156" class="cell" data-execution_count="11">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb13-1"><a href="" aria-label="1"></a>I_N_fus <span class="op">=</span> <span class="fl">35.0</span></span>
+<span id="cb13-2"><a href="" aria-label="2"></a>alpha <span class="op">=</span> <span class="fl">1.6</span></span>
+<span id="cb13-3"><a href="" aria-label="3"></a></span>
+<span id="cb13-4"><a href="" aria-label="4"></a>Iz_6mm, Iz_10mm <span class="op">=</span> <span class="fl">32.8</span>, <span class="fl">45.6</span>   <span class="co"># 41*0.8 e 57*0.8</span></span>
+<span id="cb13-5"><a href="" aria-label="5"></a></span>
+<span id="cb13-6"><a href="" aria-label="6"></a><span class="fu">teste</span>(Iz) <span class="op">=</span> alpha <span class="op">*</span> I_N_fus <span class="op">&lt;=</span> <span class="fl">1.45</span> <span class="op">*</span> Iz</span>
+<span id="cb13-7"><a href="" aria-label="7"></a></span>
+<span id="cb13-8"><a href="" aria-label="8"></a><span class="fu">println</span>(<span class="st">"Cabo 6 mm²  (Iz=</span><span class="sc">$</span>(Iz_6mm)<span class="st">A): </span><span class="sc">$</span>(alpha)<span class="st">×</span><span class="sc">$</span>(I_N_fus)<span class="st">=</span><span class="sc">$</span>(alpha<span class="op">*</span>I_N_fus)<span class="st">  &lt;=  1.45×</span><span class="sc">$</span>(Iz_6mm)<span class="st">=</span><span class="sc">$</span>(<span class="fu">round</span>(<span class="fl">1.45</span><span class="op">*</span>Iz_6mm,digits<span class="op">=</span><span class="fl">1</span>))<span class="st">  ?  "</span>, <span class="fu">teste</span>(Iz_6mm) ? <span class="st">"OK"</span> <span class="op">:</span> <span class="st">"FALHA"</span>)</span>
+<span id="cb13-9"><a href="" aria-label="9"></a><span class="fu">println</span>(<span class="st">"Cabo 10 mm² (Iz=</span><span class="sc">$</span>(Iz_10mm)<span class="st">A): </span><span class="sc">$</span>(alpha)<span class="st">×</span><span class="sc">$</span>(I_N_fus)<span class="st">=</span><span class="sc">$</span>(alpha<span class="op">*</span>I_N_fus)<span class="st">  &lt;=  1.45×</span><span class="sc">$</span>(Iz_10mm)<span class="st">=</span><span class="sc">$</span>(<span class="fu">round</span>(<span class="fl">1.45</span><span class="op">*</span>Iz_10mm,digits<span class="op">=</span><span class="fl">1</span>))<span class="st">  ?  "</span>, <span class="fu">teste</span>(Iz_10mm) ? <span class="st">"OK"</span> <span class="op">:</span> <span class="st">"FALHA"</span>)</span>
+<span id="cb13-10"><a href="" aria-label="10"></a><span class="fu">println</span>()</span>
+<span id="cb13-11"><a href="" aria-label="11"></a><span class="fu">println</span>(<span class="fu">teste</span>(Iz_6mm) ? <span class="st">""</span> <span class="op">:</span> <span class="st">"-&gt; O cabo de 6 mm² não atende com fusível; é necessário usar 10 mm²."</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Cabo 6 mm²  (Iz=32.8A): 1.6×35.0=56.0  &lt;=  1.45×32.8=47.6  ?  FALHA
+Cabo 10 mm² (Iz=45.6A): 1.6×35.0=56.0  &lt;=  1.45×45.6=66.1  ?  OK
+
+-&gt; O cabo de 6 mm² não atende com fusível; é necessário usar 10 mm².</code></pre>
+</div>
+</div>
+</section>
+<section id="omissão-da-proteção-contra-sobrecargas" class="slide level2">
+<h2>Omissão da Proteção contra Sobrecargas</h2>
+<p>A NBR 5410 permite omitir a proteção contra sobrecarga (fora de áreas de risco BE2/BE3), entre outros, quando:</p>
+<ul>
+<li class="fragment"><strong>(a)</strong> A linha a jusante de uma troca de seção já está protegida por um dispositivo a montante.</li>
+<li class="fragment"><strong>(b)</strong> A linha não é suscetível a sobrecargas (ex: motor com proteção térmica individual) e está protegida contra curto-circuito.</li>
+<li class="fragment"><strong>(c)</strong> Circuitos de telecomunicação, comando e sinalização.</li>
+</ul>
+</section>
+<section id="omissão-da-proteção-contra-sobrecargas-1" class="slide level2">
+<h2>Omissão da Proteção contra Sobrecargas</h2>
+
+<img data-src="images/index_2026-08-29-17-56-57.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_21"><p class="caption">
+Fig.&nbsp;16: Exemplos de omissão da proteção contra sobrecargas.
+</p></section>
+<section id="exemplo-omissão-via-rtq-inmetro" class="slide level2">
+<h2>Exemplo: Omissão via RTQ Inmetro</h2>
+<p>Derivação com <span class="math inline">\(I_Z=42\,A\)</span> já protegida pelo disjuntor geral <span class="math inline">\(I_N=40\,A\)</span> — como <span class="math inline">\(40 &lt; 42\,A\)</span> (Expressão 11.12), a proteção pode ser omitida na derivação.</p>
+<div id="fig-11_22" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-11_22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-29-17-58-28.png" class="quarto-figure quarto-figure-center" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-11_22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;17: Diagrama de omissão.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="exemplo-circuito-principal-com-derivações" class="slide level2">
+<h2>Exemplo: Circuito Principal com Derivações</h2>
+<p>Os trechos AB, BC e CD (seções decrescentes) já estão protegidos pelos disjuntores das derivações B, C e D.</p>
+<div id="fig-11_23" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-11_23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-29-18-00-39.png" class="quarto-figure quarto-figure-center" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-11_23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;18: Diagrama de omissão.
+</figcaption>
+</figure>
+</div>
+</section></section>
+<section>
+<section id="proteção-contra-curtos-circuitos" class="title-slide slide level1 center">
+<h1>Proteção contra Curtos-Circuitos</h1>
+
+</section>
+<section id="condições-gerais-nbr-5410" class="slide level2">
+<h2>Condições Gerais (NBR 5410)</h2>
+<p><strong>(a) Capacidade de interrupção:</strong> <span class="math display">\[ I_{CN} \ge I_k \tag{11.23} \]</span></p>
+<p><strong>(b) Integral de Joule que o dispositivo deixa passar:</strong> <span class="math display">\[ \int_0^t i^2\,dt \le K^2S^2 \tag{11.24} \]</span></p>
+<p>Para curtos de 0,1 a 5 s, com corrente aproximadamente constante: <span class="math display">\[ I_k^2 \cdot t \le K^2S^2 \tag{11.25} \]</span></p>
+
+<img data-src="images/index_2026-08-29-18-02-57.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_24"><p class="caption">
+Fig.&nbsp;19: Condições de proteção contra curto-circuito
+</p></section>
+<section id="capacidade-de-interrupção-inferior-ao-curto-presumido" class="slide level2">
+<h2>Capacidade de Interrupção Inferior ao Curto Presumido</h2>
+<p>A norma admite, excepcionalmente, um dispositivo com <span class="math inline">\(I_{CN} &lt; I_k\)</span> no ponto, <strong>desde que</strong>:</p>
+<ul>
+<li>Exista outro dispositivo a <strong>montante</strong> com capacidade suficiente.</li>
+<li>A energia que o dispositivo a montante deixa passar <strong>não supere</strong> a suportável pelo dispositivo e pela linha a jusante.</li>
+</ul>
+<div id="fig-11_25" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-11_25-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-29-18-07-41.png" class="quarto-figure quarto-figure-center" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-11_25-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;20: Dispositivo com capacidade inferior à corrente de curto presumida
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="limite-superior-da-corrente-presumida" class="slide level2">
+<h2>Limite Superior da Corrente Presumida</h2>
+<p>A corrente correspondente à interseção das curvas <span class="math inline">\((I^2t)=f(I)\)</span> do disjuntor e do condutor deve ser, no mínimo, igual à corrente de curto-circuito presumida simétrica no ponto de instalação.</p>
+<div id="fig-11_27" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-11_27-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/index_2026-08-29-18-09-12.png" class="quarto-figure quarto-figure-center" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-11_27-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;21: Limite superior da corrente de curto-circuito presumida simétrica.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="proteção-dos-condutores-de-fase" class="slide level2">
+<h2>Proteção dos Condutores de Fase</h2>
+<p>Regra geral da NBR 5410: a detecção de sobrecorrentes deve ser prevista em <strong>todos os condutores de fase</strong>, provocando o seccionamento do condutor em que a sobrecorrente for detectada — não necessariamente dos demais.</p>
+<ul>
+<li class="fragment"><strong>Exceção 1:</strong> motores trifásicos — o seccionamento de uma única fase pode ser perigoso; todas as fases devem ser seccionadas simultaneamente.</li>
+<li class="fragment"><strong>Exceção 2:</strong> instalações residenciais — o dispositivo deve ser <strong>multipolar</strong> (disjuntores unipolares “emendados” lado a lado não são aceitos pela norma).</li>
+</ul>
+</section></section>
+<section>
+<section id="coordenação-seletiva" class="title-slide slide level1 center">
+<h1>Coordenação Seletiva</h1>
+
+</section>
+<section id="o-que-é-seletividade" class="slide level2">
+<h2>O que é Seletividade?</h2>
+<p>Quando dois ou mais dispositivos são instalados em série, a atuação deles deve ser coordenada para que, em caso de falta, <strong>só atue o dispositivo mais a jusante</strong> (próximo do defeito).</p>
+<p>Isso evita apagar a fábrica inteira por causa do defeito numa máquina!</p>
+</section>
+<section id="seletividade-entre-fusíveis" class="slide level2">
+<h2>Seletividade entre Fusíveis</h2>
+<p>Dois fusíveis gG são totalmente seletivos se a corrente do montante for <strong>pelo menos 1,6 vez</strong> maior que a do fusível a jusante:</p>
+<p><span class="math display">\[ I_{NA} \ge 1{,}6\, I_{NB} \tag{11.26} \]</span></p>
+<blockquote>
+<p><strong>Ex:</strong> Um fusível gG de 63 A só será seletivo com outro de, no mínimo, <span class="math inline">\(63 \times 1{,}6 = 100{,}8\)</span> (portanto, usa-se 100 A a montante).</p>
+</blockquote>
+
+<img data-src="images/index_2026-08-29-18-11-31.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_35"><p class="caption">
+Fig.&nbsp;22: Dois dispositivos de proteção A e B, em série, percorridos pela mesma corrente de falta
+</p></section>
+<section id="condição-de-seletividade-total-fusíveis" class="slide level2">
+<h2>Condição de Seletividade Total (Fusíveis)</h2>
+<p>É preciso garantir que o fusível a montante ainda não tenha iniciado a fusão quando o de jusante interrompe a falta:</p>
+<p><span class="math display">\[ (I^2t)_{\text{interrupção, jusante}} &lt; (I^2t)_{\text{fusão, montante}} \]</span></p>
+
+<img data-src="images/index_2026-08-29-18-12-46.png" class="r-stretch quarto-figure quarto-figure-center" id="fig-11_36"><p class="caption">
+Fig.&nbsp;23: Condição de seletividade total entre fusíveis
+</p></section>
+<section id="seletividade-entre-disjuntores" class="slide level2">
+<h2>Seletividade entre Disjuntores</h2>
+<p>Para disjuntores termomagnéticos, a regra empírica da região térmica exige que o disjuntor a montante seja <strong>pelo menos 2,5 vezes</strong> maior que o de jusante:</p>
+<p><span class="math display">\[ I_{NA} \ge 2{,}5\, I_{NB} \quad \text{(Expressão 11.28)} \]</span></p>
+<p>sendo a seletividade limitada ao valor inferior do limiar de atuação magnética do disjuntor a montante.</p>
+</section>
+<section id="tabela-11.4-seletividade-entre-disjuntores-amostra" class="slide level2">
+<h2>Tabela 11.4 — Seletividade entre Disjuntores (amostra)</h2>
+<p>A Tabela 11.4 completa cruza <em>todas</em> as combinações de disjuntores usuais (jusante × montante). A título de ilustração, 3 linhas:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Disjuntor a jusante <span class="math inline">\(I_N\)</span> (A)</th>
+<th>Seletivo total a partir do montante <span class="math inline">\(I_N\)</span> (A)</th>
+<th>Limite de seletividade (<span class="math inline">\(5\times I_{N,\text{montante}}\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10</td>
+<td>25</td>
+<td>125 A</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>50</td>
+<td>250 A</td>
+</tr>
+<tr class="odd">
+<td>30</td>
+<td>70</td>
+<td>350 A</td>
+</tr>
+</tbody>
+</table>
+<p><em>(tabela completa disponível em <code>images/tab11_4.png</code>)</em></p>
+</section>
+<section id="proteção-de-retaguarda-backup" class="slide level2">
+<h2>Proteção de Retaguarda (Backup)</h2>
+<p>Um caso muito comum: disjuntor pequeno e barato coordenado com fusível grande a montante.</p>
+<p>A capacidade de interrupção do disjuntor é inferior ao curto máximo do painel. Assim, a função do fusível é atuar como ‘guarda-costas’, operando antes que o disjuntor exploda num curto severo, mas permitindo que o disjuntor desligue normalmente em caso de sobrecargas ou curtos leves.</p>
+<p>As características tempo-corrente dos dois dispositivos devem cruzar-se o mais próximo possível (mas não acima) da capacidade de interrupção do disjuntor.</p>
+</section></section>
+<section id="referências" class="title-slide slide level1 center">
+<h1>Referências</h1>
+<p>COTRIM, Ademaro A. M. B. <strong>Instalações Elétricas</strong>. 5ª Edição. São Paulo: Pearson Prentice Hall, 2009.</p>
+</section>
+
+<section>
+<section id="exercícios" class="title-slide slide level1 center">
+<h1>Exercícios</h1>
+
+</section>
+<section id="exercício-1" class="slide level2">
+<h2>Exercício 1</h2>
+<p><strong>Quais são os dois tipos possíveis de sobrecorrente?</strong></p>
+<div class="fragment">
+<p>Correntes de sobrecarga (circuitos saudáveis porém sobrecarregados) e correntes de curto-circuito (ocasionadas por falha de isolação ou contato acidental).</p>
+</div>
+</section>
+<section id="exercício-2" class="slide level2">
+<h2>Exercício 2</h2>
+<p><strong>Qual é a vida estimada de um condutor com cobertura de PVC para serviço contínuo a 70 ºC?</strong></p>
+<div class="fragment">
+<p>Aproximadamente 20 anos operando ininterruptamente sob essa temperatura limite.</p>
+</div>
+</section>
+<section id="exercício-3" class="slide level2">
+<h2>Exercício 3</h2>
+<p><strong>Quais são os limites de temperatura para correntes de curto-circuito em cabos PVC e XLPE/EPR?</strong></p>
+<div class="fragment">
+<ul>
+<li><strong>PVC:</strong> <span class="math inline">\(160^\circ\text{C}\)</span>.</li>
+<li><strong>XLPE/EPR:</strong> <span class="math inline">\(250^\circ\text{C}\)</span>.</li>
+</ul>
+</div>
+</section>
+<section id="exercício-4" class="slide level2">
+<h2>Exercício 4</h2>
+<p><strong>Quais são os limites de temperatura para correntes de sobrecarga em cabos PVC e XLPE/EPR?</strong></p>
+<div class="fragment">
+<ul>
+<li><strong>PVC:</strong> <span class="math inline">\(100^\circ\text{C}\)</span>.</li>
+<li><strong>XLPE/EPR:</strong> <span class="math inline">\(130^\circ\text{C}\)</span>.</li>
+</ul>
+</div>
+</section>
+<section id="exercício-5" class="slide level2">
+<h2>Exercício 5</h2>
+<p><strong>Em quais condições um dispositivo de proteção ideal NÃO deve intervir e em quais ele DEVE intervir?</strong></p>
+<div class="fragment">
+<p>Ele <strong>não deve atuar</strong> para correntes <span class="math inline">\(\le I_Z\)</span> (picos normais de operação). E <strong>deve atuar</strong>: sempre (ainda que devagar) até <span class="math inline">\(1{,}45\,I_Z\)</span>; em tempos decrescentes entre <span class="math inline">\(1{,}45\)</span> e <span class="math inline">\(6\)</span>–<span class="math inline">\(7\,I_Z\)</span>; e em tempos brevíssimos para correntes de curto-circuito.</p>
+</div>
+</section>
+<section id="exercício-6" class="slide level2">
+<h2>Exercício 6</h2>
+<p><strong>Quais condições podem provocar redução na capacidade de condução de corrente (definindo o ponto de localização dos dispositivos de proteção contra sobrecarga)?</strong></p>
+<div class="fragment">
+<p>Uma troca (redução) de seção, uma alteração na natureza dos condutores (ex: barras → condutores isolados), uma mudança no modo de instalação, ou uma mudança de material/isolação dos condutores.</p>
+</div>
+</section>
+<section id="exercício-7" class="slide level2">
+<h2>Exercício 7</h2>
+<p><strong>Em que casos a NBR 5410 permite omitir a proteção contra sobrecargas?</strong></p>
+<div class="fragment">
+<ol type="a">
+<li><p>Quando a linha a jusante de uma troca de seção já está protegida por um dispositivo a montante.</p></li>
+<li><p>Quando a linha não é suscetível a sobrecargas e está protegida contra curto-circuito, sem derivações.</p></li>
+<li><p>Em instalações de telecomunicação, comando e sinalização.</p></li>
+</ol>
+</div>
+</section>
+<section id="exercício-8" class="slide level2">
+<h2>Exercício 8</h2>
+<p><strong>Em um curto-circuito, exige-se essencialmente que os disjuntores possuam quais características?</strong></p>
+<div class="fragment">
+<p>Capacidade de Interrupção Nominal (<span class="math inline">\(I_{CN}\)</span>) não inferior à corrente de curto-circuito presumida simétrica, e atuação em tempo suficientemente breve para que a integral de Joule (<span class="math inline">\(I^2t\)</span>) não supere o valor suportável pelo cabo (<span class="math inline">\(K^2S^2\)</span>).</p>
+</div>
+</section>
+<section id="exercício-9" class="slide level2">
+<h2>Exercício 9</h2>
+<p><strong>Das afirmações a seguir, indique quais são corretas, no caso de dois fusíveis colocados em série e considerados seletivos:</strong></p>
+<ol type="a">
+<li><p>As suas características (curvas) tempo-corrente não se interceptam e mantêm entre si um distanciamento (de tempo) adequado.</p></li>
+<li><p>É necessário que a integral de Joule de interrupção do fusível a jusante seja inferior à integral de Joule de fusão do fusível a montante.</p></li>
+<li><p>Entre dois fusíveis gG, a corrente nominal do fusível a montante deve ser, no mínimo, 1,6 vez a do fusível a jusante.</p></li>
+</ol>
+<div class="fragment">
+<p><strong>Todas (a, b e c) estão corretas</strong> — são exatamente as três condições vistas nos slides de Seletividade entre Fusíveis.</p>
+</div>
+</section>
+<section id="exercício-10" class="slide level2">
+<h2>Exercício 10</h2>
+<p><strong>Quão superior deve ser o ajuste da corrente nominal do disjuntor a montante (<span class="math inline">\(I_{NA}\)</span>) em relação ao de jusante (<span class="math inline">\(I_{NB}\)</span>), para garantir seletividade?</strong></p>
+<div class="fragment">
+<p><span class="math inline">\(I_{NA} \ge 2{,}5\, I_{NB}\)</span> (Expressão 11.28) — ou seja, o ajuste do disjuntor a jusante não deve superar 40% do de montante.</p>
+</div>
+</section></section>
+<section id="obrigado" class="title-slide slide level1 center">
+<h1>Obrigado!</h1>
+<div style="text-align: center;">
+<p><a href="http://thalesmaia.com/">http://thalesmaia.com/</a></p>
+</div>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>UFMG | ELE618 - Sistemas Elétricos Industriais</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'h.v',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 5.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
