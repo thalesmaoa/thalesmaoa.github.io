@@ -10,6 +10,7 @@ toc: false
 <span class="lang-en">Use right in your browser. Free, no sign-up.</span>
 
 <div class="webtools-grid" id="webtools-grid"></div>
+<div class="webtools-docs" id="webtools-docs"></div>
 
 <script>
   (function () {
@@ -20,6 +21,7 @@ toc: false
         icon: '<img src="/files/icons/webtools-magfem.png" alt="">',
         tint: '#1f5f7a',
         href: '/tools/magfem-web/',
+        docs: '/tools/magfem-web/docs/',
         soon: false,
         desc: {
           pt: 'Elementos finitos magnéticos 2D no navegador (em desenvolvimento)',
@@ -64,6 +66,15 @@ toc: false
           ? '<span class="webtools-badge"><span class="lang-pt">Em breve</span><span class="lang-en">Coming soon</span></span>'
           : '');
       grid.appendChild(el);
+    });
+
+    // Documentação das ferramentas que têm (fora do card, que já é um link).
+    var docs = document.getElementById('webtools-docs');
+    APPS.filter(function (a) { return a.docs; }).forEach(function (a) {
+      var p = document.createElement('p');
+      p.innerHTML = '📘 <a class="lang-pt" href="' + a.docs + '">Documentação do ' + a.name + '</a>' +
+        '<a class="lang-en" href="' + a.docs + 'en/">' + a.name + ' documentation</a>';
+      docs.appendChild(p);
     });
   })();
 </script>
