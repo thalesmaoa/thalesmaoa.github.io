@@ -1,0 +1,423 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malha e materiais &mdash; MagFEM</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=34306bf6" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=c0c8e3fa"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=71a39b36"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Buscar" href="../search.html" />
+    <link rel="next" title="Resolução" href="solver.html" />
+    <link rel="prev" title="Geometria (CAD)" href="geometry.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MagFEM
+              <img src="../_static/magfem-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Guia</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introdução</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#o-fluxo-de-trabalho">O fluxo de trabalho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#a-interface">A interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#proximos-passos">Próximos passos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="first-model.html">Primeiro modelo: bobina com núcleo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="first-model.html#problema-axissimetrico">1. Problema axissimétrico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="first-model.html#geometria">2. Geometria</a></li>
+<li class="toctree-l2"><a class="reference internal" href="first-model.html#materiais-circuito-e-malha">3. Materiais, circuito e malha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="first-model.html#resolver">4. Resolver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="first-model.html#resultados">5. Resultados</a></li>
+<li class="toctree-l2"><a class="reference internal" href="first-model.html#experimente">6. Experimente</a></li>
+<li class="toctree-l2"><a class="reference internal" href="first-model.html#o-script-completo">O script completo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="geometry.html">Geometria (CAD)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#ferramentas-de-desenho">Ferramentas de desenho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#encaixes-snap">Encaixes (snap)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#restricoes">Restrições</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#cotas-e-variaveis">Cotas e variáveis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#editar">Editar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#selecao-por-caixa">Seleção por caixa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#plano-e-axissimetrico">Plano e axissimétrico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#importar-geometria">Importar geometria</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Malha e materiais</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#regioes">Regiões</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#materiais">Materiais</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#circuitos-e-correntes">Circuitos e correntes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contornos">Contornos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gerar-a-malha">Gerar a malha</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="solver.html">Resolução</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="solver.html#correntes">Correntes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solver.html#tipos-de-analise">Tipos de análise</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="solver.html#magnetostatica">Magnetostática</a></li>
+<li class="toctree-l3"><a class="reference internal" href="solver.html#harmonica-ac">Harmônica (AC)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="solver.html#transitoria">Transitória</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="solver.html#circuito-externo">Circuito externo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solver.html#desempenho">Desempenho</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="results.html">Resultados</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="results.html#vistas-de-campo">Vistas de campo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="results.html#tabelas-e-variaveis-de-resultado">Tabelas e variáveis de resultado</a></li>
+<li class="toctree-l2"><a class="reference internal" href="results.html#forca-e-torque">Força e torque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="results.html#transitorio-e-ac">Transitório e AC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="results.html#exportar">Exportar</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="circuit.html">Circuito externo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="circuit.html#criar-o-circuito">Criar o circuito</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuit.html#fontes">Fontes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuit.html#resolver-e-ver-os-sinais">Resolver e ver os sinais</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="thermal.html">Térmica (regime)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="thermal.html#como-usar">Como usar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermal.html#resfriamento">Resfriamento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermal.html#ventilador-canal-de-ar">Ventilador (canal de ar)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermal.html#resistividade-com-a-temperatura">Resistividade com a temperatura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermal.html#resultados">Resultados</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermal.html#limitacoes">Limitações</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="files.html">Arquivos, importar e exportar</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="files.html#projetos">Projetos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="files.html#rascunho-e-copias-automaticas">Rascunho e cópias automáticas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="files.html#importar">Importar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="files.html#exportar">Exportar</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="shortcuts.html">Atalhos de teclado</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="shortcuts.html#desenho">Desenho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shortcuts.html#restricoes-com-a-selecao">Restrições (com a seleção)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shortcuts.html#geral">Geral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shortcuts.html#console">Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shortcuts.html#esquematico">Esquemático</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Scripts e API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/console.html">Console</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/console.html#a-linguagem">A linguagem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/console.html#objetos">Objetos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/console.html#funcoes-globais">Funções globais</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/console.html#recursos-do-console">Recursos do console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/console.html#script-exportado">Script exportado</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/api.html">Referência da API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#geometria-g">Geometria — <code class="docutils literal notranslate"><span class="pre">g</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api.html#entidades">Entidades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api.html#restricoes">Restrições</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api.html#cotas-e-variaveis">Cotas e variáveis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api.html#edicao">Edição</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api.html#consulta-e-problema">Consulta e problema</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#malha-m">Malha — <code class="docutils literal notranslate"><span class="pre">m</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#metodo-de-resolucao-s">Método de resolução — <code class="docutils literal notranslate"><span class="pre">s</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#resultados-r">Resultados — <code class="docutils literal notranslate"><span class="pre">r</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#esquematico-c">Esquemático — <code class="docutils literal notranslate"><span class="pre">c</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#globais">Globais</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/bridge.html">Ponte local (Python)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#instalar">Instalar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#conectar">Conectar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#o-console-no-terminal">O console no terminal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#scripts-em-python">Scripts em Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/bridge.html#erros">Erros</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#seguranca">Segurança</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#http-direto">HTTP direto</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/other-languages.html">Matlab, Julia e HTTP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/other-languages.html#matlab-octave">Matlab / Octave</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/other-languages.html#julia">Julia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/other-languages.html#protocolo-http">Protocolo HTTP</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/examples.html">Exemplos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/examples.html#varredura-de-forca">Varredura de força</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/examples.html#contator">Contator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/examples.html#ideias">Ideias</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teoria</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../theory/formulation.html">Formulação</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../theory/formulation.html#magnetostatica">Magnetostática</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theory/formulation.html#condicoes-de-contorno">Condições de contorno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theory/formulation.html#solucao">Solução</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theory/formulation.html#transitorio">Transitório</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theory/formulation.html#harmonico-ac">Harmônico (AC)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../theory/formulation.html#perdas-ca-nos-fios">Perdas CA nos fios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../theory/formulation.html#termica-em-regime">Térmica em regime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theory/formulation.html#pos-processamento">Pós-processamento</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../theory/formulation.html#forca-e-torque">Força e torque</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../theory/validation.html">Validação</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../theory/validation.html#comparacao-com-o-femm">Comparação com o FEMM</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sobre</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/cite.html">Citar</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about/cite.html#citacao-abnt">Citação (ABNT)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/cite.html#citation-apa">Citation (APA)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/cite.html#bibtex">BibTeX</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../about/license.html">Licença e créditos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about/license.html#magfem">MagFEM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/license.html#componentes-de-terceiros">Componentes de terceiros</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contributing.html">Contribuir</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about/contributing.html#rodar-localmente">Rodar localmente</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/contributing.html#organizacao">Organização</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/contributing.html#esta-documentacao">Esta documentação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/contributing.html#estilo">Estilo</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MagFEM</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Malha e materiais</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/thalesmaoa/magfem/blob/main/docs/pt/guide/mesh.md" class="fa fa-github"> Editar no GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="malha-e-materiais">
+<h1>Malha e materiais<a class="headerlink" href="#malha-e-materiais" title="Link para este cabeçalho"></a></h1>
+<p>A etapa <strong>Malha</strong> transforma o desenho num problema físico: o MagFEM detecta as <strong>regiões</strong> fechadas, você diz
+de que material cada uma é, onde há corrente e quais são as condições de contorno, e então gera a malha de
+triângulos.</p>
+<section id="regioes">
+<h2>Regiões<a class="headerlink" href="#regioes" title="Link para este cabeçalho"></a></h2>
+<p>Toda área fechada pelas curvas vira uma região, detectada automaticamente e numerada (“Região 1”, “Região 2”…).
+Linhas de construção não formam regiões. A região mantém o que foi atribuído a ela mesmo quando o desenho muda:
+ela é identificada por um ponto interno, como os <em>block labels</em> do FEMM.</p>
+<ul class="simple">
+<li><p>Clique numa região no desenho para selecioná-la; duplo clique no nome (na árvore) renomeia.</p></li>
+<li><p>O rótulo da região pode ser arrastado no desenho.</p></li>
+<li><p>Uma região sem material não entra na malha (como no FEMM).</p></li>
+</ul>
+<div class="warning admonition">
+<p class="admonition-title">Curvas sobrepostas</p>
+<p>Duas linhas uma sobre a outra no mesmo trecho não fecham regiões direito. Divida as linhas nos pontos de
+contato (a <a class="reference internal" href="geometry.html#editar"><span class="std std-ref">tesoura</span></a> ajuda) em vez de sobrepor.</p>
+</div>
+</section>
+<section id="materiais">
+<h2>Materiais<a class="headerlink" href="#materiais" title="Link para este cabeçalho"></a></h2>
+<p>Em <strong>Malha › Materiais</strong>, cada região tem uma lista de materiais com busca. A biblioteca fica na gaveta da
+direita (<strong>Problema e bibliotecas › Materiais</strong>):</p>
+<ul class="simple">
+<li><p><strong>Grupos</strong>: ar, condutores, aços (com curva B-H), ímãs e os seus.</p></li>
+<li><p><strong>Propriedades</strong>: permeabilidade relativa μr, condutividade σ (MS/m), remanência Br (T) para ímãs, cor, e os
+coeficientes de Steinmetz para perdas no ferro (k_h, α, k_e; usados na análise AC).</p></li>
+<li><p><strong>Curva B-H</strong>: materiais com curva são não lineares. A curva aparece numa aba própria, com escala linear ou log.</p></li>
+<li><p><strong>Biblioteca do FEMM 4.2</strong>: 245 materiais prontos na busca. <strong>Importar do FEMM…</strong> também lê o <code class="docutils literal notranslate"><span class="pre">matlib.dat</span></code> da
+sua instalação.</p></li>
+<li><p>Para ímãs, a <strong>direção de magnetização</strong> (ângulo) é definida na região.</p></li>
+<li><p><strong>Chapas laminadas</strong> (Construção › Chapas laminadas): fator de empilhamento <span class="math notranslate nohighlight">\(f\)</span> e espessura da chapa <span class="math notranslate nohighlight">\(d\)</span>. O campo
+usa o material equivalente <span class="math notranslate nohighlight">\(B = f\,B_{aço}(H) + (1-f)\,\mu_0 H\)</span> (tensão induzida e força saem certas com a
+profundidade total); não há correntes parasitas de bloco; as perdas no ferro ficam no volume de aço (<span class="math notranslate nohighlight">\(f\,V\)</span>) com
+<span class="math notranslate nohighlight">\(B_{aço} = B/f\)</span>. Sem <span class="math notranslate nohighlight">\(k_e\)</span>, ele é calculado da espessura: <span class="math notranslate nohighlight">\(k_e = \pi^2 \sigma d^2/6\)</span> (informe o <span class="math notranslate nohighlight">\(\sigma\)</span> da chapa).</p></li>
+</ul>
+</section>
+<section id="circuitos-e-correntes">
+<h2>Circuitos e correntes<a class="headerlink" href="#circuitos-e-correntes" title="Link para este cabeçalho"></a></h2>
+<p>Em <strong>Malha › Circuitos</strong>, <code class="docutils literal notranslate"><span class="pre">+</span></code> cria um circuito. Nas propriedades da região, ligue-a a um circuito com um número de
+<strong>espiras</strong>; espiras negativas invertem o sentido (ida e volta de uma bobina).</p>
+<p>A <strong>corrente</strong> é uma fonte da análise, então fica em <strong>Método de resolução › (física) › Correntes</strong>: em A, aceita
+variáveis e, no transitório, funções de <code class="docutils literal notranslate"><span class="pre">t</span></code>, como <code class="docutils literal notranslate"><span class="pre">2*sin(2*pi*60*t)</span></code>. <strong>Cada física tem as suas correntes</strong>: mudar
+a corrente do estático não muda a do transitório nem a do AC. Sem valor próprio, a física usa a corrente padrão do
+circuito.</p>
+<ul class="simple">
+<li><p>Todas as regiões de um circuito levam a mesma corrente (circuito <strong>série</strong>). O tipo “paralelo” dos arquivos do
+FEMM é guardado, mas a divisão da corrente entre regiões em paralelo ainda não foi implementada.</p></li>
+<li><p>Uma região também pode ter corrente própria, sem circuito.</p></li>
+</ul>
+<p>A densidade de corrente é J = N·I / área da região.</p>
+<p><strong>Fio da bobina</strong> (nas propriedades da região): redondo por AWG ou pelo diâmetro, ou retangular (largura × altura),
+com fios em paralelo. O R CC passa a ser <span class="math notranslate nohighlight">\(R = |N|\,\ell/(\sigma A_{espira})\)</span>, com <span class="math notranslate nohighlight">\(\ell = 2\pi r\)</span> no axissimétrico ou a
+profundidade no plano (sem cabeceiras), e a tabela de circuitos mostra o <strong>fator de enchimento</strong>
+<span class="math notranslate nohighlight">\(|N|\,A_{espira}/A_{região}\)</span> (acima de 100 %, as espiras não cabem). Sem fio, a região toda conta como cobre. Na
+análise harmônica, o fio definido também dá as perdas por <strong>efeito pelicular e de proximidade</strong> e o <strong>R CA</strong> (veja
+<a class="reference internal" href="results.html"><span class="std std-doc">Resultados</span></a>).</p>
+</section>
+<section id="contornos">
+<h2>Contornos<a class="headerlink" href="#contornos" title="Link para este cabeçalho"></a></h2>
+<p>A borda externa do domínio entra automaticamente em <strong>Dirichlet (A = 0)</strong>: o fluxo não atravessa essa borda. Para
+outros contornos, clique nas bordas no desenho (Shift para várias) e escolha o contorno; os tipos ficam na gaveta
+da direita, com os mesmos nomes do FEMM:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tipo</p></th>
+<th class="head"><p>Condição</p></th>
+<th class="head"><p>Uso</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A prescrito (Dirichlet)</p></td>
+<td><p>A = A0 + A1·x + A2·y (x, y em m)</p></td>
+<td><p>A = 0 na borda; campo uniforme imposto com A1/A2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Neumann</p></td>
+<td><p>∂A/∂n = 0</p></td>
+<td><p>simetria magnética: o fluxo cruza a curva perpendicularmente</p></td>
+</tr>
+<tr class="row-even"><td><p>Misto (Robin)</p></td>
+<td><p>ν ∂A/∂n + c0·A + c1 = 0</p></td>
+<td><p>borda aberta assintótica: c0 = 1/(μ0·R), c1 = 0, com R o raio do domínio em m</p></td>
+</tr>
+<tr class="row-odd"><td><p>Periódico</p></td>
+<td><p>A igual no par de curvas</p></td>
+<td><p>repete o domínio (um polo de uma máquina)</p></td>
+</tr>
+<tr class="row-even"><td><p>Antiperiódico</p></td>
+<td><p>A com sinal trocado no par</p></td>
+<td><p>meio período</p></td>
+</tr>
+</tbody>
+</table>
+<p>Periódico e antiperiódico ligam <strong>pares</strong> de curvas: selecione as duas. A malha é gerada casando os nós das duas
+curvas. Os tipos “pequena profundidade de penetração”, “imagem dual” e “entreferro periódico” existem para ler
+arquivos do FEMM, mas ainda não são resolvidos.</p>
+<p>No axissimétrico, o eixo r = 0 tem sempre A = 0 (ψ = r·A se anula no eixo).</p>
+</section>
+<section id="gerar-a-malha">
+<h2>Gerar a malha<a class="headerlink" href="#gerar-a-malha" title="Link para este cabeçalho"></a></h2>
+<p>A malha usa o <strong>Tangle</strong>, o gerador do FEMM (de David Meeker, licença MIT), compilado para WebAssembly.</p>
+<ul class="simple">
+<li><p><strong>Elementos</strong>: tamanho padrão do elemento (vazio = automático) e <strong>ângulo mínimo</strong> (qualidade: nenhum
+triângulo terá ângulo interno menor; 30° é um bom padrão, 34° é o máximo aceito). ▶ gera a malha.</p></li>
+<li><p><strong>Regiões</strong>: tamanho do elemento por região, para refinar onde o campo varia mais (entreferro, cantos, núcleo).</p></li>
+<li><p><strong>Por curva</strong>: tamanho ao longo de curvas escolhidas (<code class="docutils literal notranslate"><span class="pre">m.curve_size</span></code> no console).</p></li>
+<li><p>As propriedades de <strong>Elementos</strong> mostram nós, triângulos, o menor ângulo e o tempo, com um mapa de qualidade.</p></li>
+</ul>
+<p>Resolver sem malha gera a malha antes, automaticamente.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="geometry.html" class="btn btn-neutral float-left" title="Geometria (CAD)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="solver.html" class="btn btn-neutral float-right" title="Resolução" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Direitos autorais 2026, Thales Maia.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Idioma">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Idioma e links</span>
+    pt
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Idioma</dt><dd><strong>português</strong></dd><dd><a href="../en/guide/mesh.html">English</a></dd>
+    </dl>
+    <hr/>
+    <dl>
+      <dt>Links</dt>
+      <dd><a href="https://thalesmaia.com/tools/magfem-web/">Abrir o MagFEM</a></dd>
+      <dd><a href="https://github.com/thalesmaoa/magfem">GitHub</a></dd>
+      <dd><a href="https://github.com/thalesmaoa/magfem/issues">Relatar um problema</a></dd>
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
