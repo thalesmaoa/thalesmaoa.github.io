@@ -1,0 +1,27 @@
+---
+title: '<span class="lang-pt">Lançamento — MagFEM: elementos finitos magnéticos 2D no navegador</span><span class="lang-en">Launch — MagFEM: 2D magnetic finite elements in the browser</span>'
+description: '<span class="lang-pt">Nova ferramenta da EE Web Tools: CAD paramétrico, malha, solver não linear, transitório e AC com acoplamento de circuito, tudo rodando localmente no navegador</span><span class="lang-en">New EE Web Tools app: parametric CAD, meshing, nonlinear, transient and AC solver with circuit coupling, all running locally in the browser</span>'
+author: "Thales Maia"
+date: "2026-09-27"
+categories: [Notícias, Ferramentas]
+image: "magfem.png"
+draft: false
+---
+
+<span class="lang-pt">A EE Web Tools ganha hoje a sua ferramenta mais ambiciosa: o **MagFEM**, um programa de elementos finitos magnéticos 2D (planar e axissimétrico) que roda inteiramente no navegador, via WebAssembly — sem instalação, sem servidor e sem login. Os projetos ficam na sua máquina.</span><span class="lang-en">EE Web Tools gains its most ambitious app today: **MagFEM**, a 2D magnetic finite element program (planar and axisymmetric) that runs entirely in the browser, via WebAssembly — no installation, no server and no login. Your projects stay on your machine.</span>
+
+<span class="lang-pt">O MagFEM reúne CAD paramétrico, geração de malha (Tangle, o gerador do FEMM), solver magnetostático não linear, transitório e AC com acoplamento de circuito, e pós-processamento com mapas de campo, linhas de fluxo e tabelas de resultados. Também traz a biblioteca de materiais do FEMM 4.2.</span><span class="lang-en">MagFEM brings together a parametric CAD, meshing (Tangle, the FEMM mesher), a nonlinear magnetostatic, transient and AC solver with circuit coupling, and post-processing with field maps, flux lines and result tables. It also ships the FEMM 4.2 material library.</span>
+
+<span class="lang-pt">Para começar, publiquei o primeiro tutorial em vídeo: do desenho à simulação magnetostática de um núcleo EI.</span><span class="lang-en">To get started, I published the first video tutorial (in Portuguese): from drawing to magnetostatic simulation of an EI core.</span>
+
+{{< video https://youtu.be/qfYtEC5cs0A >}}
+
+- <span class="lang-pt">**Acesse a ferramenta:** [MagFEM](/tools/magfem-web/)</span><span class="lang-en">**Open the tool:** [MagFEM](/tools/magfem-web/)</span>
+- <span class="lang-pt">**Leia mais no blog:** [MagFEM: elementos finitos magnéticos no navegador](../../blog/20260927%20-%20MagFEM%20elementos%20finitos%20magneticos%20no%20navegador/)</span><span class="lang-en">**Read more on the blog:** [MagFEM: magnetic finite elements in the browser](../../blog/20260927%20-%20MagFEM%20elementos%20finitos%20magneticos%20no%20navegador/)</span>
+- <span class="lang-pt">**Código-fonte (MIT):** [github.com/thalesmaoa/magfem](https://github.com/thalesmaoa/magfem)</span><span class="lang-en">**Source code (MIT):** [github.com/thalesmaoa/magfem](https://github.com/thalesmaoa/magfem)</span>
+
+<span class="lang-pt">A ferramenta ainda está em desenvolvimento — relatos de bugs são muito bem-vindos pelas *issues* do GitHub.</span><span class="lang-en">The tool is still under development — bug reports are very welcome through GitHub issues.</span>
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
