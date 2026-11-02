@@ -1,0 +1,430 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulation &mdash; MagFEM</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=34306bf6" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Validation" href="validation.html" />
+    <link rel="prev" title="Examples" href="../scripting/examples.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MagFEM
+              <img src="../_static/magfem-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide/index.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/index.html#the-workflow">The workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/index.html#the-interface">The interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/index.html#next-steps">Next steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/first-model.html">First model: coil with a core</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/first-model.html#axisymmetric-problem">1. Axisymmetric problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/first-model.html#geometry">2. Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/first-model.html#materials-circuit-and-mesh">3. Materials, circuit and mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/first-model.html#solve">4. Solve</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/first-model.html#results">5. Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/first-model.html#try-it">6. Try it</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/first-model.html#the-complete-script">The complete script</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/geometry.html">Geometry (CAD)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/geometry.html#drawing-tools">Drawing tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/geometry.html#snapping">Snapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/geometry.html#constraints">Constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/geometry.html#dimensions-and-variables">Dimensions and variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/geometry.html#editing">Editing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/geometry.html#box-selection">Box selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/geometry.html#planar-and-axisymmetric">Planar and axisymmetric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/geometry.html#importing-geometry">Importing geometry</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/mesh.html">Mesh and materials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/mesh.html#regions">Regions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/mesh.html#materials">Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/mesh.html#circuits-and-currents">Circuits and currents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/mesh.html#boundaries">Boundaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/mesh.html#generating-the-mesh">Generating the mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/solver.html">Solving</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/solver.html#currents">Currents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/solver.html#analysis-types">Analysis types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../guide/solver.html#magnetostatic">Magnetostatic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../guide/solver.html#harmonic-ac">Harmonic (AC)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../guide/solver.html#transient">Transient</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/solver.html#external-circuit">External circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/solver.html#performance">Performance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/results.html">Results</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/results.html#field-views">Field views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/results.html#tables-and-result-variables">Tables and result variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/results.html#force-and-torque">Force and torque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/results.html#transient-and-ac">Transient and AC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/results.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/circuit.html">External circuit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/circuit.html#creating-the-circuit">Creating the circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/circuit.html#sources">Sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/circuit.html#solving-and-viewing-signals">Solving and viewing signals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/thermal.html">Thermal (steady)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/thermal.html#how-to-use">How to use</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/thermal.html#cooling">Cooling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/thermal.html#fan-air-channel">Fan (air channel)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/thermal.html#resistivity-with-temperature">Resistivity with temperature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/thermal.html#results">Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/thermal.html#limitations">Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/files.html">Files, import and export</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/files.html#projects">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/files.html#draft-and-automatic-copies">Draft and automatic copies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/files.html#import">Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/files.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shortcuts.html">Keyboard shortcuts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/shortcuts.html#drawing">Drawing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/shortcuts.html#constraints-with-a-selection">Constraints (with a selection)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/shortcuts.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/shortcuts.html#console">Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/shortcuts.html#schematic">Schematic</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Scripting and API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/console.html">Console</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/console.html#the-language">The language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/console.html#objects">Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/console.html#global-functions">Global functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/console.html#console-features">Console features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/console.html#exported-script">Exported script</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/api.html">API reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#geometry-g">Geometry — <code class="docutils literal notranslate"><span class="pre">g</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api.html#entities">Entities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api.html#constraints">Constraints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api.html#dimensions-and-variables">Dimensions and variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api.html#editing">Editing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api.html#queries-and-problem">Queries and problem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#mesh-m">Mesh — <code class="docutils literal notranslate"><span class="pre">m</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#solver-s">Solver — <code class="docutils literal notranslate"><span class="pre">s</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#results-r">Results — <code class="docutils literal notranslate"><span class="pre">r</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#schematic-c">Schematic — <code class="docutils literal notranslate"><span class="pre">c</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api.html#globals">Globals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/bridge.html">Local bridge (Python)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#install">Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#connect">Connect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#the-terminal-console">The terminal console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#python-scripts">Python scripts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/bridge.html#errors">Errors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#security">Security</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/bridge.html#plain-http">Plain HTTP</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/other-languages.html">Matlab, Julia and HTTP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/other-languages.html#matlab-octave">Matlab / Octave</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/other-languages.html#julia">Julia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/other-languages.html#http-protocol">HTTP protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/examples.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/examples.html#force-sweep">Force sweep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/examples.html#contactor">Contactor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/examples.html#ideas">Ideas</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Formulation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#magnetostatics">Magnetostatics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#boundary-conditions">Boundary conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#solution">Solution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transient">Transient</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#harmonic-ac">Harmonic (AC)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ac-losses-in-the-wires">AC losses in the wires</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#steady-thermal">Steady thermal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#post-processing">Post-processing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#force-and-torque">Force and torque</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="validation.html">Validation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="validation.html#comparison-with-femm">Comparison with FEMM</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/cite.html">Cite</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about/cite.html#citation-apa">Citation (APA)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/cite.html#citacao-abnt">Citação (ABNT)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/cite.html#bibtex">BibTeX</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../about/license.html">License and credits</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about/license.html#magfem">MagFEM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/license.html#third-party-components">Third-party components</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contributing.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about/contributing.html#run-locally">Run locally</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/contributing.html#layout">Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/contributing.html#this-documentation">This documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/contributing.html#style">Style</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MagFEM</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Formulation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/thalesmaoa/magfem/blob/main/docs/en/theory/formulation.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="formulation">
+<h1>Formulation<a class="headerlink" href="#formulation" title="Link to this heading"></a></h1>
+<p>The numerical core is C++17 with Eigen, compiled to WebAssembly (and natively, for the tests). Linear triangular
+elements (P1) generated by Tangle.</p>
+<section id="magnetostatics">
+<h2>Magnetostatics<a class="headerlink" href="#magnetostatics" title="Link to this heading"></a></h2>
+<p><strong>Planar (x, y).</strong> The unknown is the vector potential <span class="math notranslate nohighlight">\(A_z\)</span>, with</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{B} = \left(\frac{\partial A}{\partial y},\; -\frac{\partial A}{\partial x}\right),
+\qquad
+-\nabla\cdot\left(\nu\,\nabla A\right) = J + \nabla\times(\nu\,\mathbf{B}_r),
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\nu = 1/\mu\)</span> is the reluctivity and <span class="math notranslate nohighlight">\(\mathbf{B}_r\)</span> the magnet remanence.</p>
+<p><strong>Axisymmetric (r, z).</strong> The unknown is <span class="math notranslate nohighlight">\(\psi = r\,A_\varphi\)</span>, which vanishes on the axis:</p>
+<div class="math notranslate nohighlight">
+\[
+B_r = -\frac{1}{r}\frac{\partial \psi}{\partial z},
+\qquad
+B_z = \frac{1}{r}\frac{\partial \psi}{\partial r},
+\]</div>
+<p>with a <span class="math notranslate nohighlight">\(1/r\)</span> weight evaluated at the centroid radius of each element.</p>
+<p><strong>Materials.</strong> Linear, <span class="math notranslate nohighlight">\(\nu = 1/(\mu_0\mu_r)\)</span>, or nonlinear through the B-H curve: <span class="math notranslate nohighlight">\(H(B)\)</span> as a monotone cubic and
+Newton-Raphson with a line search. Magnets through their remanence, <span class="math notranslate nohighlight">\(\mathbf{H} = \nu(\mathbf{B} - \mathbf{B}_r)\)</span>,
+with the direction set on the region.</p>
+<p><strong>Laminated sheets.</strong> With stacking factor <span class="math notranslate nohighlight">\(f\)</span>, sheet and insulation are in parallel along the depth:
+<span class="math notranslate nohighlight">\(B(H) = f\,B_{steel}(H) + (1-f)\,\mu_0 H\)</span> (linear: <span class="math notranslate nohighlight">\(\mu_{ef} = f\mu_r + 1 - f\)</span>), with no bulk conductivity. Iron losses use
+the steel volume and <span class="math notranslate nohighlight">\(B_{steel} = B/f\)</span>, i.e. coefficients <span class="math notranslate nohighlight">\(k_h f^{1-\alpha}\)</span> and <span class="math notranslate nohighlight">\(k_e/f\)</span> over the region volume; the
+classical eddy term in a sheet of thickness <span class="math notranslate nohighlight">\(d\)</span> is <span class="math notranslate nohighlight">\(k_e = \pi^2\sigma d^2/6\)</span>.</p>
+<p><strong>Sources.</strong> <span class="math notranslate nohighlight">\(J = N\,I/S\)</span>, with <span class="math notranslate nohighlight">\(N\)</span> turns, current <span class="math notranslate nohighlight">\(I\)</span> (of the region or circuit) and region area <span class="math notranslate nohighlight">\(S\)</span>.</p>
+</section>
+<section id="boundary-conditions">
+<h2>Boundary conditions<a class="headerlink" href="#boundary-conditions" title="Link to this heading"></a></h2>
+<p>As in FEMM:</p>
+<ul class="simple">
+<li><p><strong>Prescribed A</strong> (Dirichlet): <span class="math notranslate nohighlight">\(A = A_0 + A_1 x + A_2 y\)</span>.</p></li>
+<li><p><strong>Neumann</strong> (natural): <span class="math notranslate nohighlight">\(\partial A/\partial n = 0\)</span>.</p></li>
+<li><p><strong>Mixed</strong> (Robin): <span class="math notranslate nohighlight">\(\nu\,\partial A/\partial n + c_0 A + c_1 = 0\)</span>. In axisymmetric problems, with <span class="math notranslate nohighlight">\(\psi = rA\)</span>, the
+boundary term is <span class="math notranslate nohighlight">\(\oint (c_0/r - \nu\, n_r/r^2)\,\psi\, N_i N_j + c_1 N_i\)</span>, integrated with 2-point Gauss.
+Asymptotic open boundary: <span class="math notranslate nohighlight">\(c_0 = 1/(\mu_0 R)\)</span>.</p></li>
+<li><p><strong>Periodic and antiperiodic</strong>: elimination of matched nodes (Tangle splits both curves in sync).</p></li>
+</ul>
+</section>
+<section id="solution">
+<h2>Solution<a class="headerlink" href="#solution" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Static: sparse LDLᵀ (<code class="docutils literal notranslate"><span class="pre">SimplicialLDLT</span></code>).</p></li>
+<li><p>Circuit and AC: sparse LU (<code class="docutils literal notranslate"><span class="pre">SparseLU</span></code>, complex for AC).</p></li>
+<li><p>Nonlinear: Newton-Raphson with a line search.</p></li>
+</ul>
+</section>
+<section id="transient">
+<h2>Transient<a class="headerlink" href="#transient" title="Link to this heading"></a></h2>
+<p>Implicit Euler with eddy currents in conducting regions without a source:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma\,\frac{\partial A}{\partial t} - \nabla\cdot(\nu\,\nabla A) = J(t).
+\]</div>
+<p>Sources are functions of <span class="math notranslate nohighlight">\(t\)</span> evaluated at every step. The external circuit joins the same system (strong,
+monolithic coupling), solved with Newton at every step.</p>
+</section>
+<section id="harmonic-ac">
+<h2>Harmonic (AC)<a class="headerlink" href="#harmonic-ac" title="Link to this heading"></a></h2>
+<p>With phasors,</p>
+<div class="math notranslate nohighlight">
+\[
+\left(K(\nu_{ef}) + j\omega\,\sigma M\right)\hat{A} = \hat{J}.
+\]</div>
+<p>Materials with a B-H curve use the effective permeability <span class="math notranslate nohighlight">\(\nu_{ef} = H(\hat{B})/\hat{B}\)</span> with the peak <span class="math notranslate nohighlight">\(|B|\)</span> of
+each element, iterated with relaxation (as in FEMM). The field is shown over one period,
+<span class="math notranslate nohighlight">\(A(t) = \mathrm{Re}(\hat{A}\,e^{j\omega t})\)</span>.</p>
+<ul class="simple">
+<li><p>Eddy-current losses: <span class="math notranslate nohighlight">\(\tfrac{1}{2}\,\sigma\,\omega^2 |\hat{A}|^2\)</span> (<span class="math notranslate nohighlight">\(\psi/r\)</span> in axisymmetric problems).</p></li>
+<li><p>Iron losses (Steinmetz): <span class="math notranslate nohighlight">\(p = k_h f \hat{B}^{\alpha} + k_e (f \hat{B})^2\)</span>.</p></li>
+</ul>
+<section id="ac-losses-in-the-wires">
+<h3>AC losses in the wires<a class="headerlink" href="#ac-losses-in-the-wires" title="Link to this heading"></a></h3>
+<p>With <span class="math notranslate nohighlight">\(\delta = \sqrt{2/(\omega\mu_0\sigma)}\)</span> and <span class="math notranslate nohighlight">\(k = (1-j)/\delta\)</span>, for a round wire of radius <span class="math notranslate nohighlight">\(a\)</span>:</p>
+<ul class="simple">
+<li><p><strong>Skin:</strong> <span class="math notranslate nohighlight">\(R_{ac}/R_{dc} = \mathrm{Re}\left[\tfrac{ka}{2}\,J_0(ka)/J_1(ka)\right]\)</span> (low frequency
+<span class="math notranslate nohighlight">\(1 + (a/\delta)^4/48\)</span>; high, <span class="math notranslate nohighlight">\(a/(2\delta) + 1/4 + 3\delta/(32a)\)</span>). <span class="math notranslate nohighlight">\(P_{skin} = F\,R_{dc}\,\hat I^2/2\)</span>.</p></li>
+<li><p><strong>Proximity</strong> (transverse field of peak <span class="math notranslate nohighlight">\(\hat B\)</span>), per metre of wire:
+<span class="math notranslate nohighlight">\(P' = \tfrac{\pi\omega^2\sigma}{2}|D|^2\int_0^a |J_1(kr)|^2 r\,dr\)</span>, <span class="math notranslate nohighlight">\(D = 2\hat B/(k J_0(ka))\)</span>; low frequency
+<span class="math notranslate nohighlight">\(\pi\sigma\omega^2\hat B^2 a^4/8\)</span>. Summed over the coil elements with <span class="math notranslate nohighlight">\(|N|\cdot n_{par}/A\)</span> strands per area.</p></li>
+<li><p><strong>Rectangular</strong> (<span class="math notranslate nohighlight">\(w \times h\)</span>): Dowell in each direction, <span class="math notranslate nohighlight">\(P' = w\,P'_{foil}(h, \hat B_x) + h\,P'_{foil}(w, \hat B_y)\)</span>, with
+<span class="math notranslate nohighlight">\(P'_{foil} = \tfrac{H_0^2}{\sigma\delta}\,\tfrac{\sinh\xi - \sin\xi}{\cosh\xi + \cos\xi}\)</span>, <span class="math notranslate nohighlight">\(\xi = t/\delta\)</span>; skin from
+the foil of thickness <span class="math notranslate nohighlight">\(\min(w, h)\)</span> (approximation).</p></li>
+</ul>
+</section>
+</section>
+<section id="steady-thermal">
+<h2>Steady thermal<a class="headerlink" href="#steady-thermal" title="Link to this heading"></a></h2>
+<p><span class="math notranslate nohighlight">\(-\nabla\cdot(k\nabla T) = q\)</span> in the solid (P1; <span class="math notranslate nohighlight">\(2\pi r\)</span> weight in axisymmetric problems), with convection
+<span class="math notranslate nohighlight">\(-k\,\partial T/\partial n = h\,(T - T_{ref})\)</span> on exposed edges, the depth faces in planar problems as a sink
+<span class="math notranslate nohighlight">\(2h/d\,(T - T_{amb})\)</span>, and fixed temperature. <span class="math notranslate nohighlight">\(q\)</span> comes from the magnetic physics: <span class="math notranslate nohighlight">\(J^2/(2\sigma)\)</span> in coils (AC; with the
+wire, <span class="math notranslate nohighlight">\(\times A_{region}/(|N| A_{turn})\)</span> and the skin factor), proximity, <span class="math notranslate nohighlight">\(\tfrac12\sigma\omega^2|\hat A|^2\)</span> in solid
+conductors and Steinmetz in iron. Air channels: <span class="math notranslate nohighlight">\(T_{air} = T_{in} + P/(2\rho c_p Q)\)</span>. Resistivity:
+<span class="math notranslate nohighlight">\(\rho(T) = \rho_{20}[1 + \alpha(T - 20)]\)</span>, iterating with the AC. Conjugate gradient with Jacobi.</p>
+</section>
+<section id="post-processing">
+<h2>Post-processing<a class="headerlink" href="#post-processing" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Energy: <span class="math notranslate nohighlight">\(W = \tfrac{1}{2}\int \nu\,|\mathbf{B} - \mathbf{B}_r|^2\, dV\)</span>.</p></li>
+<li><p>Flux linkage: <span class="math notranslate nohighlight">\(\lambda = \sum (N/S)\int A\, d\Omega \times\)</span> depth (planar) or
+<span class="math notranslate nohighlight">\(\sum (N/S)\int 2\pi\psi\, d\Omega\)</span> (axisymmetric); <span class="math notranslate nohighlight">\(L = \lambda/I\)</span>; <span class="math notranslate nohighlight">\(R_{DC} = \sum N^2 \ell/(\sigma S)\)</span>, or <span class="math notranslate nohighlight">\(\sum |N|\,\ell/(\sigma A_{turn})\)</span> with the wire set.</p></li>
+<li><p>Flux through a curve: <span class="math notranslate nohighlight">\(\Phi = -\Delta A \times\)</span> depth (planar) or <span class="math notranslate nohighlight">\(2\pi\,\Delta\psi\)</span> (axisymmetric).</p></li>
+<li><p>Interpolation: gradient recovered at the nodes (per region) and a quadratic interpolant per triangle.</p></li>
+</ul>
+<section id="force-and-torque">
+<h3>Force and torque<a class="headerlink" href="#force-and-torque" title="Link to this heading"></a></h3>
+<p>With the Maxwell stress tensor, <span class="math notranslate nohighlight">\(T = (\mathbf{B}\mathbf{B}^\mathsf{T} - \tfrac{1}{2}|\mathbf{B}|^2 I)/\mu_0\)</span>:</p>
+<ul class="simple">
+<li><p><strong>Surface</strong> (weighted, like the FEMM <em>block integral</em>): <span class="math notranslate nohighlight">\(\mathbf{F} = -\int T\cdot\nabla g\, dV\)</span>, with <span class="math notranslate nohighlight">\(g = 1\)</span> at
+the body nodes and <span class="math notranslate nohighlight">\(0\)</span> elsewhere; only the air elements around the body contribute.</p></li>
+<li><p><strong>Line</strong> (closed contour in air): <span class="math notranslate nohighlight">\(\mathbf{F} = \oint T\cdot\mathbf{n}\, dl \times\)</span> depth, with B smoothed at the
+nodes.</p></li>
+</ul>
+<p>Torque is about the origin.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../scripting/examples.html" class="btn btn-neutral float-left" title="Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="validation.html" class="btn btn-neutral float-right" title="Validation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Thales Maia.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Language">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Language and links</span>
+    en
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Language</dt><dd><a href="../../theory/formulation.html">português</a></dd><dd><strong>English</strong></dd>
+    </dl>
+    <hr/>
+    <dl>
+      <dt>Links</dt>
+      <dd><a href="https://thalesmaia.com/tools/magfem-web/">Open MagFEM</a></dd>
+      <dd><a href="https://github.com/thalesmaoa/magfem">GitHub</a></dd>
+      <dd><a href="https://github.com/thalesmaoa/magfem/issues">Report a bug</a></dd>
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Winding Factor — EE Web Tools</title>
+<meta name="description" content="Winding scheme calculator: calculate the winding factor of electrical machines from the number of slots and magnet poles, with winding animation. Free web tool.">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Favicon do site (SPHIN) -->
+<link rel="icon" href="/files/icons/logo_machine.png" />
+
+<!-- Fonte do site (flatly/Lato) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!--Scheme Calculator-->
+  <script type="text/javascript" src="bewicklungsrechner_xl_script.js"></script>
+  <link rel="stylesheet" href="bewicklungsrechner_xl_style.css" type="text/css" />
+<!--Scheme Calculator-->
+
+<link rel="stylesheet" type="text/css" href="default.css" />
+
+<style>
+  /* ── Layout: conteúdo estica e rodapé fica preso embaixo ── */
+  html, body { height: 100%; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #content { flex: 1; }
+
+  /* ── Barra superior: espelha a navbar do site (SPHIN) ── */
+  .eewt-bar {
+    background: #2c3e50;
+    color: #ccd1d5;
+    font-family: Lato, -apple-system, "Segoe UI", sans-serif;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .eewt-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .eewt-back {
+    color: #ccd1d5;
+    font-size: 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .eewt-back:hover { color: #ffffff; text-decoration: underline; }
+  .eewt-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ccd1d5;
+  }
+  .eewt-brand img {
+    max-height: 30px;
+    display: block;
+  }
+  .eewt-brand span {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #ccd1d5;
+    white-space: nowrap;
+  }
+  .eewt-tag {
+    color: #ccd1d5;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  .eewt-credit {
+    color: #888;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    padding: 14px 10px 18px;
+  }
+  .eewt-credit a { color: #666; font-size: 11px; }
+
+  /* ── Layout da ferramenta (era estilo inline) ── */
+  #page-indicator { margin-left: 116px; }
+  .tool-wrap { margin-top: 88px; margin-left: 34px; margin-right: 34px; }
+  .tool-box { margin-top: -26px; margin-bottom: 50px; width: 702px; border: 0; margin-left: 81px; }
+
+  /* ── Celular: conteúdo fluido ── */
+  @media (max-width: 767px) {
+    #page-indicator { margin-left: 0; }
+    .tool-wrap { margin: 16px 8px; }
+    .tool-box { width: 100%; margin-left: auto; margin-right: auto; }
+  }
+</style>
+
+</head>
+
+<body>
+
+<div class="eewt-bar">
+  <div class="eewt-left">
+    <a class="eewt-brand" href="/">
+      <img src="/files/icons/logo_machine.png" alt="SPHIN">
+      <span>SPHIN</span>
+    </a>
+    <a class="eewt-back" href="/tools/">&larr; EE Web Tools</a>
+  </div>
+  <span class="eewt-tag">Winding Factor</span>
+</div>
+
+  <div class="text-container"> <!-- set content width -->
+    <div id="page-indicator"></div>
+  </div>
+
+<div id="content">
+
+  <div id="content_block" >
+
+    <h4></h4>  <!-- Secondary page title -->
+
+  <section class="text-columns" style="min-height:600px;">
+    <h2>Winding Scheme Calculator</h2>
+
+    <article style="margin-top:70px;">
+
+
+    <div class="tool-wrap">
+
+
+      <div class="tool-box">
+<!--Scheme Calculator-->
+  <div id="jsContainer"><span style="keinscript">Javascript must be active!</span></div>
+<!--Scheme Calculator-->
+  </div>
+
+  <div id=div-1c></div>
+
+  </div>
+  <div id="text_container" style=" margin-left:0px; margin-right:22px;">
+
+  </div><!--text_container-->
+
+
+
+      <br class="clearboth">
+    </article>
+
+  </section>
+
+  </div>     <!--content_block-->
+</div>    <!--content-->
+
+<div id="divider-line"></div>
+
+<div class="eewt-credit">
+  Winding Scheme Calculator (Bewicklungsrechner XL) &copy; 2010 Felix Niessen — distributed under the GNU GPL v3.
+</div>
+
+</body>
+
+</html>
